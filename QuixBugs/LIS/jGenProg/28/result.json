@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-15 22:34:08.653389", 
+  "repair_begin": "2021-03-15 22:33:06.415253", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/jGenProg_QuixBugs_LIS_\\/src\\/main\\/java\\/LISjava\\n+++ \\/tmp\\/jGenProg_QuixBugs_LIS_\\/src\\/main\\/java\\/LISjava\\n@@ -29,2 +29,2 @@\\n-\\t\\t\\tif ((length == longest) || (val < arr[ends.get(length + 1)])) {\\n-\\t\\t\\t\\tends.put(length + 1, i);\\n+\\n+\\t\\t\\tends.put(length + 1, i); \\t\\t\\tif ((length == longest) || (val < arr[ends.get(length + 1)])) { \\t\\t\\t\\tends.put(length + 1, i);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/jGenProg_QuixBugs_LIS_\\/.\\/output_astor\\/AstorMain-LIS-\\/\\/src\\/\\/variant-928\\/java_programs\\/LIS.java", 
+          "ORIGINAL_CODE": "if ((length == longest) || (val < arr[ends.get(length + 1)])) {\\n\\tends.put(length + 1, i);\\n\\tlongest = length + 1;\\n}", 
+          "INGREDIENT_SCOPE": "LOCAL", 
+          "PATCH_HUNK_CODE": "ends.put(length + 1, i)", 
+          "INGREDIENT_PARENT": "ends.put(length + 1, i)", 
+          "LOCATION": "java_programs.LIS", 
+          "BUGGY_CODE_TYPE": "CtIfImpl|CtBlockImpl", 
+          "OPERATOR": "InsertBeforeOp", 
+          "PATH": "\\/tmp\\/jGenProg_QuixBugs_LIS_\\/src\\/main\\/java\\/LIS.java", 
+          "LINE": "29", 
+          "MP_RANKING": "9", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtBlockImpl"
+        }
+      ], 
+      "GENERATION": "464", 
+      "VARIANT_ID": "928", 
+      "TIME": "58", 
+      "VALIDATION": "|true|0|4|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/jGenProg_QuixBugs_LIS_\\/.\\/output_astor\\/AstorMain-LIS-\\/\\/src\\/\\/variant-928"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-14 21:39:13.243637", 
+  "repair_begin": "2021-03-14 21:38:57.143753", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_QuixBugs_IS_VALID_PARENTHESIZATION_\\/src\\/main\\/java\\/IS_VALID_PARENTHESIZATIONjava\\n+++ \\/tmp\\/figra_QuixBugs_IS_VALID_PARENTHESIZATION_\\/src\\/main\\/java\\/IS_VALID_PARENTHESIZATIONjava\\n@@ -24 +24 @@\\n-\\t\\treturn true;\\n+\\t\\treturn depth == 0;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_QuixBugs_IS_VALID_PARENTHESIZATION_\\/.\\/output_astor\\/AstorMain-IS_VALID_PARENTHESIZATION-\\/\\/src\\/\\/variant-54\\/java_programs\\/IS_VALID_PARENTHESIZATION.java", 
+          "ORIGINAL_CODE": "true", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "depth == 0", 
+          "INGREDIENT_PARENT": "depth == 0", 
+          "LOCATION": "java_programs.IS_VALID_PARENTHESIZATION", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_QuixBugs_IS_VALID_PARENTHESIZATION_\\/src\\/main\\/java\\/IS_VALID_PARENTHESIZATION.java", 
+          "LINE": "24", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "0.707", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "27", 
+      "VARIANT_ID": "54", 
+      "TIME": "11", 
+      "VALIDATION": "|true|0|3|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_QuixBugs_IS_VALID_PARENTHESIZATION_\\/.\\/output_astor\\/AstorMain-IS_VALID_PARENTHESIZATION-\\/\\/src\\/\\/variant-54"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+cd /tmp/figra_QuixBugs_LIS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id LIS- \
+	-failing java_testcases.junit.LIS_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+17:36:07.253 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length to length
+17:36:07.888 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends to ends
+17:36:08.034 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths to prefix_lengths
+17:36:08.335 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:09.081 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j++ to j++
+17:36:09.385 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:10.204 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends to ends
+17:36:14.328 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:15.375 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends to ends
+17:36:16.600 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.Integer, java.lang.Integer>(100) to new java.util.HashMap<java.lang.Integer, java.lang.Integer>(100)
+17:36:16.784 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+17:36:20.184 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+17:36:32.174 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to longest >>> 1
+17:39:38.417 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+17:40:00.276 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths to prefix_lengths
+17:53:34.577 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends.put(length + 1, i) to ends.put(length + 1, i)
+17:58:54.059 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends.get(j) to ends.get(j)
+18:08:27.608 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+18:09:08.112 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ends.get(length + 1) to ends.get(length + 1)
+18:13:56.723 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify longest to longest
+18:14:08.570 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify val to val
+18:17:10.638 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+18:19:17.730 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (longest + 1) to (longest + 1)
+18:26:18.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+18:31:37.205 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths.add(j) to prefix_lengths.add(j)
+18:37:36.642 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+18:38:18.393 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (!prefix_lengths.isEmpty()) ? java.util.Collections.max(prefix_lengths) : 0 to (!prefix_lengths.isEmpty()) ? java.util.Collections.max(prefix_lengths) : 0
+18:39:40.307 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+18:50:07.177 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length to length
+18:52:32.615 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify val to val
+18:53:55.486 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+18:56:24.852 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !prefix_lengths.isEmpty() to !prefix_lengths.isEmpty()
+19:05:53.820 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+19:09:48.955 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+19:16:33.792 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (length == longest) to (length == longest)
+19:16:54.079 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+19:19:08.030 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+19:27:29.615 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+19:31:45.386 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify longest to longest
+19:36:33.415 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length to length
+19:42:50.822 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths.isEmpty() to prefix_lengths.isEmpty()
+19:44:24.843 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify longest to longest
+20:00:26.649 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr[ends.get(j)] < val to arr[ends.get(j)] < val
+20:15:03.728 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (val < arr[ends.get(length + 1)]) to (val < arr[ends.get(length + 1)])
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=LIS-
+TOTAL_TIME=10802.863
+NR_GENERATIONS=1921
+NR_RIGHT_COMPILATIONS=1890
+NR_FAILLING_COMPILATIONS=31
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+681.03user 47.17system 3:00:07elapsed 6%CPU (0avgtext+0avgdata 1283836maxresident)k
+931752inputs+96208outputs (37767major+8099973minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: dom 14 mar 2021 20:36:09 EDT
+

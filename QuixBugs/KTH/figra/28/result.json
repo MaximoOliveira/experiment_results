@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-15 01:02:12.585495", 
+  "repair_begin": "2021-03-15 00:36:07.170889", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTHjava\\n+++ \\/tmp\\/figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTHjava\\n@@ -25 +25 @@\\n-\\t\\t\\treturn java_programs.KTH.kth(above, k);\\n+\\t\\t\\treturn java_programs.KTH.kth(above, k - num_lessoreq);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_QuixBugs_KTH_\\/.\\/output_astor\\/AstorMain-KTH-\\/\\/src\\/\\/variant-3438\\/java_programs\\/KTH.java", 
+          "ORIGINAL_CODE": "k", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "k - num_lessoreq", 
+          "INGREDIENT_PARENT": "_int_0 - _int_1", 
+          "LOCATION": "java_programs.KTH", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTH.java", 
+          "LINE": "25", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "1719", 
+      "VARIANT_ID": "3438", 
+      "TIME": "1560", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_QuixBugs_KTH_\\/.\\/output_astor\\/AstorMain-KTH-\\/\\/src\\/\\/variant-3438"
+    }
+  ]
+}

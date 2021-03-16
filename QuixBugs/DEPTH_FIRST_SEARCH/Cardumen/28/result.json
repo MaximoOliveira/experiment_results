@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-15 22:04:08.002678", 
+  "repair_begin": "2021-03-15 22:04:03.197285", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/tmp\\/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (node == node) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-6\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "ORIGINAL_CODE": "search(successornodes)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "node == node", 
+          "INGREDIENT_PARENT": "_Node_0 == _Node_1", 
+          "LOCATION": "java_programs.DEPTH_FIRST_SEARCH", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCH.java", 
+          "LINE": "23", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "0.577", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "3", 
+      "VARIANT_ID": "6", 
+      "TIME": "1", 
+      "VALIDATION": "|true|0|5|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-6"
+    }
+  ]
+}

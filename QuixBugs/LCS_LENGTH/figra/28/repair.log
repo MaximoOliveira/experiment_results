@@ -1,0 +1,133 @@
+cd /tmp/figra_QuixBugs_LCS_LENGTH_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id LCS_LENGTH- \
+	-failing java_testcases.junit.LCS_LENGTH_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+20:36:18.670 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:36:18.928 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to dp.get(i - 1).get(i) / 1
+20:36:29.081 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:37:20.007 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:38:00.516 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:38:42.188 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i).values() to dp.get(i).values()
+20:38:52.309 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Collections.max(ret_list) to java.util.Collections.max(ret_list)
+20:39:42.953 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t to t
+20:40:04.230 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ret_list to ret_list
+20:40:15.716 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:40:25.824 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:40:35.946 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:40:47.277 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t to t
+20:40:57.349 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < s.length() to i < s.length()
+20:41:57.872 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.put(i, initialize) to dp.put(i, initialize)
+20:42:29.323 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to i % i
+20:44:43.558 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s.charAt(i) to s.charAt(i)
+20:44:53.718 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to i % i
+20:45:03.846 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:45:28.050 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify insert_value to insert_value
+20:46:37.050 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+20:48:30.754 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:48:40.845 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:49:46.676 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.Integer, java.lang.Integer>() to new java.util.HashMap<java.lang.Integer, java.lang.Integer>()
+20:49:56.734 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map.put(j, 0) to internal_map.put(j, 0)
+20:53:11.338 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp to dp
+20:53:21.390 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i - 1 to i - 1
+20:54:27.042 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ret_list to ret_list
+20:54:57.264 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i) to dp.get(i)
+20:56:33.045 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t.charAt(j) to t.charAt(j)
+20:57:31.638 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+20:58:12.749 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s to s
+20:59:53.829 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s to s
+21:01:58.799 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to dp.get(i - 1).get(j) << 1
+21:02:09.002 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.Integer, java.util.Map<java.lang.Integer, java.lang.Integer>>() to new java.util.HashMap<java.lang.Integer, java.util.Map<java.lang.Integer, java.lang.Integer>>()
+21:02:39.183 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i - 1).get(j) to dp.get(i - 1).get(j)
+21:04:34.387 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !dp.isEmpty() to !dp.isEmpty()
+21:04:44.436 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s to s
+21:04:56.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify initialize to initialize
+21:05:27.127 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < s.length() to i < s.length()
+21:05:47.274 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.put(i, internal_map) to dp.put(i, internal_map)
+21:08:27.529 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t to t
+21:10:23.339 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+21:14:46.237 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to i >>> i
+21:16:01.381 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i) to dp.get(i)
+21:16:55.968 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s to s
+21:19:47.400 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+21:20:07.828 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map.put(j, 1) to internal_map.put(j, 1)
+21:20:48.176 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+21:21:57.127 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j < t.length() to j < t.length()
+21:22:27.657 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.isEmpty() to dp.isEmpty()
+21:24:23.081 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+21:25:03.720 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0 to !dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0
+21:32:16.599 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s.charAt(i) == t.charAt(j) to s.charAt(i) == t.charAt(j)
+21:34:19.043 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.put(i, internal_map) to dp.put(i, internal_map)
+21:39:41.333 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.put(i, internal_map) to dp.put(i, internal_map)
+21:40:42.281 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+21:43:33.811 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i) to dp.get(i)
+21:44:14.258 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+21:44:54.956 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < s.length() to i < s.length()
+21:45:05.027 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j < t.length() to j < t.length()
+21:47:09.831 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j++ to j++
+21:47:30.048 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+21:52:27.007 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i - 1) to dp.get(i - 1)
+21:57:47.488 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+22:09:54.343 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.containsKey(i - 1) to dp.containsKey(i - 1)
+22:11:41.100 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0 to !dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0
+22:26:00.551 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map.put(j, insert_value) to internal_map.put(j, insert_value)
+22:32:25.541 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i - 1).get(j) + 1 to dp.get(i - 1).get(j) + 1
+22:36:12.451 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !dp.get(i).isEmpty() to !dp.get(i).isEmpty()
+22:46:16.382 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dp.get(i) to dp.get(i)
+22:47:58.448 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ret_list.add(!dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0) to ret_list.add(!dp.get(i).isEmpty() ? java.util.Collections.max(dp.get(i).values()) : 0)
+22:55:21.456 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j to j
+23:08:00.755 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:08:21.056 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+23:16:51.855 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t.length() to t.length()
+23:20:20.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify j to j
+23:23:34.029 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:24:25.645 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify internal_map to internal_map
+23:29:14.489 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+23:35:24.754 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify s.length() to s.length()
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=LCS_LENGTH-
+TOTAL_TIME=10802.038
+NR_GENERATIONS=1289
+NR_RIGHT_COMPILATIONS=1158
+NR_FAILLING_COMPILATIONS=131
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+318.29user 16.06system 3:00:07elapsed 3%CPU (0avgtext+0avgdata 1728364maxresident)k
+0inputs+40712outputs (0major+8597696minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: dom 14 mar 2021 23:36:20 EDT
+

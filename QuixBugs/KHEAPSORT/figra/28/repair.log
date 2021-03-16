@@ -1,0 +1,78 @@
+cd /tmp/figra_QuixBugs_KHEAPSORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id KHEAPSORT- \
+	-failing java_testcases.junit.KHEAPSORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+17:36:05.267 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:05.423 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap to heap
+17:36:06.263 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap.poll() to heap.poll()
+17:36:07.041 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap to heap
+17:36:07.191 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.PriorityQueue<java.lang.Integer>() to new java.util.PriorityQueue<java.lang.Integer>()
+17:36:07.506 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+17:36:07.787 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output to output
+17:36:08.242 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap to heap
+17:36:08.402 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output to output
+17:36:08.851 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify v to v
+17:36:09.026 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap.poll() to heap.poll()
+17:36:09.198 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify popped to popped
+17:36:20.122 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:20.284 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !heap.isEmpty() to !heap.isEmpty()
+17:36:20.916 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap to heap
+17:36:21.384 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap to heap
+17:36:21.923 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+17:36:41.640 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output.add(heap.poll()) to output.add(heap.poll())
+17:36:42.239 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+17:36:42.481 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(0, k) to arr.subList(0, k)
+17:36:47.986 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output.add(popped) to output.add(popped)
+17:36:48.989 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output to output
+17:37:00.156 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap.add(x) to heap.add(x)
+17:37:14.538 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap.add(v) to heap.add(v)
+17:37:14.851 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify heap.isEmpty() to heap.isEmpty()
+17:37:37.028 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=KHEAPSORT-
+TOTAL_TIME=10800.123
+NR_GENERATIONS=133
+NR_RIGHT_COMPILATIONS=107
+NR_FAILLING_COMPILATIONS=26
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+8664.34user 19.72system 3:00:04elapsed 80%CPU (0avgtext+0avgdata 1687048maxresident)k
+417416inputs+29088outputs (20854major+2007772minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: dom 14 mar 2021 20:36:05 EDT
+

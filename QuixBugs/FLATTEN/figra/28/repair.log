@@ -1,0 +1,109 @@
+cd /tmp/figra_QuixBugs_FLATTEN_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id FLATTEN- \
+	-failing java_testcases.junit.FLATTEN_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+20:36:39.060 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList(50) to new java.util.ArrayList(50)
+20:36:39.324 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 50 to 50
+20:36:39.553 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.FLATTEN.flatten(x) to java_programs.FLATTEN.flatten(x)
+20:36:40.086 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.util.ArrayList) (arr)) to ((java.util.ArrayList) (arr))
+20:36:40.525 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+20:36:42.212 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+20:36:43.396 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+20:36:43.972 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify narr to narr
+20:36:44.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result.add(java_programs.FLATTEN.flatten(x)) to result.add(java_programs.FLATTEN.flatten(x))
+20:36:46.909 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr instanceof java.util.ArrayList to arr instanceof java.util.ArrayList
+20:36:49.849 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+20:36:50.787 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+20:36:50.952 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+20:36:52.087 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x instanceof java.util.ArrayList to x instanceof java.util.ArrayList
+20:36:53.335 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+20:36:53.520 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.FLATTEN.flatten(arr) to java_programs.FLATTEN.flatten(arr)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=FLATTEN-
+TOTAL_TIME=19.391
+NR_GENERATIONS=79
+NR_RIGHT_COMPILATIONS=62
+NR_FAILLING_COMPILATIONS=17
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=158
+TIME=19
+VALIDATION=|true|0|7|[]|
+GENERATION=79
+FOLDER_SOLUTION_CODE=/tmp/figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-158
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FLATTEN
+
+PATH=/tmp/figra_QuixBugs_FLATTEN_/src/main/java/FLATTEN.java
+
+MODIFIED_FILE_PATH=/tmp/figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-158/java_programs/FLATTEN.java
+
+LINE=21
+
+SUSPICIOUNESS=1
+
+MP_RANKING=2
+
+ORIGINAL_CODE=java_programs.FLATTEN.flatten(x)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=x
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=x
+
+PATCH_DIFF_ORIG=--- /tmp/figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
++++ /tmp/figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
+@@ -21 +21 @@
+-					result.add(java_programs.FLATTEN.flatten(x));
++					result.add(x);
+
+
+
+26.74user 3.11system 0:26.05elapsed 114%CPU (0avgtext+0avgdata 701708maxresident)k
+0inputs+11872outputs (0major+702495minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: dom 14 mar 2021 20:36:57 EDT
+

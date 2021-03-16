@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-14 21:38:18.588798", 
+  "repair_begin": "2021-03-14 21:36:03.515651", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n+++ \\/tmp\\/figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n@@ -15 +15 @@\\n-\\t\\t\\tn = n ^ (n - 1);\\n+\\t\\t\\tn = n ^ (n - (n & (n - 1)));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-30\\/java_programs\\/BITCOUNT.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(n & (n - 1))", 
+          "INGREDIENT_PARENT": "_int_0 & (_int_0 - 1)", 
+          "LOCATION": "java_programs.BITCOUNT", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNT.java", 
+          "LINE": "15", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "15", 
+      "VARIANT_ID": "30", 
+      "TIME": "94", 
+      "VALIDATION": "|true|0|9|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-30"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+cd /tmp/figra_QuixBugs_QUICKSORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id QUICKSORT- \
+	-failing java_testcases.junit.QUICKSORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+17:36:01.405 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(1, arr.size()) to arr.subList(1, arr.size())
+17:36:01.583 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+17:36:02.597 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
+17:36:02.769 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.QUICKSORT.quicksort(greater) to java_programs.QUICKSORT.quicksort(greater)
+17:36:03.114 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x > pivot to x > pivot
+17:36:03.276 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+17:36:06.268 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify greater to greater
+17:36:06.421 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+17:36:08.522 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.QUICKSORT.quicksort(lesser) to java_programs.QUICKSORT.quicksort(lesser)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=QUICKSORT-
+TOTAL_TIME=11.121
+NR_GENERATIONS=69
+NR_RIGHT_COMPILATIONS=63
+NR_FAILLING_COMPILATIONS=6
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=138
+TIME=11
+VALIDATION=|true|0|13|[]|
+GENERATION=69
+FOLDER_SOLUTION_CODE=/tmp/figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-138
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/tmp/figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/tmp/figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-138/java_programs/QUICKSORT.java
+
+LINE=24
+
+SUSPICIOUNESS=0.277
+
+MP_RANKING=20
+
+ORIGINAL_CODE=x < pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x <= pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=x <= pivot
+
+PATCH_DIFF_ORIG=--- /tmp/figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /tmp/figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -24 +24 @@
+-			if (x < pivot) {
++			if (x <= pivot) {
+
+
+
+28.20user 3.28system 0:14.16elapsed 222%CPU (0avgtext+0avgdata 718884maxresident)k
+848inputs+11752outputs (0major+660465minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: dom 14 mar 2021 17:36:11 EDT
+

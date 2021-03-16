@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-14 21:40:21.438301", 
+  "repair_begin": "2021-03-14 21:40:09.805357", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_QuixBugs_BUCKETSORT_\\/src\\/main\\/java\\/BUCKETSORTjava\\n+++ \\/tmp\\/figra_QuixBugs_BUCKETSORT_\\/src\\/main\\/java\\/BUCKETSORTjava\\n@@ -22 +22 @@\\n-\\t\\tfor (java.lang.Integer count : arr) {\\n+\\t\\tfor (java.lang.Integer count : counts) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_QuixBugs_BUCKETSORT_\\/.\\/output_astor\\/AstorMain-BUCKETSORT-\\/\\/src\\/\\/variant-32\\/java_programs\\/BUCKETSORT.java", 
+          "ORIGINAL_CODE": "arr", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "counts", 
+          "INGREDIENT_PARENT": "counts", 
+          "LOCATION": "java_programs.BUCKETSORT", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtForEachImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_QuixBugs_BUCKETSORT_\\/src\\/main\\/java\\/BUCKETSORT.java", 
+          "LINE": "22", 
+          "MP_RANKING": "14", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtForEachImpl"
+        }
+      ], 
+      "GENERATION": "16", 
+      "VARIANT_ID": "32", 
+      "TIME": "6", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_QuixBugs_BUCKETSORT_\\/.\\/output_astor\\/AstorMain-BUCKETSORT-\\/\\/src\\/\\/variant-32"
+    }
+  ]
+}

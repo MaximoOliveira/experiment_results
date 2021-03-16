@@ -1,0 +1,93 @@
+cd /tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id DEPTH_FIRST_SEARCH- \
+	-failing java_testcases.junit.DEPTH_FIRST_SEARCH_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/maxoliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maxoliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=DEPTH_FIRST_SEARCH-
+TOTAL_TIME=1.343
+NR_GENERATIONS=3
+NR_RIGHT_COMPILATIONS=3
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=6
+TIME=1
+VALIDATION=|true|0|5|[]|
+GENERATION=3
+FOLDER_SOLUTION_CODE=/tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-6
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-6/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=node == node
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /tmp/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (node == node) { 							return true;}
+
+
+
+9.59user 1.07system 0:04.79elapsed 222%CPU (0avgtext+0avgdata 447728maxresident)k
+456inputs+7504outputs (1major+182457minor)pagefaults 0swaps
+
+
+Node: alcides-MS-7C60
+
+
+
+Date: seg 15 mar 2021 18:04:08 EDT
+
