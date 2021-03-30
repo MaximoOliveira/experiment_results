@@ -1,0 +1,175 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_GET_FACTORS/Nopol_QuixBugs_GET_FACTORS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/users2/cpca56132020/moliveira/deps/jdk-8/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 8 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:53:08.249 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:53:08.256 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_GET_FACTORS/Nopol_QuixBugs_GET_FACTORS_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_GET_FACTORS/Nopol_QuixBugs_GET_FACTORS_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:53:08.256 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:53:08.256 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.GET_FACTORS_Test]
+07:53:08.258 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.GET_FACTORS_Test], complianceLevel=8, outputFolder=., json=true}
+07:53:08.259 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:53:08.261 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:53:08.261 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:53:08.262 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:53:08.262 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:53:08.265 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:53:08.265 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:53:16.088 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:53:16.091 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:27 which is executed by 10 tests
+1072947420
+07:53:16.286 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:53:16.287 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:19 which is executed by 10 tests
+1072947420
+07:53:16.378 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:17.308 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:17.308 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:17.308 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:19.
+07:53:17.309 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:53:17.309 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:18 which is executed by 10 tests
+1072947420
+07:53:17.360 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:53:17.360 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:35 which is executed by 11 tests
+07:53:17.360 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:35
+07:53:17.360 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:53:17.361 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:31 which is executed by 11 tests
+07:53:17.361 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:31
+07:53:17.361 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:53:17.361 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:28 which is executed by 11 tests
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:28
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:27 which is executed by 11 tests
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:27
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:53:17.362 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 11 tests
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 11 tests
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 11 tests
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 11 tests
+07:53:17.363 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 11 tests
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 11 tests
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:53:17.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:15 which is executed by 11 tests
+1072947420
+07:53:17.437 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:18.011 [pool-25-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:18.011 [pool-25-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:18.011 [pool-25-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:15.
+07:53:18.014 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:53:18.413 [pool-47-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:18.414 [pool-47-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:18.414 [pool-47-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:15.
+07:53:18.414 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:53:18.414 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:20 which is executed by 8 tests
+1072947420
+07:53:18.490 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:18.960 [pool-69-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:18.960 [pool-69-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:18.960 [pool-69-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:20.
+07:53:18.960 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:53:19.224 [pool-91-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:19.224 [pool-91-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,[5,5]]> but was:<[2,2,[2,2,2]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2,[13]]> but was:<[2,2,2,[2,2]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[2,2,2,2,2]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[2,2,2,2]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[2,2,2]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[2,2,2,2,2]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[2,2,2,2,2,2,2,2,2,2,2,2]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2,[37]]> but was:<[2,[2,2,2,2]]>]
+07:53:19.224 [pool-91-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:20.
+07:53:19.224 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:53:19.224 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 5 tests
+07:53:19.224 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
+07:53:19.224 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:41 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:41
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:32 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:32
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:30 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:30
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:29 which is executed by 5 tests
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:29
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
+07:53:19.225 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:24 which is executed by 5 tests
+1072947420
+07:53:19.274 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:19.481 [pool-113-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:19.481 [pool-113-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:19.481 [pool-113-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:24.
+07:53:19.482 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
+07:53:19.482 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:23 which is executed by 5 tests
+1072947420
+07:53:19.530 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:19.737 [pool-135-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,2,5,5]]> but was:<[2[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,2,2,13]]> but was:<[2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3[,3,7]]> but was:<[3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3[,3,1093]]> but was:<[3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:19.738 [pool-135-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:19.738 [pool-135-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:23.
+07:53:19.738 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
+07:53:19.738 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:22 which is executed by 5 tests
+1072947420
+07:53:19.794 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:20.008 [pool-157-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,5,5]]> but was:<[[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,2,2,13]]> but was:<[[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,7]]> but was:<[[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[[3,3,1093]]> but was:<[[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[[2,37]]> but was:<[[]]>]
+07:53:20.008 [pool-157-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,5[,5]]> but was:<[2,2,5[]]>, test_3(java_testcases.junit.GET_FACTORS_Test): expected:<[2,2,2[,13]]> but was:<[2,2,2[]]>, test_2(java_testcases.junit.GET_FACTORS_Test): expected:<[[101]]> but was:<[[]]>, test_5(java_testcases.junit.GET_FACTORS_Test): expected:<[[3]]> but was:<[[]]>, test_4(java_testcases.junit.GET_FACTORS_Test): expected:<[[2]]> but was:<[[]]>, test_7(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,7]]> but was:<[3,3[]]>, test_6(java_testcases.junit.GET_FACTORS_Test): expected:<[[17]]> but was:<[[]]>, test_9(java_testcases.junit.GET_FACTORS_Test): expected:<[[73]]> but was:<[[]]>, test_10(java_testcases.junit.GET_FACTORS_Test): expected:<[3,3[,1093]]> but was:<[3,3[]]>, test_8(java_testcases.junit.GET_FACTORS_Test): expected:<[2[,37]]> but was:<[2[]]>]
+07:53:20.008 [pool-157-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.GET_FACTORS:22.
+07:53:20.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #26
+07:53:20.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.GET_FACTORS:21 which is executed by 5 tests
+1072947420
+07:53:20.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:53:20.077 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:53:20.077 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:53:20.077 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 8
+07:53:20.077 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:53:20.077 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:53:20.078 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:53:20.078 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:53:20.078 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 11826ms
+07:53:20.078 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+NO_ANGELIC_VALUE
+
+real	0m12.528s
+user	0m6.857s
+sys	0m4.948s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Tue Mar 30 07:53:20 EDT 2021\n

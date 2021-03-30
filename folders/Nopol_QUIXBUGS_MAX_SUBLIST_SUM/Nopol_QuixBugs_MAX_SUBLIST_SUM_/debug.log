@@ -1,0 +1,52 @@
+07:53:08.227 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:53:08.230 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_MAX_SUBLIST_SUM/Nopol_QuixBugs_MAX_SUBLIST_SUM_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_MAX_SUBLIST_SUM/Nopol_QuixBugs_MAX_SUBLIST_SUM_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:53:08.230 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:53:08.231 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.MAX_SUBLIST_SUM_Test]
+07:53:08.233 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.MAX_SUBLIST_SUM_Test], complianceLevel=8, outputFolder=., json=true}
+07:53:08.233 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:53:08.236 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:53:08.236 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:53:08.236 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:53:08.236 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:53:08.240 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:53:08.240 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:53:16.210 fr.inria.lille.repair.nopol.NoPol - statement #1
+07:53:16.211 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:23 which is executed by 6 tests
+07:53:16.345 fr.inria.lille.repair.nopol.NoPol - statement #2
+07:53:16.346 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:20 which is executed by 6 tests
+07:53:16.413 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:17.459 tests.output - Failing tests with false: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<0>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<0>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<0>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<0>]
+07:53:17.459 tests.output - Failing tests with true: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<4>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<3>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<13>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<2>]
+07:53:17.459 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.MAX_SUBLIST_SUM:20.
+07:53:17.459 fr.inria.lille.repair.nopol.NoPol - statement #3
+07:53:17.460 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:19 which is executed by 6 tests
+07:53:17.498 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:17.968 tests.output - Failing tests with false: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<0>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<0>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<0>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<0>]
+07:53:17.968 tests.output - Failing tests with true: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<4>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<3>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<13>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<2>]
+07:53:17.968 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.MAX_SUBLIST_SUM:19.
+07:53:17.968 fr.inria.lille.repair.nopol.NoPol - statement #4
+07:53:17.968 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:18 which is executed by 6 tests
+07:53:18.008 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:18.387 tests.output - Failing tests with false: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<0>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<0>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<0>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<0>]
+07:53:18.387 tests.output - Failing tests with true: 
+[test_0(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<5> but was:<4>, test_1(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<4> but was:<3>, test_3(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<19> but was:<13>, test_5(java_testcases.junit.MAX_SUBLIST_SUM_Test): expected:<6> but was:<2>]
+07:53:18.387 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.MAX_SUBLIST_SUM:18.
+07:53:18.388 fr.inria.lille.repair.nopol.NoPol - statement #5
+07:53:18.388 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:16 which is executed by 6 tests
+07:53:18.426 fr.inria.lille.repair.nopol.NoPol - statement #6
+07:53:18.426 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.MAX_SUBLIST_SUM:15 which is executed by 6 tests
+07:53:18.476 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:53:18.479 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:53:18.479 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:53:18.479 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 3
+07:53:18.479 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:53:18.479 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:53:18.480 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:53:18.481 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:53:18.481 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 10254ms
+07:53:18.481 fr.inria.lille.repair.nopol.NoPol - 

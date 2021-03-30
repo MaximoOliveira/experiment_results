@@ -1,0 +1,192 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FIND_IN_SORTED/Nopol_QuixBugs_FIND_IN_SORTED_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/users2/cpca56132020/moliveira/deps/jdk-8/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 8 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:53:14.027 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:53:14.034 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FIND_IN_SORTED/Nopol_QuixBugs_FIND_IN_SORTED_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FIND_IN_SORTED/Nopol_QuixBugs_FIND_IN_SORTED_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:53:14.034 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:53:14.034 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.FIND_IN_SORTED_Test]
+07:53:14.036 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.FIND_IN_SORTED_Test], complianceLevel=8, outputFolder=., json=true}
+07:53:14.037 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:53:14.039 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:53:14.039 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:53:14.039 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:53:14.039 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:53:14.043 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:53:14.043 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:53:29.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:53:29.435 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FIND_IN_SORTED:20 which is executed by 3 tests
+1943284754
+07:53:29.664 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:30.836 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+FIND_IN_SORTED.java:35: error: missing return statement
+    }
+    ^
+07:53:30.842 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+public class FIND_IN_SORTED {
+    public static int binsearch(int[] arr, int x, int start, int end) {
+        if (start == end) {
+            return -1;
+        }
+        int mid = start + ((end - start) / 2);
+        if (x < arr[mid]) {
+            return java_programs.FIND_IN_SORTED.binsearch(arr, x, start, mid);
+        } else
+            if (x > arr[mid]) {
+                boolean spoonDefaultValue = false;
+                try {
+                    spoonDefaultValue = true;
+                } catch (java.lang.Exception __NopolProcessorException) {
+                }
+                boolean runtimeAngelicValue = fr.inria.lille.repair.nopol.synth.AngelicExecution.angelicValue(spoonDefaultValue);
+                if (fr.inria.lille.commons.trace.RuntimeValues.instance(0).isEnabled()) {
+                    fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectionStarts();
+                    try{fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectInput("x",x);} catch (Exception ex1) {ex1.printStackTrace();};
+                    try{fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectInput("start",start);} catch (Exception ex1) {ex1.printStackTrace();};
+                    try{fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectInput("arr",arr);} catch (Exception ex1) {ex1.printStackTrace();};
+                    try{fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectInput("mid",mid);} catch (Exception ex1) {ex1.printStackTrace();};
+                    try{fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectInput("end",end);} catch (Exception ex1) {ex1.printStackTrace();};
+                    fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectOutput(runtimeAngelicValue);
+                    fr.inria.lille.commons.trace.RuntimeValues.instance(0).collectionEnds();
+                }
+                if (runtimeAngelicValue)
+                    return java_programs.FIND_IN_SORTED.binsearch(arr, x, mid, end);
+
+            } else {
+                return mid;
+            }
+
+    }
+
+    public static int find_in_sorted(int[] arr, int x) {
+        return java_programs.FIND_IN_SORTED.binsearch(arr, x, 0, arr.length);
+    }
+}
+07:53:30.843 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:53:30.843 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:53:30.843 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FIND_IN_SORTED:19 which is executed by 6 tests
+1943284754
+07:53:30.984 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:31.592 [pool-5-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+FIND_IN_SORTED.java:35: error: missing return statement
+    }
+    ^
+07:53:31.606 [pool-5-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+public class FIND_IN_SORTED {
+    public static int binsearch(int[] arr, int x, int start, int end) {
+        if (start == end) {
+            return -1;
+        }
+        int mid = start + ((end - start) / 2);
+        if (x < arr[mid]) {
+            return java_programs.FIND_IN_SORTED.binsearch(arr, x, start, mid);
+        } else {
+            boolean spoonDefaultValue = false;
+            try {
+                spoonDefaultValue = true;
+            } catch (java.lang.Exception __NopolProcessorException) {
+            }
+            boolean runtimeAngelicValue = fr.inria.lille.repair.nopol.synth.AngelicExecution.angelicValue(spoonDefaultValue);
+            if (fr.inria.lille.commons.trace.RuntimeValues.instance(1).isEnabled()) {
+                fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectionStarts();
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("arr",arr);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("x > arr[mid]",x > arr[mid]);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("x",x);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("start",start);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("mid",mid);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("arr[mid]",arr[mid]);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectInput("end",end);} catch (Exception ex1) {ex1.printStackTrace();};
+                fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectOutput(runtimeAngelicValue);
+                fr.inria.lille.commons.trace.RuntimeValues.instance(1).collectionEnds();
+            }
+            if (runtimeAngelicValue) if (x > arr[mid]) {
+                return java_programs.FIND_IN_SORTED.binsearch(arr, x, mid, end);
+            } else {
+                return mid;
+            }
+        }
+    }
+
+    public static int find_in_sorted(int[] arr, int x) {
+        return java_programs.FIND_IN_SORTED.binsearch(arr, x, 0, arr.length);
+    }
+}
+07:53:31.615 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:53:31.615 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:53:35.187 [pool-7-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_1(java_testcases.junit.FIND_IN_SORTED_Test): expected:<-1> but was:<3>, test_6(java_testcases.junit.FIND_IN_SORTED_Test): expected:<-1> but was:<2>]
+07:53:35.188 [pool-7-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_1(java_testcases.junit.FIND_IN_SORTED_Test): null, test_6(java_testcases.junit.FIND_IN_SORTED_Test): test timed out after 3000 milliseconds]
+07:53:35.188 [pool-7-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FIND_IN_SORTED:19.
+07:53:35.188 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:53:35.189 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FIND_IN_SORTED:27 which is executed by 7 tests
+1943284754
+07:53:35.266 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:53:35.266 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FIND_IN_SORTED:17 which is executed by 7 tests
+1943284754
+07:53:35.337 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:53:36.967 [pool-13-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+07:53:37.130 [pool-13-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+07:53:37.495 [pool-13-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+07:53:40.303 [pool-13-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Successful code synthesis: (mid <= 2) || ((!(arr.length < x)) && ((arr[mid]) != (x)))
+07:53:40.304 [pool-13-thread-1] INFO  f.i.l.repair.nopol.patch.TestPatch - Applying patch: java_programs.FIND_IN_SORTED:17: CONDITIONAL (mid <= 2) || ((!(arr.length < x)) && ((arr[mid]) != (x)))
+07:53:40.465 [pool-13-thread-1] INFO  f.i.l.repair.nopol.patch.TestPatch - Running test suite to check the patch "(mid <= 2) || ((!(arr.length < x)) && ((arr[mid]) != (x)))" is working
+07:53:40.678 [pool-13-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Skipped -9 patches for sake of performance
+07:53:40.679 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:53:40.680 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:53:40.680 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 10
+07:53:40.680 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 4
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 16
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 13
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 26653ms
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - (mid <= 2) || ((!(arr.length < x)) && ((arr[mid]) != (x)))
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 7
+07:53:40.681 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - java_programs.FIND_IN_SORTED:17: CONDITIONAL
+07:53:40.687 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- a/src/main/java/FIND_IN_SORTED.java
++++ b/src/main/java/FIND_IN_SORTED.java
+@@ -16,3 +16,3 @@
+         int mid = start + (end - start) / 2; // check this is floor division
+-        if (x < arr[mid]) {
++        if ((mid <= 2) || ((!(arr.length < x)) && ((arr[mid]) != (x)))) {
+             return binsearch(arr, x, start, mid);
+
+PATCH
+
+real	0m27.365s
+user	0m14.228s
+sys	0m7.030s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Tue Mar 30 07:53:41 EDT 2021\n

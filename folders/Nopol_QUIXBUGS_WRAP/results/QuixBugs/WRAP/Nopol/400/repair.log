@@ -1,0 +1,210 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_WRAP/Nopol_QuixBugs_WRAP_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/users2/cpca56132020/moliveira/deps/jdk-8/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 8 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:53:11.956 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:53:11.958 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_WRAP/Nopol_QuixBugs_WRAP_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_WRAP/Nopol_QuixBugs_WRAP_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:53:11.958 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:53:11.959 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.WRAP_Test]
+07:53:11.961 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.WRAP_Test], complianceLevel=8, outputFolder=., json=true}
+07:53:11.961 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:53:11.963 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:53:11.964 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:53:11.964 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:53:11.964 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:53:11.967 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:53:11.967 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:53:29.375 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:53:29.378 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:32 which is executed by 5 tests
+2672715
+07:53:29.555 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:53:29.555 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:30 which is executed by 5 tests
+2672715
+07:53:29.660 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:53:29.660 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:29 which is executed by 5 tests
+2672715
+07:53:29.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:30.849 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthemonotonous,hollowsoundofthesearisingupfrombelow,spokeofthepeace,ofthe,eternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,no,Oreandahere;soitsoundsnow,anditwillsoundasindifferentlyand,monotonouslywhenweareallnomore.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,therelieshid,perhaps,a,pledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,,ofunceasingprogresstowardsperfection.Sittingbesideayoungwomanwhoin,thedawnseemedsolovely,soothedandspellboundinthesemagicalsurroundings,-thesea,mountains,clouds,theopensky-Gurovthoughthowinreality,everythingisbeautifulinthisworldwhenonereflects:everythingexceptwhat,wethinkordoourselveswhenweforgetourhumandignityandthehigheraims,ofourexistence.]]> but was:<[[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnot,stironthetrees,,grasshoppers,chirruped,andthe,monotonoushollow,soundofthesea,risingupfrom,below,spokeofthe,peace,ofthe,eternalsleep,awaitingus.Soit,musthavesounded,whentherewasno,Yalta,noOreanda,here;soitsounds,now,anditwill,soundas,indifferentlyand,monotonouslywhen,weareallnomore.,Andinthis,constancy,inthis,complete,indifferencetothe,lifeanddeathof,eachofus,there,lieshid,perhaps,,apledgeofour,eternalsalvation,,oftheunceasing,movementoflife,uponearth,of,unceasingprogress,towardsperfection.,Sittingbesidea,youngwomanwhoin,thedawnseemedso,lovely,soothedand,spellboundinthese,magical,surroundings-the,sea,mountains,,clouds,theopen,sky-Gurovthought,howinreality,everythingis,beautifulinthis,worldwhenone,reflects:,everythingexcept,whatwethinkordo,ourselveswhenwe,forgetourhuman,dignityandthe,higheraimsofour,existence.]]> but was:<[[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthemonotonoushollowsoundofthesearisingupfrombelow,spokeofthe,peace,oftheeternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,noOreandahere;soitsoundsnow,anditwill,soundasindifferentlyandmonotonouslywhenweareallnomore.Andinthisconstancy,inthiscompleteindifferencetothelifeanddeath,ofeachofus,therelieshid,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,ofunceasing,progresstowardsperfection.Sittingbesideayoungwomanwhointhedawnseemedsolovely,soothedandspellboundinthesemagical,surroundings-thesea,mountains,clouds,theopensky-Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<[[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthe,monotonoushollowsoundofthesearisingupfrombelow,spokeofthepeace,,oftheeternalsleepawaitingus.Soitmusthavesoundedwhentherewasno,Yalta,noOreandahere;soitsoundsnow,anditwillsoundasindifferently,andmonotonouslywhenweareallnomore.Andinthisconstancy,inthis,completeindifferencetothelifeanddeathofeachofus,therelieshid,,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementof,lifeuponearth,ofunceasingprogresstowardsperfection.Sittingbesidea,youngwomanwhointhedawnseemedsolovely,soothedandspellboundin,thesemagicalsurroundings-thesea,mountains,clouds,theopensky-,Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetour,humandignityandthehigheraimsofourexistence.]]> but was:<[[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshoppers,chirruped,andthemonotonoushollowsoundofthe,searisingupfrombelow,spokeofthepeace,of,theeternalsleepawaitingus.Soitmusthave,soundedwhentherewasnoYalta,noOreandahere;,soitsoundsnow,anditwillsoundas,indifferentlyandmonotonouslywhenweareallno,more.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,,therelieshid,perhaps,apledgeofoureternal,salvation,oftheunceasingmovementoflifeupon,earth,ofunceasingprogresstowardsperfection.,Sittingbesideayoungwomanwhointhedawn,seemedsolovely,soothedandspellboundinthese,magicalsurroundings-thesea,mountains,,clouds,theopensky-Gurovthoughthowin,realityeverythingisbeautifulinthisworld,whenonereflects:everythingexceptwhatwe,thinkordoourselveswhenweforgetourhuman,dignityandthehigheraimsofourexistence.]]> but was:<[[]]>]
+07:53:30.849 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:30.849 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.WRAP:29.
+07:53:30.849 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:53:30.850 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:28 which is executed by 5 tests
+2672715
+07:53:30.903 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:49.760 [pool-15-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_2(java_testcases.junit.WRAP_Test): test timed out after 3000 milliseconds, test_1(java_testcases.junit.WRAP_Test): test timed out after 3000 milliseconds, test_4(java_testcases.junit.WRAP_Test): test timed out after 3000 milliseconds, test_3(java_testcases.junit.WRAP_Test): test timed out after 3000 milliseconds, test_0(java_testcases.junit.WRAP_Test): test timed out after 3000 milliseconds]
+07:53:49.761 [pool-15-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:49.761 [pool-15-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.WRAP:28.
+07:53:49.761 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:53:49.761 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:27 which is executed by 5 tests
+2672715
+07:53:50.006 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:51.616 [pool-27-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+WRAP.java:34: error: variable line might not have been initialized
+            lines.add(line);
+                      ^
+07:53:51.646 [pool-27-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+public class WRAP {
+    public static void main(java.lang.String[] args) {
+        java.lang.System.out.println("abc".lastIndexOf("c", 30));
+    }
+
+    public static java.util.ArrayList<java.lang.String> wrap(java.lang.String text, int cols) {
+        java.util.ArrayList<java.lang.String> lines = new java.util.ArrayList<java.lang.String>();
+        java.lang.String line;
+        while (text.length() > cols) {
+            int end = text.lastIndexOf(" ", cols);
+            if (end == (-1)) {
+                end = cols;
+            }
+            boolean spoonDefaultValue = false;
+            try {
+                spoonDefaultValue = true;
+            } catch (java.lang.Exception __NopolProcessorException) {
+            }
+            boolean runtimeAngelicValue = fr.inria.lille.repair.nopol.synth.AngelicExecution.angelicValue(spoonDefaultValue);
+            if (fr.inria.lille.commons.trace.RuntimeValues.instance(2).isEnabled()) {
+                fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectionStarts();
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectInput("end",end);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectInput("text",text);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectInput("lines",lines);} catch (Exception ex1) {ex1.printStackTrace();};
+                try{fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectInput("cols",cols);} catch (Exception ex1) {ex1.printStackTrace();};
+                fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectOutput(runtimeAngelicValue);
+                fr.inria.lille.commons.trace.RuntimeValues.instance(2).collectionEnds();
+            }
+            if (runtimeAngelicValue)
+                line = text.substring(0, end);
+
+            text = text.substring(end);
+            lines.add(line);
+        } 
+        return lines;
+    }
+}
+07:53:51.647 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:53:51.647 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:53:51.648 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:24 which is executed by 5 tests
+2672715
+07:53:51.884 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:54.133 [pool-29-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:54.134 [pool-29-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:54.134 [pool-29-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.WRAP:24.
+07:53:54.135 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:53:56.154 [pool-41-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:56.155 [pool-41-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...pokeofthepeace,ofthe[,eternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,no,Oreandahere;soitsoundsnow,anditwillsoundasindifferentlyand,monotonouslywhenweareallnomore.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,therelieshid,perhaps,a,pledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,,ofunceasingprogresstowardsperfection.Sittingbesideayoungwomanwhoin,thedawnseemedsolovely,soothedandspellboundinthesemagicalsurroundings,-thesea,mountains,clouds,theopensky-Gurovthoughthowinreality,everythingisbeautifulinthisworldwhenonereflects:everythingexceptwhat,wethinkordoourselveswhenweforgetourhumandignityandthehigheraims,ofourexistence.]]> but was:<...pokeofthepeace,ofthe[eterna,lsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,noOreanda,here;soitsoundsnow,anditwillsoundasindifferentlyandmonotonouslywhe,nweareallnomore.Andinthisconstancy,inthiscompleteindifferencetoth,elifeanddeathofeachofus,therelieshid,perhaps,apledgeofoureternal,salvation,oftheunceasingmovementoflifeuponearth,ofunceasingprogress,towardsperfection.Sittingbesideayoungwomanwhointhedawnseemedsolovel,y,soothedandspellboundinthesemagicalsurroundings-thesea,mountains,cl,ouds,theopensky-Gurovthoughthowinrealityeverythingisbeautifulinthi,sworldwhenonereflects:everythingexceptwhatwethinkordoourselveswhen]]>, test_1(java_testcases.junit.WRAP_Test): expected:<[Theleavesdidnot[,stironthetrees,,grasshoppers,chirruped,andthe,monotonoushollow,soundofthesea,risingupfrom,below,spokeofthe,peace,ofthe,eternalsleep,awaitingus.Soit,musthavesounded,whentherewasno,Yalta,noOreanda,here;soitsounds,now,anditwill,soundas,indifferentlyand,monotonouslywhen,weareallnomore.,Andinthis,constancy,inthis,complete,indifferencetothe,lifeanddeathof,eachofus,there,lieshid,perhaps,,apledgeofour,eternalsalvation,,oftheunceasing,movementoflife,uponearth,of,unceasingprogress,towardsperfection.,Sittingbesidea,youngwomanwhoin,thedawnseemedso,lovely,soothedand,spellboundinthese,magical,surroundings-the,sea,mountains,,clouds,theopen,sky-Gurovthought,howinreality,everythingis,beautifulinthis,worldwhenone,reflects:,everythingexcept,whatwethinkordo,ourselveswhenwe,forgetourhuman,dignityandthe,higheraimsofour,existence.]]> but was:<[Theleavesdidnot[s,tironthetrees,gr,asshopperschirruped,,andthemonotonous,hollowsoundofthe,searisingupfrom,below,spokeofthe,peace,oftheeterna,lsleepawaitingus.,Soitmusthavesou,ndedwhentherewas,noYalta,noOreanda,here;soitsounds,now,anditwillsou,ndasindifferently,andmonotonouslywhe,nweareallnomore,.Andinthisconsta,ncy,inthiscomplet,eindifferencetoth,elifeanddeathof,eachofus,thereli,eshid,perhaps,ap,ledgeofoureternal,salvation,oftheu,nceasingmovementof,lifeuponearth,of,unceasingprogress,towardsperfection.,Sittingbesideayou,ngwomanwhointhe,dawnseemedsolovel,y,soothedandspell,boundinthesemagic,alsurroundings-th,esea,mountains,cl,ouds,theopensky-,Gurovthoughthowi,nrealityeverything,isbeautifulinthi,sworldwhenoneref,lects:everythingex,ceptwhatwethinko,rdoourselveswhen,weforgetourhuman,dignityandthehigh,eraimsofourexist]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...tsoundsnow,anditwill[,soundasindifferentlyandmonotonouslywhenweareallnomore.Andinthisconstancy,inthiscompleteindifferencetothelifeanddeath,ofeachofus,therelieshid,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,ofunceasing,progresstowardsperfection.Sittingbesideayoungwomanwhointhedawnseemedsolovely,soothedandspellboundinthesemagical,surroundings-thesea,mountains,clouds,theopensky-Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...tsoundsnow,anditwill[sou,ndasindifferentlyandmonotonouslywhenweareallnomore.Andinthisconstancy,inthiscompleteindifferencetothelifeanddeathof,eachofus,therelieshid,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,ofunceasingprogress,towardsperfection.Sittingbesideayoungwomanwhointhedawnseemedsolovely,soothedandspellboundinthesemagicalsurroundings-th,esea,mountains,clouds,theopensky-Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenonereflects:everythingex]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...perschirruped,andthe[,monotonoushollowsoundofthesearisingupfrombelow,spokeofthepeace,,oftheeternalsleepawaitingus.Soitmusthavesoundedwhentherewasno,Yalta,noOreandahere;soitsoundsnow,anditwillsoundasindifferently,andmonotonouslywhenweareallnomore.Andinthisconstancy,inthis,completeindifferencetothelifeanddeathofeachofus,therelieshid,,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementof,lifeuponearth,ofunceasingprogresstowardsperfection.Sittingbesidea,youngwomanwhointhedawnseemedsolovely,soothedandspellboundin,thesemagicalsurroundings-thesea,mountains,clouds,theopensky-,Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetour,humandignityandthehigheraimsofourexistence.]]> but was:<...perschirruped,andthe[monoton,oushollowsoundofthesearisingupfrombelow,spokeofthepeace,ofthe,eternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,n,oOreandahere;soitsoundsnow,anditwillsoundasindifferentlyandmono,tonouslywhenweareallnomore.Andinthisconstancy,inthiscompleteind,ifferencetothelifeanddeathofeachofus,therelieshid,perhaps,aple,dgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,o,funceasingprogresstowardsperfection.Sittingbesideayoungwomanwhoin,thedawnseemedsolovely,soothedandspellboundinthesemagicalsurroundin,gs-thesea,mountains,clouds,theopensky-Gurovthoughthowinreality,everythingisbeautifulinthisworldwhenonereflects:everythingexceptwh,atwethinkordoourselveswhenweforgetourhumandignityandthehighera]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...itingus.Soitmusthave[,soundedwhentherewasnoYalta,noOreandahere;,soitsoundsnow,anditwillsoundas,indifferentlyandmonotonouslywhenweareallno,more.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,,therelieshid,perhaps,apledgeofoureternal,salvation,oftheunceasingmovementoflifeupon,earth,ofunceasingprogresstowardsperfection.,Sittingbesideayoungwomanwhointhedawn,seemedsolovely,soothedandspellboundinthese,magicalsurroundings-thesea,mountains,,clouds,theopensky-Gurovthoughthowin,realityeverythingisbeautifulinthisworld,whenonereflects:everythingexceptwhatwe,thinkordoourselveswhenweforgetourhuman,dignityandthehigheraimsofourexistence.]]> but was:<...itingus.Soitmusthave[sou,ndedwhentherewasnoYalta,noOreandahere;so,itsoundsnow,anditwillsoundasindifferently,andmonotonouslywhenweareallnomore.Andint,hisconstancy,inthiscompleteindifferencetoth,elifeanddeathofeachofus,therelieshid,pe,rhaps,apledgeofoureternalsalvation,oftheu,nceasingmovementoflifeuponearth,ofunceasing,progresstowardsperfection.Sittingbesideayou,ngwomanwhointhedawnseemedsolovely,soothed,andspellboundinthesemagicalsurroundings-th,esea,mountains,clouds,theopensky-Gurovtho,ughthowinrealityeverythingisbeautifulinthi,sworldwhenonereflects:everythingexceptwhat,wethinkordoourselveswhenweforgetourhuman]]>]
+07:53:56.155 [pool-41-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.WRAP:24.
+07:53:56.156 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:53:56.156 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:23 which is executed by 5 tests
+2672715
+07:53:56.354 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:53:56.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:22 which is executed by 5 tests
+2672715
+07:53:56.621 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:53:58.516 [pool-53-thread-1] DEBUG tests.output - Failing tests with false: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthemonotonous,hollowsoundofthesearisingupfrombelow,spokeofthepeace,ofthe,eternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,no,Oreandahere;soitsoundsnow,anditwillsoundasindifferentlyand,monotonouslywhenweareallnomore.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,therelieshid,perhaps,a,pledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,,ofunceasingprogresstowardsperfection.Sittingbesideayoungwomanwhoin,thedawnseemedsolovely,soothedandspellboundinthesemagicalsurroundings,-thesea,mountains,clouds,theopensky-Gurovthoughthowinreality,everythingisbeautifulinthisworldwhenonereflects:everythingexceptwhat,wethinkordoourselveswhenweforgetourhumandignityandthehigheraims,ofourexistence.]]> but was:<[[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnot,stironthetrees,,grasshoppers,chirruped,andthe,monotonoushollow,soundofthesea,risingupfrom,below,spokeofthe,peace,ofthe,eternalsleep,awaitingus.Soit,musthavesounded,whentherewasno,Yalta,noOreanda,here;soitsounds,now,anditwill,soundas,indifferentlyand,monotonouslywhen,weareallnomore.,Andinthis,constancy,inthis,complete,indifferencetothe,lifeanddeathof,eachofus,there,lieshid,perhaps,,apledgeofour,eternalsalvation,,oftheunceasing,movementoflife,uponearth,of,unceasingprogress,towardsperfection.,Sittingbesidea,youngwomanwhoin,thedawnseemedso,lovely,soothedand,spellboundinthese,magical,surroundings-the,sea,mountains,,clouds,theopen,sky-Gurovthought,howinreality,everythingis,beautifulinthis,worldwhenone,reflects:,everythingexcept,whatwethinkordo,ourselveswhenwe,forgetourhuman,dignityandthe,higheraimsofour,existence.]]> but was:<[[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthemonotonoushollowsoundofthesearisingupfrombelow,spokeofthe,peace,oftheeternalsleepawaitingus.SoitmusthavesoundedwhentherewasnoYalta,noOreandahere;soitsoundsnow,anditwill,soundasindifferentlyandmonotonouslywhenweareallnomore.Andinthisconstancy,inthiscompleteindifferencetothelifeanddeath,ofeachofus,therelieshid,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementoflifeuponearth,ofunceasing,progresstowardsperfection.Sittingbesideayoungwomanwhointhedawnseemedsolovely,soothedandspellboundinthesemagical,surroundings-thesea,mountains,clouds,theopensky-Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<[[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshopperschirruped,andthe,monotonoushollowsoundofthesearisingupfrombelow,spokeofthepeace,,oftheeternalsleepawaitingus.Soitmusthavesoundedwhentherewasno,Yalta,noOreandahere;soitsoundsnow,anditwillsoundasindifferently,andmonotonouslywhenweareallnomore.Andinthisconstancy,inthis,completeindifferencetothelifeanddeathofeachofus,therelieshid,,perhaps,apledgeofoureternalsalvation,oftheunceasingmovementof,lifeuponearth,ofunceasingprogresstowardsperfection.Sittingbesidea,youngwomanwhointhedawnseemedsolovely,soothedandspellboundin,thesemagicalsurroundings-thesea,mountains,clouds,theopensky-,Gurovthoughthowinrealityeverythingisbeautifulinthisworldwhenone,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetour,humandignityandthehigheraimsofourexistence.]]> but was:<[[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<[[Theleavesdidnotstironthetrees,grasshoppers,chirruped,andthemonotonoushollowsoundofthe,searisingupfrombelow,spokeofthepeace,of,theeternalsleepawaitingus.Soitmusthave,soundedwhentherewasnoYalta,noOreandahere;,soitsoundsnow,anditwillsoundas,indifferentlyandmonotonouslywhenweareallno,more.Andinthisconstancy,inthiscomplete,indifferencetothelifeanddeathofeachofus,,therelieshid,perhaps,apledgeofoureternal,salvation,oftheunceasingmovementoflifeupon,earth,ofunceasingprogresstowardsperfection.,Sittingbesideayoungwomanwhointhedawn,seemedsolovely,soothedandspellboundinthese,magicalsurroundings-thesea,mountains,,clouds,theopensky-Gurovthoughthowin,realityeverythingisbeautifulinthisworld,whenonereflects:everythingexceptwhatwe,thinkordoourselveswhenweforgetourhuman,dignityandthehigheraimsofourexistence.]]> but was:<[[]]>]
+07:53:58.516 [pool-53-thread-1] DEBUG tests.output - Failing tests with true: 
+[test_2(java_testcases.junit.WRAP_Test): expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>, test_1(java_testcases.junit.WRAP_Test): expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>, test_4(java_testcases.junit.WRAP_Test): expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>, test_3(java_testcases.junit.WRAP_Test): expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>, test_0(java_testcases.junit.WRAP_Test): expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>]
+07:53:58.517 [pool-53-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.WRAP:22.
+07:53:58.517 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:53:58.517 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.WRAP:19 which is executed by 5 tests
+2672715
+07:53:58.702 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:57 which is executed by 5 tests
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:57
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:52 which is executed by 5 tests
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:52
+07:53:58.703 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:53:58.704 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:50 which is executed by 5 tests
+07:53:58.704 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:50
+07:53:58.704 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:53:58.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 5 tests
+07:53:58.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
+07:53:58.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:53:58.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:39 which is executed by 5 tests
+07:53:58.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:39
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 5 tests
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 5 tests
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:35 which is executed by 5 tests
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:35
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:32 which is executed by 5 tests
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:32
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:31 which is executed by 5 tests
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:31
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:53:58.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:30 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:30
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:29 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:29
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:28 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:28
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:27 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:27
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #26
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #27
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #28
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 5 tests
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
+07:53:58.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #29
+07:53:58.733 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 5 tests
+07:53:58.733 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
+07:53:58.733 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:53:58.742 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:53:58.742 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 10
+07:53:58.742 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
+07:53:58.742 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:53:58.742 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:53:58.743 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:53:58.743 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:53:58.743 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 46779ms
+07:53:58.743 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+NO_ANGELIC_VALUE
+
+real	0m47.597s
+user	0m31.678s
+sys	0m10.413s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Tue Mar 30 07:53:59 EDT 2021\n
