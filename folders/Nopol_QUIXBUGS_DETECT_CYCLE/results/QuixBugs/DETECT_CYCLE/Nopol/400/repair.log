@@ -18,79 +18,71 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:11.456 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:11.462 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_DETECT_CYCLE/Nopol_QuixBugs_DETECT_CYCLE_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_DETECT_CYCLE/Nopol_QuixBugs_DETECT_CYCLE_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:11.463 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:11.463 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.DETECT_CYCLE_Test]
-07:53:11.465 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.DETECT_CYCLE_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:11.465 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:11.468 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:11.468 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:11.468 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:11.468 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:11.472 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:11.472 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:28.858 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:28.860 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:24 which is executed by 5 tests
+07:35:47.957 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:47.963 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_DETECT_CYCLE/Nopol_QuixBugs_DETECT_CYCLE_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_DETECT_CYCLE/Nopol_QuixBugs_DETECT_CYCLE_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:47.963 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:47.964 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.DETECT_CYCLE_Test]
+07:35:47.966 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.DETECT_CYCLE_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:47.966 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:47.969 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:47.969 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:47.969 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:47.969 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:47.973 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:47.973 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:52.783 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:52.785 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:24 which is executed by 5 tests
 2093963307
-07:53:28.991 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.672 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:52.925 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:53.606 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:29.673 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:53.606 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:29.673 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:24.
-07:53:29.673 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:29.868 [pool-7-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:53.607 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:24.
+07:35:53.607 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:53.804 [pool-7-thread-1] DEBUG tests.output - Failing tests with false: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:29.869 [pool-7-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:53.805 [pool-7-thread-1] DEBUG tests.output - Failing tests with true: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): expected:<Cycle [not ]detected!> but was:<Cycle []detected!>]
-07:53:29.869 [pool-7-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:24.
-07:53:29.869 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:29.869 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:22 which is executed by 5 tests
+07:35:53.805 [pool-7-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:24.
+07:35:53.805 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:53.806 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:22 which is executed by 5 tests
 2093963307
-07:53:29.915 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.111 [pool-11-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:53.850 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.038 [pool-11-thread-1] DEBUG tests.output - Failing tests with false: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.111 [pool-11-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.038 [pool-11-thread-1] DEBUG tests.output - Failing tests with true: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.111 [pool-11-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:22.
-07:53:30.111 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:30.111 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:21 which is executed by 5 tests
+07:35:54.038 [pool-11-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:22.
+07:35:54.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:54.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:21 which is executed by 5 tests
 2093963307
-07:53:30.152 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.320 [pool-15-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.081 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.241 [pool-15-thread-1] DEBUG tests.output - Failing tests with false: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.320 [pool-15-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.241 [pool-15-thread-1] DEBUG tests.output - Failing tests with true: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.320 [pool-15-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:21.
-07:53:30.320 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:30.320 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:58 which is executed by 6 tests
+07:35:54.241 [pool-15-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:21.
+07:35:54.241 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:54.241 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:58 which is executed by 6 tests
 2433571
-07:53:30.400 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:30.400 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:18 which is executed by 6 tests
+07:35:54.323 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:35:54.324 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:18 which is executed by 6 tests
 2093963307
-07:53:30.482 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.653 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.406 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.565 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.653 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.565 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
 [test4(java_testcases.junit.DETECT_CYCLE_Test): null]
-07:53:30.654 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:18.
-07:53:30.654 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:31.112 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
-07:53:31.228 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+07:35:54.565 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.DETECT_CYCLE:18.
+07:35:54.566 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:55.031 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+07:35:55.161 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
 == of arity: 2
 != of arity: 2
 < of arity: 2
 <= of arity: 2
-07:53:31.317 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
-== of arity: 2
-!= of arity: 2
-< of arity: 2
-<= of arity: 2
-! of arity: 1
-|| of arity: 2
-&& of arity: 2
-07:53:31.452 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+07:35:55.238 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
 == of arity: 2
 != of arity: 2
 < of arity: 2
@@ -98,11 +90,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.c
 ! of arity: 1
 || of arity: 2
 && of arity: 2
-== of arity: 2
-!= of arity: 2
-< of arity: 2
-<= of arity: 2
-07:53:31.673 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+07:35:55.401 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
 == of arity: 2
 != of arity: 2
 < of arity: 2
@@ -114,32 +102,44 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.c
 != of arity: 2
 < of arity: 2
 <= of arity: 2
+07:35:55.620 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
 ! of arity: 1
 || of arity: 2
 && of arity: 2
-07:53:35.815 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
-07:53:35.816 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:35.816 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:15 which is executed by 6 tests
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+07:35:59.830 [pool-23-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+07:35:59.831 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:35:59.831 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:15 which is executed by 6 tests
 2093963307
-07:53:35.857 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:35.857 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:14 which is executed by 6 tests
+07:35:59.884 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:35:59.884 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.DETECT_CYCLE:14 which is executed by 6 tests
 2093963307
-07:53:35.930 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:35.936 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 24476ms
-07:53:35.937 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:35:59.961 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:35:59.968 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 12006ms
+07:35:59.969 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_SYNTHESIS
 
-real	0m25.175s
-user	0m9.814s
-sys	0m9.246s
-\n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:36 EDT 2021\n
+real	0m12.696s
+user	0m9.918s
+sys	0m2.288s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 07:36:00 EDT 2021\n

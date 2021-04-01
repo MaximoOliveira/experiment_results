@@ -1,0 +1,60 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_LIS/Cardumen_QuixBugs_LIS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id LIS- \
+	-failing java_testcases.junit.LIS_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:54.425 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.Integer, java.lang.Integer>(100) to new java.util.HashMap<java.lang.Integer, java.lang.Integer>(100)
+07:35:55.259 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (!prefix_lengths.isEmpty()) ? java.util.Collections.max(prefix_lengths) : 0 to (!prefix_lengths.isEmpty()) ? java.util.Collections.max(prefix_lengths) : 0
+07:35:56.898 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+07:35:59.226 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (longest + 1) to (longest + 1)
+07:36:09.522 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify j++ to longest + 1
+07:40:01.916 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths.isEmpty() to prefix_lengths.isEmpty()
+07:42:06.834 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify ends.get(length + 1) to ends.get(length + 1)
+07:47:17.459 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+07:47:37.887 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify prefix_lengths.add(j) to prefix_lengths.add(j)
+07:48:29.300 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr[ends.get(length + 1)] to arr[ends.get(length + 1)]
+07:52:24.621 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+07:53:27.920 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify j++ to j++
+07:53:58.314 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr[ends.get(j)] to arr[ends.get(j)]
+07:54:08.494 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify !prefix_lengths.isEmpty() to !prefix_lengths.isEmpty()
+07:56:29.381 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (val < arr[ends.get(length + 1)]) to (val < arr[ends.get(length + 1)])
+08:00:31.207 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length + 1 to length + 1
+08:04:25.234 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify ends.put(length + 1, i) to ends.put(length + 1, i)
+08:08:54.538 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify ends.get(j) to ends.get(j)
+08:10:20.482 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr[ends.get(j)] < val to arr[ends.get(j)] < val
+08:13:55.409 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (length == longest) || (val < arr[ends.get(length + 1)]) to (length == longest) || (val < arr[ends.get(length + 1)])
+08:14:39.954 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (length == longest) to (length == longest)
+08:27:41.361 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+
+real	56m27.008s
+user	1m59.195s
+sys	0m21.211s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 08:32:03 EDT 2021\n

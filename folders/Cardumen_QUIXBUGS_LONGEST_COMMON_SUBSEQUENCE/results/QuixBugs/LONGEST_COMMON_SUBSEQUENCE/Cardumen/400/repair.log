@@ -1,0 +1,66 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Cardumen_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id LONGEST_COMMON_SUBSEQUENCE- \
+	-failing java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:56.179 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() to fst.length()
+07:35:57.249 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) to a.charAt(0)
+07:36:00.877 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify b.charAt(0) to b.charAt(0)
+07:36:01.808 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) to a.charAt(0)
+07:36:06.289 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify snd.length() to snd.length()
+07:36:15.851 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify b.substring(1) to b.substring(1)
+07:36:16.653 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.isEmpty() to a.isEmpty()
+07:36:21.856 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:36:25.020 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.substring(1) to a.substring(1)
+07:36:31.668 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.substring(1) to a.substring(1)
+07:36:40.491 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify b.isEmpty() to b.isEmpty()
+07:36:49.108 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) == b.charAt(0) to a.charAt(0) == b.charAt(0)
+07:37:14.323 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.isEmpty() || b.isEmpty() to a.isEmpty() || b.isEmpty()
+07:37:36.399 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:37:51.207 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1)) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1))
+07:38:00.598 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:38:04.408 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() >= snd.length() ? fst : snd to fst.length() >= snd.length() ? fst : snd
+07:38:33.723 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() >= snd.length() to fst.length() >= snd.length()
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=LONGEST_COMMON_SUBSEQUENCE-
+TOTAL_TIME=7200.026
+NR_GENERATIONS=358
+NR_RIGHT_COMPILATIONS=358
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m9.743s
+user	119m0.342s
+sys	0m46.512s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:35:45 EDT 2021\n

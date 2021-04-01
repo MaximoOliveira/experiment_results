@@ -1,0 +1,67 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_POWERSET/Figra_QuixBugs_POWERSET_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id POWERSET- \
+	-failing java_testcases.junit.POWERSET_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:53.055 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:35:53.380 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:35:53.777 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify rest to rest
+07:35:56.613 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:35:56.924 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.util.ArrayList>() to new java.util.ArrayList<java.util.ArrayList>()
+07:35:57.245 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+07:35:57.789 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify empty_set to empty_set
+07:35:59.212 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output to output
+07:36:01.398 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify empty_set to empty_set
+07:36:01.994 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output to output
+07:36:02.383 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
+07:36:04.297 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POWERSET.powerset(rest) to java_programs.POWERSET.powerset(rest)
+07:36:09.047 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify to_add to to_add
+07:36:10.957 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify subset to subset
+07:36:12.163 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:36:12.419 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:36:12.725 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+07:36:13.784 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList(100) to new java.util.ArrayList(100)
+07:36:14.477 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify output.add(to_add) to output.add(to_add)
+07:36:14.719 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify rest_subsets to rest_subsets
+07:36:15.375 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify to_add.addAll(subset) to to_add.addAll(subset)
+07:36:16.425 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify to_add to to_add
+07:36:19.173 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList() to new java.util.ArrayList()
+07:36:20.414 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.remove(0) to arr.remove(0)
+07:36:21.663 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
+07:36:25.387 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify to_add to to_add
+07:36:25.763 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify empty_set.add(new java.util.ArrayList()) to empty_set.add(new java.util.ArrayList())
+07:36:27.617 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !arr.isEmpty() to !arr.isEmpty()
+07:36:27.879 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:36:28.460 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.util.ArrayList>(100) to new java.util.ArrayList<java.util.ArrayList>(100)
+07:36:29.197 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.isEmpty() to arr.isEmpty()
+07:36:29.921 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !arr.isEmpty() to !arr.isEmpty()
+07:36:33.631 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify to_add.add(first) to to_add.add(first)
+
+real	31m18.845s
+user	30m42.641s
+sys	0m21.535s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 08:06:58 EDT 2021\n

@@ -1,7 +1,7 @@
 * ----------------------------------------------------------------
-* Running PROLOG for Nopol_QUIXBUGS_BITCOUNT on Tue Mar 30 12:53:03 WEST 2021
+* Running PROLOG for Nopol_QUIXBUGS_BITCOUNT on Wed Mar 31 12:35:37 WEST 2021
 *    JOB_NAME                : Nopol_QUIXBUGS_BITCOUNT
-*    JOB_ID                  : 550630
+*    JOB_ID                  : 552764
 *    JOB_PARTITION           : fct
 *    JOB_USER                : moliveira
 *    JOB_ACCOUNT             : cpca56132020
@@ -12,7 +12,6 @@
 *    SLURM_JOB_CPUS_PER_NODE : 1
 *    WORK_DIR                : /users2/cpca56132020/moliveira
 * ----------------------------------------------------------------
-No JSON object could be decoded
 core file size          (blocks, -c) unlimited
 data seg size           (kbytes, -d) unlimited
 scheduling priority             (-e) 0

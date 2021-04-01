@@ -1,0 +1,68 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SIEVE/Figra_QuixBugs_SIEVE_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id SIEVE- \
+	-failing java_testcases.junit.SIEVE_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:56.501 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+07:35:58.017 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify max to max
+07:36:01.323 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.SIEVE.list_comp(n, primes) to java_programs.SIEVE.list_comp(n, primes)
+07:36:04.734 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify primes to primes
+07:36:05.867 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify n++ to max ^ 1
+07:36:05.871 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify primes to primes
+07:37:05.799 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Boolean>() to new java.util.ArrayList<java.lang.Boolean>()
+07:38:09.436 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify built_comprehension to built_comprehension
+07:38:21.088 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify primes to primes
+07:41:57.836 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:43:00.356 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify false to false
+07:44:02.690 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (max + 1) to (max + 1)
+07:48:25.389 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+07:50:20.757 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+07:51:03.030 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n < (max + 1) to n < (max + 1)
+07:51:20.116 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.SIEVE.any(java_programs.SIEVE.list_comp(n, primes)) to java_programs.SIEVE.any(java_programs.SIEVE.list_comp(n, primes))
+07:52:01.949 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n++ to n++
+08:00:39.758 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (max + 1) to (max + 1)
+08:15:04.863 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+08:15:37.496 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=SIEVE-
+TOTAL_TIME=7200.021
+NR_GENERATIONS=302
+NR_RIGHT_COMPILATIONS=284
+NR_FAILLING_COMPILATIONS=18
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m6.619s
+user	81m37.943s
+sys	0m13.268s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:35:44 EDT 2021\n

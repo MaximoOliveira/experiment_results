@@ -18,105 +18,105 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:15.255 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:15.257 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LCS_LENGTH/Nopol_QuixBugs_LCS_LENGTH_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LCS_LENGTH/Nopol_QuixBugs_LCS_LENGTH_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:15.257 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:15.258 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LCS_LENGTH_Test]
-07:53:15.260 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LCS_LENGTH_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:15.260 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:15.267 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:15.267 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:15.267 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:15.267 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:15.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:15.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:19.071 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:19.072 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:40 which is executed by 8 tests
+07:35:41.914 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:41.917 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LCS_LENGTH/Nopol_QuixBugs_LCS_LENGTH_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LCS_LENGTH/Nopol_QuixBugs_LCS_LENGTH_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:41.917 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:41.917 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LCS_LENGTH_Test]
+07:35:41.919 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LCS_LENGTH_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:41.920 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:41.927 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:41.927 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:41.927 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:41.927 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:41.931 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:41.931 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:50.089 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:50.091 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:40 which is executed by 8 tests
 684284618
-07:53:19.288 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:19.289 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:39 which is executed by 8 tests
+07:35:50.373 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:50.374 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:39 which is executed by 8 tests
 684284618
-07:53:19.401 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:20.798 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:50.488 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:52.330 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:20.798 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:52.331 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:20.799 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:39.
-07:53:20.800 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:20.800 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:38 which is executed by 8 tests
+07:35:52.331 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:39.
+07:35:52.332 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:52.332 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:38 which is executed by 8 tests
 684284618
-07:53:20.885 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:21.547 [pool-21-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:52.448 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:53.340 [pool-21-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:21.547 [pool-21-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:53.340 [pool-21-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:21.547 [pool-21-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:38.
-07:53:21.547 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:21.547 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:37 which is executed by 8 tests
+07:35:53.340 [pool-21-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:38.
+07:35:53.340 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:53.341 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:37 which is executed by 8 tests
 684284618
-07:53:21.619 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:21.619 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:36 which is executed by 8 tests
+07:35:53.456 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:35:53.456 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:36 which is executed by 8 tests
 684284618
-07:53:21.709 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:21.709 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:35 which is executed by 8 tests
+07:35:53.548 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:35:53.549 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:35 which is executed by 8 tests
 684284618
-07:53:21.822 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:22.257 [pool-39-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:53.677 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.200 [pool-39-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:22.258 [pool-39-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.201 [pool-39-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:22.258 [pool-39-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:35.
-07:53:22.258 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:22.809 [pool-57-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.201 [pool-39-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:35.
+07:35:54.201 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:54.578 [pool-57-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:22.809 [pool-57-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.578 [pool-57-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:22.809 [pool-57-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:35.
-07:53:22.809 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:22.809 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:33 which is executed by 8 tests
+07:35:54.578 [pool-57-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:35.
+07:35:54.578 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:35:54.578 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:33 which is executed by 8 tests
 684284618
-07:53:22.898 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.281 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.667 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.015 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:23.281 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:55.015 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:23.281 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:33.
-07:53:23.281 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:23.627 [pool-93-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:55.015 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:33.
+07:35:55.016 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:55.675 [pool-93-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:23.628 [pool-93-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:55.676 [pool-93-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<6>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<9>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<11>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<6>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<5>]
-07:53:23.628 [pool-93-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:33.
-07:53:23.628 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:23.628 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:26 which is executed by 8 tests
+07:35:55.676 [pool-93-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:33.
+07:35:55.677 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:35:55.677 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:26 which is executed by 8 tests
 684284618
-07:53:23.695 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.961 [pool-111-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:55.780 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:56.268 [pool-111-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:23.961 [pool-111-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:56.269 [pool-111-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:23.961 [pool-111-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:26.
-07:53:23.961 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
-07:53:23.961 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:25 which is executed by 8 tests
+07:35:56.269 [pool-111-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:26.
+07:35:56.270 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:35:56.270 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:25 which is executed by 8 tests
 684284618
-07:53:24.022 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.319 [pool-129-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:56.369 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:56.922 [pool-129-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:24.319 [pool-129-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:56.922 [pool-129-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:24.319 [pool-129-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:25.
-07:53:24.319 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
-07:53:24.319 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:24 which is executed by 8 tests
+07:35:56.922 [pool-129-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:25.
+07:35:56.922 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:35:56.922 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:24 which is executed by 8 tests
 684284618
-07:53:24.382 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
-07:53:24.382 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:54 which is executed by 9 tests
+07:35:57.024 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:35:57.025 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:54 which is executed by 9 tests
 684284618
-07:53:24.474 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.721 [pool-147-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:57.145 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:57.449 [pool-147-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LCS_LENGTH.java:56: error: missing return statement
     }
     ^
-07:53:24.729 [pool-147-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:57.454 [pool-147-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LCS_LENGTH {
     public static java.lang.Integer lcs_length(java.lang.String s, java.lang.String t) {
         java.util.Map<java.lang.Integer, java.util.Map<java.lang.Integer, java.lang.Integer>> dp = new java.util.HashMap<java.lang.Integer, java.util.Map<java.lang.Integer, java.lang.Integer>>();
@@ -173,123 +173,123 @@ public class LCS_LENGTH {
         }
     }
 }
-07:53:24.738 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:24.738 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
-07:53:24.738 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:52 which is executed by 9 tests
+07:35:57.456 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:57.457 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:35:57.457 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:52 which is executed by 9 tests
 684284618
-07:53:24.819 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.088 [pool-149-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:57.534 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:57.975 [pool-149-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:25.088 [pool-149-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:57.975 [pool-149-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:25.088 [pool-149-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:52.
-07:53:25.088 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
-07:53:25.089 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:51 which is executed by 9 tests
+07:35:57.975 [pool-149-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:52.
+07:35:57.976 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:35:57.976 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:51 which is executed by 9 tests
 684284618
-07:53:25.170 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.742 [pool-167-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:58.050 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:58.643 [pool-167-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:25.742 [pool-167-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:58.643 [pool-167-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:25.743 [pool-167-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:51.
-07:53:25.743 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
-07:53:25.743 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:50 which is executed by 9 tests
+07:35:58.643 [pool-167-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:51.
+07:35:58.643 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:35:58.644 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:50 which is executed by 9 tests
 684284618
-07:53:25.836 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
-07:53:25.836 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:49 which is executed by 9 tests
+07:35:58.745 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:35:58.746 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:49 which is executed by 9 tests
 684284618
-07:53:25.935 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:26.343 [pool-185-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:58.823 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:59.231 [pool-185-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:26.343 [pool-185-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:59.231 [pool-185-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:26.344 [pool-185-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:49.
-07:53:26.344 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
-07:53:26.344 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:32 which is executed by 9 tests
+07:35:59.231 [pool-185-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:49.
+07:35:59.231 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:35:59.231 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:32 which is executed by 9 tests
 684284618
-07:53:26.437 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.863 [pool-203-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:59.320 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:59.667 [pool-203-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:26.864 [pool-203-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:59.667 [pool-203-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:26.864 [pool-203-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:32.
-07:53:26.870 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
-07:53:26.870 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:31 which is executed by 9 tests
+07:35:59.667 [pool-203-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:32.
+07:35:59.667 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:35:59.667 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:31 which is executed by 9 tests
 684284618
-07:53:26.933 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:27.336 [pool-221-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:59.736 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.079 [pool-221-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<0>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<0>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<0>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<0>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<0>]
-07:53:27.336 [pool-221-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:00.079 [pool-221-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:27.336 [pool-221-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:31.
-07:53:27.336 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
-07:53:27.336 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:23 which is executed by 9 tests
+07:36:00.080 [pool-221-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:31.
+07:36:00.080 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:36:00.080 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:23 which is executed by 9 tests
 684284618
-07:53:27.395 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:27.863 [pool-239-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:00.146 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.520 [pool-239-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:27.863 [pool-239-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:00.520 [pool-239-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:27.863 [pool-239-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:23.
-07:53:27.864 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
-07:53:27.864 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:22 which is executed by 9 tests
+07:36:00.521 [pool-239-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:23.
+07:36:00.521 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:36:00.521 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:22 which is executed by 9 tests
 684284618
-07:53:27.931 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:28.437 [pool-257-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:00.599 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.922 [pool-257-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:28.437 [pool-257-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:00.922 [pool-257-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:28.437 [pool-257-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:22.
-07:53:28.438 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
-07:53:28.438 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:21 which is executed by 9 tests
+07:36:00.922 [pool-257-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:22.
+07:36:00.922 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:36:00.922 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:21 which is executed by 9 tests
 684284618
-07:53:28.516 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
-07:53:28.516 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:20 which is executed by 9 tests
+07:36:00.993 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
+07:36:00.994 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:20 which is executed by 9 tests
 684284618
-07:53:28.587 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:28.831 [pool-275-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.083 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:01.464 [pool-275-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): null, test_6(java_testcases.junit.LCS_LENGTH_Test): null, test_8(java_testcases.junit.LCS_LENGTH_Test): null, test_3(java_testcases.junit.LCS_LENGTH_Test): null, test_5(java_testcases.junit.LCS_LENGTH_Test): null, test_4(java_testcases.junit.LCS_LENGTH_Test): null, test_1(java_testcases.junit.LCS_LENGTH_Test): null, test_0(java_testcases.junit.LCS_LENGTH_Test): null]
-07:53:28.831 [pool-275-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:01.464 [pool-275-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:28.831 [pool-275-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:20.
-07:53:28.831 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
-07:53:28.831 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:17 which is executed by 9 tests
+07:36:01.464 [pool-275-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:20.
+07:36:01.464 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
+07:36:01.464 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:17 which is executed by 9 tests
 684284618
-07:53:28.887 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
-07:53:28.888 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:43 which is executed by 6 tests
+07:36:01.521 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
+07:36:01.521 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:43 which is executed by 6 tests
 684284618
-07:53:28.942 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.176 [pool-293-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.566 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:01.798 [pool-293-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:29.176 [pool-293-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:01.799 [pool-293-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:29.176 [pool-293-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:43.
-07:53:29.181 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
-07:53:29.181 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:42 which is executed by 6 tests
+07:36:01.799 [pool-293-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:43.
+07:36:01.804 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
+07:36:01.804 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:42 which is executed by 6 tests
 684284618
-07:53:29.252 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.585 [pool-311-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.903 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:02.136 [pool-311-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:29.585 [pool-311-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:02.136 [pool-311-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<2>, test_6(java_testcases.junit.LCS_LENGTH_Test): expected:<6> but was:<1>, test_8(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_3(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_5(java_testcases.junit.LCS_LENGTH_Test): expected:<7> but was:<1>, test_4(java_testcases.junit.LCS_LENGTH_Test): expected:<3> but was:<1>, test_1(java_testcases.junit.LCS_LENGTH_Test): expected:<4> but was:<1>, test_0(java_testcases.junit.LCS_LENGTH_Test): expected:<2> but was:<1>]
-07:53:29.585 [pool-311-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:42.
-07:53:29.585 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
-07:53:29.585 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:41 which is executed by 6 tests
+07:36:02.136 [pool-311-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LCS_LENGTH:42.
+07:36:02.136 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
+07:36:02.136 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LCS_LENGTH:41 which is executed by 6 tests
 684284618
-07:53:29.630 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:29.652 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:29.652 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:29.652 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 19
-07:53:29.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:29.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:29.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:29.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:29.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 14377ms
-07:53:29.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:02.192 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:02.216 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:02.216 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:02.216 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 19
+07:36:02.216 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:02.216 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:02.218 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:02.218 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:02.218 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 20280ms
+07:36:02.218 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m15.066s
-user	0m12.901s
-sys	0m1.549s
-\n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:29 EDT 2021\n
+real	0m21.023s
+user	0m14.783s
+sys	0m5.505s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 07:36:02 EDT 2021\n

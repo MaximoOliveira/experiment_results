@@ -1,0 +1,39 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_IS_VALID_PARENTHESIZATION/Cardumen_QuixBugs_IS_VALID_PARENTHESIZATION_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id IS_VALID_PARENTHESIZATION- \
+	-failing java_testcases.junit.IS_VALID_PARENTHESIZATION_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:44.294 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify parens.charAt(i) to parens.charAt(i)
+07:35:45.283 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i < parens.length() to i < parens.length()
+07:35:45.932 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify parens.length() to parens.length()
+07:35:48.421 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify paren.equals('(') to paren.equals('(')
+07:35:48.977 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+
+real	113m36.132s
+user	113m24.893s
+sys	0m9.428s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:29:11 EDT 2021\n

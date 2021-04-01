@@ -1,0 +1,120 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SHORTEST_PATH_LENGTH/Figra_QuixBugs_SHORTEST_PATH_LENGTH_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id SHORTEST_PATH_LENGTH- \
+	-failing java_testcases.junit.SHORTEST_PATH_LENGTH_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:59.422 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify list to list
+07:36:00.307 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge to length_by_edge
+07:36:00.844 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getValue() to node.getValue()
+07:36:01.657 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify goalnode to goalnode
+07:36:02.420 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:04.044 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:04.490 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify startnode to startnode
+07:36:05.364 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:06.353 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Integer.MAX_VALUE to java.lang.Integer.MAX_VALUE
+07:36:06.956 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify getNodeWithMinDistance(unvisitedNodes) to getNodeWithMinDistance(unvisitedNodes)
+07:36:07.895 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextnode to nextnode
+07:36:08.739 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:09.077 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.isEmpty() to unvisitedNodes.isEmpty()
+07:36:10.150 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify list.keySet() to list.keySet()
+07:36:10.493 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:36:11.353 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge to length_by_edge
+07:36:35.562 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextnode to nextnode
+07:36:39.630 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:36:40.474 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<>() to new java.util.HashMap<>()
+07:36:41.927 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify visitedNodes to visitedNodes
+07:36:43.698 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify value to value
+07:36:44.372 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify successors to successors
+07:36:46.426 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:47.112 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:49.710 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:36:51.385 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextnode to nextnode
+07:36:52.702 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(node) to unvisitedNodes.get(node)
+07:36:54.853 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashSet<>() to new java.util.HashSet<>()
+07:36:56.865 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify minNode to minNode
+07:37:00.089 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify visitedNodes.add(node) to visitedNodes.add(node)
+07:37:22.437 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.min(unvisitedNodes.get(nextnode), 
+unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode))) to java.lang.Math.min(unvisitedNodes.get(nextnode), 
+unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode)))
+07:37:23.969 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify list to list
+07:37:27.741 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getSuccessors() to node.getSuccessors()
+07:37:46.910 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:37:58.514 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:38:00.642 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes to unvisitedNodes
+07:38:20.363 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.remove(node) to unvisitedNodes.remove(node)
+07:38:22.282 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:38:37.874 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(node, nextnode) to java.util.Arrays.asList(node, nextnode)
+07:38:59.358 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify distance to distance
+07:39:04.287 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextnode to nextnode
+07:39:07.616 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:39:11.539 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.put(nextnode, java.lang.Integer.MAX_VALUE) to unvisitedNodes.put(nextnode, java.lang.Integer.MAX_VALUE)
+07:39:16.939 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify goalnode.getValue() to goalnode.getValue()
+07:39:24.466 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge.get(java.util.Arrays.asList(node, nextnode)) to length_by_edge.get(java.util.Arrays.asList(node, nextnode))
+07:39:31.231 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getValue() == goalnode.getValue() to node.getValue() == goalnode.getValue()
+07:39:32.604 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify visitedNodes.contains(nextnode) to visitedNodes.contains(nextnode)
+07:40:16.300 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.put(nextnode, java.lang.Math.min(unvisitedNodes.get(nextnode), 
+unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode)))) to unvisitedNodes.put(nextnode, java.lang.Math.min(unvisitedNodes.get(nextnode), 
+unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode))))
+07:40:42.507 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify visitedNodes to visitedNodes
+07:41:22.250 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:42:03.390 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:42:25.075 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:42:34.170 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode)) to unvisitedNodes.get(nextnode) + length_by_edge.get(java.util.Arrays.asList(node, nextnode))
+07:42:57.852 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(nextnode) to unvisitedNodes.get(nextnode)
+07:43:14.379 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(nextnode) to unvisitedNodes.get(nextnode)
+07:43:20.511 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextnode to nextnode
+07:43:37.439 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify list.get(node) to list.get(node)
+07:44:04.011 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.put(startnode, 0) to unvisitedNodes.put(startnode, 0)
+07:48:57.248 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(nextnode) to unvisitedNodes.get(nextnode)
+07:50:09.515 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge.size() to length_by_edge.size()
+07:52:45.158 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify unvisitedNodes.get(nextnode) == null to unvisitedNodes.get(nextnode) == null
+07:53:31.035 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify distance < minDistance to distance < minDistance
+07:54:32.910 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Integer.MAX_VALUE to java.lang.Integer.MAX_VALUE
+07:58:49.047 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify !unvisitedNodes.isEmpty() to !unvisitedNodes.isEmpty()
+08:44:32.516 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+08:47:12.436 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify distance to distance
+09:10:14.340 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify minDistance to minDistance
+09:32:24.373 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify distance to distance
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=SHORTEST_PATH_LENGTH-
+TOTAL_TIME=7202.04
+NR_GENERATIONS=2215
+NR_RIGHT_COMPILATIONS=1674
+NR_FAILLING_COMPILATIONS=541
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m19.609s
+user	8m57.441s
+sys	0m58.394s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:36:00 EDT 2021\n

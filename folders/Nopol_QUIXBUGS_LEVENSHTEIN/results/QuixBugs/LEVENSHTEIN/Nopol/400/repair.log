@@ -18,36 +18,36 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:08.322 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:08.330 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LEVENSHTEIN/Nopol_QuixBugs_LEVENSHTEIN_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LEVENSHTEIN/Nopol_QuixBugs_LEVENSHTEIN_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:08.330 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:08.330 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LEVENSHTEIN_Test]
-07:53:08.332 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LEVENSHTEIN_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:08.333 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:08.335 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:08.336 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:08.336 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:08.336 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:08.340 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:08.340 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:19.275 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:19.277 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:22 which is executed by 5 tests
+07:35:41.669 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:41.676 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LEVENSHTEIN/Nopol_QuixBugs_LEVENSHTEIN_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LEVENSHTEIN/Nopol_QuixBugs_LEVENSHTEIN_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:41.676 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:41.677 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LEVENSHTEIN_Test]
+07:35:41.679 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LEVENSHTEIN_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:41.679 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:41.682 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:41.682 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:41.682 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:41.682 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:41.686 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:41.686 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:50.891 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:50.892 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:22 which is executed by 5 tests
 -1975184878
-07:53:19.417 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:19.417 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:21 which is executed by 5 tests
+07:35:51.035 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:51.035 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:21 which is executed by 5 tests
 -1975184878
-07:53:19.495 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:19.495 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:20 which is executed by 5 tests
+07:35:51.108 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:51.109 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:20 which is executed by 5 tests
 -1975184878
-07:53:19.546 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:19.546 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:19 which is executed by 5 tests
+07:35:51.165 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:51.165 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:19 which is executed by 5 tests
 -1975184878
-07:53:19.636 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:21.283 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:51.261 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:52.890 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LEVENSHTEIN.java:28: error: missing return statement
     }
     ^
-07:53:21.288 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:52.894 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LEVENSHTEIN {
     public static int levenshtein(java.lang.String source, java.lang.String target) {
         if (source.isEmpty() || target.isEmpty()) {
@@ -76,16 +76,16 @@ public class LEVENSHTEIN {
 
     }
 }
-07:53:21.289 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:21.289 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:21.289 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:17 which is executed by 5 tests
+07:35:52.898 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:52.898 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:35:52.898 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:17 which is executed by 5 tests
 -1975184878
-07:53:21.361 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:22.539 [pool-5-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:52.973 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.136 [pool-5-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LEVENSHTEIN.java:28: error: missing return statement
     }
     ^
-07:53:22.542 [pool-5-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:54.140 [pool-5-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LEVENSHTEIN {
     public static int levenshtein(java.lang.String source, java.lang.String target) {
         if (source.isEmpty() || target.isEmpty()) {
@@ -114,16 +114,16 @@ public class LEVENSHTEIN {
 
     }
 }
-07:53:22.542 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:22.542 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:22.542 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:16 which is executed by 5 tests
+07:35:54.141 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:54.141 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:35:54.141 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:16 which is executed by 5 tests
 -1975184878
-07:53:22.609 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.666 [pool-7-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:54.228 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.333 [pool-7-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LEVENSHTEIN.java:27: error: missing return statement
     }
     ^
-07:53:23.668 [pool-7-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:55.336 [pool-7-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LEVENSHTEIN {
     public static int levenshtein(java.lang.String source, java.lang.String target) {
         if (source.isEmpty() || target.isEmpty()) {
@@ -151,22 +151,22 @@ public class LEVENSHTEIN {
         }
     }
 }
-07:53:23.674 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:23.674 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:28.112 [pool-9-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:55.341 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:55.342 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:59.852 [pool-9-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_0(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<8>, test_1(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<7>, test_6(java_testcases.junit.LEVENSHTEIN_Test): expected:<4> but was:<5>, test_4(java_testcases.junit.LEVENSHTEIN_Test): expected:<2> but was:<7>, test_2(java_testcases.junit.LEVENSHTEIN_Test): test timed out after 3000 milliseconds]
-07:53:28.113 [pool-9-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:59.852 [pool-9-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_0(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<8>, test_1(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<7>, test_6(java_testcases.junit.LEVENSHTEIN_Test): expected:<4> but was:<5>, test_4(java_testcases.junit.LEVENSHTEIN_Test): expected:<2> but was:<7>, test_2(java_testcases.junit.LEVENSHTEIN_Test): expected:<8> but was:<13>]
-07:53:28.113 [pool-9-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LEVENSHTEIN:16.
-07:53:28.124 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:28.124 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:15 which is executed by 6 tests
+07:35:59.853 [pool-9-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LEVENSHTEIN:16.
+07:35:59.853 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:35:59.853 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:15 which is executed by 6 tests
 -1975184878
-07:53:28.171 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.232 [pool-21-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:59.901 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.884 [pool-21-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LEVENSHTEIN.java:28: error: missing return statement
     }
     ^
-07:53:29.235 [pool-21-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:00.886 [pool-21-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LEVENSHTEIN {
     public static int levenshtein(java.lang.String source, java.lang.String target) {
         if (source.isEmpty() || target.isEmpty()) {
@@ -195,30 +195,30 @@ public class LEVENSHTEIN {
 
     }
 }
-07:53:29.239 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:29.239 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:29.239 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:14 which is executed by 6 tests
+07:36:00.886 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:00.886 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:00.886 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LEVENSHTEIN:14 which is executed by 6 tests
 -1975184878
-07:53:29.303 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:30.333 [pool-23-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:00.937 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:01.887 [pool-23-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_0(java_testcases.junit.LEVENSHTEIN_Test): String index out of range: 0, test_1(java_testcases.junit.LEVENSHTEIN_Test): String index out of range: 0, test_6(java_testcases.junit.LEVENSHTEIN_Test): String index out of range: 0, test_4(java_testcases.junit.LEVENSHTEIN_Test): String index out of range: 0, test_2(java_testcases.junit.LEVENSHTEIN_Test): String index out of range: 0]
-07:53:30.333 [pool-23-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:01.887 [pool-23-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_0(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<8>, test_1(java_testcases.junit.LEVENSHTEIN_Test): expected:<3> but was:<6>, test_6(java_testcases.junit.LEVENSHTEIN_Test): expected:<4> but was:<5>, test_4(java_testcases.junit.LEVENSHTEIN_Test): expected:<2> but was:<7>, test_2(java_testcases.junit.LEVENSHTEIN_Test): expected:<8> but was:<11>]
-07:53:30.333 [pool-23-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LEVENSHTEIN:14.
-07:53:30.338 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:30.344 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:30.344 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:30.344 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
-07:53:30.348 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:30.348 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:30.349 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:30.349 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:30.349 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 22017ms
-07:53:30.349 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:01.887 [pool-23-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LEVENSHTEIN:14.
+07:36:01.888 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:01.891 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:01.891 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:01.891 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
+07:36:01.891 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:01.891 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:01.900 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:01.900 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:01.900 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 20220ms
+07:36:01.901 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m22.742s
-user	0m14.348s
-sys	0m7.794s
-\n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:30 EDT 2021\n
+real	0m21.017s
+user	0m14.458s
+sys	0m5.853s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 07:36:02 EDT 2021\n

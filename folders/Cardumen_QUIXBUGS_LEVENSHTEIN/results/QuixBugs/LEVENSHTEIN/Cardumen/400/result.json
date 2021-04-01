@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-31 12:38:09.658478", 
+  "repair_begin": "2021-03-31 12:35:42.978884", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_QUIXBUGS_LEVENSHTEIN\\/Cardumen_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_QUIXBUGS_LEVENSHTEIN\\/Cardumen_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,5 +17,5 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), \\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_QUIXBUGS_LEVENSHTEIN\\/Cardumen_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-308\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_QUIXBUGS_LEVENSHTEIN\\/Cardumen_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "154", 
+      "VARIANT_ID": "308", 
+      "TIME": "123", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_QUIXBUGS_LEVENSHTEIN\\/Cardumen_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-308"
+    }
+  ]
+}

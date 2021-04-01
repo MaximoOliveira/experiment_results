@@ -18,29 +18,29 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:14.502 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:14.504 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FLATTEN/Nopol_QuixBugs_FLATTEN_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FLATTEN/Nopol_QuixBugs_FLATTEN_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:14.504 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:14.505 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.FLATTEN_Test]
-07:53:14.507 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.FLATTEN_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:14.507 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:14.510 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:14.510 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:14.510 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:14.510 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:14.514 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:14.514 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:29.510 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:29.513 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:26 which is executed by 6 tests
+07:35:44.526 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:44.528 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FLATTEN/Nopol_QuixBugs_FLATTEN_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_FLATTEN/Nopol_QuixBugs_FLATTEN_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:44.528 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:44.529 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.FLATTEN_Test]
+07:35:44.531 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.FLATTEN_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:44.531 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:44.534 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:44.534 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:44.534 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:44.534 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:44.538 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:44.538 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:53.343 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:53.345 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:26 which is executed by 6 tests
 -60822043
-07:53:29.696 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.436 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:53.514 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.248 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 FLATTEN.java:32: error: missing return statement
     }
     ^
 Note: FLATTEN.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-07:53:30.440 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:54.255 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class FLATTEN {
     public static java.lang.Object flatten(java.lang.Object arr) {
         if (arr instanceof java.util.ArrayList) {
@@ -73,75 +73,75 @@ public class FLATTEN {
         }
     }
 }
-07:53:30.440 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:30.440 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:30.441 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:21 which is executed by 6 tests
+07:35:54.255 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:54.255 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:54.256 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:21 which is executed by 6 tests
 -60822043
-07:53:30.503 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.974 [pool-5-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.327 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.815 [pool-5-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): expected:<[[1,1]]> but was:<[[]]>, test_0(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4,5]]> but was:<[[]]>, test_6(java_testcases.junit.FLATTEN_Test): expected:<[[a,b,c,d,e]]> but was:<[[]]>, test_5(java_testcases.junit.FLATTEN_Test): expected:<[[moe,curly,larry]]> but was:<[[]]>, test_4(java_testcases.junit.FLATTEN_Test): expected:<[[1,4,6]]> but was:<[[]]>, test_3(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4]]> but was:<[[]]>]
-07:53:30.974 [pool-5-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:54.815 [pool-5-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:53:30.974 [pool-5-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:21.
-07:53:30.975 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:30.975 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:18 which is executed by 7 tests
+07:35:54.815 [pool-5-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:21.
+07:35:54.818 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:54.818 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:18 which is executed by 7 tests
 -60822043
-07:53:31.025 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:31.324 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:54.874 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.202 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): expected:<[[1,1]]> but was:<[[]]>, test_0(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4,5]]> but was:<[[]]>, test_6(java_testcases.junit.FLATTEN_Test): expected:<[[a,b,c,d,e]]> but was:<[[]]>, test_5(java_testcases.junit.FLATTEN_Test): expected:<[[moe,curly,larry]]> but was:<[[]]>, test_4(java_testcases.junit.FLATTEN_Test): expected:<[[1,4,6]]> but was:<[[]]>, test_3(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4]]> but was:<[[]]>]
-07:53:31.324 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:55.202 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:53:31.324 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:18.
-07:53:31.324 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:31.668 [pool-33-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:55.202 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:18.
+07:35:55.202 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:55.555 [pool-33-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:53:31.668 [pool-33-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:55.556 [pool-33-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:53:31.668 [pool-33-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:18.
-07:53:31.668 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:31.669 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:17 which is executed by 7 tests
+07:35:55.556 [pool-33-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:18.
+07:35:55.556 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:55.556 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:17 which is executed by 7 tests
 -60822043
-07:53:31.722 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:32.415 [pool-47-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:55.615 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:56.337 [pool-47-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): expected:<[[1,1]]> but was:<[[]]>, test_0(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4,5]]> but was:<[[]]>, test_6(java_testcases.junit.FLATTEN_Test): expected:<[[a,b,c,d,e]]> but was:<[[]]>, test_5(java_testcases.junit.FLATTEN_Test): expected:<[[moe,curly,larry]]> but was:<[[]]>, test_4(java_testcases.junit.FLATTEN_Test): expected:<[[1,4,6]]> but was:<[[]]>, test_3(java_testcases.junit.FLATTEN_Test): expected:<[[1,2,3,4]]> but was:<[[]]>]
-07:53:32.415 [pool-47-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:56.337 [pool-47-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:53:32.415 [pool-47-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:17.
-07:53:32.416 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:32.416 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:16 which is executed by 7 tests
+07:35:56.337 [pool-47-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:17.
+07:35:56.338 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:35:56.338 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:16 which is executed by 7 tests
 -60822043
-07:53:32.472 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:32.472 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:15 which is executed by 7 tests
+07:35:56.401 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:35:56.402 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:15 which is executed by 7 tests
 -60822043
-07:53:32.526 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:32.526 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:14 which is executed by 7 tests
+07:35:56.474 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:35:56.474 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:14 which is executed by 7 tests
 -60822043
-07:53:32.582 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:54:06.918 [pool-61-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:56.534 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:30.773 [pool-61-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_6(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_5(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_4(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_3(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds]
-07:54:06.918 [pool-61-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:30.773 [pool-61-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_0(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_6(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_5(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_4(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds, test_3(java_testcases.junit.FLATTEN_Test): test timed out after 3000 milliseconds]
-07:54:06.918 [pool-61-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:14.
-07:54:06.919 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:54:06.919 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:19 which is executed by 3 tests
+07:36:30.773 [pool-61-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:14.
+07:36:30.774 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:30.774 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:19 which is executed by 3 tests
 -60822043
-07:54:07.242 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:10.857 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:31.069 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:34.853 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:54:10.858 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:34.853 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_2(java_testcases.junit.FLATTEN_Test): null, test_0(java_testcases.junit.FLATTEN_Test): null, test_6(java_testcases.junit.FLATTEN_Test): null, test_5(java_testcases.junit.FLATTEN_Test): null, test_4(java_testcases.junit.FLATTEN_Test): null, test_3(java_testcases.junit.FLATTEN_Test): null]
-07:54:10.858 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:19.
-07:54:10.858 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
-07:54:10.859 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:24 which is executed by 2 tests
+07:36:34.853 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.FLATTEN:19.
+07:36:34.854 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:36:34.854 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:24 which is executed by 2 tests
 -60822043
-07:54:11.113 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:12.595 [pool-89-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:35.113 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:36.451 [pool-89-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 FLATTEN.java:34: error: missing return statement
     }
     ^
 Note: FLATTEN.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-07:54:12.598 [pool-89-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:36.455 [pool-89-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class FLATTEN {
     public static java.lang.Object flatten(java.lang.Object arr) {
         if (arr instanceof java.util.ArrayList) {
@@ -176,24 +176,24 @@ public class FLATTEN {
         }
     }
 }
-07:54:12.599 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:54:12.599 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
-07:54:12.599 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:23 which is executed by 2 tests
+07:36:36.458 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:36.458 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:36:36.458 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.FLATTEN:23 which is executed by 2 tests
 -60822043
-07:54:12.851 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:54:12.908 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:54:12.908 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:54:12.908 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 8
-07:54:12.908 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:54:12.908 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:54:12.909 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:54:12.909 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:54:12.909 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 58351ms
-07:54:12.909 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:36.705 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:36.755 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:36.756 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:36.756 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 8
+07:36:36.756 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:36.756 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:36.757 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:36.757 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:36.757 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 52181ms
+07:36:36.757 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m59.257s
-user	0m46.425s
-sys	0m6.870s
-\n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:54:13 EDT 2021\n
+real	0m53.133s
+user	0m46.382s
+sys	0m6.212s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 07:36:37 EDT 2021\n

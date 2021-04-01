@@ -18,30 +18,30 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:08.263 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:08.265 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Nopol_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Nopol_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:08.265 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:08.266 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test]
-07:53:08.268 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:08.268 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:08.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:08.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:08.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:08.271 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:08.277 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:08.277 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:16.007 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:16.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:39 which is executed by 9 tests
-07:53:16.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:39
-07:53:16.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:16.008 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:22 which is executed by 10 tests
+07:35:49.826 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:49.828 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Nopol_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Nopol_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:49.828 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:49.829 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test]
+07:35:49.831 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:49.831 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:49.834 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:49.834 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:49.834 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:49.834 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:49.840 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:49.840 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:58.993 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:58.997 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:39 which is executed by 9 tests
+07:35:58.997 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:39
+07:35:58.997 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:58.997 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:22 which is executed by 10 tests
 -358319485
-07:53:16.156 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:16.948 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:59.163 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.033 [pool-3-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LONGEST_COMMON_SUBSEQUENCE.java:32: error: missing return statement
     }
     ^
-07:53:16.951 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:00.055 [pool-3-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LONGEST_COMMON_SUBSEQUENCE {
     public static java.lang.String longest_common_subsequence(java.lang.String a, java.lang.String b) {
         if (a.isEmpty() || b.isEmpty()) {
@@ -74,22 +74,22 @@ public class LONGEST_COMMON_SUBSEQUENCE {
 
     }
 }
-07:53:16.953 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:16.953 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:16.953 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:21 which is executed by 10 tests
+07:36:00.056 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:00.056 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:36:00.057 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:21 which is executed by 10 tests
 -358319485
-07:53:17.018 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:17.018 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:20 which is executed by 10 tests
+07:36:00.123 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:36:00.123 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:20 which is executed by 10 tests
 -358319485
-07:53:17.085 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:17.085 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:18 which is executed by 10 tests
+07:36:00.201 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:36:00.202 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:18 which is executed by 10 tests
 -358319485
-07:53:17.168 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:17.713 [pool-5-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:00.289 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.893 [pool-5-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LONGEST_COMMON_SUBSEQUENCE.java:30: error: missing return statement
     }
     ^
-07:53:17.728 [pool-5-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:00.909 [pool-5-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LONGEST_COMMON_SUBSEQUENCE {
     public static java.lang.String longest_common_subsequence(java.lang.String a, java.lang.String b) {
         if (a.isEmpty() || b.isEmpty()) {
@@ -120,16 +120,16 @@ public class LONGEST_COMMON_SUBSEQUENCE {
 
     }
 }
-07:53:17.730 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:17.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:17.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:17 which is executed by 10 tests
+07:36:00.914 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:00.914 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:36:00.914 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:17 which is executed by 10 tests
 -358319485
-07:53:17.777 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:18.120 [pool-7-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:00.974 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:01.336 [pool-7-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LONGEST_COMMON_SUBSEQUENCE.java:29: error: missing return statement
     }
     ^
-07:53:18.133 [pool-7-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:01.349 [pool-7-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LONGEST_COMMON_SUBSEQUENCE {
     public static java.lang.String longest_common_subsequence(java.lang.String a, java.lang.String b) {
         if (a.isEmpty() || b.isEmpty()) {
@@ -159,22 +159,22 @@ public class LONGEST_COMMON_SUBSEQUENCE {
         }
     }
 }
-07:53:18.133 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:18.133 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:22.802 [pool-9-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.350 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:01.350 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:06.328 [pool-9-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[BCBA]> but was:<[]>, test_5(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[bcba]> but was:<[]>, test_6(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[TAAG]> but was:<[]>, test_3(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): test timed out after 3000 milliseconds]
-07:53:22.802 [pool-9-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:06.329 [pool-9-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[BCBA]> but was:<[ABCBDAB]>, test_5(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[bcba]> but was:<[abcbdab]>, test_6(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<TA[AG]> but was:<TA[TAGC]>, test_3(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<t[si]test> but was:<t[hisisa]test>]
-07:53:22.802 [pool-9-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:17.
-07:53:22.802 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:22.803 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:16 which is executed by 10 tests
+07:36:06.418 [pool-9-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:17.
+07:36:06.418 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:36:06.418 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:16 which is executed by 10 tests
 -358319485
-07:53:22.849 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.344 [pool-19-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:06.486 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:06.987 [pool-19-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 LONGEST_COMMON_SUBSEQUENCE.java:30: error: missing return statement
     }
     ^
-07:53:23.354 [pool-19-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:06.992 [pool-19-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class LONGEST_COMMON_SUBSEQUENCE {
     public static java.lang.String longest_common_subsequence(java.lang.String a, java.lang.String b) {
         if (a.isEmpty() || b.isEmpty()) {
@@ -205,66 +205,66 @@ public class LONGEST_COMMON_SUBSEQUENCE {
 
     }
 }
-07:53:23.354 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:23.354 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:23.355 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:15 which is executed by 10 tests
+07:36:06.994 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:06.994 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:06.994 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:15 which is executed by 10 tests
 -358319485
-07:53:23.402 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:23.730 [pool-21-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:07.042 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:07.433 [pool-21-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): String index out of range: 0, test_5(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): String index out of range: 0, test_6(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): String index out of range: 0, test_3(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): String index out of range: 0]
-07:53:23.730 [pool-21-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:07.433 [pool-21-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[BCBA]> but was:<[]>, test_5(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[bcba]> but was:<[]>, test_6(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[TAAG]> but was:<[]>, test_3(java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test): expected:<[tsitest]> but was:<[]>]
-07:53:23.730 [pool-21-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:15.
-07:53:23.730 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:57 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:57
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:52 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:52
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:50 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:50
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 10 tests
-07:53:23.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 10 tests
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 10 tests
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 10 tests
-07:53:23.732 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
-07:53:23.732 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:23.735 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:23.735 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:23.735 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
-07:53:23.735 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:23.735 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:23.736 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:23.736 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:23.736 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 15471ms
-07:53:23.736 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:07.433 [pool-21-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.LONGEST_COMMON_SUBSEQUENCE:15.
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:57 which is executed by 10 tests
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:57
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:52 which is executed by 10 tests
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:52
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:50 which is executed by 10 tests
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:50
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:36:07.433 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 10 tests
+07:36:07.434 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
+07:36:07.434 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:07.438 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:07.438 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:07.438 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
+07:36:07.438 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:07.438 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:07.439 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:07.439 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:07.439 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 17610ms
+07:36:07.439 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m16.208s
-user	0m10.579s
-sys	0m4.951s
+real	0m18.321s
+user	0m11.315s
+sys	0m6.076s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:24 EDT 2021\n
+\n\nDate: Wed Mar 31 07:36:07 EDT 2021\n

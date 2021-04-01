@@ -1,0 +1,33 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SHORTEST_PATH_LENGTHS/Figra_QuixBugs_SHORTEST_PATH_LENGTHS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id SHORTEST_PATH_LENGTHS- \
+	-failing java_testcases.junit.SHORTEST_PATH_LENGTHS_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:36:27.621 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify k++ to numNodes | numNodes
+07:36:28.876 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
+07:36:39.299 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to length_by_path.get(java.util.Arrays.asList(i, i)) % length_by_path.get(java.util.Arrays.asList(i, i))
+07:36:39.708 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to length_by_path.get(java.util.Arrays.asList(k, j)) / length_by_path.get(java.util.Arrays.asList(i, j))
+07:36:39.761 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge to length_by_edge

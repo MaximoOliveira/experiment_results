@@ -1,128 +1,128 @@
-07:53:08.510 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:08.512 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_KNAPSACK/Nopol_QuixBugs_KNAPSACK_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_KNAPSACK/Nopol_QuixBugs_KNAPSACK_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:08.512 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:08.513 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.KNAPSACK_Test]
-07:53:08.515 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.KNAPSACK_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:08.515 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:08.518 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:08.518 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:08.518 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:08.518 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:08.522 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:08.522 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:25.363 fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:25.365 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:39 which is executed by 10 tests
-07:53:25.511 fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:25.511 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:34 which is executed by 10 tests
-07:53:25.596 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:30.515 tests.output - Failing tests with false: 
+07:35:41.751 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:41.754 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_KNAPSACK/Nopol_QuixBugs_KNAPSACK_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_KNAPSACK/Nopol_QuixBugs_KNAPSACK_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:41.754 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:41.754 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.KNAPSACK_Test]
+07:35:41.756 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.KNAPSACK_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:41.757 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:41.760 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:41.760 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:41.760 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:41.760 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:41.764 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:41.765 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:49.872 fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:49.874 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:39 which is executed by 10 tests
+07:35:50.020 fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:50.021 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:34 which is executed by 10 tests
+07:35:50.107 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.383 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<888>]
-07:53:30.515 tests.output - Failing tests with true: 
+07:35:55.383 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:30.515 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:34.
-07:53:30.516 fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:30.516 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:31 which is executed by 10 tests
-07:53:30.573 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:34.862 tests.output - Failing tests with false: 
+07:35:55.384 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:34.
+07:35:55.384 fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:55.384 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:31 which is executed by 10 tests
+07:35:55.440 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.291 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:53:34.862 tests.output - Failing tests with true: 
+07:36:00.291 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:34.862 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:31.
-07:53:34.862 fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:34.862 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:30 which is executed by 10 tests
-07:53:34.919 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:39.281 tests.output - Failing tests with false: 
+07:36:00.292 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:31.
+07:36:00.292 fr.inria.lille.repair.nopol.NoPol - statement #4
+07:36:00.292 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:30 which is executed by 10 tests
+07:36:00.353 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:05.014 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:53:39.281 tests.output - Failing tests with true: 
+07:36:05.015 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:39.282 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:30.
-07:53:39.282 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:43.614 tests.output - Failing tests with false: 
+07:36:05.015 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:30.
+07:36:05.015 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:09.097 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:53:43.614 tests.output - Failing tests with true: 
+07:36:09.098 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): -22, test_1(java_testcases.junit.KNAPSACK_Test): -29, test_3(java_testcases.junit.KNAPSACK_Test): -11, test_4(java_testcases.junit.KNAPSACK_Test): -30, test_5(java_testcases.junit.KNAPSACK_Test): -55, test_6(java_testcases.junit.KNAPSACK_Test): -24]
-07:53:43.614 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:30.
-07:53:43.614 fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:43.614 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:28 which is executed by 10 tests
-07:53:43.670 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:48.394 tests.output - Failing tests with false: 
+07:36:09.098 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:30.
+07:36:09.100 fr.inria.lille.repair.nopol.NoPol - statement #5
+07:36:09.100 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:28 which is executed by 10 tests
+07:36:09.157 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:13.709 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:48.394 tests.output - Failing tests with true: 
+07:36:13.709 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:48.394 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:28.
-07:53:48.394 fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:48.394 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:27 which is executed by 10 tests
-07:53:48.436 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:53.054 tests.output - Failing tests with false: 
+07:36:13.709 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:28.
+07:36:13.709 fr.inria.lille.repair.nopol.NoPol - statement #6
+07:36:13.709 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:27 which is executed by 10 tests
+07:36:13.755 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:18.701 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:53:53.054 tests.output - Failing tests with true: 
+07:36:18.701 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:53:53.055 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:27.
-07:53:53.055 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:57.939 tests.output - Failing tests with false: 
+07:36:18.701 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:27.
+07:36:18.701 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:23.231 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): -1, test_1(java_testcases.junit.KNAPSACK_Test): -1, test_3(java_testcases.junit.KNAPSACK_Test): -1, test_4(java_testcases.junit.KNAPSACK_Test): -1, test_5(java_testcases.junit.KNAPSACK_Test): -1, test_6(java_testcases.junit.KNAPSACK_Test): -1]
-07:53:57.940 tests.output - Failing tests with true: 
+07:36:23.232 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:53:57.940 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:27.
-07:53:57.941 fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:57.941 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:25 which is executed by 10 tests
-07:53:58.016 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:02.875 tests.output - Failing tests with false: 
+07:36:23.232 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:27.
+07:36:23.233 fr.inria.lille.repair.nopol.NoPol - statement #7
+07:36:23.233 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:25 which is executed by 10 tests
+07:36:23.299 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:28.188 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:54:02.876 tests.output - Failing tests with true: 
+07:36:28.188 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:54:02.876 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:25.
-07:54:02.876 fr.inria.lille.repair.nopol.NoPol - statement #8
-07:54:02.876 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:23 which is executed by 10 tests
-07:54:02.928 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:07.115 tests.output - Failing tests with false: 
+07:36:28.188 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:25.
+07:36:28.188 fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:28.188 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:23 which is executed by 10 tests
+07:36:28.242 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:32.508 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:54:07.115 tests.output - Failing tests with true: 
+07:36:32.509 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:54:07.115 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:23.
-07:54:07.115 fr.inria.lille.repair.nopol.NoPol - statement #9
-07:54:07.115 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:22 which is executed by 10 tests
-07:54:07.164 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:11.263 tests.output - Failing tests with false: 
+07:36:32.509 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:23.
+07:36:32.509 fr.inria.lille.repair.nopol.NoPol - statement #9
+07:36:32.509 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:22 which is executed by 10 tests
+07:36:32.558 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:37.159 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<679>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<60>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<91>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<188>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<265>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<1308>]
-07:54:11.263 tests.output - Failing tests with true: 
+07:36:37.159 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:54:11.263 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:22.
-07:54:11.263 fr.inria.lille.repair.nopol.NoPol - statement #10
-07:54:11.263 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:21 which is executed by 10 tests
-07:54:11.330 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:15.506 tests.output - Failing tests with false: 
+07:36:37.160 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:22.
+07:36:37.160 fr.inria.lille.repair.nopol.NoPol - statement #10
+07:36:37.160 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:21 which is executed by 10 tests
+07:36:37.227 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:41.862 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:54:15.507 tests.output - Failing tests with true: 
+07:36:41.863 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:54:15.507 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:21.
-07:54:15.507 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:54:19.215 tests.output - Failing tests with false: 
+07:36:41.863 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:21.
+07:36:41.863 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:45.689 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:54:19.215 tests.output - Failing tests with true: 
+07:36:45.689 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): -1, test_1(java_testcases.junit.KNAPSACK_Test): -1, test_3(java_testcases.junit.KNAPSACK_Test): -1, test_4(java_testcases.junit.KNAPSACK_Test): -1, test_5(java_testcases.junit.KNAPSACK_Test): -1, test_6(java_testcases.junit.KNAPSACK_Test): -1]
-07:54:19.215 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:21.
-07:54:19.215 fr.inria.lille.repair.nopol.NoPol - statement #11
-07:54:19.215 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:19 which is executed by 10 tests
-07:54:19.271 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:54:23.414 tests.output - Failing tests with false: 
+07:36:45.689 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:21.
+07:36:45.689 fr.inria.lille.repair.nopol.NoPol - statement #11
+07:36:45.689 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:19 which is executed by 10 tests
+07:36:45.744 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:50.024 tests.output - Failing tests with false: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<0>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<0>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<0>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<0>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<0>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<0>]
-07:54:23.414 tests.output - Failing tests with true: 
+07:36:50.024 tests.output - Failing tests with true: 
 [test_7(java_testcases.junit.KNAPSACK_Test): expected:<309> but was:<284>, test_1(java_testcases.junit.KNAPSACK_Test): expected:<30> but was:<20>, test_3(java_testcases.junit.KNAPSACK_Test): expected:<51> but was:<47>, test_4(java_testcases.junit.KNAPSACK_Test): expected:<107> but was:<102>, test_5(java_testcases.junit.KNAPSACK_Test): expected:<150> but was:<146>, test_6(java_testcases.junit.KNAPSACK_Test): expected:<900> but was:<898>]
-07:54:23.415 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:19.
-07:54:23.415 fr.inria.lille.repair.nopol.NoPol - statement #12
-07:54:23.415 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:17 which is executed by 10 tests
-07:54:23.466 fr.inria.lille.repair.nopol.NoPol - statement #13
-07:54:23.466 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:16 which is executed by 10 tests
-07:54:23.500 fr.inria.lille.repair.nopol.NoPol - statement #14
-07:54:23.500 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:15 which is executed by 10 tests
-07:54:23.543 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:54:23.557 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:54:23.557 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:54:23.557 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
-07:54:23.557 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:54:23.557 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:54:23.558 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:54:23.558 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:54:23.558 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 75035ms
-07:54:23.558 fr.inria.lille.repair.nopol.NoPol - 
+07:36:50.024 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.KNAPSACK:19.
+07:36:50.024 fr.inria.lille.repair.nopol.NoPol - statement #12
+07:36:50.025 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:17 which is executed by 10 tests
+07:36:50.066 fr.inria.lille.repair.nopol.NoPol - statement #13
+07:36:50.067 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:16 which is executed by 10 tests
+07:36:50.097 fr.inria.lille.repair.nopol.NoPol - statement #14
+07:36:50.102 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.KNAPSACK:15 which is executed by 10 tests
+07:36:50.143 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:50.157 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:50.157 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:50.157 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
+07:36:50.158 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:50.158 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:50.159 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:50.159 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:50.159 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 68394ms
+07:36:50.159 fr.inria.lille.repair.nopol.NoPol - 

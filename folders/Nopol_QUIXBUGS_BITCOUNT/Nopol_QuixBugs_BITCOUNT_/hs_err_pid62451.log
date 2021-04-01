@@ -1,0 +1,3334 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 120 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.inline.hpp:61), pid=62451, tid=0x00007fff941c3700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_282-b08) (build 1.8.0_282-b08)
+# Java VM: OpenJDK 64-Bit Server VM (25.282-b08 mixed mode linux-amd64 compressed oops)
+# Core dump written. Default location: /users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_BITCOUNT/Nopol_QuixBugs_BITCOUNT_/core or core.62451
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fffb005b800):  JavaThread "pool-7-thread-1" [_thread_in_vm, id=26332, stack(0x00007fff940c3000,0x00007fff941c4000)]
+
+Stack: [0x00007fff940c3000,0x00007fff941c4000],  sp=0x00007fff941c1fe0,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xb30cf2]
+V  [libjvm.so+0x4e0767]
+V  [libjvm.so+0x2c24f2]
+V  [libjvm.so+0x2c2564]
+V  [libjvm.so+0xad7942]
+V  [libjvm.so+0x73b783]
+j  java.lang.Thread.start0()V+0
+j  java.lang.Thread.start()V+26
+j  java.util.concurrent.ThreadPoolExecutor.addWorker(Ljava/lang/Runnable;Z)Z+257
+j  java.util.concurrent.ThreadPoolExecutor.execute(Ljava/lang/Runnable;)V+34
+j  java.util.concurrent.AbstractExecutorService.submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;+20
+j  java.util.concurrent.Executors$DelegatedExecutorService.submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;+5
+j  xxl.java.junit.TestSuiteExecution.executionResult(Ljava/util/concurrent/Callable;Ljava/lang/ClassLoader;Lfr/inria/lille/repair/common/config/NopolContext;)Lorg/junit/runner/Result;+17
+j  xxl.java.junit.TestSuiteExecution.runCasesIn([Ljava/lang/String;Ljava/lang/ClassLoader;Lorg/junit/runner/notification/RunListener;Lfr/inria/lille/repair/common/config/NopolContext;)Lorg/junit/runner/Result;+11
+j  fr.inria.lille.repair.nopol.NoPol.reRunFailingTestCases([Ljava/lang/String;[Ljava/net/URL;)Ljava/util/Collection;+28
+j  fr.inria.lille.repair.nopol.NoPol.runNopolProcessor(Ljava/util/List;Lfr/inria/lille/repair/nopol/SourceLocation;Lfr/inria/lille/commons/spoon/SpoonedClass;Lfr/inria/lille/repair/nopol/spoon/NopolProcessor;)Ljava/util/List;+30
+j  fr.inria.lille.repair.nopol.NoPol.access$000(Lfr/inria/lille/repair/nopol/NoPol;Ljava/util/List;Lfr/inria/lille/repair/nopol/SourceLocation;Lfr/inria/lille/commons/spoon/SpoonedClass;Lfr/inria/lille/repair/nopol/spoon/NopolProcessor;)Ljava/util/List;+6
+j  fr.inria.lille.repair.nopol.NoPol$1.call()Ljava/lang/Object;+20
+j  java.util.concurrent.FutureTask.run()V+42
+j  java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V+95
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x694f9a]
+V  [libjvm.so+0x692653]
+V  [libjvm.so+0x692c27]
+V  [libjvm.so+0x734a1c]
+V  [libjvm.so+0xaceb77]
+V  [libjvm.so+0xacfeca]
+V  [libjvm.so+0x95d732]
+C  [libpthread.so.0+0x7ea5]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.lang.Thread.start0()V+0
+j  java.lang.Thread.start()V+26
+j  java.util.concurrent.ThreadPoolExecutor.addWorker(Ljava/lang/Runnable;Z)Z+257
+j  java.util.concurrent.ThreadPoolExecutor.execute(Ljava/lang/Runnable;)V+34
+j  java.util.concurrent.AbstractExecutorService.submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;+20
+j  java.util.concurrent.Executors$DelegatedExecutorService.submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;+5
+j  xxl.java.junit.TestSuiteExecution.executionResult(Ljava/util/concurrent/Callable;Ljava/lang/ClassLoader;Lfr/inria/lille/repair/common/config/NopolContext;)Lorg/junit/runner/Result;+17
+j  xxl.java.junit.TestSuiteExecution.runCasesIn([Ljava/lang/String;Ljava/lang/ClassLoader;Lorg/junit/runner/notification/RunListener;Lfr/inria/lille/repair/common/config/NopolContext;)Lorg/junit/runner/Result;+11
+j  fr.inria.lille.repair.nopol.NoPol.reRunFailingTestCases([Ljava/lang/String;[Ljava/net/URL;)Ljava/util/Collection;+28
+j  fr.inria.lille.repair.nopol.NoPol.runNopolProcessor(Ljava/util/List;Lfr/inria/lille/repair/nopol/SourceLocation;Lfr/inria/lille/commons/spoon/SpoonedClass;Lfr/inria/lille/repair/nopol/spoon/NopolProcessor;)Ljava/util/List;+30
+j  fr.inria.lille.repair.nopol.NoPol.access$000(Lfr/inria/lille/repair/nopol/NoPol;Ljava/util/List;Lfr/inria/lille/repair/nopol/SourceLocation;Lfr/inria/lille/commons/spoon/SpoonedClass;Lfr/inria/lille/repair/nopol/spoon/NopolProcessor;)Ljava/util/List;+6
+j  fr.inria.lille.repair.nopol.NoPol$1.call()Ljava/lang/Object;+20
+j  java.util.concurrent.FutureTask.run()V+42
+j  java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V+95
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007fffac09b000 JavaThread "Time-limited test" daemon [_thread_new, id=26510, stack(0x0000000000000000,0x0000000000000000)]
+=>0x00007fffb005b800 JavaThread "pool-7-thread-1" [_thread_in_vm, id=26332, stack(0x00007fff940c3000,0x00007fff941c4000)]
+  0x00007fffac099800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=24613, stack(0x00007fffcc424000,0x00007fffcc525000)]
+  0x00007fffac098000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=24470, stack(0x00007fff941c4000,0x00007fff942c5000)]
+  0x00007fffac096000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=22748, stack(0x00007fff942c5000,0x00007fff943c6000)]
+  0x00007fffac094800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=20888, stack(0x00007fff943c6000,0x00007fff944c7000)]
+  0x00007fffac092000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=19071, stack(0x00007fff944c7000,0x00007fff945c8000)]
+  0x00007fffac090800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=17308, stack(0x00007fff945c8000,0x00007fff946c9000)]
+  0x00007fffac08e800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=15331, stack(0x00007fff946c9000,0x00007fff947ca000)]
+  0x00007fffac08c800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=13170, stack(0x00007fff947ca000,0x00007fff948cb000)]
+  0x00007fffac08a000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=10984, stack(0x00007fff948cb000,0x00007fff949cc000)]
+  0x00007fffac088800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=9033, stack(0x00007fff949cc000,0x00007fff94acd000)]
+  0x00007fffac086800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=6438, stack(0x00007fff94acd000,0x00007fff94bce000)]
+  0x00007fffac084800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=4394, stack(0x00007fff94bce000,0x00007fff94ccf000)]
+  0x00007fffac082800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=2257, stack(0x00007fff94ccf000,0x00007fff94dd0000)]
+  0x00007fffac080800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=97654, stack(0x00007fff94dd0000,0x00007fff94ed1000)]
+  0x00007fffac07e800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=95462, stack(0x00007fff94ed1000,0x00007fff94fd2000)]
+  0x00007fffac07d000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=93159, stack(0x00007fff94fd2000,0x00007fff950d3000)]
+  0x00007fffac07b000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=90999, stack(0x00007fff950d3000,0x00007fff951d4000)]
+  0x00007fffac079000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=88831, stack(0x00007fff951d4000,0x00007fff952d5000)]
+  0x00007fffac077800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=86636, stack(0x00007fff952d5000,0x00007fff953d6000)]
+  0x00007fffac075800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=84077, stack(0x00007fff953d6000,0x00007fff954d7000)]
+  0x00007fffac074000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=81667, stack(0x00007fff954d7000,0x00007fff955d8000)]
+  0x00007fffac072000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=79331, stack(0x00007fff955d8000,0x00007fff956d9000)]
+  0x00007fffac070000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=76916, stack(0x00007fff956d9000,0x00007fff957da000)]
+  0x00007fffac06e800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=73785, stack(0x00007fff957da000,0x00007fff958db000)]
+  0x00007fffac06c800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=71405, stack(0x00007fff958db000,0x00007fff959dc000)]
+  0x00007fffac06b000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=68000, stack(0x00007fff959dc000,0x00007fff95add000)]
+  0x00007fffac069000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=65237, stack(0x00007fff95add000,0x00007fff95bde000)]
+  0x00007fffac067000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=62700, stack(0x00007fff95bde000,0x00007fff95cdf000)]
+  0x00007fffac065800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=60047, stack(0x00007fff95cdf000,0x00007fff95de0000)]
+  0x00007fffac063800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=57116, stack(0x00007fff95de0000,0x00007fff95ee1000)]
+  0x00007fffac061800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=53494, stack(0x00007fff95ee1000,0x00007fff95fe2000)]
+  0x00007fffac05f800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=51038, stack(0x00007fff95fe2000,0x00007fff960e3000)]
+  0x00007fffac05e000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=47346, stack(0x00007fff960e3000,0x00007fff961e4000)]
+  0x00007fffac05c000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=44571, stack(0x00007fff961e4000,0x00007fff962e5000)]
+  0x00007fffac05a000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=41986, stack(0x00007fff962e5000,0x00007fff963e6000)]
+  0x00007fffac058800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=38939, stack(0x00007fff963e6000,0x00007fff964e7000)]
+  0x00007fffac056800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=36234, stack(0x00007fff964e7000,0x00007fff965e8000)]
+  0x00007fffac055000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=33536, stack(0x00007fff965e8000,0x00007fff966e9000)]
+  0x00007fffac053000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=30288, stack(0x00007fff966e9000,0x00007fff967ea000)]
+  0x00007fffac051000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=27345, stack(0x00007fff967ea000,0x00007fff968eb000)]
+  0x00007fffac050000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=24367, stack(0x00007fff968eb000,0x00007fff969ec000)]
+  0x00007fffac04f000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=21270, stack(0x00007fffcce90000,0x00007fffccf91000)]
+  0x00007fffac04e000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=18208, stack(0x00007fffcc222000,0x00007fffcc323000)]
+  0x00007fffac04c000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=15134, stack(0x00007fff969ec000,0x00007fff96aed000)]
+  0x00007fffac04a000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=11801, stack(0x00007fff96aed000,0x00007fff96bee000)]
+  0x00007fffac048000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=7536, stack(0x00007fff96bee000,0x00007fff96cef000)]
+  0x00007fffac046000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=3779, stack(0x00007fff96cef000,0x00007fff96df0000)]
+  0x00007fffac044800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=98038, stack(0x00007fff96df0000,0x00007fff96ef1000)]
+  0x00007fffac042800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=94438, stack(0x00007fff96ef1000,0x00007fff96ff2000)]
+  0x00007fffac040800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=90806, stack(0x00007fff96ff2000,0x00007fff970f3000)]
+  0x00007fffac03e800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=87355, stack(0x00007fff970f3000,0x00007fff971f4000)]
+  0x00007fffac03d000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=83743, stack(0x00007fff971f4000,0x00007fff972f5000)]
+  0x00007fffac03b000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=80134, stack(0x00007fff972f5000,0x00007fff973f6000)]
+  0x00007fffac039800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=76790, stack(0x00007fff973f6000,0x00007fff974f7000)]
+  0x00007fffac037800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=72624, stack(0x00007fff974f7000,0x00007fff975f8000)]
+  0x00007fffac035800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=68448, stack(0x00007fff975f8000,0x00007fff976f9000)]
+  0x00007fffac034000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=64498, stack(0x00007fff976f9000,0x00007fff977fa000)]
+  0x00007fffac032000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=59996, stack(0x00007fff977fa000,0x00007fff978fb000)]
+  0x00007fffac030000 JavaThread "Time-limited test" daemon [_thread_in_Java, id=54321, stack(0x00007fff978fb000,0x00007fff979fc000)]
+  0x00007fffac02e800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=49858, stack(0x00007fff979fc000,0x00007fff97afd000)]
+  0x00007fffac029800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=45671, stack(0x00007fff97afd000,0x00007fff97bfe000)]
+  0x00007fffac028800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=42040, stack(0x00007fff97bfe000,0x00007fff97cff000)]
+  0x00007fffac02c800 JavaThread "Time-limited test" daemon [_thread_in_Java, id=37959, stack(0x00007fff97cff000,0x00007fff97e00000)]
+  0x00007fffa0002800 JavaThread "pool-4-thread-1" daemon [_thread_blocked, id=37900, stack(0x00007fffcc525000,0x00007fffcc626000)]
+  0x00007fff9800b000 JavaThread "RMI Scheduler(0)" daemon [_thread_blocked, id=88116, stack(0x00007fffcc323000,0x00007fffcc424000)]
+  0x00007fffb0053800 JavaThread "RMI TCP Accept-0" daemon [_thread_in_native, id=87499, stack(0x00007fffcc626000,0x00007fffcc727000)]
+  0x00007fffb0051000 JavaThread "RMI TCP Accept-5081" daemon [_thread_in_native, id=87489, stack(0x00007fffcc727000,0x00007fffcc828000)]
+  0x00007ffff06eb000 JavaThread "pool-2-thread-1" daemon [_thread_blocked, id=62856, stack(0x00007fffcd591000,0x00007fffcd692000)]
+  0x00007ffff00bb000 JavaThread "Service Thread" daemon [_thread_blocked, id=62486, stack(0x00007fffe02fb000,0x00007fffe03fc000)]
+  0x00007ffff00b5800 JavaThread "C1 CompilerThread1" daemon [_thread_blocked, id=62483, stack(0x00007fffe03fd000,0x00007fffe04fd000)]
+  0x00007ffff00b3800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=62482, stack(0x00007fffe04fe000,0x00007fffe05fe000)]
+  0x00007ffff00b0000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=62481, stack(0x00007fffe05fe000,0x00007fffe06ff000)]
+  0x00007ffff007d000 JavaThread "Finalizer" daemon [_thread_blocked, id=62471, stack(0x00007fffe06ff000,0x00007fffe0800000)]
+  0x00007ffff0078000 JavaThread "Reference Handler" daemon [_thread_blocked, id=62470, stack(0x00007ffff40b8000,0x00007ffff41b9000)]
+  0x00007ffff000a000 JavaThread "main" [_thread_blocked, id=62453, stack(0x00007ffff7ebd000,0x00007ffff7fbd000)]
+
+Other Threads:
+  0x00007ffff006e800 VMThread [stack: 0x00007ffff41ba000,0x00007ffff42ba000] [id=62467]
+  0x00007ffff00bd800 WatcherThread [stack: 0x00007fffe01fb000,0x00007fffe02fb000] [id=62487]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffff0007720] Threads_lock - owner thread: 0x00007fffb005b800
+
+OutOfMemory and StackOverflow Exception counts:
+OutOfMemoryError java_heap_errors=1
+
+heap address: 0x00000006c0000000, size: 4096 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ def new generation   total 314624K, used 220867K [0x00000006c0000000, 0x00000006d5560000, 0x0000000715550000)
+  eden space 279680K,  78% used [0x00000006c0000000, 0x00000006cd7b0c68, 0x00000006d1120000)
+  from space 34944K,   0% used [0x00000006d1120000, 0x00000006d1120000, 0x00000006d3340000)
+  to   space 34944K,   0% used [0x00000006d3340000, 0x00000006d3340000, 0x00000006d5560000)
+ tenured generation   total 699072K, used 21473K [0x0000000715550000, 0x0000000740000000, 0x00000007c0000000)
+   the space 699072K,   3% used [0x0000000715550000, 0x0000000716a486f0, 0x0000000716a48800, 0x0000000740000000)
+ Metaspace       used 24693K, capacity 24964K, committed 25136K, reserved 1071104K
+  class space    used 2697K, capacity 2793K, committed 2864K, reserved 1048576K
+
+Card table byte_map: [0x00007ffff4a57000,0x00007ffff5258000] byte_map_base: 0x00007ffff1457000
+
+Polling page: 0x00007ffff7ff8000
+
+CodeCache: size=245760Kb used=4944Kb max_used=5469Kb free=240815Kb
+ bounds [0x00007fffe1000000, 0x00007fffe1580000, 0x00007ffff0000000]
+ total_blobs=1823 nmethods=1419 adapters=317
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 249.303 Thread 0x00007ffff00b5800 1602       3       spoon.processing.AbstractProcessor::getTraversalStrategy (4 bytes)
+Event: 249.303 Thread 0x00007ffff00b5800 nmethod 1602 0x00007fffe1146850 code [0x00007fffe11469c0, 0x00007fffe1146b10]
+Event: 249.303 Thread 0x00007ffff00b5800 1603       1       spoon.support.StandardEnvironment::isProcessingStopped (5 bytes)
+Event: 249.303 Thread 0x00007ffff00b5800 nmethod 1603 0x00007fffe1123010 code [0x00007fffe1123160, 0x00007fffe1123270]
+Event: 249.303 Thread 0x00007ffff00b5800 1604       1       spoon.support.reflect.cu.position.SourcePositionImpl::isValidPosition (2 bytes)
+Event: 249.304 Thread 0x00007ffff00b5800 nmethod 1604 0x00007fffe13fc050 code [0x00007fffe13fc1a0, 0x00007fffe13fc2b0]
+Event: 249.304 Thread 0x00007ffff00b5800 1605       3       spoon.reflect.visitor.CtInheritanceScanner::scanCtElement (1 bytes)
+Event: 249.304 Thread 0x00007ffff00b5800 nmethod 1605 0x00007fffe13feb50 code [0x00007fffe13feca0, 0x00007fffe13fedf0]
+Event: 249.611 Thread 0x00007ffff00b3800 1606       4       java.util.AbstractCollection::<init> (5 bytes)
+Event: 249.611 Thread 0x00007ffff00b3800 nmethod 1606 0x00007fffe114e690 code [0x00007fffe114e7e0, 0x00007fffe114e838]
+
+GC Heap History (2 events):
+Event: 16.921 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 314560K, used 201325K [0x00000006c0000000, 0x00000006d5550000, 0x0000000715550000)
+  eden space 279616K,  72% used [0x00000006c0000000, 0x00000006cc49b480, 0x00000006d1110000)
+  from space 34944K,   0% used [0x00000006d1110000, 0x00000006d1110000, 0x00000006d3330000)
+  to   space 34944K,   0% used [0x00000006d3330000, 0x00000006d3330000, 0x00000006d5550000)
+ tenured generation   total 699072K, used 0K [0x0000000715550000, 0x0000000740000000, 0x00000007c0000000)
+   the space 699072K,   0% used [0x0000000715550000, 0x0000000715550000, 0x0000000715550200, 0x0000000740000000)
+ Metaspace       used 20752K, capacity 20976K, committed 21296K, reserved 1069056K
+  class space    used 2222K, capacity 2306K, committed 2352K, reserved 1048576K
+Event: 16.981 GC heap after
+Heap after GC invocations=1 (full 1):
+ def new generation   total 314624K, used 0K [0x00000006c0000000, 0x00000006d5560000, 0x0000000715550000)
+  eden space 279680K,   0% used [0x00000006c0000000, 0x00000006c0000000, 0x00000006d1120000)
+  from space 34944K,   0% used [0x00000006d1120000, 0x00000006d1120000, 0x00000006d3340000)
+  to   space 34944K,   0% used [0x00000006d3340000, 0x00000006d3340000, 0x00000006d5560000)
+ tenured generation   total 699072K, used 21473K [0x0000000715550000, 0x0000000740000000, 0x00000007c0000000)
+   the space 699072K,   3% used [0x0000000715550000, 0x0000000716a486f0, 0x0000000716a48800, 0x0000000740000000)
+ Metaspace       used 20752K, capacity 20976K, committed 21296K, reserved 1069056K
+  class space    used 2222K, capacity 2306K, committed 2352K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 16.882 Thread 0x00007ffff06eb000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fffe12f7188 method=java.util.Properties$LineReader.readLine()I @ 62
+Event: 16.882 Thread 0x00007ffff06eb000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fffe14a2be0 method=java.io.BufferedInputStream.read1([BII)I @ 39
+Event: 16.997 Thread 0x00007ffff007d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fffe149d5c0 method=java.lang.ref.ReferenceQueue.poll()Ljava/lang/ref/Reference; @ 4
+Event: 17.000 Thread 0x00007ffff007d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fffe147f53c method=java.lang.ref.ReferenceQueue.poll()Ljava/lang/ref/Reference; @ 4
+Event: 17.020 Thread 0x00007ffff06eb000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fffe14a2be0 method=java.io.BufferedInputStream.read1([BII)I @ 39
+Event: 17.256 Thread 0x00007fffa8001000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fffe1482794 method=sun.misc.MetaIndex.mayContain(Ljava/lang/String;)Z @ 38
+Event: 17.256 Thread 0x00007fffa8001000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fffe142c62c method=sun.misc.MetaIndex.mayContain(Ljava/lang/String;)Z @ 38
+Event: 45.694 Thread 0x00007fffa0002800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fffe1494de8 method=sun.misc.URLClassPath.getResource(Ljava/lang/String;Z)Lsun/misc/Resource; @ 62
+Event: 45.694 Thread 0x00007fffa0002800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fffe14b650c method=java.net.URL.<init>(Ljava/net/URL;Ljava/lang/String;Ljava/net/URLStreamHandler;)V @ 273
+Event: 45.743 Thread 0x00007fffac02c800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fffe1494de8 method=sun.misc.URLClassPath.getResource(Ljava/lang/String;Z)Lsun/misc/Resource; @ 62
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 16.904 Thread 0x00007ffff06eb000 Exception <a 'java/net/BindException'> (0x00000006cb66e890) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 17.261 Thread 0x00007fffa8001000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000006c1027410) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jni.cpp, line 1616]
+Event: 45.545 Thread 0x00007fffb0055800 Exception <a 'java/lang/InterruptedException'> (0x00000006c13a6620) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/runtime/objectMonitor.cpp, line 1692]
+Event: 45.570 Thread 0x00007ffff06eb000 Exception <a 'java/io/FileNotFoundException'> (0x00000006c00a1ab0) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 45.571 Thread 0x00007ffff06eb000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000006c00b3bd8) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 245.743 Thread 0x00007ffff06eb000 Exception <a 'java/io/FileNotFoundException'> (0x00000006c33af9d8) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 245.743 Thread 0x00007ffff06eb000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000006c33c1b00) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 247.891 Thread 0x00007fffb005b800 Exception <a 'java/lang/OutOfMemoryError': unable to create new native thread> (0x00000006cc35c918) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jvm.cpp, line 3162]
+Event: 248.322 Thread 0x00007ffff06eb000 Exception <a 'java/io/FileNotFoundException'> (0x00000006cbffab30) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 248.322 Thread 0x00007ffff06eb000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000006cc00cc58) thrown at [/home/adoptopenjdk/workspace/build-scripts/jobs/jdk8u/jdk8u-linux-x64-hotspot/workspace/build/src/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+
+Events (10 events):
+Event: 247.292 loading class spoon/reflect/visitor/LiteralHelper
+Event: 247.292 loading class spoon/reflect/visitor/LiteralHelper done
+Event: 247.523 Thread 0x00007fffb005b800 Thread added: 0x00007fffb005b800
+Event: 247.892 Executing VM operation: RevokeBias
+Event: 247.899 Executing VM operation: RevokeBias done
+Event: 248.066 Thread 0x00007fffb005b800 Thread exited: 0x00007fffb005b800
+Event: 249.383 Executing VM operation: ThreadDump
+Event: 249.517 Thread 0x00007fffb005b800 Thread added: 0x00007fffb005b800
+Event: 249.531 Executing VM operation: ThreadDump done
+Event: 249.684 Thread 0x00007fffac09b000 Thread added: 0x00007fffac09b000
+
+
+Dynamic libraries:
+6c0000000-6d5560000 rw-p 00000000 00:00 0 
+6d5560000-715550000 ---p 00000000 00:00 0 
+715550000-740000000 rw-p 00000000 00:00 0 
+740000000-7c0000000 ---p 00000000 00:00 0 
+7c0000000-7c02cc000 rw-p 00000000 00:00 0 
+7c02cc000-800000000 ---p 00000000 00:00 0 
+555555554000-555555555000 r-xp 00000000 f92:3bc90 144115374655290468     /users2/cpca56132020/moliveira/deps/jdk-8/bin/java
+555555754000-555555755000 r--p 00000000 f92:3bc90 144115374655290468     /users2/cpca56132020/moliveira/deps/jdk-8/bin/java
+555555755000-555555756000 rw-p 00001000 f92:3bc90 144115374655290468     /users2/cpca56132020/moliveira/deps/jdk-8/bin/java
+555555756000-555555777000 rw-p 00000000 00:00 0                          [heap]
+7fff43eff000-7fff44000000 rw-p 00000000 00:00 0 
+7fff44000000-7fff44021000 rw-p 00000000 00:00 0 
+7fff44021000-7fff48000000 ---p 00000000 00:00 0 
+7fff48000000-7fff48021000 rw-p 00000000 00:00 0 
+7fff48021000-7fff4c000000 ---p 00000000 00:00 0 
+7fff4c000000-7fff4c021000 rw-p 00000000 00:00 0 
+7fff4c021000-7fff50000000 ---p 00000000 00:00 0 
+7fff50000000-7fff50021000 rw-p 00000000 00:00 0 
+7fff50021000-7fff54000000 ---p 00000000 00:00 0 
+7fff54000000-7fff54021000 rw-p 00000000 00:00 0 
+7fff54021000-7fff58000000 ---p 00000000 00:00 0 
+7fff58000000-7fff58021000 rw-p 00000000 00:00 0 
+7fff58021000-7fff5c000000 ---p 00000000 00:00 0 
+7fff5c000000-7fff5c021000 rw-p 00000000 00:00 0 
+7fff5c021000-7fff60000000 ---p 00000000 00:00 0 
+7fff60000000-7fff60021000 rw-p 00000000 00:00 0 
+7fff60021000-7fff64000000 ---p 00000000 00:00 0 
+7fff64000000-7fff64021000 rw-p 00000000 00:00 0 
+7fff64021000-7fff68000000 ---p 00000000 00:00 0 
+7fff68000000-7fff68021000 rw-p 00000000 00:00 0 
+7fff68021000-7fff6c000000 ---p 00000000 00:00 0 
+7fff6c000000-7fff6c021000 rw-p 00000000 00:00 0 
+7fff6c021000-7fff70000000 ---p 00000000 00:00 0 
+7fff70000000-7fff70021000 rw-p 00000000 00:00 0 
+7fff70021000-7fff74000000 ---p 00000000 00:00 0 
+7fff74000000-7fff74021000 rw-p 00000000 00:00 0 
+7fff74021000-7fff78000000 ---p 00000000 00:00 0 
+7fff78000000-7fff78021000 rw-p 00000000 00:00 0 
+7fff78021000-7fff7c000000 ---p 00000000 00:00 0 
+7fff7c000000-7fff7c021000 rw-p 00000000 00:00 0 
+7fff7c021000-7fff80000000 ---p 00000000 00:00 0 
+7fff80000000-7fff80021000 rw-p 00000000 00:00 0 
+7fff80021000-7fff84000000 ---p 00000000 00:00 0 
+7fff84000000-7fff84021000 rw-p 00000000 00:00 0 
+7fff84021000-7fff88000000 ---p 00000000 00:00 0 
+7fff88000000-7fff88021000 rw-p 00000000 00:00 0 
+7fff88021000-7fff8c000000 ---p 00000000 00:00 0 
+7fff8c000000-7fff8c021000 rw-p 00000000 00:00 0 
+7fff8c021000-7fff90000000 ---p 00000000 00:00 0 
+7fff90000000-7fff90021000 rw-p 00000000 00:00 0 
+7fff90021000-7fff94000000 ---p 00000000 00:00 0 
+7fff940c3000-7fff940c6000 ---p 00000000 00:00 0 
+7fff940c6000-7fff941c4000 rw-p 00000000 00:00 0 
+7fff941c4000-7fff941c7000 ---p 00000000 00:00 0 
+7fff941c7000-7fff942c5000 rw-p 00000000 00:00 0 
+7fff942c5000-7fff942c8000 ---p 00000000 00:00 0 
+7fff942c8000-7fff943c6000 rw-p 00000000 00:00 0 
+7fff943c6000-7fff943c9000 ---p 00000000 00:00 0 
+7fff943c9000-7fff944c7000 rw-p 00000000 00:00 0 
+7fff944c7000-7fff944ca000 ---p 00000000 00:00 0 
+7fff944ca000-7fff945c8000 rw-p 00000000 00:00 0 
+7fff945c8000-7fff945cb000 ---p 00000000 00:00 0 
+7fff945cb000-7fff946c9000 rw-p 00000000 00:00 0 
+7fff946c9000-7fff946cc000 ---p 00000000 00:00 0 
+7fff946cc000-7fff947ca000 rw-p 00000000 00:00 0 
+7fff947ca000-7fff947cd000 ---p 00000000 00:00 0 
+7fff947cd000-7fff948cb000 rw-p 00000000 00:00 0 
+7fff948cb000-7fff948ce000 ---p 00000000 00:00 0 
+7fff948ce000-7fff949cc000 rw-p 00000000 00:00 0 
+7fff949cc000-7fff949cf000 ---p 00000000 00:00 0 
+7fff949cf000-7fff94acd000 rw-p 00000000 00:00 0 
+7fff94acd000-7fff94ad0000 ---p 00000000 00:00 0 
+7fff94ad0000-7fff94bce000 rw-p 00000000 00:00 0 
+7fff94bce000-7fff94bd1000 ---p 00000000 00:00 0 
+7fff94bd1000-7fff94ccf000 rw-p 00000000 00:00 0 
+7fff94ccf000-7fff94cd2000 ---p 00000000 00:00 0 
+7fff94cd2000-7fff94dd0000 rw-p 00000000 00:00 0 
+7fff94dd0000-7fff94dd3000 ---p 00000000 00:00 0 
+7fff94dd3000-7fff94ed1000 rw-p 00000000 00:00 0 
+7fff94ed1000-7fff94ed4000 ---p 00000000 00:00 0 
+7fff94ed4000-7fff94fd2000 rw-p 00000000 00:00 0 
+7fff94fd2000-7fff94fd5000 ---p 00000000 00:00 0 
+7fff94fd5000-7fff950d3000 rw-p 00000000 00:00 0 
+7fff950d3000-7fff950d6000 ---p 00000000 00:00 0 
+7fff950d6000-7fff951d4000 rw-p 00000000 00:00 0 
+7fff951d4000-7fff951d7000 ---p 00000000 00:00 0 
+7fff951d7000-7fff952d5000 rw-p 00000000 00:00 0 
+7fff952d5000-7fff952d8000 ---p 00000000 00:00 0 
+7fff952d8000-7fff953d6000 rw-p 00000000 00:00 0 
+7fff953d6000-7fff953d9000 ---p 00000000 00:00 0 
+7fff953d9000-7fff954d7000 rw-p 00000000 00:00 0 
+7fff954d7000-7fff954da000 ---p 00000000 00:00 0 
+7fff954da000-7fff955d8000 rw-p 00000000 00:00 0 
+7fff955d8000-7fff955db000 ---p 00000000 00:00 0 
+7fff955db000-7fff956d9000 rw-p 00000000 00:00 0 
+7fff956d9000-7fff956dc000 ---p 00000000 00:00 0 
+7fff956dc000-7fff957da000 rw-p 00000000 00:00 0 
+7fff957da000-7fff957dd000 ---p 00000000 00:00 0 
+7fff957dd000-7fff958db000 rw-p 00000000 00:00 0 
+7fff958db000-7fff958de000 ---p 00000000 00:00 0 
+7fff958de000-7fff959dc000 rw-p 00000000 00:00 0 
+7fff959dc000-7fff959df000 ---p 00000000 00:00 0 
+7fff959df000-7fff95add000 rw-p 00000000 00:00 0 
+7fff95add000-7fff95ae0000 ---p 00000000 00:00 0 
+7fff95ae0000-7fff95bde000 rw-p 00000000 00:00 0 
+7fff95bde000-7fff95be1000 ---p 00000000 00:00 0 
+7fff95be1000-7fff95cdf000 rw-p 00000000 00:00 0 
+7fff95cdf000-7fff95ce2000 ---p 00000000 00:00 0 
+7fff95ce2000-7fff95de0000 rw-p 00000000 00:00 0 
+7fff95de0000-7fff95de3000 ---p 00000000 00:00 0 
+7fff95de3000-7fff95ee1000 rw-p 00000000 00:00 0 
+7fff95ee1000-7fff95ee4000 ---p 00000000 00:00 0 
+7fff95ee4000-7fff95fe2000 rw-p 00000000 00:00 0 
+7fff95fe2000-7fff95fe5000 ---p 00000000 00:00 0 
+7fff95fe5000-7fff960e3000 rw-p 00000000 00:00 0 
+7fff960e3000-7fff960e6000 ---p 00000000 00:00 0 
+7fff960e6000-7fff961e4000 rw-p 00000000 00:00 0 
+7fff961e4000-7fff961e7000 ---p 00000000 00:00 0 
+7fff961e7000-7fff962e5000 rw-p 00000000 00:00 0 
+7fff962e5000-7fff962e8000 ---p 00000000 00:00 0 
+7fff962e8000-7fff963e6000 rw-p 00000000 00:00 0 
+7fff963e6000-7fff963e9000 ---p 00000000 00:00 0 
+7fff963e9000-7fff964e7000 rw-p 00000000 00:00 0 
+7fff964e7000-7fff964ea000 ---p 00000000 00:00 0 
+7fff964ea000-7fff965e8000 rw-p 00000000 00:00 0 
+7fff965e8000-7fff965eb000 ---p 00000000 00:00 0 
+7fff965eb000-7fff966e9000 rw-p 00000000 00:00 0 
+7fff966e9000-7fff966ec000 ---p 00000000 00:00 0 
+7fff966ec000-7fff967ea000 rw-p 00000000 00:00 0 
+7fff967ea000-7fff967ed000 ---p 00000000 00:00 0 
+7fff967ed000-7fff968eb000 rw-p 00000000 00:00 0 
+7fff968eb000-7fff968ee000 ---p 00000000 00:00 0 
+7fff968ee000-7fff969ec000 rw-p 00000000 00:00 0 
+7fff969ec000-7fff969ef000 ---p 00000000 00:00 0 
+7fff969ef000-7fff96aed000 rw-p 00000000 00:00 0 
+7fff96aed000-7fff96af0000 ---p 00000000 00:00 0 
+7fff96af0000-7fff96bee000 rw-p 00000000 00:00 0 
+7fff96bee000-7fff96bf1000 ---p 00000000 00:00 0 
+7fff96bf1000-7fff96cef000 rw-p 00000000 00:00 0 
+7fff96cef000-7fff96cf2000 ---p 00000000 00:00 0 
+7fff96cf2000-7fff96df0000 rw-p 00000000 00:00 0 
+7fff96df0000-7fff96df3000 ---p 00000000 00:00 0 
+7fff96df3000-7fff96ef1000 rw-p 00000000 00:00 0 
+7fff96ef1000-7fff96ef4000 ---p 00000000 00:00 0 
+7fff96ef4000-7fff96ff2000 rw-p 00000000 00:00 0 
+7fff96ff2000-7fff96ff5000 ---p 00000000 00:00 0 
+7fff96ff5000-7fff970f3000 rw-p 00000000 00:00 0 
+7fff970f3000-7fff970f6000 ---p 00000000 00:00 0 
+7fff970f6000-7fff971f4000 rw-p 00000000 00:00 0 
+7fff971f4000-7fff971f7000 ---p 00000000 00:00 0 
+7fff971f7000-7fff972f5000 rw-p 00000000 00:00 0 
+7fff972f5000-7fff972f8000 ---p 00000000 00:00 0 
+7fff972f8000-7fff973f6000 rw-p 00000000 00:00 0 
+7fff973f6000-7fff973f9000 ---p 00000000 00:00 0 
+7fff973f9000-7fff974f7000 rw-p 00000000 00:00 0 
+7fff974f7000-7fff974fa000 ---p 00000000 00:00 0 
+7fff974fa000-7fff975f8000 rw-p 00000000 00:00 0 
+7fff975f8000-7fff975fb000 ---p 00000000 00:00 0 
+7fff975fb000-7fff976f9000 rw-p 00000000 00:00 0 
+7fff976f9000-7fff976fc000 ---p 00000000 00:00 0 
+7fff976fc000-7fff977fa000 rw-p 00000000 00:00 0 
+7fff977fa000-7fff977fd000 ---p 00000000 00:00 0 
+7fff977fd000-7fff978fb000 rw-p 00000000 00:00 0 
+7fff978fb000-7fff978fe000 ---p 00000000 00:00 0 
+7fff978fe000-7fff979fc000 rw-p 00000000 00:00 0 
+7fff979fc000-7fff979ff000 ---p 00000000 00:00 0 
+7fff979ff000-7fff97afd000 rw-p 00000000 00:00 0 
+7fff97afd000-7fff97b00000 ---p 00000000 00:00 0 
+7fff97b00000-7fff97bfe000 rw-p 00000000 00:00 0 
+7fff97bfe000-7fff97c01000 ---p 00000000 00:00 0 
+7fff97c01000-7fff97cff000 rw-p 00000000 00:00 0 
+7fff97cff000-7fff97d02000 ---p 00000000 00:00 0 
+7fff97d02000-7fff97fc0000 rw-p 00000000 00:00 0 
+7fff97fc0000-7fff98000000 ---p 00000000 00:00 0 
+7fff98000000-7fff98021000 rw-p 00000000 00:00 0 
+7fff98021000-7fff9c000000 ---p 00000000 00:00 0 
+7fff9c000000-7fff9c021000 rw-p 00000000 00:00 0 
+7fff9c021000-7fffa0000000 ---p 00000000 00:00 0 
+7fffa0000000-7fffa0021000 rw-p 00000000 00:00 0 
+7fffa0021000-7fffa4000000 ---p 00000000 00:00 0 
+7fffa4000000-7fffa4021000 rw-p 00000000 00:00 0 
+7fffa4021000-7fffa8000000 ---p 00000000 00:00 0 
+7fffa8000000-7fffa8021000 rw-p 00000000 00:00 0 
+7fffa8021000-7fffac000000 ---p 00000000 00:00 0 
+7fffac000000-7fffac09c000 rw-p 00000000 00:00 0 
+7fffac09c000-7fffb0000000 ---p 00000000 00:00 0 
+7fffb0000000-7fffb0316000 rw-p 00000000 00:00 0 
+7fffb0316000-7fffb4000000 ---p 00000000 00:00 0 
+7fffb4000000-7fffb4021000 rw-p 00000000 00:00 0 
+7fffb4021000-7fffb8000000 ---p 00000000 00:00 0 
+7fffb8000000-7fffb8021000 rw-p 00000000 00:00 0 
+7fffb8021000-7fffbc000000 ---p 00000000 00:00 0 
+7fffbc000000-7fffbc021000 rw-p 00000000 00:00 0 
+7fffbc021000-7fffc0000000 ---p 00000000 00:00 0 
+7fffc0000000-7fffc0b22000 rw-p 00000000 00:00 0 
+7fffc0b22000-7fffc4000000 ---p 00000000 00:00 0 
+7fffc4000000-7fffc5169000 rw-p 00000000 00:00 0 
+7fffc5169000-7fffc8000000 ---p 00000000 00:00 0 
+7fffc8000000-7fffc8021000 rw-p 00000000 00:00 0 
+7fffc8021000-7fffcc000000 ---p 00000000 00:00 0 
+7fffcc083000-7fffcc0ca000 rw-p 00000000 00:00 0 
+7fffcc0ca000-7fffcc222000 r--s 014e4000 f92:3bc90 144115374655290980     /users2/cpca56132020/moliveira/RepairThemAll/repair_tools/nopol.jar
+7fffcc222000-7fffcc225000 ---p 00000000 00:00 0 
+7fffcc225000-7fffcc323000 rw-p 00000000 00:00 0 
+7fffcc323000-7fffcc326000 ---p 00000000 00:00 0 
+7fffcc326000-7fffcc424000 rw-p 00000000 00:00 0 
+7fffcc424000-7fffcc427000 ---p 00000000 00:00 0 
+7fffcc427000-7fffcc525000 rw-p 00000000 00:00 0 
+7fffcc525000-7fffcc528000 ---p 00000000 00:00 0 
+7fffcc528000-7fffcc626000 rw-p 00000000 00:00 0 
+7fffcc626000-7fffcc629000 ---p 00000000 00:00 0 
+7fffcc629000-7fffcc727000 rw-p 00000000 00:00 0 
+7fffcc727000-7fffcc72a000 ---p 00000000 00:00 0 
+7fffcc72a000-7fffcca28000 rw-p 00000000 00:00 0 
+7fffcca28000-7fffcca39000 r--s 001bc000 f92:3bc90 144115374655290609     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/jsse.jar
+7fffcca39000-7fffccc39000 rw-p 00000000 00:00 0 
+7fffccc39000-7fffcce3a000 rw-p 00000000 00:00 0 
+7fffcce3a000-7fffcce62000 rw-p 00000000 00:00 0 
+7fffcce62000-7fffcce7d000 r--s 001d6000 f92:3bc90 144115374655290551     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/nashorn.jar
+7fffcce7d000-7fffcce90000 r--s 0034b000 f92:3bc90 144115374655290612     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/resources.jar
+7fffcce90000-7fffcce93000 ---p 00000000 00:00 0 
+7fffcce93000-7fffcd191000 rw-p 00000000 00:00 0 
+7fffcd191000-7fffcd391000 rw-p 00000000 00:00 0 
+7fffcd391000-7fffcd591000 rw-p 00000000 00:00 0 
+7fffcd591000-7fffcd594000 ---p 00000000 00:00 0 
+7fffcd594000-7fffcd692000 rw-p 00000000 00:00 0 
+7fffcd692000-7fffcd6a9000 r-xp 00000000 f92:3bc90 144115374655290563     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnet.so
+7fffcd6a9000-7fffcd8a9000 ---p 00017000 f92:3bc90 144115374655290563     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnet.so
+7fffcd8a9000-7fffcd8aa000 r--p 00017000 f92:3bc90 144115374655290563     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnet.so
+7fffcd8aa000-7fffcd8ab000 rw-p 00018000 f92:3bc90 144115374655290563     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnet.so
+7fffcd8ab000-7fffcd8bc000 r-xp 00000000 f92:3bc90 144115374655290578     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnio.so
+7fffcd8bc000-7fffcdabb000 ---p 00011000 f92:3bc90 144115374655290578     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnio.so
+7fffcdabb000-7fffcdabc000 r--p 00010000 f92:3bc90 144115374655290578     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnio.so
+7fffcdabc000-7fffcdabd000 rw-p 00011000 f92:3bc90 144115374655290578     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libnio.so
+7fffcdabd000-7fffd4000000 r--p 00000000 08:03 1615812                    /usr/lib/locale/locale-archive
+7fffd4000000-7fffd4021000 rw-p 00000000 00:00 0 
+7fffd4021000-7fffd8000000 ---p 00000000 00:00 0 
+7fffd8000000-7fffd8021000 rw-p 00000000 00:00 0 
+7fffd8021000-7fffdc000000 ---p 00000000 00:00 0 
+7fffdc000000-7fffdc14b000 rw-p 00000000 00:00 0 
+7fffdc14b000-7fffe0000000 ---p 00000000 00:00 0 
+7fffe0000000-7fffe000c000 rw-p 00000000 00:00 0 
+7fffe000c000-7fffe0028000 r--s 00393000 f92:3bc90 144115374655290552     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/cldrdata.jar
+7fffe0028000-7fffe00a2000 r--s 01103000 f92:3bc90 144115374655290528     /users2/cpca56132020/moliveira/deps/jdk-8/lib/tools.jar
+7fffe00a2000-7fffe01fa000 r--s 014e4000 f92:3bc90 144115374655290980     /users2/cpca56132020/moliveira/RepairThemAll/repair_tools/nopol.jar
+7fffe01fa000-7fffe01fb000 ---p 00000000 00:00 0 
+7fffe01fb000-7fffe02fb000 rw-p 00000000 00:00 0 
+7fffe02fb000-7fffe02fe000 ---p 00000000 00:00 0 
+7fffe02fe000-7fffe03fc000 rw-p 00000000 00:00 0 
+7fffe03fc000-7fffe0400000 ---p 00000000 00:00 0 
+7fffe0400000-7fffe04fd000 rw-p 00000000 00:00 0 
+7fffe04fd000-7fffe0501000 ---p 00000000 00:00 0 
+7fffe0501000-7fffe05fe000 rw-p 00000000 00:00 0 
+7fffe05fe000-7fffe0601000 ---p 00000000 00:00 0 
+7fffe0601000-7fffe06ff000 rw-p 00000000 00:00 0 
+7fffe06ff000-7fffe0702000 ---p 00000000 00:00 0 
+7fffe0702000-7fffe1000000 rw-p 00000000 00:00 0 
+7fffe1000000-7fffe1580000 rwxp 00000000 00:00 0 
+7fffe1580000-7ffff0000000 ---p 00000000 00:00 0 
+7ffff0000000-7ffff06ee000 rw-p 00000000 00:00 0 
+7ffff06ee000-7ffff4000000 ---p 00000000 00:00 0 
+7ffff4000000-7ffff4002000 rw-p 00000000 00:00 0 
+7ffff4002000-7ffff4003000 r--s 0000d000 f92:3bc90 144115374655290549     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/sunec.jar
+7ffff4003000-7ffff4005000 r--s 00010000 f92:3bc90 144115374655290550     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/zipfs.jar
+7ffff4005000-7ffff4007000 r--s 00001000 f92:3bc90 144115374655290553     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/dnsns.jar
+7ffff4007000-7ffff400d000 r--s 0003d000 f92:3bc90 144115374655290548     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/sunjce_provider.jar
+7ffff400d000-7ffff4011000 r--s 00040000 f92:3bc90 144115374655290555     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/sunpkcs11.jar
+7ffff4011000-7ffff4016000 r--s 002f9000 f92:3bc90 144115374655290611     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/charsets.jar
+7ffff4016000-7ffff4019000 ---p 00000000 00:00 0 
+7ffff4019000-7ffff40b8000 rw-p 00000000 00:00 0 
+7ffff40b8000-7ffff40bb000 ---p 00000000 00:00 0 
+7ffff40bb000-7ffff41b9000 rw-p 00000000 00:00 0 
+7ffff41b9000-7ffff41ba000 ---p 00000000 00:00 0 
+7ffff41ba000-7ffff42ba000 rw-p 00000000 00:00 0 
+7ffff42ba000-7ffff448b000 r--s 03c97000 f92:3bc90 144115374655290642     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/rt.jar
+7ffff448b000-7ffff4657000 rw-p 00000000 00:00 0 
+7ffff4657000-7ffff4a57000 ---p 00000000 00:00 0 
+7ffff4a57000-7ffff4b02000 rw-p 00000000 00:00 0 
+7ffff4b02000-7ffff4d01000 ---p 00000000 00:00 0 
+7ffff4d01000-7ffff4e57000 rw-p 00000000 00:00 0 
+7ffff4e57000-7ffff5257000 ---p 00000000 00:00 0 
+7ffff5257000-7ffff526e000 rw-p 00000000 00:00 0 
+7ffff526e000-7ffff5618000 ---p 00000000 00:00 0 
+7ffff5618000-7ffff5633000 r-xp 00000000 f92:3bc90 144115374655290577     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libzip.so
+7ffff5633000-7ffff5832000 ---p 0001b000 f92:3bc90 144115374655290577     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libzip.so
+7ffff5832000-7ffff5833000 r--p 0001a000 f92:3bc90 144115374655290577     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libzip.so
+7ffff5833000-7ffff5834000 rw-p 0001b000 f92:3bc90 144115374655290577     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libzip.so
+7ffff5834000-7ffff5840000 r-xp 00000000 08:03 1574227                    /usr/lib64/libnss_files-2.17.so
+7ffff5840000-7ffff5a3f000 ---p 0000c000 08:03 1574227                    /usr/lib64/libnss_files-2.17.so
+7ffff5a3f000-7ffff5a40000 r--p 0000b000 08:03 1574227                    /usr/lib64/libnss_files-2.17.so
+7ffff5a40000-7ffff5a41000 rw-p 0000c000 08:03 1574227                    /usr/lib64/libnss_files-2.17.so
+7ffff5a41000-7ffff5a47000 rw-p 00000000 00:00 0 
+7ffff5a47000-7ffff5a70000 r-xp 00000000 f92:3bc90 144115374655290588     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libjava.so
+7ffff5a70000-7ffff5c6f000 ---p 00029000 f92:3bc90 144115374655290588     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libjava.so
+7ffff5c6f000-7ffff5c70000 r--p 00028000 f92:3bc90 144115374655290588     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libjava.so
+7ffff5c70000-7ffff5c72000 rw-p 00029000 f92:3bc90 144115374655290588     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libjava.so
+7ffff5c72000-7ffff5c83000 r-xp 00000000 f92:3bc90 144115374655290573     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libverify.so
+7ffff5c83000-7ffff5e82000 ---p 00011000 f92:3bc90 144115374655290573     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libverify.so
+7ffff5e82000-7ffff5e84000 r--p 00010000 f92:3bc90 144115374655290573     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libverify.so
+7ffff5e84000-7ffff5e85000 rw-p 00012000 f92:3bc90 144115374655290573     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/libverify.so
+7ffff5e85000-7ffff5e8c000 r-xp 00000000 08:03 1574239                    /usr/lib64/librt-2.17.so
+7ffff5e8c000-7ffff608b000 ---p 00007000 08:03 1574239                    /usr/lib64/librt-2.17.so
+7ffff608b000-7ffff608c000 r--p 00006000 08:03 1574239                    /usr/lib64/librt-2.17.so
+7ffff608c000-7ffff608d000 rw-p 00007000 08:03 1574239                    /usr/lib64/librt-2.17.so
+7ffff608d000-7ffff618e000 r-xp 00000000 08:03 1574217                    /usr/lib64/libm-2.17.so
+7ffff618e000-7ffff638d000 ---p 00101000 08:03 1574217                    /usr/lib64/libm-2.17.so
+7ffff638d000-7ffff638e000 r--p 00100000 08:03 1574217                    /usr/lib64/libm-2.17.so
+7ffff638e000-7ffff638f000 rw-p 00101000 08:03 1574217                    /usr/lib64/libm-2.17.so
+7ffff638f000-7ffff70e3000 r-xp 00000000 f92:3bc90 144115374655290570     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/server/libjvm.so
+7ffff70e3000-7ffff72e2000 ---p 00d54000 f92:3bc90 144115374655290570     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/server/libjvm.so
+7ffff72e2000-7ffff7379000 r--p 00d53000 f92:3bc90 144115374655290570     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/server/libjvm.so
+7ffff7379000-7ffff73a2000 rw-p 00dea000 f92:3bc90 144115374655290570     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/amd64/server/libjvm.so
+7ffff73a2000-7ffff73d5000 rw-p 00000000 00:00 0 
+7ffff73d5000-7ffff7599000 r-xp 00000000 08:03 1574209                    /usr/lib64/libc-2.17.so
+7ffff7599000-7ffff7798000 ---p 001c4000 08:03 1574209                    /usr/lib64/libc-2.17.so
+7ffff7798000-7ffff779c000 r--p 001c3000 08:03 1574209                    /usr/lib64/libc-2.17.so
+7ffff779c000-7ffff779e000 rw-p 001c7000 08:03 1574209                    /usr/lib64/libc-2.17.so
+7ffff779e000-7ffff77a3000 rw-p 00000000 00:00 0 
+7ffff77a3000-7ffff77a5000 r-xp 00000000 08:03 1574215                    /usr/lib64/libdl-2.17.so
+7ffff77a5000-7ffff79a5000 ---p 00002000 08:03 1574215                    /usr/lib64/libdl-2.17.so
+7ffff79a5000-7ffff79a6000 r--p 00002000 08:03 1574215                    /usr/lib64/libdl-2.17.so
+7ffff79a6000-7ffff79a7000 rw-p 00003000 08:03 1574215                    /usr/lib64/libdl-2.17.so
+7ffff79a7000-7ffff79be000 r-xp 00000000 f92:3bc90 144115374655290521     /users2/cpca56132020/moliveira/deps/jdk-8/lib/amd64/jli/libjli.so
+7ffff79be000-7ffff7bbd000 ---p 00017000 f92:3bc90 144115374655290521     /users2/cpca56132020/moliveira/deps/jdk-8/lib/amd64/jli/libjli.so
+7ffff7bbd000-7ffff7bbe000 r--p 00016000 f92:3bc90 144115374655290521     /users2/cpca56132020/moliveira/deps/jdk-8/lib/amd64/jli/libjli.so
+7ffff7bbe000-7ffff7bbf000 rw-p 00017000 f92:3bc90 144115374655290521     /users2/cpca56132020/moliveira/deps/jdk-8/lib/amd64/jli/libjli.so
+7ffff7bbf000-7ffff7bd6000 r-xp 00000000 08:03 1574235                    /usr/lib64/libpthread-2.17.so
+7ffff7bd6000-7ffff7dd5000 ---p 00017000 08:03 1574235                    /usr/lib64/libpthread-2.17.so
+7ffff7dd5000-7ffff7dd6000 r--p 00016000 08:03 1574235                    /usr/lib64/libpthread-2.17.so
+7ffff7dd6000-7ffff7dd7000 rw-p 00017000 08:03 1574235                    /usr/lib64/libpthread-2.17.so
+7ffff7dd7000-7ffff7ddb000 rw-p 00000000 00:00 0 
+7ffff7ddb000-7ffff7dfd000 r-xp 00000000 08:03 1574202                    /usr/lib64/ld-2.17.so
+7ffff7dfd000-7ffff7dfe000 r--s 0000a000 f92:3bc90 144115374655290556     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/jaccess.jar
+7ffff7dfe000-7ffff7e00000 r--s 00016000 f92:3bc90 144115374655290650     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/jce.jar
+7ffff7e00000-7ffff7e02000 r--s 00009000 f92:3bc90 144115374303066568     /users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+7ffff7e02000-7ffff7e08000 r--s 00036000 f92:3bc90 144115374303066565     /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar
+7ffff7e08000-7ffff7e13000 r--s 00116000 f92:3bc90 144115374655290557     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/ext/localedata.jar
+7ffff7e13000-7ffff7ebc000 rw-p 00000000 00:00 0 
+7ffff7ebc000-7ffff7ec0000 ---p 00000000 00:00 0 
+7ffff7ec0000-7ffff7fc1000 rw-p 00000000 00:00 0 
+7ffff7fc1000-7ffff7fc7000 r--s 000d3000 f92:3bc90 144115374655290546     /users2/cpca56132020/moliveira/deps/jdk-8/jre/lib/jfr.jar
+7ffff7fc7000-7ffff7fef000 rw-p 00000000 00:00 0 
+7ffff7fef000-7ffff7ff7000 rw-s 00000000 103:02 9961559                   /tmp/hsperfdata_moliveira/62451
+7ffff7ff7000-7ffff7ff8000 rw-p 00000000 00:00 0 
+7ffff7ff8000-7ffff7ff9000 r--p 00000000 00:00 0 
+7ffff7ff9000-7ffff7ffa000 rw-p 00000000 00:00 0 
+7ffff7ffa000-7ffff7ffc000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7ffc000-7ffff7ffd000 r--p 00021000 08:03 1574202                    /usr/lib64/ld-2.17.so
+7ffff7ffd000-7ffff7ffe000 rw-p 00022000 08:03 1574202                    /usr/lib64/ld-2.17.so
+7ffff7ffe000-7ffff7fff000 rw-p 00000000 00:00 0 
+7ffffffdd000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en -Xmx4g -Xms1g 
+java_command: fr.inria.lille.repair.Main --mode repair --type pre_then_cond --oracle angelic --synthesis smt --flocal gzoltar --json --solver z3 --solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 --complianceLevel 8 --source src/main/java --classpath target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar
+java_class_path (initial): /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/users2/cpca56132020/moliveira/deps/jdk-8/bin/../lib/tools.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/users2/cpca56132020/moliveira/deps/jdk-8/bin
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+PATH=/users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb315f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb315f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x95b690], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x95b690], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x95b690], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x95b690], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x95b560], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x95bb80], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x95bb80], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x95bb80], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x95bb80], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:CentOS Linux release 7.9.2009 (Core)
+
+uname:Linux 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE infinity, NPROC 2060904, NOFILE 131072, AS 8192000k
+load average:315.51 164.47 66.80
+
+/proc/meminfo:
+MemTotal:       527703904 kB
+MemFree:        423733764 kB
+MemAvailable:   439608432 kB
+Buffers:          519464 kB
+Cached:         14624724 kB
+SwapCached:            0 kB
+Active:         76193808 kB
+Inactive:        4466236 kB
+Active(anon):   65086216 kB
+Inactive(anon):   484876 kB
+Active(file):   11107592 kB
+Inactive(file):  3981360 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      249999356 kB
+SwapFree:       249999356 kB
+Dirty:              8280 kB
+Writeback:             0 kB
+AnonPages:      64914760 kB
+Mapped:            73332 kB
+Shmem:             54984 kB
+Slab:            2836724 kB
+SReclaimable:    1403424 kB
+SUnreclaim:      1433300 kB
+KernelStack:       80736 kB
+PageTables:       219704 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    513851308 kB
+Committed_AS:   121842648 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:     2090400 kB
+VmallocChunk:   33842808828 kB
+Percpu:            26112 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:  52527104 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     2011932 kB
+DirectMap2M:    68743168 kB
+DirectMap1G:    465567744 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: failed
+cpu_memory_nodes: failed
+active_processor_count: 1
+cpu_quota: -2
+cpu_period: -2
+cpu_shares: -2
+memory_limit_in_bytes: -2
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -2
+memory_usage_in_bytes: -2
+memory_max_usage_in_bytes: -2
+
+
+CPU:total 96 (initial active 1) (48 cores per cpu, 1 threads per core) family 23 model 49 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 0
+cpu cores	: 48
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 1
+cpu cores	: 48
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 2
+cpu cores	: 48
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 3
+cpu cores	: 48
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 4
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 4
+cpu cores	: 48
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 5
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 5
+cpu cores	: 48
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 6
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 6
+cpu cores	: 48
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 7
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 7
+cpu cores	: 48
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 8
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 8
+cpu cores	: 48
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 9
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 9
+cpu cores	: 48
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 10
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 10
+cpu cores	: 48
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 11
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 11
+cpu cores	: 48
+apicid		: 11
+initial apicid	: 11
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 12
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 12
+cpu cores	: 48
+apicid		: 12
+initial apicid	: 12
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 13
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 13
+cpu cores	: 48
+apicid		: 13
+initial apicid	: 13
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 14
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 14
+cpu cores	: 48
+apicid		: 14
+initial apicid	: 14
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 15
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 15
+cpu cores	: 48
+apicid		: 15
+initial apicid	: 15
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 16
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 16
+cpu cores	: 48
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 17
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 17
+cpu cores	: 48
+apicid		: 17
+initial apicid	: 17
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 18
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 18
+cpu cores	: 48
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 19
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 19
+cpu cores	: 48
+apicid		: 19
+initial apicid	: 19
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 20
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 20
+cpu cores	: 48
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 21
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 21
+cpu cores	: 48
+apicid		: 21
+initial apicid	: 21
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 22
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 22
+cpu cores	: 48
+apicid		: 22
+initial apicid	: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 23
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 23
+cpu cores	: 48
+apicid		: 23
+initial apicid	: 23
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 24
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 24
+cpu cores	: 48
+apicid		: 24
+initial apicid	: 24
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 25
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 25
+cpu cores	: 48
+apicid		: 25
+initial apicid	: 25
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 26
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 26
+cpu cores	: 48
+apicid		: 26
+initial apicid	: 26
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 27
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 27
+cpu cores	: 48
+apicid		: 27
+initial apicid	: 27
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 28
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 28
+cpu cores	: 48
+apicid		: 28
+initial apicid	: 28
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 29
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 29
+cpu cores	: 48
+apicid		: 29
+initial apicid	: 29
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 30
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 30
+cpu cores	: 48
+apicid		: 30
+initial apicid	: 30
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 31
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 31
+cpu cores	: 48
+apicid		: 31
+initial apicid	: 31
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 32
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 32
+cpu cores	: 48
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 33
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 33
+cpu cores	: 48
+apicid		: 33
+initial apicid	: 33
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 34
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 34
+cpu cores	: 48
+apicid		: 34
+initial apicid	: 34
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 35
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 35
+cpu cores	: 48
+apicid		: 35
+initial apicid	: 35
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 36
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 36
+cpu cores	: 48
+apicid		: 36
+initial apicid	: 36
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 37
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 37
+cpu cores	: 48
+apicid		: 37
+initial apicid	: 37
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 38
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 38
+cpu cores	: 48
+apicid		: 38
+initial apicid	: 38
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 39
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 39
+cpu cores	: 48
+apicid		: 39
+initial apicid	: 39
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 40
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 40
+cpu cores	: 48
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 41
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 41
+cpu cores	: 48
+apicid		: 41
+initial apicid	: 41
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 42
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 42
+cpu cores	: 48
+apicid		: 42
+initial apicid	: 42
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 43
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 43
+cpu cores	: 48
+apicid		: 43
+initial apicid	: 43
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 44
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 44
+cpu cores	: 48
+apicid		: 44
+initial apicid	: 44
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 45
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 45
+cpu cores	: 48
+apicid		: 45
+initial apicid	: 45
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 46
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 46
+cpu cores	: 48
+apicid		: 46
+initial apicid	: 46
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 47
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 0
+siblings	: 48
+core id		: 47
+cpu cores	: 48
+apicid		: 47
+initial apicid	: 47
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4391.58
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 48
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 0
+cpu cores	: 48
+apicid		: 64
+initial apicid	: 64
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 49
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 1
+cpu cores	: 48
+apicid		: 65
+initial apicid	: 65
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 50
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 2
+cpu cores	: 48
+apicid		: 66
+initial apicid	: 66
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 51
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 3
+cpu cores	: 48
+apicid		: 67
+initial apicid	: 67
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 52
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 4
+cpu cores	: 48
+apicid		: 68
+initial apicid	: 68
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 53
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 5
+cpu cores	: 48
+apicid		: 69
+initial apicid	: 69
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 54
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 6
+cpu cores	: 48
+apicid		: 70
+initial apicid	: 70
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 55
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 7
+cpu cores	: 48
+apicid		: 71
+initial apicid	: 71
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 56
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 8
+cpu cores	: 48
+apicid		: 72
+initial apicid	: 72
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 57
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 9
+cpu cores	: 48
+apicid		: 73
+initial apicid	: 73
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 58
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 10
+cpu cores	: 48
+apicid		: 74
+initial apicid	: 74
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 59
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 11
+cpu cores	: 48
+apicid		: 75
+initial apicid	: 75
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 60
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 12
+cpu cores	: 48
+apicid		: 76
+initial apicid	: 76
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 61
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 13
+cpu cores	: 48
+apicid		: 77
+initial apicid	: 77
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 62
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 14
+cpu cores	: 48
+apicid		: 78
+initial apicid	: 78
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 63
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 15
+cpu cores	: 48
+apicid		: 79
+initial apicid	: 79
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 64
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 16
+cpu cores	: 48
+apicid		: 80
+initial apicid	: 80
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 65
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 17
+cpu cores	: 48
+apicid		: 81
+initial apicid	: 81
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 66
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 18
+cpu cores	: 48
+apicid		: 82
+initial apicid	: 82
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 67
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 19
+cpu cores	: 48
+apicid		: 83
+initial apicid	: 83
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 68
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 20
+cpu cores	: 48
+apicid		: 84
+initial apicid	: 84
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 69
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 21
+cpu cores	: 48
+apicid		: 85
+initial apicid	: 85
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 70
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 22
+cpu cores	: 48
+apicid		: 86
+initial apicid	: 86
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 71
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 23
+cpu cores	: 48
+apicid		: 87
+initial apicid	: 87
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 72
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 24
+cpu cores	: 48
+apicid		: 88
+initial apicid	: 88
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 73
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 25
+cpu cores	: 48
+apicid		: 89
+initial apicid	: 89
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 74
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 26
+cpu cores	: 48
+apicid		: 90
+initial apicid	: 90
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 75
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 27
+cpu cores	: 48
+apicid		: 91
+initial apicid	: 91
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 76
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 28
+cpu cores	: 48
+apicid		: 92
+initial apicid	: 92
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 77
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 29
+cpu cores	: 48
+apicid		: 93
+initial apicid	: 93
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 78
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 30
+cpu cores	: 48
+apicid		: 94
+initial apicid	: 94
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 79
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 31
+cpu cores	: 48
+apicid		: 95
+initial apicid	: 95
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 80
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 32
+cpu cores	: 48
+apicid		: 96
+initial apicid	: 96
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 81
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 33
+cpu cores	: 48
+apicid		: 97
+initial apicid	: 97
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 82
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 34
+cpu cores	: 48
+apicid		: 98
+initial apicid	: 98
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 83
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 35
+cpu cores	: 48
+apicid		: 99
+initial apicid	: 99
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 84
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 36
+cpu cores	: 48
+apicid		: 100
+initial apicid	: 100
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 85
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 37
+cpu cores	: 48
+apicid		: 101
+initial apicid	: 101
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 86
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 38
+cpu cores	: 48
+apicid		: 102
+initial apicid	: 102
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 87
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 39
+cpu cores	: 48
+apicid		: 103
+initial apicid	: 103
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 88
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 40
+cpu cores	: 48
+apicid		: 104
+initial apicid	: 104
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 89
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 41
+cpu cores	: 48
+apicid		: 105
+initial apicid	: 105
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 90
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 42
+cpu cores	: 48
+apicid		: 106
+initial apicid	: 106
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 91
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 43
+cpu cores	: 48
+apicid		: 107
+initial apicid	: 107
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 92
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 44
+cpu cores	: 48
+apicid		: 108
+initial apicid	: 108
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 93
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 45
+cpu cores	: 48
+apicid		: 109
+initial apicid	: 109
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 94
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 46
+cpu cores	: 48
+apicid		: 110
+initial apicid	: 110
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+processor	: 95
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7552 48-Core Processor
+stepping	: 0
+microcode	: 0x8301038
+cpu MHz		: 2195.790
+cache size	: 512 KB
+physical id	: 1
+siblings	: 48
+core id		: 47
+cpu cores	: 48
+apicid		: 111
+initial apicid	: 111
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc art rep_good nopl nonstop_tsc extd_apicid aperfmperf eagerfpu pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_l2 cpb cat_l3 cdp_l3 hw_pstate sme retpoline_amd ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip overflow_recov succor smca
+bogomips	: 4392.28
+TLB size	: 3072 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+
+
+
+Memory: 4k page, physical 8192000k(423418188k free), swap 249999356k(249999356k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.282-b08) for linux-amd64 JRE (1.8.0_282-b08), built on Jan 20 2021 11:56:52 by "jenkins" with gcc 7.5.0
+
+time: Wed Mar 31 07:39:57 2021
+timezone: EDT
+elapsed time: 250.017920 seconds (0d 0h 4m 10s)
+

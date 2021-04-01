@@ -1,132 +1,132 @@
-07:53:08.618 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:08.620 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_SHORTEST_PATH_LENGTHS/Nopol_QuixBugs_SHORTEST_PATH_LENGTHS_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_SHORTEST_PATH_LENGTHS/Nopol_QuixBugs_SHORTEST_PATH_LENGTHS_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:08.621 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:08.621 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.SHORTEST_PATH_LENGTHS_Test]
-07:53:08.623 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.SHORTEST_PATH_LENGTHS_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:08.623 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:08.626 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:08.626 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:08.626 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:08.626 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:08.632 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:08.632 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:19.166 fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:19.167 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:41 which is executed by 4 tests
-07:53:19.470 fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:19.471 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:37 which is executed by 4 tests
-07:53:19.583 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:20.712 tests.output - Failing tests with false: 
+07:35:41.710 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:41.713 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_SHORTEST_PATH_LENGTHS/Nopol_QuixBugs_SHORTEST_PATH_LENGTHS_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_SHORTEST_PATH_LENGTHS/Nopol_QuixBugs_SHORTEST_PATH_LENGTHS_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:41.713 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:41.714 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.SHORTEST_PATH_LENGTHS_Test]
+07:35:41.716 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.SHORTEST_PATH_LENGTHS_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:41.716 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:41.719 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:41.719 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:41.719 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:41.719 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:41.725 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:41.725 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:51.472 fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:51.474 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:41 which is executed by 4 tests
+07:35:51.799 fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:51.800 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:37 which is executed by 4 tests
+07:35:51.912 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:53.081 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<99999>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:20.712 tests.output - Failing tests with true: 
+07:35:53.081 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:20.712 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:37.
-07:53:20.712 fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:20.713 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:36 which is executed by 4 tests
-07:53:20.827 fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:20.827 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:35 which is executed by 4 tests
-07:53:20.921 fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:20.921 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:34 which is executed by 4 tests
-07:53:21.024 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:21.478 tests.output - Failing tests with false: 
+07:35:53.081 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:37.
+07:35:53.081 fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:53.081 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:36 which is executed by 4 tests
+07:35:53.210 fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:53.210 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:35 which is executed by 4 tests
+07:35:53.364 fr.inria.lille.repair.nopol.NoPol - statement #5
+07:35:53.365 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:34 which is executed by 4 tests
+07:35:53.506 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.185 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<99999>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:21.479 tests.output - Failing tests with true: 
+07:35:54.186 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:21.479 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:34.
-07:53:21.479 fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:21.479 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:33 which is executed by 4 tests
-07:53:21.570 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:21.948 tests.output - Failing tests with false: 
+07:35:54.186 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:34.
+07:35:54.186 fr.inria.lille.repair.nopol.NoPol - statement #6
+07:35:54.186 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:33 which is executed by 4 tests
+07:35:54.328 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:54.854 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<99999>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:21.948 tests.output - Failing tests with true: 
+07:35:54.855 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:21.949 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:33.
-07:53:21.949 fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:21.949 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:32 which is executed by 4 tests
-07:53:22.032 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:22.419 tests.output - Failing tests with false: 
+07:35:54.855 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:33.
+07:35:54.855 fr.inria.lille.repair.nopol.NoPol - statement #7
+07:35:54.855 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:32 which is executed by 4 tests
+07:35:54.959 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.420 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<99999>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:22.419 tests.output - Failing tests with true: 
+07:35:55.420 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:22.420 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:32.
-07:53:22.420 fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:22.420 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:28 which is executed by 4 tests
-07:53:22.474 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:22.754 tests.output - Failing tests with false: 
+07:35:55.421 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:32.
+07:35:55.421 fr.inria.lille.repair.nopol.NoPol - statement #8
+07:35:55.421 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:28 which is executed by 4 tests
+07:35:55.515 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:55.922 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:22.754 tests.output - Failing tests with true: 
+07:35:55.922 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:22.754 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:28.
-07:53:22.755 fr.inria.lille.repair.nopol.NoPol - statement #9
-07:53:22.755 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:26 which is executed by 4 tests
-07:53:22.841 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.120 tests.output - Failing tests with false: 
+07:35:55.922 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:28.
+07:35:55.922 fr.inria.lille.repair.nopol.NoPol - statement #9
+07:35:55.922 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:26 which is executed by 4 tests
+07:35:55.994 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:56.375 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:23.120 tests.output - Failing tests with true: 
+07:35:56.376 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:23.120 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:26.
-07:53:23.121 fr.inria.lille.repair.nopol.NoPol - statement #10
-07:53:23.121 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25 which is executed by 4 tests
-07:53:23.210 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.480 tests.output - Failing tests with false: 
+07:35:56.376 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:26.
+07:35:56.377 fr.inria.lille.repair.nopol.NoPol - statement #10
+07:35:56.377 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25 which is executed by 4 tests
+07:35:56.479 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:56.855 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:23.480 tests.output - Failing tests with true: 
+07:35:56.855 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:23.480 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25.
-07:53:23.484 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:23.714 tests.output - Failing tests with false: 
+07:35:56.855 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25.
+07:35:56.859 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:57.172 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<99999>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:23.714 tests.output - Failing tests with true: 
+07:35:57.173 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:23.714 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25.
-07:53:23.714 fr.inria.lille.repair.nopol.NoPol - statement #11
-07:53:23.714 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:23 which is executed by 4 tests
-07:53:23.795 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.057 tests.output - Failing tests with false: 
+07:35:57.173 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:25.
+07:35:57.173 fr.inria.lille.repair.nopol.NoPol - statement #11
+07:35:57.173 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:23 which is executed by 4 tests
+07:35:57.252 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:57.511 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:24.057 tests.output - Failing tests with true: 
+07:35:57.511 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:24.057 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:23.
-07:53:24.058 fr.inria.lille.repair.nopol.NoPol - statement #12
-07:53:24.058 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22 which is executed by 4 tests
-07:53:24.137 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.398 tests.output - Failing tests with false: 
+07:35:57.511 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:23.
+07:35:57.511 fr.inria.lille.repair.nopol.NoPol - statement #12
+07:35:57.512 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22 which is executed by 4 tests
+07:35:57.592 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:57.918 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:24.398 tests.output - Failing tests with true: 
+07:35:57.918 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:24.398 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22.
-07:53:24.399 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:24.665 tests.output - Failing tests with false: 
+07:35:57.918 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22.
+07:35:57.918 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:35:58.232 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>]
-07:53:24.666 tests.output - Failing tests with true: 
+07:35:58.232 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<0>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<0>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<0>]
-07:53:24.666 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22.
-07:53:24.666 fr.inria.lille.repair.nopol.NoPol - statement #13
-07:53:24.666 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:21 which is executed by 4 tests
-07:53:24.742 fr.inria.lille.repair.nopol.NoPol - statement #14
-07:53:24.742 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:20 which is executed by 4 tests
-07:53:24.818 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.048 tests.output - Failing tests with false: 
+07:35:58.233 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:22.
+07:35:58.233 fr.inria.lille.repair.nopol.NoPol - statement #13
+07:35:58.233 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:21 which is executed by 4 tests
+07:35:58.306 fr.inria.lille.repair.nopol.NoPol - statement #14
+07:35:58.306 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:20 which is executed by 4 tests
+07:35:58.402 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:58.708 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:25.048 tests.output - Failing tests with true: 
+07:35:58.708 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:25.048 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:20.
-07:53:25.048 fr.inria.lille.repair.nopol.NoPol - statement #15
-07:53:25.048 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:19 which is executed by 4 tests
-07:53:25.129 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.347 tests.output - Failing tests with false: 
+07:35:58.708 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:20.
+07:35:58.709 fr.inria.lille.repair.nopol.NoPol - statement #15
+07:35:58.709 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:19 which is executed by 4 tests
+07:35:58.803 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:59.057 tests.output - Failing tests with false: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): null]
-07:53:25.347 tests.output - Failing tests with true: 
+07:35:59.057 tests.output - Failing tests with true: 
 [test4s(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<2> but was:<1>, test1(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<0> but was:<-10>, test2(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<10> but was:<99999>, test3(java_testcases.junit.SHORTEST_PATH_LENGTHS_Test): expected:<99999> but was:<3>]
-07:53:25.347 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:19.
-07:53:25.347 fr.inria.lille.repair.nopol.NoPol - statement #16
-07:53:25.347 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:18 which is executed by 4 tests
-07:53:25.401 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:25.420 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:25.420 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:25.420 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
-07:53:25.420 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:25.420 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:25.421 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:25.421 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:25.422 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 16785ms
-07:53:25.422 fr.inria.lille.repair.nopol.NoPol - 
+07:35:59.058 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.SHORTEST_PATH_LENGTHS:19.
+07:35:59.058 fr.inria.lille.repair.nopol.NoPol - statement #16
+07:35:59.058 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.SHORTEST_PATH_LENGTHS:18 which is executed by 4 tests
+07:35:59.127 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:35:59.147 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:35:59.148 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:35:59.148 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
+07:35:59.148 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:35:59.148 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:35:59.149 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:35:59.149 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:35:59.149 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 17418ms
+07:35:59.149 fr.inria.lille.repair.nopol.NoPol - 

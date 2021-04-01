@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-03-31 14:36:01.024500", 
+  "repair_begin": "2021-03-31 12:35:48.639889", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_KTH\\/Figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_KTH\\/Figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTHjava\\n@@ -25 +25 @@\\n-\\t\\t\\treturn java_programs.KTH.kth(above, k);\\n+\\t\\t\\treturn java_programs.KTH.kth(above, k - num_lessoreq);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_KTH\\/Figra_QuixBugs_KTH_\\/.\\/output_astor\\/AstorMain-KTH-\\/\\/src\\/\\/variant-2658\\/java_programs\\/KTH.java", 
+          "ORIGINAL_CODE": "k", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "k - num_lessoreq", 
+          "INGREDIENT_PARENT": "_int_0 - _int_1", 
+          "LOCATION": "java_programs.KTH", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_KTH\\/Figra_QuixBugs_KTH_\\/src\\/main\\/java\\/KTH.java", 
+          "LINE": "25", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "1329", 
+      "VARIANT_ID": "2658", 
+      "TIME": "313", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_KTH\\/Figra_QuixBugs_KTH_\\/.\\/output_astor\\/AstorMain-KTH-\\/\\/src\\/\\/variant-2658"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id BITCOUNT- \
+	-failing java_testcases.junit.BITCOUNT_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:36:39.084 [main] ERROR AstorCoreEngine - Initial run of test suite fails
+07:36:45.788 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:36:45.789 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:36:56.760 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:36:56.778 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:36:58.110 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n != 0 to n != 0
+07:37:22.826 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:39:43.037 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:39:43.081 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:39:43.087 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:39:43.088 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:40:02.023 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:40:02.068 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:41:57.708 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:41:57.741 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:42:30.600 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:42:30.603 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:42:40.865 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:42:40.865 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:42:51.118 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (n - 1) to (n - 1)
+07:43:01.385 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:43:01.386 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:43:34.484 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:43:34.485 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:44:47.299 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:44:47.301 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:46:37.822 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:46:37.826 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:46:54.015 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:46:54.016 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:47:39.865 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:47:39.870 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:48:10.502 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:48:10.502 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:48:23.095 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (n - 1) to (n - 1)
+07:50:09.332 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:50:09.336 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:51:58.286 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:51:58.288 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:53:01.084 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:53:01.130 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:53:42.590 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:53:42.611 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:54:04.610 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:54:04.610 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:55:57.353 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:56:07.754 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:56:07.754 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:57:03.503 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:57:03.538 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:58:50.495 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:58:50.530 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:59:12.908 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+07:59:12.908 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:00:09.275 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:00:09.281 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:22.889 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:22.894 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:35.629 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:35.629 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:46.159 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:46.159 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:48.334 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:02:48.334 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:03:09.446 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+08:03:09.773 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:03:09.774 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:03:40.821 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:03:40.822 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:04:43.782 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n ^ (n - 1) to n ^ (n - 1)
+08:07:37.955 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:07:37.956 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:07:45.457 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:07:45.458 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:08:22.507 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:08:22.511 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:08:53.748 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:08:53.748 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:09:46.418 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:09:46.430 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:07.348 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:07.348 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:28.491 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:28.491 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:28.790 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:28.790 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:39.428 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:39.429 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:50.006 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:10:50.006 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:11:35.805 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:11:35.887 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:12:07.330 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:12:07.330 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:13:39.267 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:13:39.267 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:14:10.813 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+08:14:42.452 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:14:42.453 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:15.371 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:15.372 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:15.606 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:15.606 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:16.046 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:16.046 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:26.718 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:26.720 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:48.404 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:16:48.406 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:17:09.021 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:17:09.021 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:17:50.491 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:17:50.492 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:18:21.773 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:18:21.774 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:19:03.846 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:19:03.847 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:19:44.576 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:19:44.576 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:19:56.293 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+08:20:48.124 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:20:48.125 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:21:20.951 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:21:20.951 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:21:31.732 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:21:31.733 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:22:08.284 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:22:08.287 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:22:29.344 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:22:29.344 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:23:07.862 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:23:07.862 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:24:06.103 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:24:06.103 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:28:25.177 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:28:25.178 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:29:11.648 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:29:11.649 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:30:28.596 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:30:28.597 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:30:49.552 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:30:49.552 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:32:42.845 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:32:42.845 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:33:03.388 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:33:03.388 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:34:06.475 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:34:06.475 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:34:27.081 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:34:27.081 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:34:56.306 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count++ to count++
+08:36:27.952 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+08:39:26.281 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:39:26.281 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:40:03.327 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:40:03.328 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:40:11.347 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+08:40:11.347 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 2 for local n-gramm java_programs.BITCOUNT, ingredient from java_programs.BITCOUNT
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=BITCOUNT-
+TOTAL_TIME=7200.47
+NR_GENERATIONS=678
+NR_RIGHT_COMPILATIONS=669
+NR_FAILLING_COMPILATIONS=9
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=490
+TIME=1791
+VALIDATION=|true|0|9|[]|
+GENERATION=245
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/./output_astor/AstorMain-BITCOUNT-//src//variant-490
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.BITCOUNT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/./output_astor/AstorMain-BITCOUNT-//src//variant-490/java_programs/BITCOUNT.java
+
+LINE=15
+
+SUSPICIOUNESS=1
+
+MP_RANKING=5
+
+ORIGINAL_CODE=1
+
+BUGGY_CODE_TYPE=CtLiteralImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(n & (n - 1))
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 & (_int_0 - 1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNTjava
+@@ -15 +15 @@
+-			n = n ^ (n - 1);
++			n = n ^ (n - (n & (n - 1)));
+
+
+
+Patch 2
+VARIANT_ID=526
+TIME=1886
+VALIDATION=|true|0|9|[]|
+GENERATION=263
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/./output_astor/AstorMain-BITCOUNT-//src//variant-526
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.BITCOUNT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/./output_astor/AstorMain-BITCOUNT-//src//variant-526/java_programs/BITCOUNT.java
+
+LINE=15
+
+SUSPICIOUNESS=1
+
+MP_RANKING=7
+
+ORIGINAL_CODE=n ^ (n - 1)
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtAssignmentImpl
+
+PATCH_HUNK_CODE=(n & (n - 1))
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(n & (n - 1))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/src/main/java/BITCOUNTjava
+@@ -15 +15 @@
+-			n = n ^ (n - 1);
++			n = n & (n - 1);
+
+
+
+
+real	120m58.041s
+user	60m18.779s
+sys	0m23.934s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:36:42 EDT 2021\n

@@ -1,0 +1,61 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_POWERSET/Cardumen_QuixBugs_POWERSET_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
+export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id POWERSET- \
+	-failing java_testcases.junit.POWERSET_Test \
+	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:36:06.401 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify !arr.isEmpty() to !arr.isEmpty()
+07:36:07.785 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.util.ArrayList>() to new java.util.ArrayList<java.util.ArrayList>()
+07:36:09.925 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.util.ArrayList>(100) to new java.util.ArrayList<java.util.ArrayList>(100)
+07:36:12.182 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.remove(0) to arr.remove(0)
+07:36:12.777 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList() to new java.util.ArrayList()
+07:36:14.007 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
+07:36:20.358 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POWERSET.powerset(rest) to java_programs.POWERSET.powerset(rest)
+07:36:20.919 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList(100) to new java.util.ArrayList(100)
+07:36:22.550 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify output.add(to_add) to output.add(to_add)
+07:36:23.925 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify empty_set.add(new java.util.ArrayList()) to empty_set.add(new java.util.ArrayList())
+07:36:26.841 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.isEmpty() to arr.isEmpty()
+07:36:29.562 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify to_add.add(first) to to_add.add(first)
+07:36:37.364 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify to_add.addAll(subset) to to_add.addAll(subset)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=POWERSET-
+TOTAL_TIME=7200.008
+NR_GENERATIONS=253
+NR_RIGHT_COMPILATIONS=247
+NR_FAILLING_COMPILATIONS=6
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m21.282s
+user	119m44.193s
+sys	0m27.891s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Mar 31 09:36:06 EDT 2021\n

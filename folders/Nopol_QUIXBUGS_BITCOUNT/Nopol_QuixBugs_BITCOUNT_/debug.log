@@ -1,37 +1,24 @@
-07:53:14.743 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:14.746 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_BITCOUNT/Nopol_QuixBugs_BITCOUNT_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_BITCOUNT/Nopol_QuixBugs_BITCOUNT_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:14.747 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:14.748 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.BITCOUNT_Test]
-07:53:14.750 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.BITCOUNT_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:14.750 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:14.753 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:14.753 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:14.753 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:14.753 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:14.757 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:14.758 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:45.531 fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:45.533 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:16 which is executed by 9 tests
-07:53:45.662 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:57:05.664 xxl.java.junit.TestSuiteExecution - Timeout after 200 seconds. Infinite loop?
-07:57:05.665 fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.util.concurrent.TimeoutException
-07:57:05.665 fr.inria.lille.repair.nopol.NoPol - statement #2
-07:57:05.665 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:15 which is executed by 9 tests
-07:57:06.817 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:57:07.405 fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: unable to create new native thread
-07:57:07.405 fr.inria.lille.repair.nopol.NoPol - statement #3
-07:57:07.406 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:14 which is executed by 9 tests
-07:57:08.847 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:57:09.409 fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: unable to create new native thread
-07:57:09.409 fr.inria.lille.repair.nopol.NoPol - statement #4
-07:57:09.410 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:13 which is executed by 9 tests
-07:57:10.971 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:57:11.312 fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:57:11.313 fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:57:11.313 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 0
-07:57:11.313 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:57:11.313 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:57:11.314 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:57:11.314 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:57:11.314 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 236229ms
-07:57:11.314 fr.inria.lille.repair.nopol.NoPol - 
+07:35:47.683 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:47.685 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_BITCOUNT/Nopol_QuixBugs_BITCOUNT_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_BITCOUNT/Nopol_QuixBugs_BITCOUNT_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:47.686 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:47.687 fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.BITCOUNT_Test]
+07:35:47.688 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.BITCOUNT_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:47.689 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:47.691 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:47.691 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:47.691 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:47.691 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:47.695 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:47.695 fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:36:32.878 fr.inria.lille.repair.nopol.NoPol - statement #1
+07:36:32.881 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:16 which is executed by 9 tests
+07:36:33.022 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:39:53.024 xxl.java.junit.TestSuiteExecution - Timeout after 200 seconds. Infinite loop?
+07:39:53.027 fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.util.concurrent.TimeoutException
+07:39:53.027 fr.inria.lille.repair.nopol.NoPol - statement #2
+07:39:53.027 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:15 which is executed by 9 tests
+07:39:54.623 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:39:55.222 fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: unable to create new native thread
+07:39:55.222 fr.inria.lille.repair.nopol.NoPol - statement #3
+07:39:55.222 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.BITCOUNT:14 which is executed by 9 tests
+07:39:56.635 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder

@@ -18,167 +18,167 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:08.468 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:08.471 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_TOPOLOGICAL_ORDERING/Nopol_QuixBugs_TOPOLOGICAL_ORDERING_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_TOPOLOGICAL_ORDERING/Nopol_QuixBugs_TOPOLOGICAL_ORDERING_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:08.472 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:08.472 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.TOPOLOGICAL_ORDERING_Test]
-07:53:08.474 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.TOPOLOGICAL_ORDERING_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:08.474 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:08.477 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:08.477 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:08.477 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:08.477 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:08.483 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:08.483 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:22.186 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:22.187 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:23 which is executed by 3 tests
+07:35:45.045 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:45.048 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_TOPOLOGICAL_ORDERING/Nopol_QuixBugs_TOPOLOGICAL_ORDERING_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_TOPOLOGICAL_ORDERING/Nopol_QuixBugs_TOPOLOGICAL_ORDERING_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:45.048 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:45.049 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.TOPOLOGICAL_ORDERING_Test]
+07:35:45.051 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.TOPOLOGICAL_ORDERING_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:45.051 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:45.054 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:45.054 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:45.055 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:45.055 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:45.059 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:45.059 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:36:02.305 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:36:02.307 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:23 which is executed by 3 tests
 -108092635
-07:53:22.354 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:22.354 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:21 which is executed by 3 tests
+07:36:02.485 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:36:02.485 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:21 which is executed by 3 tests
 -108092635
-07:53:22.446 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:22.447 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:17 which is executed by 3 tests
+07:36:02.580 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:36:02.581 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:17 which is executed by 3 tests
 -108092635
-07:53:22.512 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.278 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:02.643 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:03.435 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 [0 2 3 1 ]> but was:<4 5 []>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 [11 8 10 2 9 ]> but was:<5 7 3 []>]
-07:53:23.278 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:03.435 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:23.279 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:17.
-07:53:23.279 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:23.540 [pool-11-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:03.436 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:17.
+07:36:03.437 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:03.742 [pool-11-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 [0 2 3 1 ]> but was:<4 5 []>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 [11 8 10 2 9 ]> but was:<5 7 3 []>]
-07:53:23.540 [pool-11-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:03.742 [pool-11-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2] 3 1 > but was:<4 5 0 [1 2 0] 3 1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...t griddle 1 cup mix [pour 1/4 cup heat syrup turn when bubbly] eat > but was:<...t griddle 1 cup mix [1 cup mix 1 cup mix pour 1/4 cup heat syrup pour 1/4 cup heat syrup pour 1/4 cup heat syrup pour 1/4 cup turn when bubbly eat turn when bubbly eat turn when bubbly eat turn when bubbly eat eat eat] eat >, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 11 [8 10 2] 9 > but was:<5 7 3 11 [11 8 8 10 2 9 10 2 9 10 9] 9 >]
-07:53:23.540 [pool-11-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:17.
-07:53:23.540 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:23.540 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:16 which is executed by 3 tests
+07:36:03.742 [pool-11-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:17.
+07:36:03.743 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:36:03.743 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:16 which is executed by 3 tests
 -108092635
-07:53:23.596 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:23.856 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:03.804 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:04.092 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 [0 2 3 1 ]> but was:<4 5 []>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 [11 8 10 2 9 ]> but was:<5 7 3 []>]
-07:53:23.856 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:04.093 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:23.856 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:16.
-07:53:23.856 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:23.856 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:15 which is executed by 3 tests
+07:36:04.093 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:16.
+07:36:04.093 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:36:04.093 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:15 which is executed by 3 tests
 -108092635
-07:53:23.926 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:23.926 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:14 which is executed by 3 tests
+07:36:04.167 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:36:04.167 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:14 which is executed by 3 tests
 -108092635
-07:53:23.996 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.282 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:04.243 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:04.561 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 [0 2 3 1 ]> but was:<4 5 []>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 [11 8 10 2 9 ]> but was:<5 7 3 []>]
-07:53:24.282 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:04.562 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:24.282 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:14.
-07:53:24.282 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:24.282 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:13 which is executed by 3 tests
+07:36:04.562 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:14.
+07:36:04.562 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:36:04.562 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:13 which is executed by 3 tests
 -108092635
-07:53:24.346 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:24.346 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:11 which is executed by 3 tests
+07:36:04.636 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:04.636 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:11 which is executed by 3 tests
 -108092635
-07:53:24.409 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
-07:53:24.410 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:9 which is executed by 3 tests
+07:36:04.707 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:36:04.708 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:9 which is executed by 3 tests
 -108092635
-07:53:24.461 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.674 [pool-35-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:04.768 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:05.013 [pool-35-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1 ]> but was:<[]>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[3/4 cup milk 1 egg 1 Tbl oil heat griddle 1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<[]>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[5 7 3 11 8 10 2 9 ]> but was:<[]>]
-07:53:24.675 [pool-35-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:05.014 [pool-35-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:24.675 [pool-35-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:9.
-07:53:24.675 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
-07:53:24.675 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:8 which is executed by 3 tests
+07:36:05.014 [pool-35-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:9.
+07:36:05.014 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:36:05.014 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:8 which is executed by 3 tests
 -108092635
-07:53:24.757 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:24.954 [pool-43-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:05.082 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:05.284 [pool-43-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1 ]> but was:<[]>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[3/4 cup milk 1 egg 1 Tbl oil heat griddle 1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<[]>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[5 7 3 11 8 10 2 9 ]> but was:<[]>]
-07:53:24.954 [pool-43-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:05.284 [pool-43-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:24.954 [pool-43-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:8.
-07:53:24.954 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:25.152 [pool-51-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:05.284 [pool-43-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:8.
+07:36:05.284 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:05.511 [pool-51-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1 ]> but was:<[]>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[3/4 cup milk 1 egg 1 Tbl oil heat griddle 1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<[]>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[5 7 3 11 8 10 2 9 ]> but was:<[]>]
-07:53:25.152 [pool-51-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:05.511 [pool-51-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1] > but was:<[0 1 2 3 4 5] >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...ilk 1 egg 1 Tbl oil [heat griddle 1 cup mix pour 1/4 cup heat syr]up turn when bubbly ...> but was:<...ilk 1 egg 1 Tbl oil [1 cup mix heat syrup heat griddle pour 1/4 c]up turn when bubbly ...>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 11 8 [10 2 9] > but was:<5 7 3 11 8 [2 9 10] >]
-07:53:25.152 [pool-51-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:8.
-07:53:25.153 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
-07:53:25.153 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:7 which is executed by 3 tests
+07:36:05.511 [pool-51-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:8.
+07:36:05.511 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:36:05.511 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:7 which is executed by 3 tests
 -108092635
-07:53:25.205 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.391 [pool-59-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:05.568 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:05.791 [pool-59-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1 ]> but was:<[]>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[3/4 cup milk 1 egg 1 Tbl oil heat griddle 1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<[]>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[5 7 3 11 8 10 2 9 ]> but was:<[]>]
-07:53:25.391 [pool-59-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:05.791 [pool-59-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:25.391 [pool-59-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:7.
-07:53:25.392 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
-07:53:25.392 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:6 which is executed by 3 tests
+07:36:05.791 [pool-59-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:7.
+07:36:05.792 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:36:05.792 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:6 which is executed by 3 tests
 -108092635
-07:53:25.449 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
-07:53:25.450 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:65 which is executed by 3 tests
+07:36:05.858 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:36:05.858 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:65 which is executed by 3 tests
 2433571
-07:53:25.543 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
-07:53:25.543 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:62 which is executed by 3 tests
+07:36:05.948 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:36:05.948 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:62 which is executed by 3 tests
 2433571
-07:53:25.619 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
-07:53:25.619 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:55 which is executed by 3 tests
+07:36:06.033 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:36:06.033 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:55 which is executed by 3 tests
 2433571
-07:53:25.695 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
-07:53:25.695 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:54 which is executed by 3 tests
+07:36:06.104 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:36:06.104 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:54 which is executed by 3 tests
 2433571
-07:53:25.753 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.049 [pool-67-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:06.185 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:06.511 [pool-67-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<[4 5 0 2 3 1] > but was:<[0 1 2 3 4 5] >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...ilk 1 egg 1 Tbl oil [heat griddle 1 cup mix pour 1/4 cup heat syr]up turn when bubbly ...> but was:<...ilk 1 egg 1 Tbl oil [1 cup mix heat syrup heat griddle pour 1/4 c]up turn when bubbly ...>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 11 8 [10 2 9] > but was:<5 7 3 11 8 [2 9 10] >]
-07:53:26.049 [pool-67-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:06.512 [pool-67-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:26.049 [pool-67-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.Node:54.
-07:53:26.049 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
-07:53:26.049 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:51 which is executed by 3 tests
+07:36:06.512 [pool-67-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.Node:54.
+07:36:06.512 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:36:06.512 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:51 which is executed by 3 tests
 2433571
-07:53:26.105 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
-07:53:26.105 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:50 which is executed by 3 tests
+07:36:06.602 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:36:06.602 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:50 which is executed by 3 tests
 2433571
-07:53:26.181 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.442 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:06.670 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:06.971 [pool-75-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 [0 2 3 1 ]> but was:<4 5 []>, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 [11 8 10 2 9 ]> but was:<5 7 3 []>]
-07:53:26.442 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:06.971 [pool-75-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:26.442 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.Node:50.
-07:53:26.443 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
-07:53:26.443 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:42 which is executed by 3 tests
+07:36:06.971 [pool-75-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.Node:50.
+07:36:06.972 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:36:06.972 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.Node:42 which is executed by 3 tests
 2433571
-07:53:26.511 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
-07:53:26.511 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:19 which is executed by 2 tests
+07:36:07.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:36:07.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:19 which is executed by 2 tests
 -108092635
-07:53:26.575 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.797 [pool-83-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:07.107 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:07.298 [pool-83-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:26.797 [pool-83-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:07.298 [pool-83-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:26.798 [pool-83-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:19.
-07:53:26.803 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
-07:53:26.803 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:18 which is executed by 2 tests
+07:36:07.299 [pool-83-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:19.
+07:36:07.299 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
+07:36:07.299 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.TOPOLOGICAL_ORDERING:18 which is executed by 2 tests
 -108092635
-07:53:26.847 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:27.032 [pool-91-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:07.353 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:07.559 [pool-91-thread-1] DEBUG tests.output - Failing tests with false: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): Index: 2, Size: 2, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): Index: 3, Size: 3]
-07:53:27.032 [pool-91-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:07.559 [pool-91-thread-1] DEBUG tests.output - Failing tests with true: 
 [test2(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<4 5 0 [2 3 ]1 > but was:<4 5 0 []1 >, test3(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<...bl oil heat griddle [1 cup mix pour 1/4 cup heat syrup turn when bubbly eat ]> but was:<...bl oil heat griddle []>, test1(java_testcases.junit.TOPOLOGICAL_ORDERING_Test): expected:<5 7 3 1[1 8 10 2 9] > but was:<5 7 3 1[0] >]
-07:53:27.032 [pool-91-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:18.
-07:53:27.032 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:27.034 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:27.034 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:27.034 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 12
-07:53:27.034 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:27.034 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:27.036 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:27.036 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:27.036 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 18569ms
-07:53:27.036 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:07.559 [pool-91-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.TOPOLOGICAL_ORDERING:18.
+07:36:07.559 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:07.561 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:07.561 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:07.561 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 12
+07:36:07.561 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:07.561 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:07.562 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:07.562 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:07.563 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 22520ms
+07:36:07.563 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m19.262s
-user	0m7.422s
-sys	0m11.282s
+real	0m23.230s
+user	0m7.721s
+sys	0m11.004s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:27 EDT 2021\n
+\n\nDate: Wed Mar 31 07:36:07 EDT 2021\n

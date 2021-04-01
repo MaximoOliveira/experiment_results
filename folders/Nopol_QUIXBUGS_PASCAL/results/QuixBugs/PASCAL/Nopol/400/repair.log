@@ -18,45 +18,45 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-07:53:10.227 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
-07:53:10.229 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_PASCAL/Nopol_QuixBugs_PASCAL_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_PASCAL/Nopol_QuixBugs_PASCAL_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
-07:53:10.230 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
-07:53:10.230 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.PASCAL_Test]
-07:53:10.232 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.PASCAL_Test], complianceLevel=8, outputFolder=., json=true}
-07:53:10.232 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
-07:53:10.235 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
-07:53:10.235 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
-07:53:10.235 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
-07:53:10.235 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
-07:53:10.239 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
-07:53:10.239 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
-07:53:24.891 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
-07:53:24.893 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:36 which is executed by 4 tests
+07:35:48.854 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+07:35:48.857 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_PASCAL/Nopol_QuixBugs_PASCAL_/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_QUIXBUGS_PASCAL/Nopol_QuixBugs_PASCAL_/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+07:35:48.857 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+07:35:48.858 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [java_testcases.junit.PASCAL_Test]
+07:35:48.860 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[java_testcases.junit.PASCAL_Test], complianceLevel=8, outputFolder=., json=true}
+07:35:48.861 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+07:35:48.863 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+07:35:48.863 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+07:35:48.863 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+07:35:48.864 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_282
+07:35:48.867 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /users2/cpca56132020/moliveira/deps/jdk-8/bin
+07:35:48.868 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /users2/cpca56132020/moliveira/deps/jdk-8/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+07:35:57.729 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+07:35:57.731 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:36 which is executed by 4 tests
 -1942067219
-07:53:25.052 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:25.853 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:57.901 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:58.758 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1][,[1,1]]]> but was:<[[1][]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:25.853 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:58.758 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:25.854 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:36.
-07:53:25.854 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
-07:53:25.854 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:34 which is executed by 4 tests
+07:35:58.759 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:36.
+07:35:58.759 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+07:35:58.759 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:34 which is executed by 4 tests
 -1942067219
-07:53:25.921 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.202 [pool-13-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:58.837 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:59.122 [pool-13-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1]]]> but was:<[[1],[[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_3(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_4(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0]
-07:53:26.202 [pool-13-thread-1] DEBUG tests.output - Failing tests with true: 
+07:35:59.123 [pool-13-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:26.202 [pool-13-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:34.
-07:53:26.203 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
-07:53:26.203 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:30 which is executed by 4 tests
+07:35:59.123 [pool-13-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:34.
+07:35:59.123 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+07:35:59.123 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:30 which is executed by 4 tests
 -1942067219
-07:53:26.272 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.612 [pool-23-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:59.201 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:59.587 [pool-23-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 PASCAL.java:40: error: variable upright might not have been initialized
                 row.add(upleft + upright);
                                  ^
-07:53:26.632 [pool-23-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:59.613 [pool-23-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class PASCAL {
     public static java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> pascal(int n) {
         java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> rows = new java.util.ArrayList<java.util.ArrayList<java.lang.Integer>>();
@@ -102,16 +102,16 @@ public class PASCAL {
         return rows;
     }
 }
-07:53:26.632 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:26.632 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
-07:53:26.632 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:29 which is executed by 4 tests
+07:35:59.614 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:59.614 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+07:35:59.614 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:29 which is executed by 4 tests
 -1942067219
-07:53:26.686 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:26.914 [pool-25-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:35:59.682 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:35:59.931 [pool-25-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 PASCAL.java:41: error: variable upright might not have been initialized
                 row.add(upleft + upright);
                                  ^
-07:53:26.918 [pool-25-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:35:59.934 [pool-25-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class PASCAL {
     public static java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> pascal(int n) {
         java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> rows = new java.util.ArrayList<java.util.ArrayList<java.lang.Integer>>();
@@ -158,22 +158,22 @@ public class PASCAL {
         return rows;
     }
 }
-07:53:26.920 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:26.921 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:27.162 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
+07:35:59.935 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:35:59.936 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:00.210 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1]]]> but was:<[[1],[[0]]]>, test_2(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1]]]> but was:<[[1],[[0],[0,0]]]>, test_3(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1],[1,3,3,1]]]> but was:<[[1],[[0],[0,0],[0,0,0]]]>, test_4(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]]> but was:<[[1],[[0],[0,0],[0,0,0],[0,0,0,0]]]>]
-07:53:27.162 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:00.210 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:27.162 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:29.
-07:53:27.163 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
-07:53:27.163 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:27 which is executed by 4 tests
+07:36:00.210 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:29.
+07:36:00.210 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+07:36:00.210 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:27 which is executed by 4 tests
 -1942067219
-07:53:27.226 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:27.409 [pool-37-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:00.286 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.498 [pool-37-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 PASCAL.java:40: error: variable upleft might not have been initialized
                 row.add(upleft + upright);
                         ^
-07:53:27.412 [pool-37-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:00.500 [pool-37-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class PASCAL {
     public static java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> pascal(int n) {
         java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> rows = new java.util.ArrayList<java.util.ArrayList<java.lang.Integer>>();
@@ -219,16 +219,16 @@ public class PASCAL {
         return rows;
     }
 }
-07:53:27.416 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:27.416 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
-07:53:27.416 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:24 which is executed by 4 tests
+07:36:00.502 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:00.502 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+07:36:00.503 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:24 which is executed by 4 tests
 -1942067219
-07:53:27.475 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:27.645 [pool-39-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:00.566 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:00.775 [pool-39-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 PASCAL.java:41: error: variable upleft might not have been initialized
                 row.add(upleft + upright);
                         ^
-07:53:27.648 [pool-39-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:00.777 [pool-39-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class PASCAL {
     public static java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> pascal(int n) {
         java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> rows = new java.util.ArrayList<java.util.ArrayList<java.lang.Integer>>();
@@ -275,67 +275,67 @@ public class PASCAL {
         return rows;
     }
 }
-07:53:27.650 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:27.651 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
-07:53:28.020 [pool-41-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:00.778 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:00.778 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+07:36:01.220 [pool-41-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:28.020 [pool-41-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:01.221 [pool-41-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): -1, test_2(java_testcases.junit.PASCAL_Test): -1, test_3(java_testcases.junit.PASCAL_Test): -1, test_4(java_testcases.junit.PASCAL_Test): -1]
-07:53:28.020 [pool-41-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:24.
-07:53:28.021 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
-07:53:28.021 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:22 which is executed by 4 tests
+07:36:01.221 [pool-41-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:24.
+07:36:01.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+07:36:01.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:22 which is executed by 4 tests
 -1942067219
-07:53:28.100 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:28.282 [pool-51-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.296 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:01.537 [pool-51-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1]]]> but was:<[[1],[[]]]>, test_2(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1]]]> but was:<[[1],[[],[]]]>, test_3(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1],[1,3,3,1]]]> but was:<[[1],[[],[],[]]]>, test_4(java_testcases.junit.PASCAL_Test): expected:<[[1],[[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]]> but was:<[[1],[[],[],[],[]]]>]
-07:53:28.283 [pool-51-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:01.537 [pool-51-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:28.283 [pool-51-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:22.
-07:53:28.283 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
-07:53:28.283 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:21 which is executed by 4 tests
+07:36:01.537 [pool-51-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:22.
+07:36:01.537 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+07:36:01.537 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:21 which is executed by 4 tests
 -1942067219
-07:53:28.329 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
-07:53:28.329 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:20 which is executed by 5 tests
+07:36:01.588 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+07:36:01.588 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:20 which is executed by 5 tests
 -1942067219
-07:53:28.396 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:28.794 [pool-61-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:01.647 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:02.129 [pool-61-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1][,[1,1]]]> but was:<[[1][]]>, test_2(java_testcases.junit.PASCAL_Test): expected:<[[1][,[1,1],[1,2,1]]]> but was:<[[1][]]>, test_3(java_testcases.junit.PASCAL_Test): expected:<[[1][,[1,1],[1,2,1],[1,3,3,1]]]> but was:<[[1][]]>, test_4(java_testcases.junit.PASCAL_Test): expected:<[[1][,[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]]> but was:<[[1][]]>]
-07:53:28.794 [pool-61-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:02.129 [pool-61-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:28.794 [pool-61-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:20.
-07:53:28.794 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
-07:53:28.794 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:18 which is executed by 5 tests
+07:36:02.129 [pool-61-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:20.
+07:36:02.130 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+07:36:02.130 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:18 which is executed by 5 tests
 -1942067219
-07:53:28.844 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.038 [pool-71-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:02.188 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:02.392 [pool-71-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_2(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_3(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_4(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0]
-07:53:29.038 [pool-71-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:02.392 [pool-71-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:29.038 [pool-71-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:18.
-07:53:29.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
-07:53:29.039 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:17 which is executed by 5 tests
+07:36:02.393 [pool-71-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:18.
+07:36:02.393 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+07:36:02.393 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:17 which is executed by 5 tests
 -1942067219
-07:53:29.078 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.254 [pool-81-thread-1] DEBUG tests.output - Failing tests with false: 
+07:36:02.438 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:02.703 [pool-81-thread-1] DEBUG tests.output - Failing tests with false: 
 [test_1(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_2(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_3(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0, test_4(java_testcases.junit.PASCAL_Test): Index: 0, Size: 0]
-07:53:29.254 [pool-81-thread-1] DEBUG tests.output - Failing tests with true: 
+07:36:02.704 [pool-81-thread-1] DEBUG tests.output - Failing tests with true: 
 [test_1(java_testcases.junit.PASCAL_Test): expected:<[[1],[1[,1]]]> but was:<[[1],[1[]]]>, test_2(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_3(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1, test_4(java_testcases.junit.PASCAL_Test): Index: 1, Size: 1]
-07:53:29.255 [pool-81-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:17.
-07:53:29.255 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
-07:53:29.255 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:16 which is executed by 5 tests
+07:36:02.705 [pool-81-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation java_programs.PASCAL:17.
+07:36:02.705 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+07:36:02.705 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:16 which is executed by 5 tests
 -1942067219
-07:53:29.329 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
-07:53:29.329 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:15 which is executed by 5 tests
+07:36:02.769 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+07:36:02.770 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:15 which is executed by 5 tests
 -1942067219
-07:53:29.376 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
-07:53:29.378 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:25 which is executed by 3 tests
+07:36:02.820 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+07:36:02.820 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:25 which is executed by 3 tests
 -1942067219
-07:53:29.424 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
-07:53:29.556 [pool-91-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
+07:36:02.862 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+07:36:03.027 [pool-91-thread-1] ERROR x.java.compiler.DynamicClassCompiler - [Compilation errors]
 PASCAL.java:40: error: variable upleft might not have been initialized
                 row.add(upleft + upright);
                         ^
-07:53:29.558 [pool-91-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
+07:36:03.029 [pool-91-thread-1] ERROR f.i.l.r.n.s.ConstraintModelBuilder - Unable to compile the change: 
 public class PASCAL {
     public static java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> pascal(int n) {
         java.util.ArrayList<java.util.ArrayList<java.lang.Integer>> rows = new java.util.ArrayList<java.util.ArrayList<java.lang.Integer>>();
@@ -381,75 +381,75 @@ public class PASCAL {
         return rows;
     }
 }
-07:53:29.559 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 2 tests
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:41 which is executed by 2 tests
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:41
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
-07:53:29.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:35 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:35
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:32 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:32
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:31 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:31
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:30 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:30
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:29 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:29
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:28 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:28
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:27 which is executed by 2 tests
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:27
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #26
-07:53:29.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #27
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #28
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #29
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #30
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #31
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 2 tests
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #32
-07:53:29.561 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:39 which is executed by 2 tests
+07:36:03.030 [pool-2-thread-1] ERROR fr.inria.lille.repair.nopol.NoPol - Error ExecutionException java.util.concurrent.ExecutionException: xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:44 which is executed by 2 tests
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:44
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:41 which is executed by 2 tests
+07:36:03.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:41
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:38 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:38
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #18
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:37 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:37
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #19
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:35 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:35
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #20
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:32 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:32
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #21
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:31 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:31
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #22
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:30 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:30
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #23
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:29 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:29
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #24
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:28 which is executed by 2 tests
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:28
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #25
+07:36:03.031 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:27 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:27
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #26
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:26 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:26
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #27
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:22 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:22
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #28
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:21 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:21
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #29
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:16 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:16
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #30
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:15 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:15
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #31
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_testcases.junit.QuixFixOracleHelper:14 which is executed by 2 tests
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - cannot spoon SourceLocation java_testcases.junit.QuixFixOracleHelper:14
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #32
+07:36:03.032 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation java_programs.PASCAL:39 which is executed by 2 tests
 -1942067219
-07:53:29.619 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
-07:53:29.621 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
-07:53:29.621 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
-07:53:29.621 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
-07:53:29.621 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
-07:53:29.621 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
-07:53:29.622 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
-07:53:29.622 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
-07:53:29.622 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 19393ms
-07:53:29.622 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+07:36:03.102 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+07:36:03.104 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 3
+07:36:03.104 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 9
+07:36:03.104 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 13
+07:36:03.104 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+07:36:03.104 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+07:36:03.114 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+07:36:03.115 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+07:36:03.119 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 14249ms
+07:36:03.120 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
 NO_ANGELIC_VALUE
 
-real	0m20.096s
-user	0m7.405s
-sys	0m8.208s
+real	0m14.979s
+user	0m8.176s
+sys	0m5.892s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Tue Mar 30 07:53:29 EDT 2021\n
+\n\nDate: Wed Mar 31 07:36:03 EDT 2021\n
