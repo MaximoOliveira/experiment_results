@@ -1,0 +1,2 @@
+/var/spool/slurmd/job564051/slurm_script: line 12: 61343 Terminated              python $RTA_DIR/script/repair.py $ARGS
+slurmstepd: error: Detected 253 oom-kill event(s) in step 564051.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
