@@ -1,0 +1,281 @@
+{
+  "repair_end": "2021-04-01 18:48:25.386129", 
+  "repair_begin": "2021-04-01 16:48:18.721625", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -24 +24 @@\\n-\\t\\t\\tif (x < pivot) {\\n+\\t\\t\\tif (x <= pivot) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-138\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x < pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x <= pivot", 
+          "INGREDIENT_PARENT": "x <= pivot", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "24", 
+          "MP_RANKING": "20", 
+          "SUSPICIOUNESS": "0.277", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "69", 
+      "VARIANT_ID": "138", 
+      "TIME": "20", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-138"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (!arr.isEmpty()) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-298\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "!arr.isEmpty()", 
+          "INGREDIENT_PARENT": "!arr.isEmpty()", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "149", 
+      "VARIANT_ID": "298", 
+      "TIME": "51", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-298"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (x >= pivot) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-362\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x >= pivot", 
+          "INGREDIENT_PARENT": "x >= pivot", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "181", 
+      "VARIANT_ID": "362", 
+      "TIME": "60", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-362"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (pivot <= x) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-432\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "pivot <= x", 
+          "INGREDIENT_PARENT": "_Integer_0 <= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "216", 
+      "VARIANT_ID": "432", 
+      "TIME": "78", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-432"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -24 +24 @@\\n-\\t\\t\\tif (x < pivot) {\\n+\\t\\t\\tif (pivot >= x) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-484\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x < pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "pivot >= x", 
+          "INGREDIENT_PARENT": "_Integer_0 >= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "24", 
+          "MP_RANKING": "20", 
+          "SUSPICIOUNESS": "0.277", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "242", 
+      "VARIANT_ID": "484", 
+      "TIME": "86", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-484"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (x >= x) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-544\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x >= x", 
+          "INGREDIENT_PARENT": "_Integer_0 >= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "272", 
+      "VARIANT_ID": "544", 
+      "TIME": "103", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-544"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (x <= x) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-566\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x <= x", 
+          "INGREDIENT_PARENT": "_Integer_0 <= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "283", 
+      "VARIANT_ID": "566", 
+      "TIME": "105", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-566"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (pivot >= pivot) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-674\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "pivot >= pivot", 
+          "INGREDIENT_PARENT": "_Integer_0 >= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "337", 
+      "VARIANT_ID": "674", 
+      "TIME": "129", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-674"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (x == x) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-756\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x == x", 
+          "INGREDIENT_PARENT": "_Integer_0 == _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "378", 
+      "VARIANT_ID": "756", 
+      "TIME": "160", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-756"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (pivot <= pivot) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-758\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "pivot <= pivot", 
+          "INGREDIENT_PARENT": "_Integer_0 <= _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "379", 
+      "VARIANT_ID": "758", 
+      "TIME": "160", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-758"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORTjava\\n@@ -26 +26 @@\\n-\\t\\t\\t} else if (x > pivot) {\\n+\\t\\t\\t} else if (pivot == pivot) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-818\\/java_programs\\/QUICKSORT.java", 
+          "ORIGINAL_CODE": "x > pivot", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "pivot == pivot", 
+          "INGREDIENT_PARENT": "_Integer_0 == _Integer_1", 
+          "LOCATION": "java_programs.QUICKSORT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/src\\/main\\/java\\/QUICKSORT.java", 
+          "LINE": "26", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "0.289", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "409", 
+      "VARIANT_ID": "818", 
+      "TIME": "166", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_QUICKSORT\\/Figra_QuixBugs_QUICKSORT_\\/.\\/output_astor\\/AstorMain-QUICKSORT-\\/\\/src\\/\\/variant-818"
+    }
+  ]
+}
