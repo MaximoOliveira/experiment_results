@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_POSSIBLE_CHANGE/Figra_QuixBugs_POSSIBLE_CHANGE_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id POSSIBLE_CHANGE- \
 	-failing java_testcases.junit.POSSIBLE_CHANGE_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,31 +26,45 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-11:52:46.966 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total < 0 to total < 0
-11:52:47.678 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
-11:52:51.208 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
-11:53:01.239 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
-11:53:05.820 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify rest to rest
-11:53:19.228 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total == 0 to total == 0
-11:53:25.897 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total) to java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total)
-11:53:36.071 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
-11:54:09.199 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
-11:54:34.636 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:54:39.210 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:55:03.356 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:55:19.247 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:55:29.788 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins[0] to coins[0]
-11:55:35.681 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:56:03.629 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(rest, total) to java_programs.POSSIBLE_CHANGE.possible_change(rest, total)
-11:56:30.747 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
-11:57:25.948 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
-11:57:30.918 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:59:27.387 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) to java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first)
-12:00:33.297 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total - first to total - first
-12:02:34.572 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total - first to total - first
+03:58:43.644 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
+03:58:44.002 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
+03:58:44.636 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
+03:58:51.738 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
+03:58:53.321 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total < 0 to total < 0
+03:58:53.954 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify rest to rest
+03:59:20.245 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins to coins
+03:59:52.657 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify coins[0] to coins[0]
+03:59:53.575 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total == 0 to total == 0
+03:59:59.627 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(rest, total) to java_programs.POSSIBLE_CHANGE.possible_change(rest, total)
+04:00:10.932 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total - first to total - first
+04:00:12.246 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:00:56.591 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:01:15.565 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:01:25.645 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
+04:01:46.748 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:01:59.432 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:03:01.979 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:03:28.872 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total) to java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total)
+04:03:55.651 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) to java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first)
+04:05:40.435 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify total to total
+04:06:57.476 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total) to java_programs.POSSIBLE_CHANGE.possible_change(coins, total - first) + java_programs.POSSIBLE_CHANGE.possible_change(rest, total)
+Astor Output:
 
-real	11m17.349s
-user	9m47.094s
-sys	0m52.163s
+General stats:
+EXECUTION_IDENTIFIER=POSSIBLE_CHANGE-
+TOTAL_TIME=7202.288
+NR_GENERATIONS=2129
+NR_RIGHT_COMPILATIONS=2113
+NR_FAILLING_COMPILATIONS=16
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m10.150s
+user	117m52.152s
+sys	1m24.699s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 12:03:56 EDT 2021\n
+\n\nDate: Fri Apr  2 05:58:35 EDT 2021\n

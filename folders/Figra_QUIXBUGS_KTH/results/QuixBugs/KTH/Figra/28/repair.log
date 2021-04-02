@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id KTH- \
 	-failing java_testcases.junit.KTH_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,105 +26,64 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-12:04:39.859 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
-12:04:41.399 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.KTH.kth(above, k) to java_programs.KTH.kth(above, k)
-12:04:43.261 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
-12:04:44.574 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
-12:04:47.059 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
-12:04:47.959 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
-12:04:50.399 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-12:04:52.877 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.KTH.kth(below, k) to java_programs.KTH.kth(below, k)
-12:04:53.114 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(arr.size()) to new java.util.ArrayList<java.lang.Integer>(arr.size())
-12:04:53.891 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(arr.size()) to new java.util.ArrayList<java.lang.Integer>(arr.size())
-12:04:56.325 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-12:04:57.466 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
-12:04:58.322 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
-12:05:10.284 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-12:05:12.354 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-12:05:14.254 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
-12:05:22.251 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
-12:05:22.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
-12:05:26.493 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-12:05:30.961 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
-12:05:32.804 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x < pivot to x < pivot
-12:05:36.144 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above.size() to above.size()
-12:05:36.622 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
-12:05:40.408 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
-12:05:45.023 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
-12:05:48.211 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
-12:05:52.213 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
-12:05:57.929 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num_less to num_less
-12:06:04.366 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k >= num_lessoreq to k >= num_lessoreq
-12:06:08.377 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x > pivot to x > pivot
-12:06:11.434 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above.add(x) to above.add(x)
-12:06:27.844 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
-12:06:31.859 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below.size() to below.size()
-12:06:39.073 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k < num_less to k < num_less
-12:06:39.852 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num_lessoreq to num_lessoreq
-12:06:48.140 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() - above.size() to arr.size() - above.size()
-12:06:50.609 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below.add(x) to below.add(x)
-12:06:54.512 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
-12:08:56.039 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
-12:09:21.546 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
-12:10:58.721 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+03:58:27.277 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
+03:58:30.380 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
+03:58:32.580 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.KTH.kth(below, k) to java_programs.KTH.kth(below, k)
+03:58:33.337 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(arr.size()) to new java.util.ArrayList<java.lang.Integer>(arr.size())
+03:58:34.343 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+03:58:35.152 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+03:58:36.536 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
+03:58:38.070 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.KTH.kth(above, k) to java_programs.KTH.kth(above, k)
+03:58:39.868 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+03:58:43.151 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(arr.size()) to new java.util.ArrayList<java.lang.Integer>(arr.size())
+03:58:48.767 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+03:58:49.450 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+03:58:50.956 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+03:58:52.001 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k >= num_lessoreq to k >= num_lessoreq
+03:58:54.577 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below to below
+03:58:56.289 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
+03:58:58.797 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
+03:59:02.512 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+03:59:03.924 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+03:59:09.380 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above to above
+03:59:20.402 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+03:59:21.514 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+03:59:49.066 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k < num_less to k < num_less
+03:59:53.186 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+03:59:58.068 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x > pivot to x > pivot
+04:00:05.224 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+04:00:08.314 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below.size() to below.size()
+04:00:12.973 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x < pivot to x < pivot
+04:00:26.620 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+04:00:35.925 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above.add(x) to above.add(x)
+04:00:49.631 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify above.size() to above.size()
+04:00:58.619 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num_less to num_less
+04:01:28.319 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+04:01:30.889 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:01:59.096 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+04:02:04.625 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify below.add(x) to below.add(x)
+04:02:22.526 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+04:03:00.966 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+04:04:01.521 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+04:05:43.661 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() - above.size() to arr.size() - above.size()
+04:10:08.024 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num_lessoreq to num_lessoreq
 Astor Output:
 
 General stats:
 EXECUTION_IDENTIFIER=KTH-
-TOTAL_TIME=7200.995
-NR_GENERATIONS=3695
-NR_RIGHT_COMPILATIONS=3493
-NR_FAILLING_COMPILATIONS=202
+TOTAL_TIME=7200.2
+NR_GENERATIONS=3552
+NR_RIGHT_COMPILATIONS=3347
+NR_FAILLING_COMPILATIONS=205
 NR_ERRONEOUS_VARIANCES=null
 NR_FAILING_VALIDATION_PROCESS=null
 OUTPUT_STATUS=TIME_OUT
 
 Patch stats:
 
-Patch 1
-VARIANT_ID=5520
-TIME=697
-VALIDATION=|true|0|7|[]|
-GENERATION=2760
-FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_/./output_astor/AstorMain-KTH-//src//variant-5520
---Patch Hunk #1
-OPERATOR=ExpressionReplaceOperator
 
-LOCATION=java_programs.KTH
-
-PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_/src/main/java/KTH.java
-
-MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_/./output_astor/AstorMain-KTH-//src//variant-5520/java_programs/KTH.java
-
-LINE=25
-
-SUSPICIOUNESS=1
-
-MP_RANKING=1
-
-ORIGINAL_CODE=k
-
-BUGGY_CODE_TYPE=CtVariableReadImpl|CtInvocationImpl
-
-PATCH_HUNK_CODE=k - num_lessoreq
-
-PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
-
-INGREDIENT_SCOPE=-
-
-INGREDIENT_PARENT=_int_0 - _int_1
-
-PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_/src/main/java/KTHjava
-+++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_KTH/Figra_QuixBugs_KTH_/src/main/java/KTHjava
-@@ -25 +25 @@
--			return java_programs.KTH.kth(above, k);
-+			return java_programs.KTH.kth(above, k - num_lessoreq);
-
-
-
-
-real	120m6.726s
-user	116m25.625s
-sys	1m52.576s
+real	120m6.917s
+user	117m32.494s
+sys	1m44.580s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 14:04:38 EDT 2021\n
+\n\nDate: Fri Apr  2 05:58:26 EDT 2021\n

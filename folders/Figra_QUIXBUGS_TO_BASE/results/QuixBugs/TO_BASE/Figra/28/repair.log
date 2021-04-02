@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_TO_BASE/Figra_QuixBugs_TO_BASE_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id TO_BASE- \
 	-failing java_testcases.junit.TO_BASE_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,33 +26,34 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-11:54:14.728 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify alphabet.charAt(i) to alphabet.charAt(i)
-11:54:53.107 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
-11:54:57.231 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result + java.lang.String.valueOf(alphabet.charAt(i)) to result + java.lang.String.valueOf(alphabet.charAt(i))
-11:54:57.980 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
-11:56:16.959 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" to "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-11:56:18.634 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "" to ""
-11:56:32.256 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(alphabet.charAt(i)) to java.lang.String.valueOf(alphabet.charAt(i))
-11:57:07.906 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
-11:57:19.072 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num / b to num / b
-11:58:11.792 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
-11:58:27.242 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num % b to num % b
-11:58:59.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify alphabet to alphabet
-11:59:09.819 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num > 0 to num > 0
-11:59:21.447 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
-12:00:34.113 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
-12:03:04.597 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
-12:04:02.100 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num / b to num / b
-12:09:31.522 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-12:11:22.412 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
+03:58:34.399 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify alphabet.charAt(i) to alphabet.charAt(i)
+03:58:35.730 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+03:59:21.065 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
+03:59:24.341 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+03:59:33.204 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "" to ""
+03:59:58.635 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result + java.lang.String.valueOf(alphabet.charAt(i)) to result + java.lang.String.valueOf(alphabet.charAt(i))
+04:00:10.728 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(alphabet.charAt(i)) to java.lang.String.valueOf(alphabet.charAt(i))
+04:00:24.602 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result + java.lang.String.valueOf(alphabet.charAt(i)) to result + java.lang.String.valueOf(alphabet.charAt(i))
+04:00:26.730 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" to "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+04:00:50.474 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify alphabet to alphabet
+04:01:15.084 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+04:02:11.314 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+04:02:46.460 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+04:04:02.398 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num > 0 to num > 0
+04:04:14.862 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
+04:05:52.717 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:09:58.464 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num to num
+04:10:35.773 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num / b to num / b
+04:12:35.897 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num / b to num / b
+04:12:47.055 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify num % b to num % b
 Astor Output:
 
 General stats:
 EXECUTION_IDENTIFIER=TO_BASE-
-TOTAL_TIME=7200.127
-NR_GENERATIONS=1291
-NR_RIGHT_COMPILATIONS=940
-NR_FAILLING_COMPILATIONS=351
+TOTAL_TIME=7200.076
+NR_GENERATIONS=1295
+NR_RIGHT_COMPILATIONS=945
+NR_FAILLING_COMPILATIONS=350
 NR_ERRONEOUS_VARIANCES=null
 NR_FAILING_VALIDATION_PROCESS=null
 OUTPUT_STATUS=TIME_OUT
@@ -60,8 +61,8 @@ OUTPUT_STATUS=TIME_OUT
 Patch stats:
 
 
-real	120m5.791s
-user	89m32.507s
-sys	1m0.923s
+real	120m8.927s
+user	90m12.333s
+sys	0m48.120s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 13:54:00 EDT 2021\n
+\n\nDate: Fri Apr  2 05:58:29 EDT 2021\n

@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_MINIMUM_SPANNING_TREE/Figra_QuixBugs_MINIMUM_SPANNING_TREE_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id MINIMUM_SPANNING_TREE- \
 	-failing java_testcases.junit.MINIMUM_SPANNING_TREE_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -35,8 +35,8 @@ Exception in thread "main" java.lang.IllegalArgumentException: No suspicious gen
 	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:228)
 	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:199)
 
-real	0m4.223s
-user	0m3.514s
-sys	0m0.337s
+real	0m5.917s
+user	0m3.844s
+sys	0m1.682s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 11:46:38 EDT 2021\n
+\n\nDate: Fri Apr  2 03:58:28 EDT 2021\n

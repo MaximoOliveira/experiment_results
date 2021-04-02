@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SHORTEST_PATH_LENGTHS/Figra_QuixBugs_SHORTEST_PATH_LENGTHS_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id SHORTEST_PATH_LENGTHS- \
 	-failing java_testcases.junit.SHORTEST_PATH_LENGTHS_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,35 +26,15 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-11:56:35.872 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
-11:56:36.371 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<>() to new java.util.HashMap<>()
-11:56:36.705 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
-11:56:38.332 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to length_by_path.get(java.util.Arrays.asList(i, j)) + length_by_path.get(java.util.Arrays.asList(j, j))
-11:56:59.079 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge to length_by_edge
-11:59:30.364 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to j << j
-12:00:54.310 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(j, k) to java.util.Arrays.asList(j, k)
-12:01:17.637 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge to length_by_edge
-12:02:06.196 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.get(java.util.Arrays.asList(j, k)) to length_by_path.get(java.util.Arrays.asList(j, k))
-12:02:35.736 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to i - 1
-12:02:37.208 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-12:09:33.860 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge.get(edge) to length_by_edge.get(edge)
-12:10:04.447 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-12:17:25.181 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
-12:18:35.976 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
-12:20:52.440 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify k++ to numNodes - numNodes
-12:23:55.557 [main] ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+03:58:34.824 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify j++ to length_by_path.get(java.util.Arrays.asList(k, j)) % length_by_path.get(java.util.Arrays.asList(i, j))
+03:58:35.219 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.put(java.util.Arrays.asList(i, j), update_length) to length_by_path.put(java.util.Arrays.asList(i, j), update_length)
+03:58:45.371 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
+03:58:55.625 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(i, k) to java.util.Arrays.asList(i, k)
+04:01:09.437 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify k++ to numNodes + 1
+04:02:06.957 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.get(java.util.Arrays.asList(i, j)) to length_by_path.get(java.util.Arrays.asList(i, j))
 
-12:24:11.593 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path to length_by_path
-12:25:52.797 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to i % i
-12:41:09.790 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < numNodes to i < numNodes
-12:44:02.239 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(i, j) to java.util.Arrays.asList(i, j)
-/bin/sh: line 24: 40572 Killed                  java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain -mode figra -location . -id SHORTEST_PATH_LENGTHS- -failing java_testcases.junit.SHORTEST_PATH_LENGTHS_Test -jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin -jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin -maxgen 1000000 -maxtime 120 -stopfirst false -seed 28 -scope package -population 1 -javacompliancelevel 8 -srcjavafolder src/main/java -srctestfolder src/test/java -binjavafolder target/classes -bintestfolder target/test-classes -parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 -dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
-
-real	50m6.278s
-user	0m54.307s
-sys	0m5.910s
+real	4m55.937s
+user	0m17.655s
+sys	0m5.053s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 12:46:29 EDT 2021\n
+\n\nDate: Fri Apr  2 04:03:16 EDT 2021\n

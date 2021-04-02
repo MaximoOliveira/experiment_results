@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id GCD- \
 	-failing java_testcases.junit.GCD_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,19 +26,19 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-12:04:46.516 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
-12:04:53.293 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a % b to a % b
-12:05:00.513 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-12:05:03.684 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b == 0 to b == 0
-12:05:27.991 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
-12:05:45.949 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.GCD.gcd(a % b, b) to java_programs.GCD.gcd(a % b, b)
-12:05:48.091 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a % b to a % b
-12:06:55.370 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+03:58:33.184 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b == 0 to b == 0
+03:58:34.642 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+03:58:38.119 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a % b to a % b
+03:58:51.975 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.GCD.gcd(a % b, b) to java_programs.GCD.gcd(a % b, b)
+03:59:50.835 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a % b to a % b
+04:00:03.946 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:00:20.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+04:00:32.395 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
 Astor Output:
 
 General stats:
 EXECUTION_IDENTIFIER=GCD-
-TOTAL_TIME=7200.107
+TOTAL_TIME=7200.016
 NR_GENERATIONS=678
 NR_RIGHT_COMPILATIONS=672
 NR_FAILLING_COMPILATIONS=6
@@ -49,11 +49,11 @@ OUTPUT_STATUS=TIME_OUT
 Patch stats:
 
 Patch 1
-VARIANT_ID=112
-TIME=16
+VARIANT_ID=480
+TIME=58
 VALIDATION=|true|0|5|[]|
-GENERATION=56
-FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/./output_astor/AstorMain-GCD-//src//variant-112
+GENERATION=240
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/./output_astor/AstorMain-GCD-//src//variant-480
 --Patch Hunk #1
 OPERATOR=ExpressionReplaceOperator
 
@@ -61,7 +61,7 @@ LOCATION=java_programs.GCD
 
 PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/src/main/java/GCD.java
 
-MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/./output_astor/AstorMain-GCD-//src//variant-112/java_programs/GCD.java
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/./output_astor/AstorMain-GCD-//src//variant-480/java_programs/GCD.java
 
 LINE=19
 
@@ -79,7 +79,7 @@ PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
 
 INGREDIENT_SCOPE=-
 
-INGREDIENT_PARENT=java_programs.GCD.gcd(_int_0, _int_1 % _int_0)
+INGREDIENT_PARENT=java_programs.GCD.gcd(b, a % b)
 
 PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/src/main/java/GCDjava
 +++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Figra_QuixBugs_GCD_/src/main/java/GCDjava
@@ -90,8 +90,8 @@ PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_GCD/Fi
 
 
 
-real	120m6.357s
-user	119m26.092s
-sys	0m26.547s
+real	120m6.626s
+user	119m30.294s
+sys	0m24.719s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 14:04:45 EDT 2021\n
+\n\nDate: Fri Apr  2 05:58:27 EDT 2021\n

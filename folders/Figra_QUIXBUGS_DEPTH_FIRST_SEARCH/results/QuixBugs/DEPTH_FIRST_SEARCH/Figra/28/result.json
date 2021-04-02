@@ -1,37 +1,37 @@
 {
-  "repair_end": "2021-04-01 19:02:54.725311", 
-  "repair_begin": "2021-04-01 17:02:48.053097", 
+  "repair_end": "2021-04-02 10:58:30.385762", 
+  "repair_begin": "2021-04-02 08:58:22.489742", 
   "patches": [
     {
-      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n@@ -50 +50 @@\\n-\\t\\tthis.successors = successors;\\n+\\t\\tthis.successors = predecessors;\\n\\n", 
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (!nodesvisited.contains(node)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-16\\/java_programs\\/Node.java", 
-          "ORIGINAL_CODE": "successors", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-40\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
-          "PATCH_HUNK_CODE": "predecessors", 
-          "INGREDIENT_PARENT": "predecessors", 
-          "LOCATION": "java_programs.Node", 
-          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtAssignmentImpl", 
+          "PATCH_HUNK_CODE": "!nodesvisited.contains(node)", 
+          "INGREDIENT_PARENT": "!nodesvisited.contains(node)", 
+          "LOCATION": "java_programs.DEPTH_FIRST_SEARCH", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtIfImpl", 
           "OPERATOR": "ExpressionReplaceOperator", 
-          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Node.java", 
-          "LINE": "50", 
-          "MP_RANKING": "1", 
-          "SUSPICIOUNESS": "1", 
-          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtReturnImpl"
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCH.java", 
+          "LINE": "23", 
+          "MP_RANKING": "3", 
+          "SUSPICIOUNESS": "0.577", 
+          "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "8", 
-      "VARIANT_ID": "16", 
-      "TIME": "3", 
+      "GENERATION": "20", 
+      "VARIANT_ID": "40", 
+      "TIME": "7", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-16"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-40"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n@@ -50 +50 @@\\n-\\t\\tthis.successors = successors;\\n+\\t\\tthis.successors = new java.util.ArrayList<java_programs.Node>();\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-28\\/java_programs\\/Node.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-52\\/java_programs\\/Node.java", 
           "ORIGINAL_CODE": "successors", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "new java.util.ArrayList<java_programs.Node>()", 
@@ -46,17 +46,42 @@
           "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtReturnImpl"
         }
       ], 
-      "GENERATION": "14", 
-      "VARIANT_ID": "28", 
-      "TIME": "4", 
+      "GENERATION": "26", 
+      "VARIANT_ID": "52", 
+      "TIME": "9", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-28"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-52"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Nodejava\\n@@ -50 +50 @@\\n-\\t\\tthis.successors = successors;\\n+\\t\\tthis.successors = predecessors;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-56\\/java_programs\\/Node.java", 
+          "ORIGINAL_CODE": "successors", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "predecessors", 
+          "INGREDIENT_PARENT": "predecessors", 
+          "LOCATION": "java_programs.Node", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/Node.java", 
+          "LINE": "50", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "28", 
+      "VARIANT_ID": "56", 
+      "TIME": "11", 
+      "VALIDATION": "|true|0|5|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-56"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (search(goalnode)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-52\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-154\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "successornodes", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "goalnode", 
@@ -68,45 +93,20 @@
           "LINE": "23", 
           "MP_RANKING": "2", 
           "SUSPICIOUNESS": "0.577", 
-          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl"
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtInvocationImpl"
         }
       ], 
-      "GENERATION": "26", 
-      "VARIANT_ID": "52", 
-      "TIME": "8", 
+      "GENERATION": "77", 
+      "VARIANT_ID": "154", 
+      "TIME": "25", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-52"
-    }, 
-    {
-      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (!nodesvisited.contains(node)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
-      "patchhunks": [
-        {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-102\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
-          "ORIGINAL_CODE": "search(successornodes)", 
-          "INGREDIENT_SCOPE": "-", 
-          "PATCH_HUNK_CODE": "!nodesvisited.contains(node)", 
-          "INGREDIENT_PARENT": "!_Set_0.contains(_Node_1)", 
-          "LOCATION": "java_programs.DEPTH_FIRST_SEARCH", 
-          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtIfImpl", 
-          "OPERATOR": "ExpressionReplaceOperator", 
-          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCH.java", 
-          "LINE": "23", 
-          "MP_RANKING": "3", 
-          "SUSPICIOUNESS": "0.577", 
-          "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
-        }
-      ], 
-      "GENERATION": "51", 
-      "VARIANT_ID": "102", 
-      "TIME": "14", 
-      "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-102"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-154"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (!nodesvisited.contains(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-230\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-164\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "!nodesvisited.contains(successornodes)", 
@@ -121,17 +121,17 @@
           "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "115", 
-      "VARIANT_ID": "230", 
-      "TIME": "29", 
+      "GENERATION": "82", 
+      "VARIANT_ID": "164", 
+      "TIME": "27", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-230"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-164"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (!nodesvisited.contains(startnode)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-242\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-174\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "!nodesvisited.contains(startnode)", 
@@ -146,42 +146,17 @@
           "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "121", 
-      "VARIANT_ID": "242", 
-      "TIME": "31", 
+      "GENERATION": "87", 
+      "VARIANT_ID": "174", 
+      "TIME": "28", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-242"
-    }, 
-    {
-      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (search(goalnode)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
-      "patchhunks": [
-        {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-278\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
-          "ORIGINAL_CODE": "search(successornodes)", 
-          "INGREDIENT_SCOPE": "-", 
-          "PATCH_HUNK_CODE": "search(goalnode)", 
-          "INGREDIENT_PARENT": "search(_Node_0)", 
-          "LOCATION": "java_programs.DEPTH_FIRST_SEARCH", 
-          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtIfImpl", 
-          "OPERATOR": "ExpressionReplaceOperator", 
-          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCH.java", 
-          "LINE": "23", 
-          "MP_RANKING": "3", 
-          "SUSPICIOUNESS": "0.577", 
-          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtIfImpl"
-        }
-      ], 
-      "GENERATION": "139", 
-      "VARIANT_ID": "278", 
-      "TIME": "35", 
-      "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-278"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-174"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (true) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-292\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-212\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "true", 
@@ -196,17 +171,17 @@
           "PATCH_HUNK_TYPE": "CtLiteralImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "146", 
-      "VARIANT_ID": "292", 
-      "TIME": "37", 
+      "GENERATION": "106", 
+      "VARIANT_ID": "212", 
+      "TIME": "33", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-292"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-212"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (!nodesvisited.contains(goalnode)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-378\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-260\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "!nodesvisited.contains(goalnode)", 
@@ -221,17 +196,17 @@
           "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "189", 
-      "VARIANT_ID": "378", 
-      "TIME": "45", 
+      "GENERATION": "130", 
+      "VARIANT_ID": "260", 
+      "TIME": "39", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-378"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-260"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (node == node) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-394\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-284\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "node == node", 
@@ -246,17 +221,17 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "197", 
-      "VARIANT_ID": "394", 
-      "TIME": "46", 
+      "GENERATION": "142", 
+      "VARIANT_ID": "284", 
+      "TIME": "42", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-394"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-284"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (successornodes == successornodes) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-402\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-288\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "successornodes == successornodes", 
@@ -271,17 +246,42 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "201", 
-      "VARIANT_ID": "402", 
-      "TIME": "47", 
+      "GENERATION": "144", 
+      "VARIANT_ID": "288", 
+      "TIME": "43", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-402"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-288"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (search(goalnode)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-306\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "ORIGINAL_CODE": "search(successornodes)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "search(goalnode)", 
+          "INGREDIENT_PARENT": "search(_Node_0)", 
+          "LOCATION": "java_programs.DEPTH_FIRST_SEARCH", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCH.java", 
+          "LINE": "23", 
+          "MP_RANKING": "3", 
+          "SUSPICIOUNESS": "0.577", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "153", 
+      "VARIANT_ID": "306", 
+      "TIME": "45", 
+      "VALIDATION": "|true|0|5|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-306"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (startnode == startnode) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-414\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-336\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "startnode == startnode", 
@@ -296,17 +296,17 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "207", 
-      "VARIANT_ID": "414", 
+      "GENERATION": "168", 
+      "VARIANT_ID": "336", 
       "TIME": "48", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-414"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-336"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (goalnode == goalnode) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-428\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-368\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "goalnode == goalnode", 
@@ -321,17 +321,17 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "214", 
-      "VARIANT_ID": "428", 
-      "TIME": "49", 
+      "GENERATION": "184", 
+      "VARIANT_ID": "368", 
+      "TIME": "52", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-428"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-368"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (startnode == node) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-490\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-450\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "startnode == node", 
@@ -346,17 +346,17 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "245", 
-      "VARIANT_ID": "490", 
-      "TIME": "55", 
+      "GENERATION": "225", 
+      "VARIANT_ID": "450", 
+      "TIME": "61", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-490"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-450"
     }, 
     {
       "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/src\\/main\\/java\\/DEPTH_FIRST_SEARCHjava\\n@@ -23 +23 @@\\n-\\t\\t\\t\\t\\t\\tif (search(successornodes)) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n+\\t\\t\\t\\t\\t\\tif (node == startnode) { \\t\\t\\t\\t\\t\\t\\treturn true;}\\n\\n", 
       "patchhunks": [
         {
-          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-498\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-524\\/java_programs\\/DEPTH_FIRST_SEARCH.java", 
           "ORIGINAL_CODE": "search(successornodes)", 
           "INGREDIENT_SCOPE": "-", 
           "PATCH_HUNK_CODE": "node == startnode", 
@@ -371,11 +371,11 @@
           "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
         }
       ], 
-      "GENERATION": "249", 
-      "VARIANT_ID": "498", 
-      "TIME": "56", 
+      "GENERATION": "262", 
+      "VARIANT_ID": "524", 
+      "TIME": "68", 
       "VALIDATION": "|true|0|5|[]|", 
-      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-498"
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_DEPTH_FIRST_SEARCH\\/Figra_QuixBugs_DEPTH_FIRST_SEARCH_\\/.\\/output_astor\\/AstorMain-DEPTH_FIRST_SEARCH-\\/\\/src\\/\\/variant-524"
     }
   ]
 }

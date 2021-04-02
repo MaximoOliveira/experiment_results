@@ -1,15 +1,15 @@
 cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_;
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
 TZ="America/New_York"; export TZ;
-export PATH="/users2/cpca56132020/moliveira/deps/jdk-8/bin:$PATH";
-export JAVA_HOME="/users2/cpca56132020/moliveira/deps/jdk-8/bin";
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
 time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
 	-mode figra \
 	-location . \
 	-id NEXT_PALINDROME- \
 	-failing java_testcases.junit.NEXT_PALINDROME_Test \
-	-jvm4testexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
-	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/deps/jdk-8/bin \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
 	-maxgen 1000000 \
 	-maxtime 120 \
 	-stopfirst false \
@@ -26,45 +26,264 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-11:52:50.254 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:52:53.545 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
-11:52:55.187 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
-11:52:59.663 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
-11:53:00.760 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:03.627 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:04.327 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
-11:53:09.375 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
-11:53:09.607 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:13.471 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:16.877 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:17.337 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(otherwise) to java.lang.String.valueOf(otherwise)
-11:53:19.369 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
-11:53:28.863 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
-11:53:32.058 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list[high_mid] == 9 to digit_list[high_mid] == 9
-11:53:44.202 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:53:56.093 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:54:01.196 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list[high_mid] to digit_list[high_mid]
-11:54:04.250 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:54:12.107 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise.add(1) to otherwise.add(1)
-11:54:15.090 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:54:48.524 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
-11:54:56.360 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
-11:54:56.612 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise.add(1) to otherwise.add(1)
-11:55:06.126 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:55:17.666 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:55:57.695 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
-11:56:07.217 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:56:48.884 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
-11:57:40.498 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (low_mid >= 0) to (low_mid >= 0)
-11:58:05.506 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify low_mid to low_mid
-11:58:29.308 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
-11:59:09.290 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify low_mid to low_mid
-12:02:10.310 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
-12:02:21.120 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 9 to 9
-12:04:29.328 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (low_mid >= 0) to (low_mid >= 0)
+03:58:29.306 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:31.737 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
+03:58:32.103 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:33.417 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+03:58:36.069 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(otherwise) to java.lang.String.valueOf(otherwise)
+03:58:38.540 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
+03:58:41.733 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
+03:58:42.974 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:43.355 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:45.312 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise to otherwise
+03:58:46.431 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:46.687 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:58:52.545 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list[high_mid] == 9 to digit_list[high_mid] == 9
+03:59:03.899 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+03:59:13.465 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list to digit_list
+03:59:13.760 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+03:59:17.092 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+03:59:18.922 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
+03:59:20.015 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+03:59:44.654 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify low_mid to low_mid
+04:00:03.017 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise.add(1) to otherwise.add(1)
+04:00:12.712 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:00:15.044 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 9 to 9
+04:00:16.410 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+04:00:28.054 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+04:01:18.650 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:01:32.584 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify digit_list[high_mid] to digit_list[high_mid]
+04:01:56.490 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify low_mid to low_mid
+04:02:22.990 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:02:26.539 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (low_mid >= 0) to (low_mid >= 0)
+04:02:48.597 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:02:52.770 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
+04:03:31.132 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify otherwise.add(1) to otherwise.add(1)
+04:05:12.560 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+04:07:10.736 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (low_mid >= 0) to (low_mid >= 0)
+04:07:33.303 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify high_mid to high_mid
+Astor Output:
 
-real	113m23.194s
-user	110m57.217s
-sys	1m25.723s
+General stats:
+EXECUTION_IDENTIFIER=NEXT_PALINDROME-
+TOTAL_TIME=7200.149
+NR_GENERATIONS=2027
+NR_RIGHT_COMPILATIONS=1992
+NR_FAILLING_COMPILATIONS=35
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=248
+TIME=38
+VALIDATION=|true|0|5|[]|
+GENERATION=124
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-248
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.NEXT_PALINDROME
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROME.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-248/java_programs/NEXT_PALINDROME.java
+
+LINE=35
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=digit_list.length
+
+BUGGY_CODE_TYPE=CtFieldReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=high_mid - 1
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_1 - 1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
+@@ -35 +35 @@
+-		otherwise.addAll(java.util.Collections.nCopies(digit_list.length, 0));
++		otherwise.addAll(java.util.Collections.nCopies(high_mid - 1, 0));
+
+
+
+Patch 2
+VARIANT_ID=658
+TIME=92
+VALIDATION=|true|0|5|[]|
+GENERATION=329
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-658
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.NEXT_PALINDROME
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROME.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-658/java_programs/NEXT_PALINDROME.java
+
+LINE=35
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=digit_list.length
+
+BUGGY_CODE_TYPE=CtFieldReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=high_mid ^ 1
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_1 ^ 1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
+@@ -35 +35 @@
+-		otherwise.addAll(java.util.Collections.nCopies(digit_list.length, 0));
++		otherwise.addAll(java.util.Collections.nCopies(high_mid ^ 1, 0));
+
+
+
+Patch 3
+VARIANT_ID=1106
+TIME=153
+VALIDATION=|true|0|5|[]|
+GENERATION=553
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-1106
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.NEXT_PALINDROME
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROME.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-1106/java_programs/NEXT_PALINDROME.java
+
+LINE=35
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=digit_list.length
+
+BUGGY_CODE_TYPE=CtFieldReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=2
+
+PATCH_HUNK_TYPE=CtLiteralImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=2
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
+@@ -35 +35 @@
+-		otherwise.addAll(java.util.Collections.nCopies(digit_list.length, 0));
++		otherwise.addAll(java.util.Collections.nCopies(2, 0));
+
+
+
+Patch 4
+VARIANT_ID=2032
+TIME=286
+VALIDATION=|true|0|5|[]|
+GENERATION=1016
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-2032
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.NEXT_PALINDROME
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROME.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-2032/java_programs/NEXT_PALINDROME.java
+
+LINE=35
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=digit_list.length
+
+BUGGY_CODE_TYPE=CtFieldReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=low_mid + high_mid
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 + _int_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
+@@ -35 +35 @@
+-		otherwise.addAll(java.util.Collections.nCopies(digit_list.length, 0));
++		otherwise.addAll(java.util.Collections.nCopies(low_mid + high_mid, 0));
+
+
+
+Patch 5
+VARIANT_ID=2094
+TIME=296
+VALIDATION=|true|0|5|[]|
+GENERATION=1047
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-2094
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.NEXT_PALINDROME
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROME.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/./output_astor/AstorMain-NEXT_PALINDROME-//src//variant-2094/java_programs/NEXT_PALINDROME.java
+
+LINE=35
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=digit_list.length
+
+BUGGY_CODE_TYPE=CtFieldReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=high_mid + low_mid
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 + _int_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_NEXT_PALINDROME/Figra_QuixBugs_NEXT_PALINDROME_/src/main/java/NEXT_PALINDROMEjava
+@@ -35 +35 @@
+-		otherwise.addAll(java.util.Collections.nCopies(digit_list.length, 0));
++		otherwise.addAll(java.util.Collections.nCopies(high_mid + low_mid, 0));
+
+
+
+
+real	120m9.913s
+user	118m23.647s
+sys	1m12.429s
 \n\nNode: hpc060.ncg.ingrid.pt\n
-\n\nDate: Thu Apr  1 13:46:07 EDT 2021\n
+\n\nDate: Fri Apr  2 05:58:29 EDT 2021\n
