@@ -26,20 +26,170 @@ time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/
 	echo "\n\nNode: `hostname`\n";
 	echo "\n\nDate: `date`\n";
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
-03:58:54.766 [main] ERROR AstorCoreEngine - Initial run of test suite fails
-03:58:56.605 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify approx to approx
-03:59:19.839 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2.0F to 2.0F
-03:59:40.502 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x - approx to x - approx
-04:00:24.137 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F to 0.5F
-04:02:32.042 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.abs(x - approx) > epsilon to java.lang.Math.abs(x - approx) > epsilon
-04:08:44.502 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify approx to approx
-04:09:47.987 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.abs(x - approx) to java.lang.Math.abs(x - approx)
-04:11:03.084 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x / 2.0F to x / 2.0F
-04:16:02.425 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (x / approx) to (x / approx)
-04:22:10.505 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F * (approx + (x / approx)) to 0.5F * (approx + (x / approx))
-04:25:46.760 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-04:31:05.732 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify epsilon to epsilon
-04:35:00.292 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (approx + (x / approx)) to (approx + (x / approx))
-04:40:59.247 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F * (approx + (x / approx)) to 0.5F * (approx + (x / approx))
-04:50:07.663 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
-04:57:25.291 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+13:27:19.894 [main] ERROR AstorCoreEngine - Initial run of test suite fails
+13:27:44.294 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2.0F to 2.0F
+13:28:46.268 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.abs(x - approx) > epsilon to java.lang.Math.abs(x - approx) > epsilon
+13:29:37.803 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F to 0.5F
+13:33:21.929 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (approx + (x / approx)) to (approx + (x / approx))
+13:35:55.826 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.abs(x - approx) to java.lang.Math.abs(x - approx)
+13:36:46.335 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (x / approx) to (x / approx)
+13:38:23.310 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify approx to approx
+13:38:54.298 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify epsilon to epsilon
+13:39:47.430 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x / 2.0F to x / 2.0F
+13:41:11.290 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify approx to approx
+13:47:02.769 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+13:52:24.377 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F * (approx + (x / approx)) to 0.5F * (approx + (x / approx))
+13:53:25.669 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+14:02:21.347 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.5F * (approx + (x / approx)) to 0.5F * (approx + (x / approx))
+14:02:51.885 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x - approx to x - approx
+14:10:26.215 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x - approx to x - approx
+14:33:50.858 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=SQRT-
+TOTAL_TIME=7205.108
+NR_GENERATIONS=1302
+NR_RIGHT_COMPILATIONS=846
+NR_FAILLING_COMPILATIONS=456
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=242
+TIME=746
+VALIDATION=|true|0|7|[]|
+GENERATION=121
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-242
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.SQRT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-242/java_programs/SQRT.java
+
+LINE=16
+
+SUSPICIOUNESS=0.926
+
+MP_RANKING=3
+
+ORIGINAL_CODE=x
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(x / approx)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_double_0 / _double_1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
+@@ -16,2 +16,2 @@
+-		while (java.lang.Math.abs(x - approx) > epsilon) {
+-			approx = 0.5F * (approx + (x / approx));
++		while (java.lang.Math.abs(
++		(x / approx) - approx) > epsilon) { 			approx = 0.5F * (approx + (x / approx));
+
+
+
+Patch 2
+VARIANT_ID=680
+TIME=1911
+VALIDATION=|true|0|7|[]|
+GENERATION=340
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-680
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.SQRT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-680/java_programs/SQRT.java
+
+LINE=16
+
+SUSPICIOUNESS=0.926
+
+MP_RANKING=3
+
+ORIGINAL_CODE=x
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(0.5F * (approx + (x / approx)))
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=0.5F * (_double_0 + (_double_1 / _double_0))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
+@@ -16,2 +16,2 @@
+-		while (java.lang.Math.abs(x - approx) > epsilon) {
+-			approx = 0.5F * (approx + (x / approx));
++		while (java.lang.Math.abs(
++		(0.5F * (approx + (x / approx))) - approx) > epsilon) { 			approx = 0.5F * (approx + (x / approx));
+
+
+
+Patch 3
+VARIANT_ID=922
+TIME=2574
+VALIDATION=|true|0|7|[]|
+GENERATION=461
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-922
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.SQRT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/./output_astor/AstorMain-SQRT-//src//variant-922/java_programs/SQRT.java
+
+LINE=16
+
+SUSPICIOUNESS=0.926
+
+MP_RANKING=3
+
+ORIGINAL_CODE=x
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(0.5F * (approx + (x / approx)))
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(0.5F * (approx + (x / approx)))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_SQRT/Figra_QuixBugs_SQRT_/src/main/java/SQRTjava
+@@ -16,2 +16,2 @@
+-		while (java.lang.Math.abs(x - approx) > epsilon) {
+-			approx = 0.5F * (approx + (x / approx));
++		while (java.lang.Math.abs(
++		(0.5F * (approx + (x / approx))) - approx) > epsilon) { 			approx = 0.5F * (approx + (x / approx));
+
+
+
+
+real	120m48.613s
+user	3m30.175s
+sys	0m18.617s
+\n\nNode: hpc062.ncg.ingrid.pt\n
+\n\nDate: Fri Apr  2 15:27:27 EDT 2021\n
