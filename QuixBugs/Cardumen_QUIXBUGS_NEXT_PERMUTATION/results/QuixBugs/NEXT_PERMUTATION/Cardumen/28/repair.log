@@ -1,0 +1,58 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_NEXT_PERMUTATION/Cardumen_QuixBugs_NEXT_PERMUTATION_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id NEXT_PERMUTATION- \
+	-failing java_testcases.junit.NEXT_PERMUTATION_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+10:01:11.658 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify next_perm.set(q, replace) to next_perm.set(q, replace)
+10:01:12.917 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(i) to perm.get(i)
+10:01:13.835 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+10:01:15.772 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.size() to perm.size()
+10:01:16.026 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(i) to perm.get(i)
+10:01:17.916 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify (-1) to (-1)
+10:01:18.181 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify next_perm.size() - 1 to next_perm.size() - 1
+10:01:18.465 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i != (-1) to i != (-1)
+10:01:19.248 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i + 1 to i + 1
+10:01:30.176 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(i) to perm.get(i)
+10:01:30.455 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i + 1 to i + 1
+10:01:30.769 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(i + 1) to perm.get(i + 1)
+10:01:31.120 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+10:01:42.874 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.size() - 1 to perm.size() - 1
+10:01:44.551 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(i) < perm.get(i + 1) to perm.get(i) < perm.get(i + 1)
+10:01:46.690 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify reversed.add(next_perm.get(k)) to reversed.add(next_perm.get(k))
+10:01:47.212 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify i-- to perm.size() - 2
+10:02:28.008 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify k-- to perm.size() - 2
+10:02:59.022 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.size() to perm.size()
+10:03:19.545 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify j-- to perm.size() - 2
+10:05:04.297 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i-- to i--
+10:06:15.621 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify j-- to j--
+10:08:17.118 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.size() - 2 to perm.size() - 2
+10:12:21.166 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify perm.get(j) to perm.get(j)
+
+real	13m44.551s
+user	0m34.668s
+sys	0m20.928s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 10:14:28 EDT 2021\n
