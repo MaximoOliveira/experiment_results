@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/runner/local/LocalRunner.py", line 41, in run
+    task.run()
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/runner/RepairTask.py", line 30, in run
+    return self.tool.repair(self)
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/repair_tools/Nopol.py", line 38, in repair
+    self.init_bug(bug, bug_path)
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/RepairTool.py", line 67, in init_bug
+    unlock()
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/RepairTool.py", line 34, in unlock
+    os.remove(path)
+OSError: [Errno 2] No such file or directory: '/users2/cpca56132020/moliveira/RepairThemAll/script/../LOCK_BUGS_INIT'

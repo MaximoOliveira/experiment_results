@@ -1,0 +1,9 @@
+--- a/src/main/java/introclassJava/digits_c5d8f924_003.java
++++ b/src/main/java/introclassJava/digits_c5d8f924_003.java
+@@ -75,3 +75,5 @@
+             number.value = number.value / 10;
+-            i.value++;
++            if (introclassJava.digits_c5d8f924_003.this.scanner.hasNext()) {
++                i.value++;
++            }
+             if (number.value == 0) {

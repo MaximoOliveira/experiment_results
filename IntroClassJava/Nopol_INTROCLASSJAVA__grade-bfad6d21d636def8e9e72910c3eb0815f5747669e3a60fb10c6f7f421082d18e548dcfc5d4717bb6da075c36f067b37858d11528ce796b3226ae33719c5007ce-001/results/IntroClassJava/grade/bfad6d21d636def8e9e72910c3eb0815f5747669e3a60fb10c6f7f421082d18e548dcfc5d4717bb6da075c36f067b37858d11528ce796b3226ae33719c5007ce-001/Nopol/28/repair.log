@@ -1,0 +1,247 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__grade-bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001/Nopol_IntroClassJava_grade_bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/usr/lib/jvm/java-1.8.0-openjdk/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 7 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+16:00:30.225 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:30.227 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__grade-bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001/Nopol_IntroClassJava_grade_bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__grade-bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001/Nopol_IntroClassJava_grade_bfad6d21d636def8e9e72910c3eb0815f5747669e3a60fb10c6f7f421082d18e548dcfc5d4717bb6da075c36f067b37858d11528ce796b3226ae33719c5007ce-001/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:30.228 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:30.228 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.grade_bfad6d21_001BlackboxTest, introclassJava.grade_bfad6d21_001WhiteboxTest]
+16:00:30.230 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.grade_bfad6d21_001BlackboxTest, introclassJava.grade_bfad6d21_001WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:30.231 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:30.233 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:30.234 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:30.234 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:30.234 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:30.238 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:30.238 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:35.364 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:35.366 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:88 which is executed by 18 tests
+-557812625
+16:00:35.743 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:37.220 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:37.220 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:37.221 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:88.
+16:00:37.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:37.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:84 which is executed by 18 tests
+-557812625
+16:00:37.347 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:37.924 [pool-9-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:37.924 [pool-9-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:37.924 [pool-9-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:84.
+16:00:37.924 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:38.263 [pool-15-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:38.264 [pool-15-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...(percent)>Studenthas[anAgrad]e> but was:<...(percent)>Studenthas[failedthecours]e>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...(percent)>Studenthas[anAgrad]e> but was:<...(percent)>Studenthas[failedthecours]e>]
+16:00:38.264 [pool-15-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:84.
+16:00:38.264 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:38.264 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:81 which is executed by 18 tests
+-557812625
+16:00:38.403 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:38.833 [pool-21-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:38.833 [pool-21-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:38.833 [pool-21-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:81.
+16:00:38.833 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:39.178 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:39.179 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[D]grade>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[D]grade>]
+16:00:39.179 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:81.
+16:00:39.179 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:39.179 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:78 which is executed by 18 tests
+-557812625
+16:00:39.316 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:39.695 [pool-33-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:39.695 [pool-33-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:39.696 [pool-33-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:78.
+16:00:39.696 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:40.019 [pool-39-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:40.020 [pool-39-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[C]grade>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[C]grade>]
+16:00:40.020 [pool-39-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:78.
+16:00:40.020 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+16:00:40.020 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:75 which is executed by 18 tests
+-557812625
+16:00:40.130 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:40.467 [pool-45-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:40.467 [pool-45-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:40.467 [pool-45-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:75.
+16:00:40.467 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:40.871 [pool-51-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:40.872 [pool-51-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[B]grade>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[B]grade>]
+16:00:40.872 [pool-51-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:75.
+16:00:40.872 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+16:00:40.872 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:72 which is executed by 18 tests
+-557812625
+16:00:40.962 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:41.333 [pool-57-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:41.333 [pool-57-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:00:41.333 [pool-57-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:72.
+16:00:41.333 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:41.976 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:42.086 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:42.183 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:42.467 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:42.756 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:05.270 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:01:05.271 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+16:01:05.272 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:71 which is executed by 18 tests
+-557812625
+16:01:05.340 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:05.598 [pool-121-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...(percent)>Studenthas[anAgrad]e> but was:<...(percent)>Studenthas[failedthecours]e>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...(percent)>Studenthas[anAgrad]e> but was:<...(percent)>Studenthas[failedthecours]e>]
+16:01:05.598 [pool-121-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:05.598 [pool-121-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:71.
+16:01:05.598 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+16:01:05.598 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:70 which is executed by 18 tests
+-557812625
+16:01:05.655 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+16:01:05.655 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:69 which is executed by 18 tests
+-557812625
+16:01:05.721 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:05.918 [pool-127-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...creasingpercentages>[Thankyou.Nowenterstudentscore(percent)>StudenthasanAgrade]> but was:<...creasingpercentages>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...creasingpercentages>[Thankyou.Nowenterstudentscore(percent)>StudenthasanAgrade]> but was:<...creasingpercentages>[]>]
+16:01:05.918 [pool-127-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:05.918 [pool-127-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:69.
+16:01:05.918 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+16:01:05.918 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:68 which is executed by 18 tests
+-557812625
+16:01:05.994 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:06.175 [pool-133-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[D]grade>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[A]grade> but was:<...ercent)>Studenthasan[D]grade>]
+16:01:06.175 [pool-133-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:06.175 [pool-133-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:68.
+16:01:06.176 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+16:01:06.176 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:67 which is executed by 18 tests
+-557812625
+16:01:06.223 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:06.417 [pool-139-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[Agrad]e> but was:<...ercent)>Studenthasan[CgradeStudenthasfailedthecours]e>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[Agrad]e> but was:<...ercent)>Studenthasan[CgradeStudenthasfailedthecours]e>]
+16:01:06.418 [pool-139-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:06.418 [pool-139-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:67.
+16:01:06.418 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+16:01:06.418 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:66 which is executed by 18 tests
+-557812625
+16:01:06.496 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:06.717 [pool-145-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...ercent)>Studenthasan[Agrad]e> but was:<...ercent)>Studenthasan[BgradeStudenthasfailedthecours]e>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...ercent)>Studenthasan[Agrad]e> but was:<...ercent)>Studenthasan[BgradeStudenthasfailedthecours]e>]
+16:01:06.717 [pool-145-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:06.717 [pool-145-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:66.
+16:01:06.718 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+16:01:06.718 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:65 which is executed by 18 tests
+-557812625
+16:01:06.774 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:07.112 [pool-151-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...)>StudenthasanAgrade[]> but was:<...)>StudenthasanAgrade[Studenthasfailedthecourse]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...)>StudenthasanAgrade[]> but was:<...)>StudenthasanAgrade[Studenthasfailedthecourse]>]
+16:01:07.112 [pool-151-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:07.112 [pool-151-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:65.
+16:01:07.113 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+16:01:07.113 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:64 which is executed by 18 tests
+-557812625
+16:01:07.184 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+16:01:07.184 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:62 which is executed by 18 tests
+-557812625
+16:01:07.228 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:07.367 [pool-157-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<[EnterthresholdsforA,B,C,Dinthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>StudenthasanAgrade]> but was:<[Thankyou.Nowenterstudentscore(percent)>]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<[EnterthresholdsforA,B,C,Dinthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>StudenthasanAgrade]> but was:<[Thankyou.Nowenterstudentscore(percent)>]>]
+16:01:07.367 [pool-157-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.grade_bfad6d21_001BlackboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>, test2(introclassJava.grade_bfad6d21_001WhiteboxTest): expected:<...udentscore(percent)>[StudenthasanAgrade]> but was:<...udentscore(percent)>[]>]
+16:01:07.367 [pool-157-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_bfad6d21_001:62.
+16:01:07.367 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+16:01:07.367 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:61 which is executed by 18 tests
+-557812625
+16:01:07.414 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+16:01:07.414 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_bfad6d21_001:60 which is executed by 18 tests
+-557812625
+16:01:07.545 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 18
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 37322ms
+16:01:07.548 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+NO_SYNTHESIS
+
+real	0m38.066s
+user	0m34.241s
+sys	0m2.049s
+\n\nNode: hpc062.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 16:01:07 EDT 2021\n

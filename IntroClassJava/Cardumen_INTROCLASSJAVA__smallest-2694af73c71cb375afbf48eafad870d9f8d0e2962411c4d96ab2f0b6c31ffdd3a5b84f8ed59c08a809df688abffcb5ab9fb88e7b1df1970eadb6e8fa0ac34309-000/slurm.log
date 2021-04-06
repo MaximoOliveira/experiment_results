@@ -1,0 +1,30 @@
+* ----------------------------------------------------------------
+* Running PROLOG for Cardumen_INTROCLASSJAVA__smallest-2694af73c71cb375afbf48eafad870d9f8d0e2962411c4d96ab2f0b6c31ffdd3a5b84f8ed59c08a809df688abffcb5ab9fb88e7b1df1970eadb6e8fa0ac34309-000 on Sat Apr  3 20:59:44 WEST 2021
+*    JOB_NAME                : Cardumen_INTROCLASSJAVA__smallest-2694af73c71cb375afbf48eafad870d9f8d0e2962411c4d96ab2f0b6c31ffdd3a5b84f8ed59c08a809df688abffcb5ab9fb88e7b1df1970eadb6e8fa0ac34309-000
+*    JOB_ID                  : 616173
+*    JOB_PARTITION           : fct
+*    JOB_USER                : moliveira
+*    JOB_ACCOUNT             : cpca56132020
+*    JOB_QOS                 : cpca56132020
+*    NODE_LIST               : hpc063
+*    SLURM_NNODES            : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    WORK_DIR                : /users2/cpca56132020/moliveira
+* ----------------------------------------------------------------
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 2061407
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 8192000
+open files                      (-n) 131072
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 2061407
+virtual memory          (kbytes, -v) 8192000
+file locks                      (-x) unlimited

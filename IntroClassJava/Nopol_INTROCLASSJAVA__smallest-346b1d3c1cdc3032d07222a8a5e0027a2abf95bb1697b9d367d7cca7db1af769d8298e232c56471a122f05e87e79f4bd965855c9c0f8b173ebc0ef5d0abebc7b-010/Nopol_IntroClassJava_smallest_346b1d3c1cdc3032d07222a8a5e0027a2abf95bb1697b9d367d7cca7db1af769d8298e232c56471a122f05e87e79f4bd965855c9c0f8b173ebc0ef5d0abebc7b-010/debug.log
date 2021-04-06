@@ -1,0 +1,222 @@
+16:00:37.628 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:37.631 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-346b1d3c1cdc3032d07222a8a5e0027a2abf95bb1697b9d367d7cca7db1af769d8298e232c56471a122f05e87e79f4bd965855c9c0f8b173ebc0ef5d0abebc7b-010/Nopol_IntroClassJava_smallest_346b1d3c1cdc3032d07222a8a5e0027a2abf95bb1697b9d367d7cca7db1af769d8298e232c56471a122f05e87e79f4bd965855c9c0f8b173ebc0ef5d0abebc7b-010/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-346b1d3c1cdc3032d07222a8a5e0027a2abf95bb1697b9d367d7cca7db1af769d8298e232c56471a122f05e87e79f4bd965855c9c0f8b173ebc0ef5d0abebc7b-010/Nopol_IntroClassJava_smallest_346b1d3c1cdc3032d07222a8a5e0027a2abf95bb1697b9d367d7cca7db1af769d8298e232c56471a122f05e87e79f4bd965855c9c0f8b173ebc0ef5d0abebc7b-010/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:37.631 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:37.631 fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.smallest_346b1d3c_010BlackboxTest, introclassJava.smallest_346b1d3c_010WhiteboxTest]
+16:00:37.633 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.smallest_346b1d3c_010BlackboxTest, introclassJava.smallest_346b1d3c_010WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:37.633 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:37.636 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:37.636 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:37.636 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:37.636 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:37.640 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:37.640 fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:41.410 fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:41.412 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:80 which is executed by 1 tests
+16:00:41.721 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:42.837 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:42.837 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:42.837 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:80.
+16:00:42.837 fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:42.837 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:78 which is executed by 1 tests
+16:00:42.929 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:43.304 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:43.304 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:43.304 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:78.
+16:00:43.304 fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:43.304 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:77 which is executed by 5 tests
+16:00:43.408 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:43.797 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:43.797 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:43.797 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:77.
+16:00:43.798 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:44.088 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:44.088 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:44.088 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:77.
+16:00:44.088 fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:44.088 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:73 which is executed by 16 tests
+16:00:44.200 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:44.507 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:44.507 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:44.507 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:73.
+16:00:44.508 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:44.784 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:44.784 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1]isthesmallest> but was:<...rsseparatedbyspaces>[0]isthesmallest>]
+16:00:44.784 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:73.
+16:00:44.784 fr.inria.lille.repair.nopol.NoPol - statement #5
+16:00:44.785 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:72 which is executed by 16 tests
+16:00:44.868 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:45.149 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:45.149 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:45.149 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:72.
+16:00:45.149 fr.inria.lille.repair.nopol.NoPol - statement #6
+16:00:45.149 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:71 which is executed by 16 tests
+16:00:45.258 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:45.569 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:45.569 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:45.569 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:71.
+16:00:45.569 fr.inria.lille.repair.nopol.NoPol - statement #7
+16:00:45.569 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:70 which is executed by 16 tests
+16:00:45.646 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:45.968 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...rsseparatedbyspaces>[-1]isthesmallest> but was:<...rsseparatedbyspaces>[0]isthesmallest>]
+16:00:45.968 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:45.968 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:70.
+16:00:45.968 fr.inria.lille.repair.nopol.NoPol - statement #8
+16:00:45.968 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:69 which is executed by 16 tests
+16:00:46.058 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:46.344 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:46.344 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:46.344 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:69.
+16:00:46.345 fr.inria.lille.repair.nopol.NoPol - statement #9
+16:00:46.345 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:68 which is executed by 16 tests
+16:00:46.417 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:46.698 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:46.698 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:46.698 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:68.
+16:00:46.698 fr.inria.lille.repair.nopol.NoPol - statement #10
+16:00:46.698 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:67 which is executed by 16 tests
+16:00:46.768 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.074 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:47.074 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:00:47.074 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:67.
+16:00:47.074 fr.inria.lille.repair.nopol.NoPol - statement #11
+16:00:47.074 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:66 which is executed by 16 tests
+16:00:47.146 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.677 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:47.801 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:47.877 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:48.110 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:48.408 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:54.601 f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:00:54.602 fr.inria.lille.repair.nopol.NoPol - statement #12
+16:00:54.602 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:65 which is executed by 16 tests
+16:00:54.666 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:55.073 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:55.093 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:55.118 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:55.208 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:55.428 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:01.474 f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:01:01.480 fr.inria.lille.repair.nopol.NoPol - statement #13
+16:01:01.480 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:64 which is executed by 16 tests
+16:01:01.543 fr.inria.lille.repair.nopol.NoPol - statement #14
+16:01:01.543 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:63 which is executed by 16 tests
+16:01:01.618 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:01.810 tests.output - Failing tests with false: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<[Pleaseenter4numbersseparatedbyspaces>-1isthesmallest]> but was:<[-1isthesmalles]>]
+16:01:01.810 tests.output - Failing tests with true: 
+[test8(introclassJava.smallest_346b1d3c_010BlackboxTest): expected:<...paces>-1isthesmalles[t]> but was:<...paces>-1isthesmalles[]>]
+16:01:01.810 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_346b1d3c_010:63.
+16:01:01.810 fr.inria.lille.repair.nopol.NoPol - statement #15
+16:01:01.811 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:62 which is executed by 16 tests
+16:01:01.865 fr.inria.lille.repair.nopol.NoPol - statement #16
+16:01:01.865 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:61 which is executed by 16 tests
+16:01:01.938 fr.inria.lille.repair.nopol.NoPol - statement #17
+16:01:01.939 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_346b1d3c_010:60 which is executed by 16 tests
+16:01:02.014 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 15
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 2
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 24387ms
+16:01:02.030 fr.inria.lille.repair.nopol.NoPol - 

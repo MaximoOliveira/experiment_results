@@ -1,0 +1,18 @@
+--- a/src/main/java/introclassJava/median_36d8008b_000.java
++++ b/src/main/java/introclassJava/median_36d8008b_000.java
+@@ -69,7 +69,11 @@
+             d.value = a.value;
+-        } else if (b.value > a.value && b.value < c.value || b.value < a.value
+-                   && b.value > c.value) {
+-            d.value = b.value;
+         } else {
+-            d.value = c.value;
++            if ((((b.value < a.value)) || ((b.value > a.value))) || (!((a!=null) && ((b.value < c.value))))) {
++                if (b.value > a.value && b.value < c.value || b.value < a.value
++                && b.value > c.value) {
++                    d.value = b.value;
++                } else {
++                    d.value = c.value;
++                }
++            }
+         }

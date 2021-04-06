@@ -1,0 +1,8 @@
+--- a/src/main/java/introclassJava/median_317aa705_003.java
++++ b/src/main/java/introclassJava/median_317aa705_003.java
+@@ -73,4 +73,3 @@
+         }
+-        if ((a.value > b.value && a.value < c.value)
+-                || (a.value < b.value && a.value > c.value)) {
++        if (!((((a.value < b.value)) && ((a.value < c.value))) || (((a.value > b.value)) && ((a.value > c.value))))) {
+             output += (String.format ("%d is the median", a.value));

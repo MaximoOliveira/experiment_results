@@ -1,0 +1,16 @@
+--- a/src/main/java/introclassJava/median_0cea42f9_003.java
++++ b/src/main/java/introclassJava/median_0cea42f9_003.java
+@@ -65,10 +65,9 @@
+         c.value = scanner.nextInt ();
+-        if (((a.value > b.value) && (a.value < c.value))
+-                || ((a.value < b.value) && (a.value > c.value))) {
++        if (!((((a.value > c.value)) && ((introclassJava.median_0cea42f9_003.this.output.length() <= 0) || ((a.value > b.value)))) || (((a.value < c.value)) && ((a.value < b.value))))) {
+             output += (String.format ("%d is the median\n", a.value));
+         } else if (((b.value > a.value) && (b.value < c.value))
+-                   || ((b.value < a.value) && (b.value > c.value))) {
++        || ((b.value < a.value) && (b.value > c.value))) {
+             output += (String.format ("%d is the median\n", b.value));
+         } else if (((c.value > a.value) && (c.value < b.value))
+-                   || ((c.value < a.value) && (c.value > b.value))) {
++        || ((c.value < a.value) && (c.value > b.value))) {
+             output += (String.format ("%d is the median\n", c.value));

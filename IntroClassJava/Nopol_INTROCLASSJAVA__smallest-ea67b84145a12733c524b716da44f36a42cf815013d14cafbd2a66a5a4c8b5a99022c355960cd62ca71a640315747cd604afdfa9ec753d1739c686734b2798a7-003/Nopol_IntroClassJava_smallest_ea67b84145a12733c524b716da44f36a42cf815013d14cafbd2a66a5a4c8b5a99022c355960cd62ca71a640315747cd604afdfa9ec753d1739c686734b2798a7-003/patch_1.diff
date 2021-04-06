@@ -1,0 +1,12 @@
+--- a/src/main/java/introclassJava/smallest_ea67b841_003.java
++++ b/src/main/java/introclassJava/smallest_ea67b841_003.java
+@@ -69,7 +69,6 @@
+             SN.value = a.value;
+-        } else if ((b.value < a.value) && (b.value < c.value)
+-                   && (b.value < d.value)) {
++        } else if ((b.value < d.value)) {
+             SN.value = b.value;
+         } else if ((c.value < a.value) && (c.value < b.value)
+-                   && (c.value < d.value)) {
++        && (c.value < d.value)) {
+             SN.value = c.value;

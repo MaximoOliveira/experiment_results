@@ -1,0 +1,140 @@
+15:59:58.523 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+15:59:58.525 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/Nopol_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/Nopol_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+15:59:58.526 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+15:59:58.526 fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.median_1bf73a9c_003BlackboxTest, introclassJava.median_1bf73a9c_003WhiteboxTest]
+15:59:58.528 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.median_1bf73a9c_003BlackboxTest, introclassJava.median_1bf73a9c_003WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+15:59:58.528 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+15:59:58.531 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+15:59:58.531 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+15:59:58.531 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+15:59:58.531 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+15:59:58.535 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+15:59:58.535 fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:21.656 fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:21.659 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_1bf73a9c_003:74 which is executed by 8 tests
+16:00:21.935 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.391 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:23.431 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:23.500 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:23.634 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:23.812 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:28.838 f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:00:28.839 fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:28.839 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_1bf73a9c_003:70 which is executed by 11 tests
+16:00:28.955 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:29.408 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:29.427 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:29.502 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:30.019 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:30.591 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:30.805 f.i.l.c.s.ConstraintBasedSynthesis - Successful code synthesis: !(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))
+16:00:30.805 f.i.l.repair.nopol.patch.TestPatch - Applying patch: introclassJava.median_1bf73a9c_003:70: PRECONDITION !(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))
+16:00:30.994 f.i.l.repair.nopol.patch.TestPatch - Running test suite to check the patch "!(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))" is working
+16:00:31.084 fr.inria.lille.repair.nopol.NoPol - Skipped -9 patches for sake of performance
+16:00:31.084 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 2
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 2
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 6
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 20
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 32562ms
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - 
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+16:00:31.089 fr.inria.lille.repair.nopol.NoPol - !(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))
+16:00:31.091 fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 11
+16:00:31.091 fr.inria.lille.repair.nopol.NoPol - introclassJava.median_1bf73a9c_003:70: PRECONDITION
+16:00:31.101 fr.inria.lille.repair.nopol.NoPol - --- a/src/main/java/introclassJava/median_1bf73a9c_003.java
++++ b/src/main/java/introclassJava/median_1bf73a9c_003.java
+@@ -69,7 +69,11 @@
+             ans.value = first.value;
+-        } else if ((second.value > first.value && second.value < third.value)
+-                   || (second.value > third.value && second.value < first.value)) {
+-            ans.value = second.value;
+         } else {
+-            ans.value = third.value;
++            if (!(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))) {
++                if ((second.value > first.value && second.value < third.value)
++                || (second.value > third.value && second.value < first.value)) {
++                    ans.value = second.value;
++                } else {
++                    ans.value = third.value;
++                }
++            }
+         }
+
