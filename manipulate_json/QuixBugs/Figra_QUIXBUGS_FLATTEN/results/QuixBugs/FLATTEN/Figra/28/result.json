@@ -1,0 +1,56 @@
+{
+  "repair_end": "2021-04-02 10:58:39.412100", 
+  "repair_begin": "2021-04-02 08:58:32.573244", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTENjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTENjava\\n@@ -21 +21 @@\\n-\\t\\t\\t\\t\\tresult.add(java_programs.FLATTEN.flatten(x));\\n+\\t\\t\\t\\t\\tresult.add(x);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/.\\/output_astor\\/AstorMain-FLATTEN-\\/\\/src\\/\\/variant-70\\/java_programs\\/FLATTEN.java", 
+          "ORIGINAL_CODE": "java_programs.FLATTEN.flatten(x)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "x", 
+          "INGREDIENT_PARENT": "x", 
+          "LOCATION": "java_programs.FLATTEN", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTEN.java", 
+          "LINE": "21", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "35", 
+      "VARIANT_ID": "70", 
+      "TIME": "11", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/.\\/output_astor\\/AstorMain-FLATTEN-\\/\\/src\\/\\/variant-70"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTENjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTENjava\\n@@ -26 +26 @@\\n-\\t\\t\\treturn java_programs.FLATTEN.flatten(arr);\\n+\\t\\t\\treturn arr;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/.\\/output_astor\\/AstorMain-FLATTEN-\\/\\/src\\/\\/variant-106\\/java_programs\\/FLATTEN.java", 
+          "ORIGINAL_CODE": "java_programs.FLATTEN.flatten(arr)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "arr", 
+          "INGREDIENT_PARENT": "arr", 
+          "LOCATION": "java_programs.FLATTEN", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/src\\/main\\/java\\/FLATTEN.java", 
+          "LINE": "26", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "53", 
+      "VARIANT_ID": "106", 
+      "TIME": "15", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_FLATTEN\\/Figra_QuixBugs_FLATTEN_\\/.\\/output_astor\\/AstorMain-FLATTEN-\\/\\/src\\/\\/variant-106"
+    }
+  ]
+}

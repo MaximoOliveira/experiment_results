@@ -1,0 +1,55 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_QUIXBUGS_SHORTEST_PATH_LENGTHS/Cardumen_QuixBugs_SHORTEST_PATH_LENGTHS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id SHORTEST_PATH_LENGTHS- \
+	-failing java_testcases.junit.SHORTEST_PATH_LENGTHS_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+10:01:08.533 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+10:01:22.116 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.put(edge, java_programs.SHORTEST_PATH_LENGTHS.INF) to length_by_path.put(edge, java_programs.SHORTEST_PATH_LENGTHS.INF)
+10:01:23.257 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<>() to new java.util.HashMap<>()
+10:01:23.839 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify j++ to length_by_path.get(java.util.Arrays.asList(j, j)) + length_by_path.get(java.util.Arrays.asList(i, j))
+10:03:18.261 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify j++ to j++
+10:05:16.489 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify j++ to j++
+10:05:49.837 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+10:09:02.179 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify k++ to length_by_path.get(java.util.Arrays.asList(k, k)) + length_by_path.get(java.util.Arrays.asList(k, k))
+10:10:21.201 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify i++ to length_by_path.get(java.util.Arrays.asList(i, i)) + length_by_path.get(java.util.Arrays.asList(i, i))
+10:10:45.815 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - error to modify j++ to length_by_path.get(java.util.Arrays.asList(k, j)) + length_by_path.get(java.util.Arrays.asList(i, j))
+10:11:57.506 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge.containsKey(edge) to length_by_edge.containsKey(edge)
+10:12:44.607 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length_by_edge.get(edge) to length_by_edge.get(edge)
+10:15:23.793 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(i, j) to java.util.Arrays.asList(i, j)
+10:18:34.483 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i < numNodes to i < numNodes
+10:18:46.994 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.get(java.util.Arrays.asList(i, j)) to length_by_path.get(java.util.Arrays.asList(i, j))
+10:20:04.517 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(i, j) to java.util.Arrays.asList(i, j)
+10:21:51.692 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify length_by_path.put(edge, length_by_edge.get(edge)) to length_by_path.put(edge, length_by_edge.get(edge))
+10:26:11.110 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i < numNodes to i < numNodes
+10:29:19.683 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify i == j to i == j
+10:31:44.989 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Arrays.asList(i, j) to java.util.Arrays.asList(i, j)
+/bin/sh: line 24: 53328 Killed                  java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain -mode cardumen -location . -id SHORTEST_PATH_LENGTHS- -failing java_testcases.junit.SHORTEST_PATH_LENGTHS_Test -jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin -jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin -maxgen 1000000 -maxtime 120 -stopfirst true -seed 28 -scope package -population 1 -javacompliancelevel 8 -srcjavafolder src/main/java -srctestfolder src/test/java -binjavafolder target/classes -bintestfolder target/test-classes -parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 -dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+
+real	32m16.381s
+user	0m31.914s
+sys	0m14.654s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 10:33:05 EDT 2021\n

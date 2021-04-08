@@ -1,0 +1,15 @@
+{
+  "repair_end": "2021-04-03 15:00:53.225548", 
+  "repair_begin": "2021-04-03 15:00:42.317339", 
+  "patches": [
+    {
+      "nb_test_that_execute_statement": 12, 
+      "patchLocation": {
+        "line": 26, 
+        "class": "java_programs.QUICKSORT"
+      }, 
+      "patchType": "CONDITIONAL", 
+      "patch": "--- a/src/main/java/QUICKSORT.java\n+++ b/src/main/java/QUICKSORT.java\n@@ -25,3 +25,3 @@\n                 lesser.add(x);\n-            } else if (x > pivot) {\n+            } else if (lesser!=null) {\n                 greater.add(x);\n"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-02 21:26:26.630391", 
+  "repair_begin": "2021-04-02 21:26:12.987794", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n@@ -18 +18 @@\\n-\\t\\tint max = ((int) (java.lang.Math.sqrt(n) + 1.0));\\n+\\t\\tint max = ((int) (java.lang.Math.sqrt(n * n) + 1.0));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-34\\/java_programs\\/GET_FACTORS.java", 
+          "ORIGINAL_CODE": "n", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "n * n", 
+          "INGREDIENT_PARENT": "(_int_0 * _int_1)", 
+          "LOCATION": "java_programs.GET_FACTORS", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORS.java", 
+          "LINE": "18", 
+          "MP_RANKING": "0", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "17", 
+      "VARIANT_ID": "34", 
+      "TIME": "6", 
+      "VALIDATION": "|true|0|11|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-34"
+    }
+  ]
+}

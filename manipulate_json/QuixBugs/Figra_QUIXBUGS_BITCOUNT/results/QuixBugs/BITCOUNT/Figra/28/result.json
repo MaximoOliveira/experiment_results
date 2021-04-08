@@ -1,0 +1,106 @@
+{
+  "repair_end": "2021-04-02 10:59:12.437884", 
+  "repair_begin": "2021-04-02 08:58:26.518315", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n@@ -15 +15 @@\\n-\\t\\t\\tn = n ^ (n - 1);\\n+\\t\\t\\tn = n ^ (n - (n & (n - 1)));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-570\\/java_programs\\/BITCOUNT.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "n & (n - 1)", 
+          "INGREDIENT_PARENT": "n & (n - 1)", 
+          "LOCATION": "java_programs.BITCOUNT", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNT.java", 
+          "LINE": "15", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl"
+        }
+      ], 
+      "GENERATION": "285", 
+      "VARIANT_ID": "570", 
+      "TIME": "1878", 
+      "VALIDATION": "|true|0|9|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-570"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n@@ -15 +15 @@\\n-\\t\\t\\tn = n ^ (n - 1);\\n+\\t\\t\\tn = n & (n - 1);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-620\\/java_programs\\/BITCOUNT.java", 
+          "ORIGINAL_CODE": "n ^ (n - 1)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "n & (n - 1)", 
+          "INGREDIENT_PARENT": "n & (n - 1)", 
+          "LOCATION": "java_programs.BITCOUNT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNT.java", 
+          "LINE": "15", 
+          "MP_RANKING": "7", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl"
+        }
+      ], 
+      "GENERATION": "310", 
+      "VARIANT_ID": "620", 
+      "TIME": "2037", 
+      "VALIDATION": "|true|0|9|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-620"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n@@ -15 +15 @@\\n-\\t\\t\\tn = n ^ (n - 1);\\n+\\t\\t\\tn = n & (n - 1);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-794\\/java_programs\\/BITCOUNT.java", 
+          "ORIGINAL_CODE": "n ^ (n - 1)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "n & (n - 1)", 
+          "INGREDIENT_PARENT": "_int_0 & (_int_0 - 1)", 
+          "LOCATION": "java_programs.BITCOUNT", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNT.java", 
+          "LINE": "15", 
+          "MP_RANKING": "7", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl"
+        }
+      ], 
+      "GENERATION": "397", 
+      "VARIANT_ID": "794", 
+      "TIME": "2465", 
+      "VALIDATION": "|true|0|9|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-794"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNTjava\\n@@ -15 +15 @@\\n-\\t\\t\\tn = n ^ (n - 1);\\n+\\t\\t\\tn = n ^ (n - (n & (n - 1)));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-996\\/java_programs\\/BITCOUNT.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(n & (n - 1))", 
+          "INGREDIENT_PARENT": "_int_0 & (_int_0 - 1)", 
+          "LOCATION": "java_programs.BITCOUNT", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/src\\/main\\/java\\/BITCOUNT.java", 
+          "LINE": "15", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "498", 
+      "VARIANT_ID": "996", 
+      "TIME": "2987", 
+      "VALIDATION": "|true|0|9|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_BITCOUNT\\/Figra_QuixBugs_BITCOUNT_\\/.\\/output_astor\\/AstorMain-BITCOUNT-\\/\\/src\\/\\/variant-996"
+    }
+  ]
+}
