@@ -1,0 +1,92 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_21_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id HANOI- \
+	-failing java_testcases.junit.HANOI_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 21 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+12:01:35.169 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
+12:01:37.850 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify second to second
+12:01:41.008 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper) to new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)
+12:01:42.350 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:01:42.626 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:01:43.108 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:01:44.560 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+12:01:44.940 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:01:46.680 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+12:01:49.039 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.HANOI.hanoi(height - 1, start, helper) to java_programs.HANOI.hanoi(height - 1, start, helper)
+12:01:55.788 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.poll() to crap_set.poll()
+12:01:57.019 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(second) to java.lang.String.valueOf(second)
+12:02:03.660 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+12:02:04.930 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+12:02:06.359 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:02:06.640 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+12:02:10.385 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "(" to "("
+12:02:14.684 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (("(" + java.lang.String.valueOf(first)) + ", ") to (("(" + java.lang.String.valueOf(first)) + ", ")
+12:02:16.064 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.PriorityQueue<java.lang.Integer>() to new java.util.PriorityQueue<java.lang.Integer>()
+12:02:20.090 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height > 0 to height > 0
+12:02:20.396 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>>() to new java.util.ArrayList<java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>>()
+12:02:21.923 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.addAll(java_programs.HANOI.hanoi(height - 1, helper, end)) to steps.addAll(java_programs.HANOI.hanoi(height - 1, helper, end))
+12:02:23.780 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(3) to crap_set.add(3)
+12:02:25.368 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+12:02:31.895 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")" to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")"
+12:02:35.815 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+12:02:42.916 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second))
+12:02:54.135 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.remove(start) to crap_set.remove(start)
+12:02:56.908 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+12:02:59.214 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+12:03:01.451 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")" to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")"
+12:03:06.259 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+12:03:10.038 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)) to steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper))
+12:03:22.145 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.addAll(java_programs.HANOI.hanoi(height - 1, start, helper)) to steps.addAll(java_programs.HANOI.hanoi(height - 1, start, helper))
+12:03:28.168 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(first) to java.lang.String.valueOf(first)
+12:03:30.687 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ")" to ")"
+12:03:37.121 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.remove(end) to crap_set.remove(end)
+12:03:38.279 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(2) to crap_set.add(2)
+12:03:38.898 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+12:04:19.757 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ", " to ", "
+12:04:34.438 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(1) to crap_set.add(1)
+12:04:56.983 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+12:05:00.905 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify end to end
+12:05:03.077 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ("(" + java.lang.String.valueOf(first)) to ("(" + java.lang.String.valueOf(first))
+12:05:35.173 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.HANOI.hanoi(height - 1, helper, end) to java_programs.HANOI.hanoi(height - 1, helper, end)
+12:07:57.547 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify end to end
+12:08:26.378 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+12:08:59.878 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+12:09:05.764 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+12:09:27.898 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+12:10:03.378 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+12:10:13.457 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+12:10:43.655 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+12:10:50.315 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+12:10:56.011 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 3 to 3
+12:12:53.818 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+12:15:00.814 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+12:15:12.153 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+
+real	42m46.294s
+user	38m11.570s
+sys	3m14.884s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 12:44:03 EDT 2021\n

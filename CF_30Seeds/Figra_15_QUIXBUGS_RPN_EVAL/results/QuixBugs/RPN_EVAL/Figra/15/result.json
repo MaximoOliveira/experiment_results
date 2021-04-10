@@ -1,0 +1,56 @@
+{
+  "repair_end": "2021-04-07 18:53:44.994345", 
+  "repair_begin": "2021-04-07 16:53:26.298822", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n@@ -34 +34 @@\\n-\\t\\t\\t\\tc = bin_op.apply(a, b);\\n+\\t\\t\\t\\tc = bin_op.apply(b, a);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-312\\/java_programs\\/RPN_EVAL.java", 
+          "ORIGINAL_CODE": "bin_op.apply(a, b)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "bin_op.apply(b, a)", 
+          "INGREDIENT_PARENT": "_BinaryOperator_0.apply(_Double_1, _Double_2)", 
+          "LOCATION": "java_programs.RPN_EVAL", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVAL.java", 
+          "LINE": "34", 
+          "MP_RANKING": "56", 
+          "SUSPICIOUNESS": "0.707", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtAssignmentImpl"
+        }
+      ], 
+      "GENERATION": "156", 
+      "VARIANT_ID": "312", 
+      "TIME": "63", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-312"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n@@ -35 +35 @@\\n-\\t\\t\\t\\tstack.push(c);\\n+\\t\\t\\t\\tstack.push(bin_op.apply(b, a));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-332\\/java_programs\\/RPN_EVAL.java", 
+          "ORIGINAL_CODE": "c", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "bin_op.apply(b, a)", 
+          "INGREDIENT_PARENT": "bin_op.apply(b, a)", 
+          "LOCATION": "java_programs.RPN_EVAL", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVAL.java", 
+          "LINE": "35", 
+          "MP_RANKING": "58", 
+          "SUSPICIOUNESS": "0.707", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "166", 
+      "VARIANT_ID": "332", 
+      "TIME": "67", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_15_QUIXBUGS_RPN_EVAL\\/Figra_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-332"
+    }
+  ]
+}

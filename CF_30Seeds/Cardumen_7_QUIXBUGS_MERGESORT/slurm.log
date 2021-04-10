@@ -1,0 +1,14 @@
+* ----------------------------------------------------------------
+* Running PROLOG for Cardumen_7_QUIXBUGS_MERGESORT on Wed Apr  7 17:51:39 WEST 2021
+*    JOB_NAME                : Cardumen_7_QUIXBUGS_MERGESORT
+*    JOB_ID                  : 705562
+*    JOB_PARTITION           : fct
+*    JOB_USER                : moliveira
+*    JOB_ACCOUNT             : cpca56132020
+*    JOB_QOS                 : cpca56132020
+*    NODE_LIST               : hpc063
+*    SLURM_NNODES            : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    WORK_DIR                : /users2/cpca56132020/moliveira
+* ----------------------------------------------------------------

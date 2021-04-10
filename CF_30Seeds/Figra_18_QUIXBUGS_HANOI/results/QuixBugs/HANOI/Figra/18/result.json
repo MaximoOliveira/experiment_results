@@ -1,0 +1,131 @@
+{
+  "repair_end": "2021-04-07 18:53:45.270694", 
+  "repair_begin": "2021-04-07 16:53:28.555583", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n@@ -27 +27 @@\\n-\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));\\n+\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-820\\/java_programs\\/HANOI.java", 
+          "ORIGINAL_CODE": "new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end)", 
+          "INGREDIENT_PARENT": "new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(_int_0, _int_1)", 
+          "LOCATION": "java_programs.HANOI", 
+          "BUGGY_CODE_TYPE": "CtConstructorCallImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOI.java", 
+          "LINE": "27", 
+          "MP_RANKING": "44", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "410", 
+      "VARIANT_ID": "820", 
+      "TIME": "129", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-820"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n@@ -27 +27 @@\\n-\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));\\n+\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-2370\\/java_programs\\/HANOI.java", 
+          "ORIGINAL_CODE": "helper", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "end", 
+          "INGREDIENT_PARENT": "end", 
+          "LOCATION": "java_programs.HANOI", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtConstructorCallImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOI.java", 
+          "LINE": "27", 
+          "MP_RANKING": "43", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1185", 
+      "VARIANT_ID": "2370", 
+      "TIME": "363", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-2370"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n@@ -27 +27 @@\\n-\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));\\n+\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end \\/ 1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-2804\\/java_programs\\/HANOI.java", 
+          "ORIGINAL_CODE": "helper", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "end \\/ 1", 
+          "INGREDIENT_PARENT": "_int_0 \\/ 1", 
+          "LOCATION": "java_programs.HANOI", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtConstructorCallImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOI.java", 
+          "LINE": "27", 
+          "MP_RANKING": "43", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtConstructorCallImpl"
+        }
+      ], 
+      "GENERATION": "1402", 
+      "VARIANT_ID": "2804", 
+      "TIME": "434", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-2804"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n@@ -27 +27 @@\\n-\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));\\n+\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end * 1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-3834\\/java_programs\\/HANOI.java", 
+          "ORIGINAL_CODE": "helper", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "end * 1", 
+          "INGREDIENT_PARENT": "_int_0 * 1", 
+          "LOCATION": "java_programs.HANOI", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtConstructorCallImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOI.java", 
+          "LINE": "27", 
+          "MP_RANKING": "43", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtConstructorCallImpl"
+        }
+      ], 
+      "GENERATION": "1917", 
+      "VARIANT_ID": "3834", 
+      "TIME": "605", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-3834"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOIjava\\n@@ -27 +27 @@\\n-\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));\\n+\\t\\t\\tsteps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-8452\\/java_programs\\/HANOI.java", 
+          "ORIGINAL_CODE": "steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end))", 
+          "INGREDIENT_PARENT": "_ArrayList_0.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(_int_1, _int_2))", 
+          "LOCATION": "java_programs.HANOI", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtBlockImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/src\\/main\\/java\\/HANOI.java", 
+          "LINE": "27", 
+          "MP_RANKING": "45", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtBlockImpl"
+        }
+      ], 
+      "GENERATION": "4226", 
+      "VARIANT_ID": "8452", 
+      "TIME": "1385", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_18_QUIXBUGS_HANOI\\/Figra_QuixBugs_HANOI_\\/.\\/output_astor\\/AstorMain-HANOI-\\/\\/src\\/\\/variant-8452"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-07 18:13:11.739322", 
+  "repair_begin": "2021-04-07 16:12:57.889646", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_0_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_0_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n@@ -19,5 +19,5 @@\\n-\\t\\tfor (int i = 2; i < max;) {\\n-\\t\\t\\tif ((n % i) == 0) {\\n-\\t\\t\\t\\tjava.util.ArrayList<java.lang.Integer> prepend = new java.util.ArrayList<java.lang.Integer>(0);\\n-\\t\\t\\t\\tprepend.add(i);\\n-\\t\\t\\t\\tprepend.addAll(java_programs.GET_FACTORS.get_factors(n \\/ i));\\n+\\t\\tfor (int i = 2; \\n+\\n+\\n+\\n+\\t\\t(n - n) < max; i++) { \\t\\t\\tif ((n % i) == 0) { \\t\\t\\t\\tjava.util.ArrayList<java.lang.Integer> prepend = new java.util.ArrayList<java.lang.Integer>(0); \\t\\t\\t\\tprepend.add(i); \\t\\t\\t\\tprepend.addAll(java_programs.GET_FACTORS.get_factors(n \\/ i));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_0_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-36\\/java_programs\\/GET_FACTORS.java", 
+          "ORIGINAL_CODE": "i", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(n - n)", 
+          "INGREDIENT_PARENT": "_int_0 - _int_1", 
+          "LOCATION": "java_programs.GET_FACTORS", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_0_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORS.java", 
+          "LINE": "19", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "18", 
+      "VARIANT_ID": "36", 
+      "TIME": "9", 
+      "VALIDATION": "|true|0|11|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_0_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-36"
+    }
+  ]
+}

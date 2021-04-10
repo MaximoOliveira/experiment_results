@@ -1,0 +1,108 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id MERGESORT- \
+	-failing java_testcases.junit.MERGESORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 24 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+13:54:55.685 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+13:54:58.511 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(0, middle) to arr.subList(0, middle)
+13:55:11.989 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() == 0 to arr.size() == 0
+13:55:14.978 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(middle, arr.size()) to arr.subList(middle, arr.size())
+13:55:16.736 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.MERGESORT.mergesort(left) to java_programs.MERGESORT.mergesort(left)
+13:55:18.261 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+13:55:21.478 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() / 2 to arr.size() / 2
+13:55:23.929 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+13:55:28.550 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+13:55:33.734 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.MERGESORT.mergesort(right) to java_programs.MERGESORT.mergesort(right)
+13:55:39.281 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify right.addAll(arr.subList(middle, arr.size())) to right.addAll(arr.subList(middle, arr.size()))
+13:55:40.877 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+13:56:04.988 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify left.addAll(arr.subList(0, middle)) to left.addAll(arr.subList(0, middle))
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=MERGESORT-
+TOTAL_TIME=7200.001
+NR_GENERATIONS=127
+NR_RIGHT_COMPILATIONS=127
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=6
+TIME=2
+VALIDATION=|true|0|13|[]|
+GENERATION=3
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-6
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.MERGESORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_/src/main/java/MERGESORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-6/java_programs/MERGESORT.java
+
+LINE=38
+
+SUSPICIOUNESS=1
+
+MP_RANKING=0
+
+ORIGINAL_CODE=arr.size()
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(arr.size() / 2)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_ArrayList_0.size() / 2
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_24_QUIXBUGS_MERGESORT/Cardumen_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
+@@ -38,4 +38,4 @@
+-		if (arr.size() == 0) {
+-			return arr;
+-		} else {
+-			int middle = arr.size() / 2;
++		if (
++
++
++		(arr.size() / 2) == 0) { 			return arr;} else { 			int middle = arr.size() / 2;
+
+
+
+
+real	120m7.358s
+user	119m12.321s
+sys	0m8.778s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 15:54:55 EDT 2021\n
