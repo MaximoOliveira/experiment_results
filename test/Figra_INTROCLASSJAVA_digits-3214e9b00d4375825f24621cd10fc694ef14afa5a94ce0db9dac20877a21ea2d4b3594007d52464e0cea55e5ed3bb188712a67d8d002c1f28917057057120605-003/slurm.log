@@ -1,0 +1,30 @@
+* ----------------------------------------------------------------
+* Running PROLOG for Figra_INTROCLASSJAVA_digits-3214e9b00d4375825f24621cd10fc694ef14afa5a94ce0db9dac20877a21ea2d4b3594007d52464e0cea55e5ed3bb188712a67d8d002c1f28917057057120605-003 on Sun Apr 11 11:51:46 WEST 2021
+*    JOB_NAME                : Figra_INTROCLASSJAVA_digits-3214e9b00d4375825f24621cd10fc694ef14afa5a94ce0db9dac20877a21ea2d4b3594007d52464e0cea55e5ed3bb188712a67d8d002c1f28917057057120605-003
+*    JOB_ID                  : 723681
+*    JOB_PARTITION           : fct
+*    JOB_USER                : moliveira
+*    JOB_ACCOUNT             : cpca56132020
+*    JOB_QOS                 : cpca56132020
+*    NODE_LIST               : hpc062
+*    SLURM_NNODES            : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    WORK_DIR                : /users2/cpca56132020/moliveira
+* ----------------------------------------------------------------
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 2060904
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 8192000
+open files                      (-n) 131072
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 2060904
+virtual memory          (kbytes, -v) 8192000
+file locks                      (-x) unlimited

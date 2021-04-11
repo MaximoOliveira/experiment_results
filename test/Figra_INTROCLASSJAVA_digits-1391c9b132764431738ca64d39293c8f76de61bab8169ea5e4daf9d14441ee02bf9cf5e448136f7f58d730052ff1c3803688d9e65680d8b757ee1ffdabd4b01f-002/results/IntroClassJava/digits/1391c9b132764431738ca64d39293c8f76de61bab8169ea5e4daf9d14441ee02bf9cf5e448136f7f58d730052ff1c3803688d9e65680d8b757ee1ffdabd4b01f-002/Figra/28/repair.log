@@ -1,0 +1,141 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_INTROCLASSJAVA_digits-1391c9b132764431738ca64d39293c8f76de61bab8169ea5e4daf9d14441ee02bf9cf5e448136f7f58d730052ff1c3803688d9e65680d8b757ee1ffdabd4b01f-002/Figra_IntroClassJava_digits_1391c9b132764431738ca64d39293c8f76de61bab8169ea5e4daf9d14441ee02bf9cf5e448136f7f58d730052ff1c3803688d9e65680d8b757ee1ffdabd4b01f-002;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id digits-1391c9b132764431738ca64d39293c8f76de61bab8169ea5e4daf9d14441ee02bf9cf5e448136f7f58d730052ff1c3803688d9e65680d8b757ee1ffdabd4b01f-002 \
+	-failing introclassJava.digits_1391c9b1_002BlackboxTest:introclassJava.digits_1391c9b1_002WhiteboxTest \
+	-jvm4testexecution /users2/cpca56132020/moliveira/java-se-7u75-ri/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/java-se-7u75-ri/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+06:51:36.124 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - Error retrieving java version output obtained: 
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=enError occurred during initialization of VMCould not reserve enough space for object heapError: Could not create the Java Virtual Machine.Error: A fatal exception has occurred. Program will exit.
+06:51:40.993 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:41.332 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:45.106 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:46.161 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:46.664 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:47.222 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:47.760 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:48.646 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:49.165 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:49.878 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:50.369 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:51.202 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:51.860 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:52.638 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:53.022 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify X to X
+06:51:53.221 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:53.971 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:51:54.600 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:04.700 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify NewNum to NewNum
+06:52:05.490 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:09.969 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:10.390 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:11.045 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:11.455 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:12.085 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:12.699 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+06:52:12.772 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:13.197 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:13.949 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:14.629 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:14.964 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:15.303 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:15.650 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:16.040 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:16.378 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:16.706 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:17.029 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:27.358 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:27.891 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:28.369 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:29.085 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:41.661 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:44.574 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+06:52:44.687 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:45.088 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:45.730 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:46.357 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:46.919 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify Num to Num
+06:52:47.007 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:47.437 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:47.947 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:48.678 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:52:58.973 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:09.164 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:09.603 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:10.044 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:20.766 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:21.934 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:32.037 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify Num to Num
+06:53:32.744 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:37.843 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:38.207 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:38.556 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:38.829 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify Num to Num
+06:53:38.910 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:39.900 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:40.301 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:40.620 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:40.940 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+06:53:40.985 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:41.531 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:41.810 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify Num to Num
+06:53:41.873 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:42.560 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:43.215 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:43.981 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:44.636 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:44.916 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify Num to Num
+06:53:44.953 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:45.295 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:45.634 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:45.985 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:46.438 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:46.784 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:47.246 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:47.623 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:47.991 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+06:53:48.097 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:48.947 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:49.288 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:49.797 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:50.165 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:50.918 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:51.682 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+06:53:51.744 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:53:52.504 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:07.541 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:08.116 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:08.677 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:09.062 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:09.409 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:09.742 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:10.137 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:10.679 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+06:54:10.988 [main] ERROR fr.inria.astor.core.setup.ProjectConfiguration - The property jvmversion is null or empty
+
+real	2m36.486s
+user	0m49.066s
+sys	0m4.916s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Sun Apr 11 06:54:11 EDT 2021\n

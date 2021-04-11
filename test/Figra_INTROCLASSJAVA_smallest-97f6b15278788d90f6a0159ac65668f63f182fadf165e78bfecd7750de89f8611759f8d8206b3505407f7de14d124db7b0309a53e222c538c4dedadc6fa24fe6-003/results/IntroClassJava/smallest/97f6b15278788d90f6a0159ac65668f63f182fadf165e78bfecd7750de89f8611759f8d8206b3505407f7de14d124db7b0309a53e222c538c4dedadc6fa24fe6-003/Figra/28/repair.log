@@ -1,0 +1,43 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_INTROCLASSJAVA_smallest-97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id smallest-97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003 \
+	-failing introclassJava.smallest_97f6b152_003BlackboxTest:introclassJava.smallest_97f6b152_003WhiteboxTest \
+	-jvm4testexecution /users2/cpca56132020/moliveira/java-se-7u75-ri/bin \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/java-se-7u75-ri/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder  \
+	-bintestfolder  \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+Exception in thread "main" org.apache.commons.cli.MissingArgumentException: Missing argument for option: binjavafolder
+	at org.apache.commons.cli.Parser.processArgs(Parser.java:363)
+	at org.apache.commons.cli.Parser.processOption(Parser.java:395)
+	at org.apache.commons.cli.Parser.parse(Parser.java:210)
+	at org.apache.commons.cli.Parser.parse(Parser.java:88)
+	at fr.inria.main.AbstractMain.processArguments(AbstractMain.java:337)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:203)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:199)
+
+real	0m1.070s
+user	0m1.008s
+sys	0m0.058s
+\n\nNode: hpc062.ncg.ingrid.pt\n
+\n\nDate: Sun Apr 11 06:53:55 EDT 2021\n
