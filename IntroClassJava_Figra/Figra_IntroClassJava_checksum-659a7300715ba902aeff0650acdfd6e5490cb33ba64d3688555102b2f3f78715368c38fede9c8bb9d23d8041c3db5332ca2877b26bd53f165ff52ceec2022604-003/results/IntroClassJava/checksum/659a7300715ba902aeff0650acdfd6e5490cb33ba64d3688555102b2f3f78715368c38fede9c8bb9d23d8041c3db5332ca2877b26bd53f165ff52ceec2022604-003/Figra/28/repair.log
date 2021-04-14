@@ -1,0 +1,58 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_checksum-659a7300715ba902aeff0650acdfd6e5490cb33ba64d3688555102b2f3f78715368c38fede9c8bb9d23d8041c3db5332ca2877b26bd53f165ff52ceec2022604-003/Figra_IntroClassJava_checksum_659a7300715ba902aeff0650acdfd6e5490cb33ba64d3688555102b2f3f78715368c38fede9c8bb9d23d8041c3db5332ca2877b26bd53f165ff52ceec2022604-003;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin/";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id checksum-659a7300715ba902aeff0650acdfd6e5490cb33ba64d3688555102b2f3f78715368c38fede9c8bb9d23d8041c3db5332ca2877b26bd53f165ff52ceec2022604-003 \
+	-failing introclassJava.checksum_659a7300_003BlackboxTest:introclassJava.checksum_659a7300_003WhiteboxTest \
+	-jvm4testexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Picked up _JAVA_OPTIONS: -Xmx512m -Xms256m
+06:11:00.810 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify ++i.value to introclassJava.checksum_659a7300_003.length ^ 64
+06:11:11.413 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+06:11:49.547 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count to count
+06:12:14.021 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+06:12:34.731 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.next() to scanner.next()
+06:13:40.003 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ' ' to ' '
+06:14:04.146 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify string to string
+06:15:05.966 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:15:30.545 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count to count
+06:15:51.216 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count to count
+06:16:42.687 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+06:17:19.169 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify string to string
+06:17:29.406 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Picked up _JAVA_OPTIONS: -Xmx512m -Xms256m
+
+06:19:12.947 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Enter an abitrarily long string, ending with carriage return > " to "Enter an abitrarily long string, ending with carriage return > "
+06:22:07.418 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count to count
+06:22:48.753 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.next().toCharArray() to scanner.next().toCharArray()
+06:28:48.696 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify introclassJava.checksum_659a7300_003.length to introclassJava.checksum_659a7300_003.length
+06:30:10.691 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Check sum is %c\n" to "Check sum is %c\n"
+
+real	49m58.932s
+user	1m0.563s
+sys	0m12.676s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Tue Apr 13 07:00:41 EDT 2021\n

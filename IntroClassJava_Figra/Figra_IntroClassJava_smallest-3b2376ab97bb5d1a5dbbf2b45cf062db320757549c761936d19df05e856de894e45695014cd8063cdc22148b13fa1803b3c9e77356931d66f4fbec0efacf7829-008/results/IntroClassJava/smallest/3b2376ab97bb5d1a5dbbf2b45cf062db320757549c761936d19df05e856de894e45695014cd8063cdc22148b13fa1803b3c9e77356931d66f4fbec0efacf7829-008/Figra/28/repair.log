@@ -1,0 +1,198 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin/";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008 \
+	-failing introclassJava.smallest_3b2376ab_008BlackboxTest:introclassJava.smallest_3b2376ab_008WhiteboxTest \
+	-jvm4testexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Picked up _JAVA_OPTIONS: -Xmx512m -Xms256m
+06:11:11.403 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+06:11:12.714 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n4 to n4
+06:11:13.463 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+06:11:13.780 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the smallest" to "%d is the smallest"
+06:11:15.238 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+06:11:15.616 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+06:11:28.705 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+06:11:30.673 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+06:11:30.971 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n4 to n4
+06:11:32.236 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+06:11:51.679 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:11:55.197 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+06:11:56.673 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:12:02.045 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:12:02.807 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+06:12:04.689 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Please enter 4 numbers separated by spaces > " to "Please enter 4 numbers separated by spaces > "
+06:12:04.972 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+06:12:07.872 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:12:11.272 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+06:12:29.284 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+06:12:32.393 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+06:12:34.722 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+06:12:45.938 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+06:12:57.684 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+06:13:09.683 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Please enter 4 numbers separated by spaces > ") to java.lang.String.format("Please enter 4 numbers separated by spaces > ")
+06:13:15.410 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n4 to n4
+06:13:52.509 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008
+TOTAL_TIME=7205.108
+NR_GENERATIONS=247
+NR_RIGHT_COMPILATIONS=150
+NR_FAILLING_COMPILATIONS=97
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=12
+TIME=13
+VALIDATION=|true|0|16|[]|
+GENERATION=6
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/./output_astor/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008//src//variant-12
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=introclassJava.smallest_3b2376ab_008
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/./output_astor/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008//src//variant-12/introclassJava/smallest_3b2376ab_008.java
+
+LINE=70
+
+SUSPICIOUNESS=0.48
+
+MP_RANKING=22
+
+ORIGINAL_CODE=((n2.value < n1.value) && (n2.value < n3.value))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=true
+
+PATCH_HUNK_TYPE=CtLiteralImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=true
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008java
++++ /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008java
+@@ -70,10 +70,10 @@
+-		} else if (((n2.value < n1.value) && (n2.value < n3.value)) && 
+-		(n2.value < n4.value)) {
+-			output += java.lang.String.format("%d is the smallest", n2.value);
+-		} else if (((n3.value < n1.value) && (n3.value < n2.value)) && 
+-		(n3.value < n4.value)) {
+-			output += java.lang.String.format("%d is the smallest", n3.value);
+-		} else {
+-			output += java.lang.String.format("%d is the smallest", n4.value);
+-		}
+-		if (true)
++		} else if (
++
++
++
++
++
++
++
++
++		true && (n2.value < n4.value)) { 			output += java.lang.String.format("%d is the smallest", n2.value);} else if (((n3.value < n1.value) && (n3.value < n2.value)) && (n3.value < n4.value)) { 			output += java.lang.String.format("%d is the smallest", n3.value);} else { 			output += java.lang.String.format("%d is the smallest", n4.value);} 		if (true)
+
+
+
+Patch 2
+VARIANT_ID=334
+TIME=108
+VALIDATION=|true|0|16|[]|
+GENERATION=167
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/./output_astor/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008//src//variant-334
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=introclassJava.smallest_3b2376ab_008
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/./output_astor/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008//src//variant-334/introclassJava/smallest_3b2376ab_008.java
+
+LINE=68
+
+SUSPICIOUNESS=0.433
+
+MP_RANKING=47
+
+ORIGINAL_CODE=((n1.value < n2.value) && (n1.value < n3.value))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=true
+
+PATCH_HUNK_TYPE=CtLiteralImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=true
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008java
++++ /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-008/src/main/java/introclassJava/smallest_3b2376ab_008java
+@@ -68,12 +68,12 @@
+-		if (((n1.value < n2.value) && (n1.value < n3.value)) && (n1.value < n4.value)) {
+-			output += java.lang.String.format("%d is the smallest ", n1.value);
+-		} else if (((n2.value < n1.value) && (n2.value < n3.value)) && 
+-		(n2.value < n4.value)) {
+-			output += java.lang.String.format("%d is the smallest", n2.value);
+-		} else if (((n3.value < n1.value) && (n3.value < n2.value)) && 
+-		(n3.value < n4.value)) {
+-			output += java.lang.String.format("%d is the smallest", n3.value);
+-		} else {
+-			output += java.lang.String.format("%d is the smallest", n4.value);
+-		}
+-		if (true)
++		if (
++
++
++
++
++
++
++
++
++
++
++		true && (n1.value < n4.value)) { 			output += java.lang.String.format("%d is the smallest ", n1.value);} else if (((n2.value < n1.value) && (n2.value < n3.value)) && (n2.value < n4.value)) { 			output += java.lang.String.format("%d is the smallest", n2.value);} else if (((n3.value < n1.value) && (n3.value < n2.value)) && (n3.value < n4.value)) { 			output += java.lang.String.format("%d is the smallest", n3.value);} else { 			output += java.lang.String.format("%d is the smallest", n4.value);} 		if (true)
+
+
+
+
+real	120m24.214s
+user	119m10.413s
+sys	0m21.624s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Tue Apr 13 08:11:01 EDT 2021\n

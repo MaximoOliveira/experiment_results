@@ -1,0 +1,79 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_IntroClassJava_grade-dccb1242e60245b164eba39e7c2ae4d7140c2c8964675ee78c7d8bea4aae494217dcac52415ab45fd89391060d17b101d87530b8e5a0b9a5781d06fe7db614eb-001/Figra_IntroClassJava_grade_dccb1242e60245b164eba39e7c2ae4d7140c2c8964675ee78c7d8bea4aae494217dcac52415ab45fd89391060d17b101d87530b8e5a0b9a5781d06fe7db614eb-001;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin/";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id grade-dccb1242e60245b164eba39e7c2ae4d7140c2c8964675ee78c7d8bea4aae494217dcac52415ab45fd89391060d17b101d87530b8e5a0b9a5781d06fe7db614eb-001 \
+	-failing introclassJava.grade_dccb1242_001BlackboxTest:introclassJava.grade_dccb1242_001WhiteboxTest \
+	-jvm4testexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /users2/cpca56132020/moliveira/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Picked up _JAVA_OPTIONS: -Xmx512m -Xms256m
+06:10:59.972 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.FloatObj() to new introclassJava.FloatObj()
+06:11:03.676 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify A to A
+06:11:05.380 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify score to score
+06:11:15.904 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextFloat() to scanner.nextFloat()
+06:11:16.552 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextFloat() to scanner.nextFloat()
+06:11:18.343 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify score to score
+06:11:18.688 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextFloat() to scanner.nextFloat()
+06:11:32.266 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Studetn has an C grade\n") to java.lang.String.format("Studetn has an C grade\n")
+06:11:35.052 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:11:36.020 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify A to A
+06:11:36.430 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:11:40.745 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:11:41.457 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Thank you. Now enter student score (percent) >  ") to java.lang.String.format("Thank you. Now enter student score (percent) >  ")
+06:11:42.644 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify score to score
+06:11:43.352 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify score to score
+06:11:46.413 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:11:48.442 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextFloat() to scanner.nextFloat()
+06:12:06.192 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.FloatObj() to new introclassJava.FloatObj()
+06:12:18.334 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify C to C
+06:12:19.230 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+06:12:25.581 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify C to C
+06:12:26.220 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify D to D
+06:12:27.358 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Enter thresholds for A, B, C, D\nin that order, decreasing percentages > " to "Enter thresholds for A, B, C, D\nin that order, decreasing percentages > "
+06:12:31.367 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify B to B
+06:12:33.203 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify B to B
+06:12:33.891 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextFloat() to scanner.nextFloat()
+06:12:36.453 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Studetn has an C grade\n" to "Studetn has an C grade\n"
+06:12:45.962 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify A to A
+06:12:51.379 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify B to B
+06:12:59.647 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Thank you. Now enter student score (percent) >  " to "Thank you. Now enter student score (percent) >  "
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=grade-dccb1242e60245b164eba39e7c2ae4d7140c2c8964675ee78c7d8bea4aae494217dcac52415ab45fd89391060d17b101d87530b8e5a0b9a5781d06fe7db614eb-001
+TOTAL_TIME=7200.84
+NR_GENERATIONS=246
+NR_RIGHT_COMPILATIONS=192
+NR_FAILLING_COMPILATIONS=54
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m12.868s
+user	119m2.590s
+sys	0m17.074s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Tue Apr 13 08:10:49 EDT 2021\n

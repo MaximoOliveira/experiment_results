@@ -1,0 +1,14 @@
+* ----------------------------------------------------------------
+* Running PROLOG for Figra_IntroClassJava_digits-f227ed285307815838e91975d2523300f5c71aa244356578858ac751ca351b55bc62f13559b03041faf2130fa8228dc0f8527f129e516404f37d4940707125b1-000 on Tue Apr 13 11:10:28 WEST 2021
+*    JOB_NAME                : Figra_IntroClassJava_digits-f227ed285307815838e91975d2523300f5c71aa244356578858ac751ca351b55bc62f13559b03041faf2130fa8228dc0f8527f129e516404f37d4940707125b1-000
+*    JOB_ID                  : 760451
+*    JOB_PARTITION           : fct
+*    JOB_USER                : moliveira
+*    JOB_ACCOUNT             : cpca56132020
+*    JOB_QOS                 : cpca56132020
+*    NODE_LIST               : hpc060
+*    SLURM_NNODES            : 1
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 1
+*    WORK_DIR                : /users2/cpca56132020/moliveira
+* ----------------------------------------------------------------

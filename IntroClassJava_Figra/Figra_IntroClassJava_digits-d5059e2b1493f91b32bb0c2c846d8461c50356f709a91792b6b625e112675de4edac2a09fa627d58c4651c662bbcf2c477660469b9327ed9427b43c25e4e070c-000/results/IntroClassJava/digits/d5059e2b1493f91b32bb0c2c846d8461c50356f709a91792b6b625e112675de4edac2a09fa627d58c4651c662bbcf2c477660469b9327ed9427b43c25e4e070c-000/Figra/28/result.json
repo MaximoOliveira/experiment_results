@@ -1,0 +1,231 @@
+{
+  "repair_end": "2021-04-13 13:10:56.987684", 
+  "repair_begin": "2021-04-13 11:10:37.919976", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = 10 % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-2\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "java.lang.Math.abs(num.value)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "10", 
+          "INGREDIENT_PARENT": "10", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "22", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1", 
+      "VARIANT_ID": "2", 
+      "TIME": "1", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-2"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = 0;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-14\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "java.lang.Math.abs(num.value) % 10", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "0", 
+          "INGREDIENT_PARENT": "0", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "24", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "7", 
+      "VARIANT_ID": "14", 
+      "TIME": "6", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-14"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-24\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "java.lang.Math.abs(num.value) % 10", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "10", 
+          "INGREDIENT_PARENT": "10", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "24", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "12", 
+      "VARIANT_ID": "24", 
+      "TIME": "9", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-24"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -62,2 +62,2 @@\\n-\\t\\tnum.value = scanner.nextInt();\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tnum.value = scanner.nextInt(); \\t\\tnew introclassJava.IntObj().value = \\n+\\t\\tjava.lang.Math.abs(num.value) % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-90\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "digit", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "new introclassJava.IntObj()", 
+          "INGREDIENT_PARENT": "new introclassJava.IntObj()", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldWriteImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "19", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "45", 
+      "VARIANT_ID": "90", 
+      "TIME": "34", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-90"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = java.lang.Math.abs(digit.value) % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-122\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "num", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "digit", 
+          "INGREDIENT_PARENT": "digit", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "20", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "61", 
+      "VARIANT_ID": "122", 
+      "TIME": "42", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-122"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = java.lang.Math.abs(0) % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-150\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "num.value", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "0", 
+          "INGREDIENT_PARENT": "0", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtFieldReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "21", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "75", 
+      "VARIANT_ID": "150", 
+      "TIME": "49", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-150"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = java.lang.Math.abs(10) % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-196\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "num.value", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "10", 
+          "INGREDIENT_PARENT": "10", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtFieldReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "21", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "98", 
+      "VARIANT_ID": "196", 
+      "TIME": "63", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-196"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = java.lang.Math.abs(new introclassJava.IntObj().value) % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-202\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "num", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "new introclassJava.IntObj()", 
+          "INGREDIENT_PARENT": "new introclassJava.IntObj()", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "20", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "101", 
+      "VARIANT_ID": "202", 
+      "TIME": "65", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-202"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000java\\n@@ -63 +63 @@\\n-\\t\\tdigit.value = java.lang.Math.abs(num.value) % 10;\\n+\\t\\tdigit.value = 0 % 10;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-238\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "ORIGINAL_CODE": "java.lang.Math.abs(num.value)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "0", 
+          "INGREDIENT_PARENT": "0", 
+          "LOCATION": "introclassJava.digits_d5059e2b_000", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/src\\/main\\/java\\/introclassJava\\/digits_d5059e2b_000.java", 
+          "LINE": "63", 
+          "MP_RANKING": "22", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "119", 
+      "VARIANT_ID": "238", 
+      "TIME": "84", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/Figra_IntroClassJava_digits_d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/.\\/output_astor\\/AstorMain-digits-d5059e2b1493f91b32bb0c2c846d8461c50356f709a91792b6b625e112675de4edac2a09fa627d58c4651c662bbcf2c477660469b9327ed9427b43c25e4e070c-000\\/\\/src\\/\\/variant-238"
+    }
+  ]
+}

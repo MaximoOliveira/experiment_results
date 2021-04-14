@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-13 13:10:50.403003", 
+  "repair_begin": "2021-04-13 11:10:36.440391", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/Figra_IntroClassJava_digits_e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/src\\/main\\/java\\/introclassJava\\/digits_e79f832f_002java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/Figra_IntroClassJava_digits_e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/src\\/main\\/java\\/introclassJava\\/digits_e79f832f_002java\\n@@ -64,8 +64,8 @@\\n-\\t\\tif (number.value < 0) {\\n-\\t\\t\\tnumber.value = java.lang.Math.abs(number.value);\\n-\\t\\t\\twhile (number.value > 10) {\\n-\\t\\t\\t\\trem.value = number.value % 10;\\n-\\t\\t\\t\\toutput += java.lang.String.format(\\\"%d\\\\n\\\", rem.value);\\n-\\t\\t\\t\\tnumber.value = (number.value - rem.value) \\/ 10;\\n-\\t\\t\\t} \\n-\\t\\t\\tnumber.value = number.value - (2 * number.value);\\n+\\t\\tif (number.value < \\n+\\n+\\n+\\n+\\n+\\n+\\n+\\t\\t2) { \\t\\t\\tnumber.value = java.lang.Math.abs(number.value); \\t\\t\\twhile (number.value > 10) { \\t\\t\\t\\trem.value = number.value % 10; \\t\\t\\t\\toutput += java.lang.String.format(\\\"%d\\\\n\\\", rem.value); \\t\\t\\t\\tnumber.value = (number.value - rem.value) \\/ 10;} \\t\\t\\tnumber.value = number.value - (2 * number.value);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/Figra_IntroClassJava_digits_e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/.\\/output_astor\\/AstorMain-digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/\\/src\\/\\/variant-206\\/introclassJava\\/digits_e79f832f_002.java", 
+          "ORIGINAL_CODE": "0", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "2", 
+          "INGREDIENT_PARENT": "2", 
+          "LOCATION": "introclassJava.digits_e79f832f_002", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/Figra_IntroClassJava_digits_e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/src\\/main\\/java\\/introclassJava\\/digits_e79f832f_002.java", 
+          "LINE": "64", 
+          "MP_RANKING": "16", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "103", 
+      "VARIANT_ID": "206", 
+      "TIME": "96", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/Figra_IntroClassJava_digits_e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/.\\/output_astor\\/AstorMain-digits-e79f832ff314d3658c07e164d7866db707eafc8c97f209cf1d5cdb3b0cfc6738e7bd533c426a4887122d853ffa152b8861f30c41642a180152ba50c983de66dc-002\\/\\/src\\/\\/variant-206"
+    }
+  ]
+}

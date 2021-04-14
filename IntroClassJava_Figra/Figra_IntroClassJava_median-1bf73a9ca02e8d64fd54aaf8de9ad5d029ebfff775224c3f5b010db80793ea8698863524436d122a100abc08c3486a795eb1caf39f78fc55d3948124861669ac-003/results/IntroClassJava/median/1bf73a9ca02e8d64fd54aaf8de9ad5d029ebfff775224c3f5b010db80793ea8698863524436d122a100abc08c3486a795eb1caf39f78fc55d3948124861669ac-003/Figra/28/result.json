@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-13 13:11:03.725785", 
+  "repair_begin": "2021-04-13 11:10:45.061568", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/src\\/main\\/java\\/introclassJava\\/median_1bf73a9c_003java\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/src\\/main\\/java\\/introclassJava\\/median_1bf73a9c_003java\\n@@ -70 +70 @@\\n-\\t\\t} else if (((second.value > first.value) && (second.value < third.value)) || \\n+\\t\\t} else if (((third.value > first.value) && (second.value < third.value)) || \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/.\\/output_astor\\/AstorMain-median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/\\/src\\/\\/variant-108\\/introclassJava\\/median_1bf73a9c_003.java", 
+          "ORIGINAL_CODE": "second", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "third", 
+          "INGREDIENT_PARENT": "third", 
+          "LOCATION": "introclassJava.median_1bf73a9c_003", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/src\\/main\\/java\\/introclassJava\\/median_1bf73a9c_003.java", 
+          "LINE": "70", 
+          "MP_RANKING": "3", 
+          "SUSPICIOUNESS": "0.302", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldWriteImpl"
+        }
+      ], 
+      "GENERATION": "54", 
+      "VARIANT_ID": "108", 
+      "TIME": "29", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_IntroClassJava_median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/.\\/output_astor\\/AstorMain-median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003\\/\\/src\\/\\/variant-108"
+    }
+  ]
+}
