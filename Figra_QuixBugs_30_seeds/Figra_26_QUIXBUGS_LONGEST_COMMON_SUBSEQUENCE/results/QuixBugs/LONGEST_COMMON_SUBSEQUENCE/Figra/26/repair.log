@@ -1,0 +1,130 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id LONGEST_COMMON_SUBSEQUENCE- \
+	-failing java_testcases.junit.LONGEST_COMMON_SUBSEQUENCE_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 26 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:31:29.977 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) to a.charAt(0)
+07:31:31.239 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b.charAt(0) to b.charAt(0)
+07:31:32.275 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+07:31:43.036 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() >= snd.length() to fst.length() >= snd.length()
+07:31:59.167 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) to a.charAt(0)
+07:32:01.738 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+07:32:02.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:32:03.631 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:32:06.802 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b.isEmpty() to b.isEmpty()
+07:32:10.462 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+07:32:10.864 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify snd.length() to snd.length()
+07:32:29.263 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1)) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1))
+07:32:39.648 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() >= snd.length() ? fst : snd to fst.length() >= snd.length() ? fst : snd
+07:32:40.530 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify fst to fst
+07:32:41.310 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.substring(1) to a.substring(1)
+07:32:52.376 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify fst.length() to fst.length()
+07:32:54.968 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+07:32:57.276 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+07:32:58.831 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) == b.charAt(0) to a.charAt(0) == b.charAt(0)
+07:32:59.217 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+07:33:24.843 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+07:33:48.902 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b.substring(1) to b.substring(1)
+07:33:49.957 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:33:52.848 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "" to ""
+07:34:30.011 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+07:34:33.263 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify snd to snd
+07:34:45.122 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+07:35:06.175 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:35:24.772 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.substring(1) to a.substring(1)
+07:35:52.879 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+07:36:54.290 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b) to java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b)
+07:37:41.322 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.isEmpty() to a.isEmpty()
+07:38:32.300 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.isEmpty() || b.isEmpty() to a.isEmpty() || b.isEmpty()
+07:38:38.208 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+07:38:38.637 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+07:38:40.852 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+07:41:45.222 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a.isEmpty() || b.isEmpty() to a.isEmpty() || b.isEmpty()
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=LONGEST_COMMON_SUBSEQUENCE-
+TOTAL_TIME=7200.322
+NR_GENERATIONS=1262
+NR_RIGHT_COMPILATIONS=1222
+NR_FAILLING_COMPILATIONS=40
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=630
+TIME=210
+VALIDATION=|true|0|10|[]|
+GENERATION=315
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/./output_astor/AstorMain-LONGEST_COMMON_SUBSEQUENCE-//src//variant-630
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LONGEST_COMMON_SUBSEQUENCE
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/src/main/java/LONGEST_COMMON_SUBSEQUENCE.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/./output_astor/AstorMain-LONGEST_COMMON_SUBSEQUENCE-//src//variant-630/java_programs/LONGEST_COMMON_SUBSEQUENCE.java
+
+LINE=18
+
+SUSPICIOUNESS=0.632
+
+MP_RANKING=17
+
+ORIGINAL_CODE=b
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=b.substring(1)
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=b.substring(1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/src/main/java/LONGEST_COMMON_SUBSEQUENCEjava
++++ /users2/cpca56132020/moliveira/folders/Figra_26_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_/src/main/java/LONGEST_COMMON_SUBSEQUENCEjava
+@@ -18,3 +18,3 @@
+-			return a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b);
+-		} else {
+-			java.lang.String fst = java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1));
++			return a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), 
++
++			b.substring(1));} else { 			java.lang.String fst = java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1));
+
+
+
+
+real	120m8.365s
+user	117m45.957s
+sys	1m10.193s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Fri Apr 16 09:31:27 EDT 2021\n

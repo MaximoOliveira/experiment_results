@@ -1,0 +1,204 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id FIND_FIRST_IN_SORTED- \
+	-failing java_testcases.junit.FIND_FIRST_IN_SORTED_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 19 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:35:54.712 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:36:42.607 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:39:21.408 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x <= arr[mid] to x <= arr[mid]
+07:40:36.038 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+07:43:02.817 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+07:44:58.523 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (lo + hi) / 2 to (lo + hi) / 2
+07:46:14.513 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (mid == 0) to (mid == 0)
+07:49:08.946 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (x == arr[mid]) to (x == arr[mid])
+07:52:01.258 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr[mid - 1] to arr[mid - 1]
+07:55:11.453 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+07:56:01.195 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((mid == 0) || (x != arr[mid - 1])) to ((mid == 0) || (x != arr[mid - 1]))
+08:04:08.236 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify mid to mid
+08:04:15.299 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr[mid] to arr[mid]
+08:05:02.088 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x <= arr[mid] to x <= arr[mid]
+08:13:59.766 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+08:21:17.892 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+08:21:35.352 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+08:22:03.566 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (lo + hi) to (lo + hi)
+08:42:22.728 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr[mid] to arr[mid]
+08:43:16.038 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lo to lo
+08:53:43.455 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (x != arr[mid - 1]) to (x != arr[mid - 1])
+09:14:18.135 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lo to lo
+09:18:18.006 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify mid - 1 to mid - 1
+09:20:12.393 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=FIND_FIRST_IN_SORTED-
+TOTAL_TIME=7204.307
+NR_GENERATIONS=1242
+NR_RIGHT_COMPILATIONS=1231
+NR_FAILLING_COMPILATIONS=11
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=476
+TIME=1402
+VALIDATION=|true|0|7|[]|
+GENERATION=238
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-476
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FIND_FIRST_IN_SORTED
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTED.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-476/java_programs/FIND_FIRST_IN_SORTED.java
+
+LINE=19
+
+SUSPICIOUNESS=0.655
+
+MP_RANKING=5
+
+ORIGINAL_CODE=lo <= hi
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtWhileImpl
+
+PATCH_HUNK_CODE=hi > lo
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtWhileImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 > _int_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
++++ /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
+@@ -19 +19 @@
+-		while (lo <= hi) {
++		while (hi > lo) {
+
+
+
+Patch 2
+VARIANT_ID=500
+TIME=1478
+VALIDATION=|true|0|7|[]|
+GENERATION=250
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-500
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FIND_FIRST_IN_SORTED
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTED.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-500/java_programs/FIND_FIRST_IN_SORTED.java
+
+LINE=19
+
+SUSPICIOUNESS=0.655
+
+MP_RANKING=5
+
+ORIGINAL_CODE=lo <= hi
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtWhileImpl
+
+PATCH_HUNK_CODE=(lo != hi)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(lo != hi)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
++++ /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
+@@ -19 +19 @@
+-		while (lo <= hi) {
++		while (lo != hi) {
+
+
+
+Patch 3
+VARIANT_ID=1726
+TIME=5123
+VALIDATION=|true|0|7|[]|
+GENERATION=863
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-1726
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FIND_FIRST_IN_SORTED
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTED.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/./output_astor/AstorMain-FIND_FIRST_IN_SORTED-//src//variant-1726/java_programs/FIND_FIRST_IN_SORTED.java
+
+LINE=19
+
+SUSPICIOUNESS=0.655
+
+MP_RANKING=4
+
+ORIGINAL_CODE=hi
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(hi - 1)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(mid - 1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
++++ /users2/cpca56132020/moliveira/folders/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED/Figra_QuixBugs_FIND_FIRST_IN_SORTED_/src/main/java/FIND_FIRST_IN_SORTEDjava
+@@ -19,2 +19 @@
+-		while (lo <= hi) {
+-			int mid = (lo + hi) / 2;
++		while (lo <= 
+@@ -22 +21,2 @@
+-			if ((x == arr[mid]) && ((mid == 0) || (x != arr[mid - 1]))) {
++
++		(hi - 1)) { 			int mid = (lo + hi) / 2; 			if ((x == arr[mid]) && ((mid == 0) || (x != arr[mid - 1]))) {
+
+
+
+
+real	120m31.311s
+user	60m20.070s
+sys	1m0.114s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Fri Apr 16 09:31:53 EDT 2021\n

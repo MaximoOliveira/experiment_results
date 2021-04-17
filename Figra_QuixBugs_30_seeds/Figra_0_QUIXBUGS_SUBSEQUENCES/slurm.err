@@ -1,0 +1,1 @@
+/var/spool/slurmd/job789227/slurm_script: line 13: 48339 Terminated              python $RTA_DIR/script/repair.py $ARGS

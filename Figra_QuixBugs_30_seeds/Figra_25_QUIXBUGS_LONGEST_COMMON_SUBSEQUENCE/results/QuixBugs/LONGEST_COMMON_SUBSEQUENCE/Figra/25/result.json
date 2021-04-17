@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-16 14:31:30.837464", 
+  "repair_begin": "2021-04-16 12:31:21.154629", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE\\/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_\\/src\\/main\\/java\\/LONGEST_COMMON_SUBSEQUENCEjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE\\/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_\\/src\\/main\\/java\\/LONGEST_COMMON_SUBSEQUENCEjava\\n@@ -18,3 +18,3 @@\\n-\\t\\t\\treturn a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), b);\\n-\\t\\t} else {\\n-\\t\\t\\tjava.lang.String fst = java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1));\\n+\\t\\t\\treturn a.charAt(0) + java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a.substring(1), \\n+\\n+\\t\\t\\tb.substring(1));} else { \\t\\t\\tjava.lang.String fst = java_programs.LONGEST_COMMON_SUBSEQUENCE.longest_common_subsequence(a, b.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE\\/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_\\/.\\/output_astor\\/AstorMain-LONGEST_COMMON_SUBSEQUENCE-\\/\\/src\\/\\/variant-1206\\/java_programs\\/LONGEST_COMMON_SUBSEQUENCE.java", 
+          "ORIGINAL_CODE": "b", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "b.substring(1)", 
+          "INGREDIENT_PARENT": "b.substring(1)", 
+          "LOCATION": "java_programs.LONGEST_COMMON_SUBSEQUENCE", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE\\/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_\\/src\\/main\\/java\\/LONGEST_COMMON_SUBSEQUENCE.java", 
+          "LINE": "18", 
+          "MP_RANKING": "17", 
+          "SUSPICIOUNESS": "0.632", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "603", 
+      "VARIANT_ID": "1206", 
+      "TIME": "457", 
+      "VALIDATION": "|true|0|10|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_LONGEST_COMMON_SUBSEQUENCE\\/Figra_QuixBugs_LONGEST_COMMON_SUBSEQUENCE_\\/.\\/output_astor\\/AstorMain-LONGEST_COMMON_SUBSEQUENCE-\\/\\/src\\/\\/variant-1206"
+    }
+  ]
+}

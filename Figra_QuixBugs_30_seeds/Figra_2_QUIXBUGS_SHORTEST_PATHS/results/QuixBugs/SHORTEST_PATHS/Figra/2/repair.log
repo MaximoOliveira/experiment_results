@@ -1,0 +1,103 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_2_QUIXBUGS_SHORTEST_PATHS/Figra_QuixBugs_SHORTEST_PATHS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id SHORTEST_PATHS- \
+	-failing java_testcases.junit.SHORTEST_PATHS_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 2 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:31:29.024 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge to weight_by_edge
+07:31:30.217 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:31:30.801 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.put(source, 0) to weight_by_node.put(source, 0)
+07:31:31.176 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:31:32.188 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge to weight_by_edge
+07:31:32.832 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:31:33.797 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:31:34.146 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.get(edge.get(0)) to weight_by_node.get(edge.get(0))
+07:31:35.369 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to java_programs.SHORTEST_PATHS.INF * java_programs.SHORTEST_PATHS.INF
+07:31:35.386 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:32:08.456 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:32:22.018 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:33:29.599 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge.get(1) to edge.get(1)
+07:33:39.880 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge.keySet() to weight_by_edge.keySet()
+07:34:13.355 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify source to source
+07:34:31.039 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge.get(1) to edge.get(1)
+07:34:52.602 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.put(edge.get(1), java_programs.SHORTEST_PATHS.INF) to weight_by_node.put(edge.get(1), java_programs.SHORTEST_PATHS.INF)
+07:35:18.998 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge to edge
+07:36:30.544 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+07:36:33.706 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge to weight_by_edge
+07:36:44.106 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.String, java.lang.Integer>() to new java.util.HashMap<java.lang.String, java.lang.Integer>()
+07:36:57.960 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge to weight_by_edge
+07:40:06.386 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:40:29.364 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge.get(0) to edge.get(0)
+07:41:49.486 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+07:43:44.006 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_edge.keySet() to weight_by_edge.keySet()
+07:43:54.580 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:44:29.169 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+07:45:41.639 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:45:52.259 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:47:35.394 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:53:14.446 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.put(edge.get(0), java_programs.SHORTEST_PATHS.INF) to weight_by_node.put(edge.get(0), java_programs.SHORTEST_PATHS.INF)
+07:54:31.559 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node to weight_by_node
+07:58:29.029 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+08:02:34.246 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify edge.get(0) to edge.get(0)
+08:02:48.279 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+08:17:58.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.size() to weight_by_node.size()
+08:18:22.441 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < weight_by_node.size() to i < weight_by_node.size()
+08:24:42.122 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.get(edge.get(1)) to weight_by_node.get(edge.get(1))
+08:27:56.690 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify weight_by_node.get(edge.get(0)) + 
+weight_by_edge.get(edge) to weight_by_node.get(edge.get(0)) + 
+weight_by_edge.get(edge)
+08:57:39.662 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=SHORTEST_PATHS-
+TOTAL_TIME=7221.046
+NR_GENERATIONS=393
+NR_RIGHT_COMPILATIONS=334
+NR_FAILLING_COMPILATIONS=59
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+
+real	120m31.661s
+user	1m47.892s
+sys	0m7.746s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Fri Apr 16 09:31:52 EDT 2021\n

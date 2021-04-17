@@ -1,0 +1,81 @@
+{
+  "repair_end": "2021-04-16 14:31:53.471818", 
+  "repair_begin": "2021-04-16 12:31:22.141909", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n@@ -19 +19 @@\\n-\\t\\twhile (lo <= hi) {\\n+\\t\\twhile (hi > lo) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-476\\/java_programs\\/FIND_FIRST_IN_SORTED.java", 
+          "ORIGINAL_CODE": "lo <= hi", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "hi > lo", 
+          "INGREDIENT_PARENT": "_int_0 > _int_1", 
+          "LOCATION": "java_programs.FIND_FIRST_IN_SORTED", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtWhileImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTED.java", 
+          "LINE": "19", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "0.655", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtWhileImpl"
+        }
+      ], 
+      "GENERATION": "238", 
+      "VARIANT_ID": "476", 
+      "TIME": "1402", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-476"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n@@ -19 +19 @@\\n-\\t\\twhile (lo <= hi) {\\n+\\t\\twhile (lo != hi) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-500\\/java_programs\\/FIND_FIRST_IN_SORTED.java", 
+          "ORIGINAL_CODE": "lo <= hi", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(lo != hi)", 
+          "INGREDIENT_PARENT": "(lo != hi)", 
+          "LOCATION": "java_programs.FIND_FIRST_IN_SORTED", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtWhileImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTED.java", 
+          "LINE": "19", 
+          "MP_RANKING": "5", 
+          "SUSPICIOUNESS": "0.655", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "250", 
+      "VARIANT_ID": "500", 
+      "TIME": "1478", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-500"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTEDjava\\n@@ -19,2 +19 @@\\n-\\t\\twhile (lo <= hi) {\\n-\\t\\t\\tint mid = (lo + hi) \\/ 2;\\n+\\t\\twhile (lo <= \\n@@ -22 +21,2 @@\\n-\\t\\t\\tif ((x == arr[mid]) && ((mid == 0) || (x != arr[mid - 1]))) {\\n+\\n+\\t\\t(hi - 1)) { \\t\\t\\tint mid = (lo + hi) \\/ 2; \\t\\t\\tif ((x == arr[mid]) && ((mid == 0) || (x != arr[mid - 1]))) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-1726\\/java_programs\\/FIND_FIRST_IN_SORTED.java", 
+          "ORIGINAL_CODE": "hi", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(hi - 1)", 
+          "INGREDIENT_PARENT": "(mid - 1)", 
+          "LOCATION": "java_programs.FIND_FIRST_IN_SORTED", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/src\\/main\\/java\\/FIND_FIRST_IN_SORTED.java", 
+          "LINE": "19", 
+          "MP_RANKING": "4", 
+          "SUSPICIOUNESS": "0.655", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "863", 
+      "VARIANT_ID": "1726", 
+      "TIME": "5123", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_19_QUIXBUGS_FIND_FIRST_IN_SORTED\\/Figra_QuixBugs_FIND_FIRST_IN_SORTED_\\/.\\/output_astor\\/AstorMain-FIND_FIRST_IN_SORTED-\\/\\/src\\/\\/variant-1726"
+    }
+  ]
+}

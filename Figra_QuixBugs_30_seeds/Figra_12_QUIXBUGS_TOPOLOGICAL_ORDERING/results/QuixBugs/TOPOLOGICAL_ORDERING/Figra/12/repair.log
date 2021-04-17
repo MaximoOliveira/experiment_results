@@ -1,0 +1,86 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_12_QUIXBUGS_TOPOLOGICAL_ORDERING/Figra_QuixBugs_TOPOLOGICAL_ORDERING_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id TOPOLOGICAL_ORDERING- \
+	-failing java_testcases.junit.TOPOLOGICAL_ORDERING_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 12 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+07:31:58.347 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:31:59.102 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java_programs.Node>() to new java.util.ArrayList<java_programs.Node>()
+07:32:02.004 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.get(i) to orderedNodes.get(i)
+07:32:02.359 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getPredecessors() to node.getPredecessors()
+07:32:03.274 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify predecessors to predecessors
+07:32:04.176 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify directedGraph to directedGraph
+07:32:05.249 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextNode to nextNode
+07:32:06.298 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.size() to orderedNodes.size()
+07:32:06.905 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+07:32:07.723 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to listSize ^ i
+07:32:52.709 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify predecessors to predecessors
+07:33:16.577 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextNode to nextNode
+07:33:26.973 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+07:33:37.501 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.contains(nextNode) to orderedNodes.contains(nextNode)
+07:34:25.982 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:34:36.501 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify value to value
+07:34:47.023 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getSuccessors() to node.getSuccessors()
+07:35:08.397 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify nextNode.getSuccessors() to nextNode.getSuccessors()
+07:38:12.777 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+07:38:24.463 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+07:40:10.402 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.add(node) to orderedNodes.add(node)
+07:42:04.922 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.containsAll(nextNode.getSuccessors()) && (!orderedNodes.contains(nextNode)) to orderedNodes.containsAll(nextNode.getSuccessors()) && (!orderedNodes.contains(nextNode))
+07:42:17.274 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+07:42:44.763 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+07:42:57.420 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node to node
+07:43:54.439 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+07:48:32.895 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+07:49:48.611 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify listSize++ to listSize++
+07:50:41.511 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify successors to successors
+07:52:52.342 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify successors to successors
+07:54:05.415 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (!orderedNodes.contains(nextNode)) to (!orderedNodes.contains(nextNode))
+07:54:55.297 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+07:55:08.291 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+07:58:45.769 [main] ERROR main - Problems killing subprocess 78520
+07:58:46.438 [main] ERROR main - java.io.IOException: Cannot run program "kill": error=7, Argument list too long
+08:06:27.203 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < listSize to i < listSize
+08:10:28.723 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.containsAll(nextNode.getSuccessors()) to orderedNodes.containsAll(nextNode.getSuccessors())
+08:15:44.219 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.containsAll(nextNode.getSuccessors()) && (!orderedNodes.contains(nextNode)) to orderedNodes.containsAll(nextNode.getSuccessors()) && (!orderedNodes.contains(nextNode))
+08:17:06.100 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes to orderedNodes
+08:22:06.258 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify orderedNodes.add(nextNode) to orderedNodes.add(nextNode)
+08:23:13.649 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify listSize to listSize
+08:32:23.064 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify node.getPredecessors().isEmpty() to node.getPredecessors().isEmpty()
+08:43:49.828 [main] ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+
+/bin/sh: line 24: 46800 Killed                  java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain -mode figra -location . -id TOPOLOGICAL_ORDERING- -failing java_testcases.junit.TOPOLOGICAL_ORDERING_Test -jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin -jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin -maxgen 1000000 -maxtime 120 -stopfirst false -seed 12 -scope package -population 1 -javacompliancelevel 8 -srcjavafolder src/main/java -srctestfolder src/test/java -binjavafolder target/classes -bintestfolder target/test-classes -parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 -dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+
+real	79m40.533s
+user	1m5.263s
+sys	0m7.307s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Fri Apr 16 08:51:31 EDT 2021\n
