@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 17:48:05.106233", 
+  "repair_begin": "2021-04-15 17:47:02.274630", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_11\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeUtilitiesjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_11\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeUtilitiesjava\\n@@ -275 +275 @@\\n-\\t\\tjava.awt.geom.PathIterator iterator2 = p1.getPathIterator(null);\\n+\\t\\tjava.awt.geom.PathIterator iterator2 = p2.getPathIterator(null);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_11\\/.\\/output_astor\\/AstorMain-Chart-11\\/\\/src\\/\\/variant-112\\/org\\/jfree\\/chart\\/util\\/ShapeUtilities.java", 
+          "ORIGINAL_CODE": "p1.getPathIterator(null)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "p2.getPathIterator(null)", 
+          "INGREDIENT_PARENT": "_GeneralPath_0.getPathIterator(null)", 
+          "LOCATION": "org.jfree.chart.util.ShapeUtilities", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtLocalVariableImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_11\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeUtilities.java", 
+          "LINE": "275", 
+          "MP_RANKING": "25", 
+          "SUSPICIOUNESS": "0.204", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtLocalVariableImpl"
+        }
+      ], 
+      "GENERATION": "56", 
+      "VARIANT_ID": "112", 
+      "TIME": "19", 
+      "VALIDATION": "|true|0|3621|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_11\\/.\\/output_astor\\/AstorMain-Chart-11\\/\\/src\\/\\/variant-112"
+    }
+  ]
+}

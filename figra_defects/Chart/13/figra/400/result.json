@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 18:34:50.203978", 
+  "repair_begin": "2021-04-15 18:31:43.274516", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_13\\/source\\/org\\/jfree\\/chart\\/block\\/BorderArrangementjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_13\\/source\\/org\\/jfree\\/chart\\/block\\/BorderArrangementjava\\n@@ -453 +453 @@\\n-\\t\\tif (this.rightBlock != null) {\\n+\\t\\tif (new org.jfree.chart.block.BorderArrangement().rightBlock != null) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_13\\/.\\/output_astor\\/AstorMain-Chart-13\\/\\/src\\/\\/variant-228\\/org\\/jfree\\/chart\\/block\\/BorderArrangement.java", 
+          "ORIGINAL_CODE": "this", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "new org.jfree.chart.block.BorderArrangement()", 
+          "INGREDIENT_PARENT": "new org.jfree.chart.block.BorderArrangement()", 
+          "LOCATION": "org.jfree.chart.block.BorderArrangement", 
+          "BUGGY_CODE_TYPE": "CtThisAccessImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_13\\/source\\/org\\/jfree\\/chart\\/block\\/BorderArrangement.java", 
+          "LINE": "453", 
+          "MP_RANKING": "178", 
+          "SUSPICIOUNESS": "0.816", 
+          "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "114", 
+      "VARIANT_ID": "228", 
+      "TIME": "122", 
+      "VALIDATION": "|true|0|3597|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_13\\/.\\/output_astor\\/AstorMain-Chart-13\\/\\/src\\/\\/variant-228"
+    }
+  ]
+}

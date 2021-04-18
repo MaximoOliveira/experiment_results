@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 18:31:30.857113", 
+  "repair_begin": "2021-04-15 17:08:30.203494", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_6\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeListjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_6\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeListjava\\n@@ -81,2 +81 @@\\n-\\t\\tset(index, shape);\\n-\\t}\\n+\\t\\tset(\\n@@ -92,3 +90,0 @@\\n-\\tpublic java.lang.Object clone() throws java.lang.CloneNotSupportedException {\\n-\\t\\treturn super.clone();\\n-\\t}\\n@@ -103 +98,0 @@\\n-\\tpublic boolean equals(java.lang.Object obj) {\\n@@ -105,7 +99,0 @@\\n-\\t\\tif (obj == this) {\\n-\\t\\t\\treturn true;\\n-\\t\\t}\\n-\\t\\tif (!(obj instanceof org.jfree.chart.util.ShapeList)) {\\n-\\t\\t\\treturn false;\\n-\\t\\t}\\n-\\t\\treturn super.equals(obj);\\n@@ -113 +100,0 @@\\n-\\t}\\n@@ -120,3 +106,0 @@\\n-\\tpublic int hashCode() {\\n-\\t\\treturn super.hashCode();\\n-\\t}\\n@@ -131 +114,0 @@\\n-\\tprivate void writeObject(java.io.ObjectOutputStream stream) throws java.io.IOException {\\n@@ -133,13 +115,0 @@\\n-\\t\\tstream.defaultWriteObject();\\n-\\t\\tint count = size();\\n-\\t\\tstream.writeInt(count);\\n-\\t\\tfor (int i = 0; i < count; i++) {\\n-\\t\\t\\tjava.awt.Shape shape = getShape(i);\\n-\\t\\t\\tif (shape != null) {\\n-\\t\\t\\t\\tstream.writeInt(i);\\n-\\t\\t\\t\\torg.jfree.chart.util.SerialUtilities.writeShape(shape, stream);\\n-\\t\\t\\t} else \\n-\\t\\t\\t{\\n-\\t\\t\\t\\tstream.writeInt(-1);\\n-\\t\\t\\t}\\n-\\t\\t}\\n@@ -147 +116,0 @@\\n-\\t}\\n@@ -157,2 +125,0 @@\\n-\\tprivate void readObject(java.io.ObjectInputStream stream) throws java.io.IOException, \\n-\\tjava.lang.ClassNotFoundException {\\n@@ -160,8 +126,0 @@\\n-\\t\\tstream.defaultReadObject();\\n-\\t\\tint count = stream.readInt();\\n-\\t\\tfor (int i = 0; i < count; i++) {\\n-\\t\\t\\tint index = stream.readInt();\\n-\\t\\t\\tif (index != (-1)) {\\n-\\t\\t\\t\\tsetShape(index, org.jfree.chart.util.SerialUtilities.readShape(stream));\\n-\\t\\t\\t}\\n-\\t\\t}\\n@@ -169 +128,191 @@\\n-\\t}}\\n\\\\ No newline at end of file\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\t\\t2, shape);} \\tpublic java.lang.Object clone() throws java.lang.CloneNotSupportedException { \\t\\treturn super.clone();} \\tpublic boolean equals(java.lang.Object obj) { \\t\\tif (obj == this) { \\t\\t\\treturn true;} \\t\\tif (!(obj instanceof org.jfree.chart.util.ShapeList)) { \\t\\t\\treturn false;} \\t\\treturn super.equals(obj);} \\tpublic int hashCode() { \\t\\treturn super.hashCode();} \\tprivate void writeObject(java.io.ObjectOutputStream stream) throws java.io.IOException { \\t\\tstream.defaultWriteObject(); \\t\\tint count = size(); \\t\\tstream.writeInt(count); \\t\\tfor (int i = 0; i < count; i++) { \\t\\t\\tjava.awt.Shape shape = getShape(i); \\t\\t\\tif (shape != null) { \\t\\t\\t\\tstream.writeInt(i); \\t\\t\\t\\torg.jfree.chart.util.SerialUtilities.writeShape(shape, stream);} else { \\t\\t\\t\\tstream.writeInt(-1);}}} \\tprivate void readObject(java.io.ObjectInputStream stream) throws java.io.IOException, java.lang.ClassNotFoundException { \\t\\tstream.defaultReadObject(); \\t\\tint count = stream.readInt(); \\t\\tfor (int i = 0; i < count; i++) { \\t\\t\\tint index = stream.readInt(); \\t\\t\\tif (index != (-1)) { \\t\\t\\t\\tsetShape(index, org.jfree.chart.util.SerialUtilities.readShape(stream));}}}}\\n\\\\ No newline at end of file\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_6\\/.\\/output_astor\\/AstorMain-Chart-6\\/\\/src\\/\\/variant-1066\\/org\\/jfree\\/chart\\/util\\/ShapeList.java", 
+          "ORIGINAL_CODE": "index", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "2", 
+          "INGREDIENT_PARENT": "2", 
+          "LOCATION": "org.jfree.chart.util.ShapeList", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_6\\/source\\/org\\/jfree\\/chart\\/util\\/ShapeList.java", 
+          "LINE": "81", 
+          "MP_RANKING": "58", 
+          "SUSPICIOUNESS": "0.243", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "533", 
+      "VARIANT_ID": "1066", 
+      "TIME": "4804", 
+      "VALIDATION": "|true|0|3789|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_6\\/.\\/output_astor\\/AstorMain-Chart-6\\/\\/src\\/\\/variant-1066"
+    }
+  ]
+}

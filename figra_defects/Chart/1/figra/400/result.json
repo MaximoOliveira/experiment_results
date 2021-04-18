@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 17:13:11.819045", 
+  "repair_begin": "2021-04-15 17:03:55.268830", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_1\\/source\\/org\\/jfree\\/chart\\/renderer\\/category\\/AbstractCategoryItemRendererjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_1\\/source\\/org\\/jfree\\/chart\\/renderer\\/category\\/AbstractCategoryItemRendererjava\\n@@ -1797 +1797 @@\\n-\\t\\tif (dataset != null) {\\n+\\t\\tif (!isSeriesVisibleInLegend(rowCount)) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_1\\/.\\/output_astor\\/AstorMain-Chart-1\\/\\/src\\/\\/variant-118\\/org\\/jfree\\/chart\\/renderer\\/category\\/AbstractCategoryItemRenderer.java", 
+          "ORIGINAL_CODE": "dataset != null", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "!isSeriesVisibleInLegend(rowCount)", 
+          "INGREDIENT_PARENT": "(!isSeriesVisibleInLegend(series))", 
+          "LOCATION": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_1\\/source\\/org\\/jfree\\/chart\\/renderer\\/category\\/AbstractCategoryItemRenderer.java", 
+          "LINE": "1797", 
+          "MP_RANKING": "82", 
+          "SUSPICIOUNESS": "0.132", 
+          "PATCH_HUNK_TYPE": "CtUnaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "59", 
+      "VARIANT_ID": "118", 
+      "TIME": "45", 
+      "VALIDATION": "|true|0|4402|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_1\\/.\\/output_astor\\/AstorMain-Chart-1\\/\\/src\\/\\/variant-118"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+cd /tmp/figra_Defects4J_Chart_7;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id Chart-7 \
+	-failing org.jfree.data.time.junit.TimePeriodValuesTests \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 4 \
+	-srcjavafolder source/ \
+	-srctestfolder tests/ \
+	-binjavafolder build/ \
+	-bintestfolder build-tests/ \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /tmp/figra_Defects4J_Chart_7/build/:/tmp/figra_Defects4J_Chart_7/build-tests/:/tmp/figra_Defects4J_Chart_7/lib/junit.jar:/tmp/figra_Defects4J_Chart_7/lib/itext-2.0.6.jar:/tmp/figra_Defects4J_Chart_7/lib/servlet.jar:/home/maxoliveira/Tese/RepairThemAll/script/../benchmarks/defects4j/framework/projects/lib/junit-4.11.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+12:13:50.906 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify item to item
+12:13:54.395 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+12:13:54.620 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass().getClassLoader().getResource(
+"org/jfree/chart/gorilla.jpg") to this.getClass().getClassLoader().getResource(
+"org/jfree/chart/gorilla.jpg")
+12:13:54.908 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify value to value
+12:13:56.857 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass() to this.getClass()
+12:13:57.890 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify imageURL to imageURL
+12:13:58.780 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify getDataItem(this.minMiddleIndex) to getDataItem(this.minMiddleIndex)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=Chart-7
+TOTAL_TIME=21.447
+NR_GENERATIONS=33
+NR_RIGHT_COMPILATIONS=28
+NR_FAILLING_COMPILATIONS=5
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=66
+TIME=21
+VALIDATION=|true|0|3641|[]|
+GENERATION=33
+FOLDER_SOLUTION_CODE=/tmp/figra_Defects4J_Chart_7/./output_astor/AstorMain-Chart-7//src//variant-66
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=org.jfree.data.time.TimePeriodValues
+
+PATH=/tmp/figra_Defects4J_Chart_7/source/org/jfree/data/time/TimePeriodValues.java
+
+MODIFIED_FILE_PATH=/tmp/figra_Defects4J_Chart_7/./output_astor/AstorMain-Chart-7//src//variant-66/org/jfree/data/time/TimePeriodValues.java
+
+LINE=288
+
+SUSPICIOUNESS=0.226
+
+MP_RANKING=99
+
+ORIGINAL_CODE=getDataItem(this.minMiddleIndex).getPeriod()
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=getDataItem(this.maxEndIndex).getPeriod()
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=getDataItem(this.maxEndIndex).getPeriod()
+
+PATCH_DIFF_ORIG=--- /tmp/figra_Defects4J_Chart_7/source/org/jfree/data/time/TimePeriodValuesjava
++++ /tmp/figra_Defects4J_Chart_7/source/org/jfree/data/time/TimePeriodValuesjava
+@@ -288 +288 @@
+-			long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
++			long e = 
+@@ -290,33 +289,0 @@
+-			long minMiddle = s + ((e - s) / 2);
+-			if (middle < minMiddle) {
+-				this.minMiddleIndex = index;
+-			}
+-		} else 
+-		{
+-			this.minMiddleIndex = index;
+-		}
+-
+-		if (this.maxMiddleIndex >= 0) {
+-			long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+-
+-			long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+-
+-			long maxMiddle = s + ((e - s) / 2);
+-			if (middle > maxMiddle) {
+-				this.maxMiddleIndex = index;
+-			}
+-		} else 
+-		{
+-			this.maxMiddleIndex = index;
+-		}
+-
+-		if (this.minEndIndex >= 0) {
+-			long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+-
+-			if (end < minEnd) {
+-				this.minEndIndex = index;
+-			}
+-		} else 
+-		{
+-			this.minEndIndex = index;
+-		}
+@@ -324,2 +291,35 @@
+-		if (this.maxEndIndex >= 0) {
+-			long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++			getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime(); 			long minMiddle = s + ((e - s) / 2); 			if (middle < minMiddle) { 				this.minMiddleIndex = index;}} else { 			this.minMiddleIndex = index;} 		if (this.maxMiddleIndex >= 0) { 			long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); 			long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); 			long maxMiddle = s + ((e - s) / 2); 			if (middle > maxMiddle) { 				this.maxMiddleIndex = index;}} else { 			this.maxMiddleIndex = index;} 		if (this.minEndIndex >= 0) { 			long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime(); 			if (end < minEnd) { 				this.minEndIndex = index;}} else { 			this.minEndIndex = index;} 		if (this.maxEndIndex >= 0) { 			long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+
+
+
+171.89user 3.95system 1:39.20elapsed 177%CPU (0avgtext+0avgdata 1920164maxresident)k
+0inputs+41736outputs (0major+1111435minor)pagefaults 0swaps
+
+
+Node: polaris
+
+
+
+Date: qui 15 abr 2021 12:14:06 EDT
+

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 19:56:48.360287", 
+  "repair_begin": "2021-04-15 19:49:33.194627", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_17\\/source\\/org\\/jfree\\/data\\/time\\/TimeSeriesjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_17\\/source\\/org\\/jfree\\/data\\/time\\/TimeSeriesjava\\n@@ -879 +879 @@\\n-\\t\\tif (end < start) {\\n+\\t\\tif ((start * end) < start) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_17\\/.\\/output_astor\\/AstorMain-Chart-17\\/\\/src\\/\\/variant-560\\/org\\/jfree\\/data\\/time\\/TimeSeries.java", 
+          "ORIGINAL_CODE": "end", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(start * end)", 
+          "INGREDIENT_PARENT": "_int_0 * _int_1", 
+          "LOCATION": "org.jfree.data.time.TimeSeries", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_17\\/source\\/org\\/jfree\\/data\\/time\\/TimeSeries.java", 
+          "LINE": "879", 
+          "MP_RANKING": "19", 
+          "SUSPICIOUNESS": "0.365", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "280", 
+      "VARIANT_ID": "560", 
+      "TIME": "305", 
+      "VALIDATION": "|true|0|3499|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_17\\/.\\/output_astor\\/AstorMain-Chart-17\\/\\/src\\/\\/variant-560"
+    }
+  ]
+}

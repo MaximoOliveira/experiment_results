@@ -1,0 +1,1025 @@
+cd /tmp/figra_Defects4J_Math_63;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id Math-63 \
+	-failing org.apache.commons.math.util.MathUtilsTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 1 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 5 \
+	-srcjavafolder src/main/java/ \
+	-srctestfolder src/test/java/ \
+	-binjavafolder target/classes/ \
+	-bintestfolder target/test-classes/ \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /tmp/figra_Defects4J_Math_63/target/classes/:/tmp/figra_Defects4J_Math_63/target/test-classes/:/home/maxoliveira/Tese/RepairThemAll/script/../benchmarks/defects4j/framework/projects/lib/junit-4.11.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=Math-63
+TOTAL_TIME=108.64
+NR_GENERATIONS=9
+NR_RIGHT_COMPILATIONS=9
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=18
+TIME=108
+VALIDATION=|true|0|2282|[]|
+GENERATION=9
+FOLDER_SOLUTION_CODE=/tmp/figra_Defects4J_Math_63/./output_astor/AstorMain-Math-63//src//variant-18
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=org.apache.commons.math.util.MathUtils
+
+PATH=/tmp/figra_Defects4J_Math_63/src/main/java/org/apache/commons/math/util/MathUtils.java
+
+MODIFIED_FILE_PATH=/tmp/figra_Defects4J_Math_63/./output_astor/AstorMain-Math-63//src//variant-18/org/apache/commons/math/util/MathUtils.java
+
+LINE=417
+
+SUSPICIOUNESS=1
+
+MP_RANKING=1
+
+ORIGINAL_CODE=java.lang.Double.isNaN(x)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(x > 0.0)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_double_0 > 0.0
+
+PATCH_DIFF_ORIG=--- /tmp/figra_Defects4J_Math_63/src/main/java/org/apache/commons/math/util/MathUtilsjava
++++ /tmp/figra_Defects4J_Math_63/src/main/java/org/apache/commons/math/util/MathUtilsjava
+@@ -417,2 +417 @@
+-		return (java.lang.Double.isNaN(x) && java.lang.Double.isNaN(y)) || (x == y);
+-	}
++		return (
+@@ -428,3 +426,0 @@
+-	public static boolean equalsIncludingNaN(double x, double y) {
+-		return (java.lang.Double.isNaN(x) && java.lang.Double.isNaN(y)) || org.apache.commons.math.util.MathUtils.equals(x, y, 1);
+-	}
+@@ -441,3 +436,0 @@
+-	public static boolean equals(double x, double y, double eps) {
+-		return org.apache.commons.math.util.MathUtils.equals(x, y, 1) || (org.apache.commons.math.util.FastMath.abs(y - x) <= eps);
+-	}
+@@ -455,3 +447,0 @@
+-	public static boolean equalsIncludingNaN(double x, double y, double eps) {
+-		return org.apache.commons.math.util.MathUtils.equalsIncludingNaN(x, y) || (org.apache.commons.math.util.FastMath.abs(y - x) <= eps);
+-	}
+@@ -476 +465,0 @@
+-	public static boolean equals(double x, double y, int maxUlps) {
+@@ -479 +467,0 @@
+-		assert (maxUlps > 0) && (maxUlps < org.apache.commons.math.util.MathUtils.NAN_GAP);
+@@ -481,2 +468,0 @@
+-		long xInt = java.lang.Double.doubleToLongBits(x);
+-		long yInt = java.lang.Double.doubleToLongBits(y);
+@@ -485,6 +470,0 @@
+-		if (xInt < 0) {
+-			xInt = org.apache.commons.math.util.MathUtils.SGN_MASK - xInt;
+-		}
+-		if (yInt < 0) {
+-			yInt = org.apache.commons.math.util.MathUtils.SGN_MASK - yInt;
+-		}
+@@ -492 +471,0 @@
+-		final boolean isEqual = org.apache.commons.math.util.FastMath.abs(xInt - yInt) <= maxUlps;
+@@ -494,2 +472,0 @@
+-		return (isEqual && (!java.lang.Double.isNaN(x))) && (!java.lang.Double.isNaN(y));
+-	}
+@@ -508,3 +484,0 @@
+-	public static boolean equalsIncludingNaN(double x, double y, int maxUlps) {
+-		return (java.lang.Double.isNaN(x) && java.lang.Double.isNaN(y)) || org.apache.commons.math.util.MathUtils.equals(x, y, maxUlps);
+-	}
+@@ -522,14 +495,0 @@
+-	public static boolean equals(double[] x, double[] y) {
+-		if ((x == null) || (y == null)) {
+-			return !((x == null) ^ (y == null));
+-		}
+-		if (x.length != y.length) {
+-			return false;
+-		}
+-		for (int i = 0; i < x.length; ++i) {
+-			if (!org.apache.commons.math.util.MathUtils.equals(x[i], y[i])) {
+-				return false;
+-			}
+-		}
+-		return true;
+-	}
+@@ -547,14 +506,0 @@
+-	public static boolean equalsIncludingNaN(double[] x, double[] y) {
+-		if ((x == null) || (y == null)) {
+-			return !((x == null) ^ (y == null));
+-		}
+-		if (x.length != y.length) {
+-			return false;
+-		}
+-		for (int i = 0; i < x.length; ++i) {
+-			if (!org.apache.commons.math.util.MathUtils.equalsIncludingNaN(x[i], y[i])) {
+-				return false;
+-			}
+-		}
+-		return true;
+-	}
+@@ -584,12 +529,0 @@
+-	public static long factorial(final int n) {
+-		if (n < 0) {
+-			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, 
+-			n);
+-		}
+-		if (n > 20) {
+-			throw new java.lang.ArithmeticException(
+-			"factorial value is too large to fit in a long");
+-		}
+-		return org.apache.commons.math.util.MathUtils.FACTORIALS[n];
+-	}
+@@ -617,11 +550,0 @@
+-	public static double factorialDouble(final int n) {
+-		if (n < 0) {
+-			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, 
+-			n);
+-		}
+-		if (n < 21) {
+-			return org.apache.commons.math.util.MathUtils.factorial(n);
+-		}
+-		return org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.exp(org.apache.commons.math.util.MathUtils.factorialLog(n)) + 0.5);
+-	}
+@@ -642,15 +564,0 @@
+-	public static double factorialLog(final int n) {
+-		if (n < 0) {
+-			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, 
+-			n);
+-		}
+-		if (n < 21) {
+-			return org.apache.commons.math.util.FastMath.log(org.apache.commons.math.util.MathUtils.factorial(n));
+-		}
+-		double logSum = 0;
+-		for (int i = 2; i <= n; i++) {
+-			logSum += org.apache.commons.math.util.FastMath.log(i);
+-		}
+-		return logSum;
+-	}
+@@ -687,11 +594,0 @@
+-	public static int gcd(final int p, final int q) {
+-		int u = p;
+-		int v = q;
+-		if ((u == 0) || (v == 0)) {
+-			if ((u == java.lang.Integer.MIN_VALUE) || (v == java.lang.Integer.MIN_VALUE)) {
+-				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-				org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_32_BITS, 
+-				p, q);
+-			}
+-			return org.apache.commons.math.util.FastMath.abs(u) + org.apache.commons.math.util.FastMath.abs(v);
+-		}
+@@ -703,6 +599,0 @@
+-		if (u > 0) {
+-			u = -u;
+-		}
+-		if (v > 0) {
+-			v = -v;
+-		}
+@@ -710,2 +600,0 @@
+-		int k = 0;
+-		while ((((u & 1) == 0) && ((v & 1) == 0)) && (k < 31)) {
+@@ -713,9 +601,0 @@
+-			u /= 2;
+-			v /= 2;
+-			k++;
+-		} 
+-		if (k == 31) {
+-			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_32_BITS, 
+-			p, q);
+-		}
+@@ -724 +603,0 @@
+-		int t = ((u & 1) == 1) ? v : -(u / 2);
+@@ -727 +605,0 @@
+-		do {
+@@ -730,3 +607,0 @@
+-			while ((t & 1) == 0) {
+-				t /= 2;
+-			} 
+@@ -734,5 +608,0 @@
+-			if (t > 0) {
+-				u = -t;
+-			} else {
+-				v = t;
+-			}
+@@ -740 +609,0 @@
+-			t = (v - u) / 2;
+@@ -743,3 +611,0 @@
+-		} while (t != 0 );
+-		return (-u) * (1 << k);
+-	}
+@@ -776,11 +641,0 @@
+-	public static long gcd(final long p, final long q) {
+-		long u = p;
+-		long v = q;
+-		if ((u == 0) || (v == 0)) {
+-			if ((u == java.lang.Long.MIN_VALUE) || (v == java.lang.Long.MIN_VALUE)) {
+-				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-				org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_64_BITS, 
+-				p, q);
+-			}
+-			return org.apache.commons.math.util.FastMath.abs(u) + org.apache.commons.math.util.FastMath.abs(v);
+-		}
+@@ -792,6 +646,0 @@
+-		if (u > 0) {
+-			u = -u;
+-		}
+-		if (v > 0) {
+-			v = -v;
+-		}
+@@ -799,2 +647,0 @@
+-		int k = 0;
+-		while ((((u & 1) == 0) && ((v & 1) == 0)) && (k < 63)) {
+@@ -802,9 +648,0 @@
+-			u /= 2;
+-			v /= 2;
+-			k++;
+-		} 
+-		if (k == 63) {
+-			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_64_BITS, 
+-			p, q);
+-		}
+@@ -813 +650,0 @@
+-		long t = ((u & 1) == 1) ? v : -(u / 2);
+@@ -816 +652,0 @@
+-		do {
+@@ -819,3 +654,0 @@
+-			while ((t & 1) == 0) {
+-				t /= 2;
+-			} 
+@@ -823,5 +655,0 @@
+-			if (t > 0) {
+-				u = -t;
+-			} else {
+-				v = t;
+-			}
+@@ -829 +656,0 @@
+-			t = (v - u) / 2;
+@@ -832,3 +658,0 @@
+-		} while (t != 0 );
+-		return (-u) * (1L << k);
+-	}
+@@ -842,3 +665,0 @@
+-	public static int hash(double value) {
+-		return new java.lang.Double(value).hashCode();
+-	}
+@@ -853,3 +673,0 @@
+-	public static int hash(double[] value) {
+-		return java.util.Arrays.hashCode(value);
+-	}
+@@ -864,3 +681,0 @@
+-	public static byte indicator(final byte x) {
+-		return x >= org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.PB : org.apache.commons.math.util.MathUtils.NB;
+-	}
+@@ -876,6 +690,0 @@
+-	public static double indicator(final double x) {
+-		if (java.lang.Double.isNaN(x)) {
+-			return java.lang.Double.NaN;
+-		}
+-		return x >= 0.0 ? 1.0 : -1.0;
+-	}
+@@ -890,6 +698,0 @@
+-	public static float indicator(final float x) {
+-		if (java.lang.Float.isNaN(x)) {
+-			return java.lang.Float.NaN;
+-		}
+-		return x >= 0.0F ? 1.0F : -1.0F;
+-	}
+@@ -903,3 +705,0 @@
+-	public static int indicator(final int x) {
+-		return x >= 0 ? 1 : -1;
+-	}
+@@ -913,3 +712,0 @@
+-	public static long indicator(final long x) {
+-		return x >= 0L ? 1L : -1L;
+-	}
+@@ -924,3 +720,0 @@
+-	public static short indicator(final short x) {
+-		return x >= org.apache.commons.math.util.MathUtils.ZS ? org.apache.commons.math.util.MathUtils.PS : org.apache.commons.math.util.MathUtils.NS;
+-	}
+@@ -951,12 +744,0 @@
+-	public static int lcm(int a, int b) {
+-		if ((a == 0) || (b == 0)) {
+-			return 0;
+-		}
+-		int lcm = org.apache.commons.math.util.FastMath.abs(org.apache.commons.math.util.MathUtils.mulAndCheck(a / org.apache.commons.math.util.MathUtils.gcd(a, b), b));
+-		if (lcm == java.lang.Integer.MIN_VALUE) {
+-			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.LCM_OVERFLOW_32_BITS, 
+-			a, b);
+-		}
+-		return lcm;
+-	}
+@@ -986,12 +767,0 @@
+-	public static long lcm(long a, long b) {
+-		if ((a == 0) || (b == 0)) {
+-			return 0;
+-		}
+-		long lcm = org.apache.commons.math.util.FastMath.abs(org.apache.commons.math.util.MathUtils.mulAndCheck(a / org.apache.commons.math.util.MathUtils.gcd(a, b), b));
+-		if (lcm == java.lang.Long.MIN_VALUE) {
+-			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.LCM_OVERFLOW_64_BITS, 
+-			a, b);
+-		}
+-		return lcm;
+-	}
+@@ -1015,3 +784,0 @@
+-	public static double log(double base, double x) {
+-		return org.apache.commons.math.util.FastMath.log(x) / org.apache.commons.math.util.FastMath.log(base);
+-	}
+@@ -1029,7 +795,0 @@
+-	public static int mulAndCheck(int x, int y) {
+-		long m = ((long) (x)) * ((long) (y));
+-		if ((m < java.lang.Integer.MIN_VALUE) || (m > java.lang.Integer.MAX_VALUE)) {
+-			throw new java.lang.ArithmeticException("overflow: mul");
+-		}
+-		return ((int) (m));
+-	}
+@@ -1047,4 +806,0 @@
+-	public static long mulAndCheck(long a, long b) {
+-		long ret;
+-		java.lang.String msg = "overflow: multiply";
+-		if (a > b) {
+@@ -1052,4 +807,0 @@
+-			ret = org.apache.commons.math.util.MathUtils.mulAndCheck(b, a);
+-		} else 
+-		if (a < 0) {
+-			if (b < 0) {
+@@ -1057,6 +808,0 @@
+-				if (a >= (java.lang.Long.MAX_VALUE / b)) {
+-					ret = a * b;
+-				} else {
+-					throw new java.lang.ArithmeticException(msg);
+-				}
+-			} else if (b > 0) {
+@@ -1064,4 +809,0 @@
+-				if ((java.lang.Long.MIN_VALUE / b) <= a) {
+-					ret = a * b;
+-				} else {
+-					throw new java.lang.ArithmeticException(msg);
+@@ -1069,2 +810,0 @@
+-				}
+-			} else {
+@@ -1072,3 +811,0 @@
+-				ret = 0;
+-			}
+-		} else if (a > 0) {
+@@ -1079,6 +815,0 @@
+-			if (a <= (java.lang.Long.MAX_VALUE / b)) {
+-				ret = a * b;
+-			} else {
+-				throw new java.lang.ArithmeticException(msg);
+-			}
+-		} else {
+@@ -1086,2 +816,0 @@
+-			ret = 0;
+-		}
+@@ -1089,2 +817,0 @@
+-		return ret;
+-	}
+@@ -1101 +827,0 @@
+-	public static double scalb(final double d, final int scaleFactor) {
+@@ -1104,3 +829,0 @@
+-		if (((d == 0) || java.lang.Double.isNaN(d)) || java.lang.Double.isInfinite(d)) {
+-			return d;
+-		}
+@@ -1109,3 +831,0 @@
+-		final long bits = java.lang.Double.doubleToLongBits(d);
+-		final long exponent = bits & 0x7ff0000000000000L;
+-		final long rest = bits & 0x800fffffffffffffL;
+@@ -1114,2 +833,0 @@
+-		final long newBits = rest | (exponent + (((long) (scaleFactor)) << 52));
+-		return java.lang.Double.longBitsToDouble(newBits);
+@@ -1117 +834,0 @@
+-	}
+@@ -1138,3 +854,0 @@
+-	public static double normalizeAngle(double a, double center) {
+-		return a - (org.apache.commons.math.util.MathUtils.TWO_PI * org.apache.commons.math.util.FastMath.floor(((a + org.apache.commons.math.util.FastMath.PI) - center) / org.apache.commons.math.util.MathUtils.TWO_PI));
+-	}
+@@ -1163,34 +876,0 @@
+-	public static double[] normalizeArray(double[] values, double normalizedSum) throws 
+-	java.lang.ArithmeticException, java.lang.IllegalArgumentException {
+-		if (java.lang.Double.isInfinite(normalizedSum)) {
+-			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.NORMALIZE_INFINITE);
+-		}
+-		if (java.lang.Double.isNaN(normalizedSum)) {
+-			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-			org.apache.commons.math.exception.util.LocalizedFormats.NORMALIZE_NAN);
+-		}
+-		double sum = 0.0;
+-		final int len = values.length;
+-		double[] out = new double[len];
+-		for (int i = 0; i < len; i++) {
+-			if (java.lang.Double.isInfinite(values[i])) {
+-				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(
+-				org.apache.commons.math.exception.util.LocalizedFormats.INFINITE_ARRAY_ELEMENT, values[i], i);
+-			}
+-			if (!java.lang.Double.isNaN(values[i])) {
+-				sum += values[i];
+-			}
+-		}
+-		if (sum == 0) {
+-			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.ARRAY_SUMS_TO_ZERO);
+-		}
+-		for (int i = 0; i < len; i++) {
+-			if (java.lang.Double.isNaN(values[i])) {
+-				out[i] = java.lang.Double.NaN;
+-			} else {
+-				out[i] = (values[i] * normalizedSum) / sum;
+-			}
+-		}
+-		return out;
+-	}
+@@ -1207,3 +886,0 @@
+-	public static double round(double x, int scale) {
+-		return org.apache.commons.math.util.MathUtils.round(x, scale, java.math.BigDecimal.ROUND_HALF_UP);
+-	}
+@@ -1223,5 +899,0 @@
+-	public static double round(double x, int scale, int roundingMethod) {
+-		try {
+-			return new java.math.BigDecimal(
+-			java.lang.Double.toString(x)).setScale(
+-			scale, roundingMethod).doubleValue();
+@@ -1229,8 +900,0 @@
+-		} catch (java.lang.NumberFormatException ex) {
+-			if (java.lang.Double.isInfinite(x)) {
+-				return x;
+-			} else {
+-				return java.lang.Double.NaN;
+-			}
+-		}
+-	}
+@@ -1247,3 +910,0 @@
+-	public static float round(float x, int scale) {
+-		return org.apache.commons.math.util.MathUtils.round(x, scale, java.math.BigDecimal.ROUND_HALF_UP);
+-	}
+@@ -1263,5 +923,0 @@
+-	public static float round(float x, int scale, int roundingMethod) {
+-		float sign = org.apache.commons.math.util.MathUtils.indicator(x);
+-		float factor = ((float) (org.apache.commons.math.util.FastMath.pow(10.0F, scale))) * sign;
+-		return ((float) (org.apache.commons.math.util.MathUtils.roundUnscaled(x * factor, sign, roundingMethod))) / factor;
+-	}
+@@ -1281,37 +936,0 @@
+-	private static double roundUnscaled(double unscaled, double sign, 
+-	int roundingMethod) {
+-		switch (roundingMethod) {
+-			case java.math.BigDecimal.ROUND_CEILING :
+-				if (sign == (-1)) {
+-					unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY));
+-				} else {
+-					unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY));
+-				}
+-				break;
+-			case java.math.BigDecimal.ROUND_DOWN :
+-				unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY));
+-				break;
+-			case java.math.BigDecimal.ROUND_FLOOR :
+-				if (sign == (-1)) {
+-					unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY));
+-				} else {
+-					unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY));
+-				}
+-				break;
+-			case java.math.BigDecimal.ROUND_HALF_DOWN : 				{
+-					unscaled = org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY);
+-					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled);
+-					if (fraction > 0.5) {
+-						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);
+-					} else {
+-						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);
+-					}
+-					break;
+-				}
+-			case java.math.BigDecimal.ROUND_HALF_EVEN : 				{
+-					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled);
+-					if (fraction > 0.5) {
+-						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);
+-					} else if (fraction < 0.5) {
+-						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);
+-					} else 
+@@ -1319,6 +937,0 @@
+-					if ((org.apache.commons.math.util.FastMath.floor(unscaled) / 2.0) == org.apache.commons.math.util.FastMath.floor(java.lang.Math.floor(
+-					unscaled) / 2.0)) {
+-						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);
+-					} else {
+-						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);
+-					}
+@@ -1326,32 +938,0 @@
+-					break;
+-				}
+-			case java.math.BigDecimal.ROUND_HALF_UP : 				{
+-					unscaled = org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY);
+-					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled);
+-					if (fraction >= 0.5) {
+-						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);
+-					} else {
+-						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);
+-					}
+-					break;
+-				}
+-			case java.math.BigDecimal.ROUND_UNNECESSARY :
+-				if (unscaled != org.apache.commons.math.util.FastMath.floor(unscaled)) {
+-					throw new java.lang.ArithmeticException("Inexact result from rounding");
+-				}
+-				break;
+-			case java.math.BigDecimal.ROUND_UP :
+-				unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY));
+-				break;
+-			default :
+-				throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(
+-				org.apache.commons.math.exception.util.LocalizedFormats.INVALID_ROUNDING_METHOD, 
+-				roundingMethod, 
+-				"ROUND_CEILING", java.math.BigDecimal.ROUND_CEILING, 
+-				"ROUND_DOWN", java.math.BigDecimal.ROUND_DOWN, 
+-				"ROUND_FLOOR", java.math.BigDecimal.ROUND_FLOOR, 
+-				"ROUND_HALF_DOWN", java.math.BigDecimal.ROUND_HALF_DOWN, 
+-				"ROUND_HALF_EVEN", java.math.BigDecimal.ROUND_HALF_EVEN, 
+-				"ROUND_HALF_UP", java.math.BigDecimal.ROUND_HALF_UP, 
+-				"ROUND_UNNECESSARY", java.math.BigDecimal.ROUND_UNNECESSARY, 
+-				"ROUND_UP", java.math.BigDecimal.ROUND_UP);}
+@@ -1359,2 +939,0 @@
+-		return unscaled;
+-	}
+@@ -1372,3 +950,0 @@
+-	public static byte sign(final byte x) {
+-		return x == org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.ZB : x > org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.PB : org.apache.commons.math.util.MathUtils.NB;
+-	}
+@@ -1388,5 +964,429 @@
+-	public static double sign(final double x) {
+-		if (java.lang.Double.isNaN(x)) {
+-			return java.lang.Double.NaN;
+-		}
+-		return x == 0.0 ? 0.0 : x > 0.0 ? 1.0 : -1.0;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		(x > 0.0) && java.lang.Double.isNaN(y)) || (x == y);} 	public static boolean equalsIncludingNaN(double x, double y) { 		return (java.lang.Double.isNaN(x) && java.lang.Double.isNaN(y)) || org.apache.commons.math.util.MathUtils.equals(x, y, 1);} 	public static boolean equals(double x, double y, double eps) { 		return org.apache.commons.math.util.MathUtils.equals(x, y, 1) || (org.apache.commons.math.util.FastMath.abs(y - x) <= eps);} 	public static boolean equalsIncludingNaN(double x, double y, double eps) { 		return org.apache.commons.math.util.MathUtils.equalsIncludingNaN(x, y) || (org.apache.commons.math.util.FastMath.abs(y - x) <= eps);} 	public static boolean equals(double x, double y, int maxUlps) { 		assert (maxUlps > 0) && (maxUlps < org.apache.commons.math.util.MathUtils.NAN_GAP); 		long xInt = java.lang.Double.doubleToLongBits(x); 		long yInt = java.lang.Double.doubleToLongBits(y); 		if (xInt < 0) { 			xInt = org.apache.commons.math.util.MathUtils.SGN_MASK - xInt;} 		if (yInt < 0) { 			yInt = org.apache.commons.math.util.MathUtils.SGN_MASK - yInt;} 		final boolean isEqual = org.apache.commons.math.util.FastMath.abs(xInt - yInt) <= maxUlps; 		return (isEqual && (!java.lang.Double.isNaN(x))) && (!java.lang.Double.isNaN(y));} 	public static boolean equalsIncludingNaN(double x, double y, int maxUlps) { 		return (java.lang.Double.isNaN(x) && java.lang.Double.isNaN(y)) || org.apache.commons.math.util.MathUtils.equals(x, y, maxUlps);} 	public static boolean equals(double[] x, double[] y) { 		if ((x == null) || (y == null)) { 			return !((x == null) ^ (y == null));} 		if (x.length != y.length) { 			return false;} 		for (int i = 0; i < x.length; ++i) { 			if (!org.apache.commons.math.util.MathUtils.equals(x[i], y[i])) { 				return false;}} 		return true;} 	public static boolean equalsIncludingNaN(double[] x, double[] y) { 		if ((x == null) || (y == null)) { 			return !((x == null) ^ (y == null));} 		if (x.length != y.length) { 			return false;} 		for (int i = 0; i < x.length; ++i) { 			if (!org.apache.commons.math.util.MathUtils.equalsIncludingNaN(x[i], y[i])) { 				return false;}} 		return true;} 	public static long factorial(final int n) { 		if (n < 0) { 			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, n);} 		if (n > 20) { 			throw new java.lang.ArithmeticException("factorial value is too large to fit in a long");} 		return org.apache.commons.math.util.MathUtils.FACTORIALS[n];} 	public static double factorialDouble(final int n) { 		if (n < 0) { 			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, n);} 		if (n < 21) { 			return org.apache.commons.math.util.MathUtils.factorial(n);} 		return org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.exp(org.apache.commons.math.util.MathUtils.factorialLog(n)) + 0.5);} 	public static double factorialLog(final int n) { 		if (n < 0) { 			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.FACTORIAL_NEGATIVE_PARAMETER, n);} 		if (n < 21) { 			return org.apache.commons.math.util.FastMath.log(org.apache.commons.math.util.MathUtils.factorial(n));} 		double logSum = 0; 		for (int i = 2; i <= n; i++) { 			logSum += org.apache.commons.math.util.FastMath.log(i);} 		return logSum;} 	public static int gcd(final int p, final int q) { 		int u = p; 		int v = q; 		if ((u == 0) || (v == 0)) { 			if ((u == java.lang.Integer.MIN_VALUE) || (v == java.lang.Integer.MIN_VALUE)) { 				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_32_BITS, p, q);} 			return org.apache.commons.math.util.FastMath.abs(u) + org.apache.commons.math.util.FastMath.abs(v);} 		if (u > 0) { 			u = -u;} 		if (v > 0) { 			v = -v;} 		int k = 0; 		while ((((u & 1) == 0) && ((v & 1) == 0)) && (k < 31)) { 			u /= 2; 			v /= 2; 			k++;} 		if (k == 31) { 			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_32_BITS, p, q);} 		int t = ((u & 1) == 1) ? v : -(u / 2); 		do { 			while ((t & 1) == 0) { 				t /= 2;} 			if (t > 0) { 				u = -t;} else { 				v = t;} 			t = (v - u) / 2;} while (t != 0 ); 		return (-u) * (1 << k);} 	public static long gcd(final long p, final long q) { 		long u = p; 		long v = q; 		if ((u == 0) || (v == 0)) { 			if ((u == java.lang.Long.MIN_VALUE) || (v == java.lang.Long.MIN_VALUE)) { 				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_64_BITS, p, q);} 			return org.apache.commons.math.util.FastMath.abs(u) + org.apache.commons.math.util.FastMath.abs(v);} 		if (u > 0) { 			u = -u;} 		if (v > 0) { 			v = -v;} 		int k = 0; 		while ((((u & 1) == 0) && ((v & 1) == 0)) && (k < 63)) { 			u /= 2; 			v /= 2; 			k++;} 		if (k == 63) { 			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.GCD_OVERFLOW_64_BITS, p, q);} 		long t = ((u & 1) == 1) ? v : -(u / 2); 		do { 			while ((t & 1) == 0) { 				t /= 2;} 			if (t > 0) { 				u = -t;} else { 				v = t;} 			t = (v - u) / 2;} while (t != 0 ); 		return (-u) * (1L << k);} 	public static int hash(double value) { 		return new java.lang.Double(value).hashCode();} 	public static int hash(double[] value) { 		return java.util.Arrays.hashCode(value);} 	public static byte indicator(final byte x) { 		return x >= org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.PB : org.apache.commons.math.util.MathUtils.NB;} 	public static double indicator(final double x) { 		if (java.lang.Double.isNaN(x)) { 			return java.lang.Double.NaN;} 		return x >= 0.0 ? 1.0 : -1.0;} 	public static float indicator(final float x) { 		if (java.lang.Float.isNaN(x)) { 			return java.lang.Float.NaN;} 		return x >= 0.0F ? 1.0F : -1.0F;} 	public static int indicator(final int x) { 		return x >= 0 ? 1 : -1;} 	public static long indicator(final long x) { 		return x >= 0L ? 1L : -1L;} 	public static short indicator(final short x) { 		return x >= org.apache.commons.math.util.MathUtils.ZS ? org.apache.commons.math.util.MathUtils.PS : org.apache.commons.math.util.MathUtils.NS;} 	public static int lcm(int a, int b) { 		if ((a == 0) || (b == 0)) { 			return 0;} 		int lcm = org.apache.commons.math.util.FastMath.abs(org.apache.commons.math.util.MathUtils.mulAndCheck(a / org.apache.commons.math.util.MathUtils.gcd(a, b), b)); 		if (lcm == java.lang.Integer.MIN_VALUE) { 			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.LCM_OVERFLOW_32_BITS, a, b);} 		return lcm;} 	public static long lcm(long a, long b) { 		if ((a == 0) || (b == 0)) { 			return 0;} 		long lcm = org.apache.commons.math.util.FastMath.abs(org.apache.commons.math.util.MathUtils.mulAndCheck(a / org.apache.commons.math.util.MathUtils.gcd(a, b), b)); 		if (lcm == java.lang.Long.MIN_VALUE) { 			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.LCM_OVERFLOW_64_BITS, a, b);} 		return lcm;} 	public static double log(double base, double x) { 		return org.apache.commons.math.util.FastMath.log(x) / org.apache.commons.math.util.FastMath.log(base);} 	public static int mulAndCheck(int x, int y) { 		long m = ((long) (x)) * ((long) (y)); 		if ((m < java.lang.Integer.MIN_VALUE) || (m > java.lang.Integer.MAX_VALUE)) { 			throw new java.lang.ArithmeticException("overflow: mul");} 		return ((int) (m));} 	public static long mulAndCheck(long a, long b) { 		long ret; 		java.lang.String msg = "overflow: multiply"; 		if (a > b) { 			ret = org.apache.commons.math.util.MathUtils.mulAndCheck(b, a);} else if (a < 0) { 			if (b < 0) { 				if (a >= (java.lang.Long.MAX_VALUE / b)) { 					ret = a * b;} else { 					throw new java.lang.ArithmeticException(msg);}} else if (b > 0) { 				if ((java.lang.Long.MIN_VALUE / b) <= a) { 					ret = a * b;} else { 					throw new java.lang.ArithmeticException(msg);}} else { 				ret = 0;}} else if (a > 0) { 			if (a <= (java.lang.Long.MAX_VALUE / b)) { 				ret = a * b;} else { 				throw new java.lang.ArithmeticException(msg);}} else { 			ret = 0;} 		return ret;} 	public static double scalb(final double d, final int scaleFactor) { 		if (((d == 0) || java.lang.Double.isNaN(d)) || java.lang.Double.isInfinite(d)) { 			return d;} 		final long bits = java.lang.Double.doubleToLongBits(d); 		final long exponent = bits & 0x7ff0000000000000L; 		final long rest = bits & 0x800fffffffffffffL; 		final long newBits = rest | (exponent + (((long) (scaleFactor)) << 52)); 		return java.lang.Double.longBitsToDouble(newBits);} 	public static double normalizeAngle(double a, double center) { 		return a - (org.apache.commons.math.util.MathUtils.TWO_PI * org.apache.commons.math.util.FastMath.floor(((a + org.apache.commons.math.util.FastMath.PI) - center) / org.apache.commons.math.util.MathUtils.TWO_PI));} 	public static double[] normalizeArray(double[] values, double normalizedSum) throws java.lang.ArithmeticException, java.lang.IllegalArgumentException { 		if (java.lang.Double.isInfinite(normalizedSum)) { 			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.NORMALIZE_INFINITE);} 		if (java.lang.Double.isNaN(normalizedSum)) { 			throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.NORMALIZE_NAN);} 		double sum = 0.0; 		final int len = values.length; 		double[] out = new double[len]; 		for (int i = 0; i < len; i++) { 			if (java.lang.Double.isInfinite(values[i])) { 				throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.INFINITE_ARRAY_ELEMENT, values[i], i);} 			if (!java.lang.Double.isNaN(values[i])) { 				sum += values[i];}} 		if (sum == 0) { 			throw org.apache.commons.math.MathRuntimeException.createArithmeticException(org.apache.commons.math.exception.util.LocalizedFormats.ARRAY_SUMS_TO_ZERO);} 		for (int i = 0; i < len; i++) { 			if (java.lang.Double.isNaN(values[i])) { 				out[i] = java.lang.Double.NaN;} else { 				out[i] = (values[i] * normalizedSum) / sum;}} 		return out;} 	public static double round(double x, int scale) { 		return org.apache.commons.math.util.MathUtils.round(x, scale, java.math.BigDecimal.ROUND_HALF_UP);} 	public static double round(double x, int scale, int roundingMethod) { 		try { 			return new java.math.BigDecimal(java.lang.Double.toString(x)).setScale(scale, roundingMethod).doubleValue();} catch (java.lang.NumberFormatException ex) { 			if (java.lang.Double.isInfinite(x)) { 				return x;} else { 				return java.lang.Double.NaN;}}} 	public static float round(float x, int scale) { 		return org.apache.commons.math.util.MathUtils.round(x, scale, java.math.BigDecimal.ROUND_HALF_UP);} 	public static float round(float x, int scale, int roundingMethod) { 		float sign = org.apache.commons.math.util.MathUtils.indicator(x); 		float factor = ((float) (org.apache.commons.math.util.FastMath.pow(10.0F, scale))) * sign; 		return ((float) (org.apache.commons.math.util.MathUtils.roundUnscaled(x * factor, sign, roundingMethod))) / factor;} 	private static double roundUnscaled(double unscaled, double sign, int roundingMethod) { 		switch (roundingMethod) { 			case java.math.BigDecimal.ROUND_CEILING : 				if (sign == (-1)) { 					unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY));} else { 					unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY));} 				break; 			case java.math.BigDecimal.ROUND_DOWN : 				unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY)); 				break; 			case java.math.BigDecimal.ROUND_FLOOR : 				if (sign == (-1)) { 					unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY));} else { 					unscaled = org.apache.commons.math.util.FastMath.floor(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY));} 				break; 			case java.math.BigDecimal.ROUND_HALF_DOWN : 				{ 					unscaled = org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.NEGATIVE_INFINITY); 					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled); 					if (fraction > 0.5) { 						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);} else { 						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);} 					break;} 			case java.math.BigDecimal.ROUND_HALF_EVEN : 				{ 					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled); 					if (fraction > 0.5) { 						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);} else if (fraction < 0.5) { 						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);} else if ((org.apache.commons.math.util.FastMath.floor(unscaled) / 2.0) == org.apache.commons.math.util.FastMath.floor(java.lang.Math.floor(unscaled) / 2.0)) { 						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);} else { 						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);} 					break;} 			case java.math.BigDecimal.ROUND_HALF_UP : 				{ 					unscaled = org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY); 					double fraction = unscaled - org.apache.commons.math.util.FastMath.floor(unscaled); 					if (fraction >= 0.5) { 						unscaled = org.apache.commons.math.util.FastMath.ceil(unscaled);} else { 						unscaled = org.apache.commons.math.util.FastMath.floor(unscaled);} 					break;} 			case java.math.BigDecimal.ROUND_UNNECESSARY : 				if (unscaled != org.apache.commons.math.util.FastMath.floor(unscaled)) { 					throw new java.lang.ArithmeticException("Inexact result from rounding");} 				break; 			case java.math.BigDecimal.ROUND_UP : 				unscaled = org.apache.commons.math.util.FastMath.ceil(org.apache.commons.math.util.FastMath.nextAfter(unscaled, java.lang.Double.POSITIVE_INFINITY)); 				break; 			default : 				throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(org.apache.commons.math.exception.util.LocalizedFormats.INVALID_ROUNDING_METHOD, roundingMethod, "ROUND_CEILING", java.math.BigDecimal.ROUND_CEILING, "ROUND_DOWN", java.math.BigDecimal.ROUND_DOWN, "ROUND_FLOOR", java.math.BigDecimal.ROUND_FLOOR, "ROUND_HALF_DOWN", java.math.BigDecimal.ROUND_HALF_DOWN, "ROUND_HALF_EVEN", java.math.BigDecimal.ROUND_HALF_EVEN, "ROUND_HALF_UP", java.math.BigDecimal.ROUND_HALF_UP, "ROUND_UNNECESSARY", java.math.BigDecimal.ROUND_UNNECESSARY, "ROUND_UP", java.math.BigDecimal.ROUND_UP);} 		return unscaled;} 	public static byte sign(final byte x) { 		return x == org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.ZB : x > org.apache.commons.math.util.MathUtils.ZB ? org.apache.commons.math.util.MathUtils.PB : org.apache.commons.math.util.MathUtils.NB;} 	public static double sign(final double x) { 		if (java.lang.Double.isNaN(x)) { 			return java.lang.Double.NaN;} 		return x == 0.0 ? 0.0 : x > 0.0 ? 1.0 : -1.0;
+
+
+
+437.17user 41.51system 19:13.15elapsed 41%CPU (0avgtext+0avgdata 1642868maxresident)k
+1949848inputs+48368outputs (10480major+1228366minor)pagefaults 0swaps
+
+
+Node: polaris
+
+
+
+Date: dom 18 abr 2021 10:07:44 EDT
+

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-18 15:12:40.262660", 
+  "repair_begin": "2021-04-18 15:08:12.829991", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Math_73\\/src\\/main\\/java\\/org\\/apache\\/commons\\/math\\/analysis\\/solvers\\/BrentSolverjava\\n+++ \\/tmp\\/figra_Defects4J_Math_73\\/src\\/main\\/java\\/org\\/apache\\/commons\\/math\\/analysis\\/solvers\\/BrentSolverjava\\n@@ -138 +138 @@\\n-\\t\\treturn solve(f, min, yMin, max, yMax, initial, yInitial);\\n+\\t\\treturn solve(f, min, yMin, max, yMax, initial, solve(f, min, min));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Math_73\\/.\\/output_astor\\/AstorMain-Math-73\\/\\/src\\/\\/variant-24\\/org\\/apache\\/commons\\/math\\/analysis\\/solvers\\/BrentSolver.java", 
+          "ORIGINAL_CODE": "yInitial", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "solve(f, min, min)", 
+          "INGREDIENT_PARENT": "solve(_UnivariateRealFunction_0, _double_1, _double_2)", 
+          "LOCATION": "org.apache.commons.math.analysis.solvers.BrentSolver", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Math_73\\/src\\/main\\/java\\/org\\/apache\\/commons\\/math\\/analysis\\/solvers\\/BrentSolver.java", 
+          "LINE": "138", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "12", 
+      "VARIANT_ID": "24", 
+      "TIME": "107", 
+      "VALIDATION": "|true|0|2140|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Math_73\\/.\\/output_astor\\/AstorMain-Math-73\\/\\/src\\/\\/variant-24"
+    }
+  ]
+}
