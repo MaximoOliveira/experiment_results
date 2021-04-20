@@ -1,0 +1,106 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007/Nopol_IntroClassJava_smallest_15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/usr/lib/jvm/java-1.8.0-openjdk/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 7 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+16:00:34.038 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:34.040 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007/Nopol_IntroClassJava_smallest_15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007/Nopol_IntroClassJava_smallest_15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-007/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:34.041 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:34.041 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.smallest_15cb07a7_007BlackboxTest, introclassJava.smallest_15cb07a7_007WhiteboxTest]
+16:00:34.043 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.smallest_15cb07a7_007BlackboxTest, introclassJava.smallest_15cb07a7_007WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:34.044 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:34.047 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:34.048 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:34.048 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:34.048 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:34.052 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:34.052 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:37.721 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:37.726 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_15cb07a7_007:78 which is executed by 12 tests
+1777977049
+16:00:38.122 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:39.406 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:39.406 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[2]isthesmallest>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2]isthesmallest> but was:<...rsseparatedbyspaces>[3]isthesmallest>]
+16:00:39.407 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_15cb07a7_007:78.
+16:00:39.407 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:39.407 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_15cb07a7_007:74 which is executed by 12 tests
+1777977049
+16:00:39.537 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:40.012 [pool-11-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:40.012 [pool-11-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[2]isthesmallest>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2]isthesmallest> but was:<...rsseparatedbyspaces>[3]isthesmallest>]
+16:00:40.012 [pool-11-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_15cb07a7_007:74.
+16:00:40.013 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:40.472 [pool-19-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[2]isthesmallest>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2]isthesmallest> but was:<...rsseparatedbyspaces>[3]isthesmallest>]
+16:00:40.472 [pool-19-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[3]isthesmallest>]
+16:00:40.472 [pool-19-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_15cb07a7_007:74.
+16:00:40.472 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:40.472 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_15cb07a7_007:71 which is executed by 13 tests
+1777977049
+16:00:40.597 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:40.927 [pool-27-thread-1] DEBUG tests.output - Failing tests with false: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:00:40.931 [pool-27-thread-1] DEBUG tests.output - Failing tests with true: 
+[test2(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[2]isthesmallest>, test4(introclassJava.smallest_15cb07a7_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test6(introclassJava.smallest_15cb07a7_007BlackboxTest): expected:<...rsseparatedbyspaces>[2]isthesmallest> but was:<...rsseparatedbyspaces>[3]isthesmallest>]
+16:00:40.931 [pool-27-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_15cb07a7_007:71.
+16:00:40.932 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:41.634 [pool-35-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:41.776 [pool-35-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Successful code synthesis: (scnd.value < frth.value)
+16:00:41.776 [pool-35-thread-1] INFO  f.i.l.repair.nopol.patch.TestPatch - Applying patch: introclassJava.smallest_15cb07a7_007:71: CONDITIONAL (scnd.value < frth.value)
+16:00:41.943 [pool-35-thread-1] INFO  f.i.l.repair.nopol.patch.TestPatch - Running test suite to check the patch "(scnd.value < frth.value)" is working
+16:00:42.068 [pool-35-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Skipped -9 patches for sake of performance
+16:00:42.069 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 5
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 6
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 18
+16:00:42.072 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 8033ms
+16:00:42.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+16:00:42.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+16:00:42.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - (scnd.value < frth.value)
+16:00:42.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 13
+16:00:42.073 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - introclassJava.smallest_15cb07a7_007:71: CONDITIONAL
+16:00:42.095 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- a/src/main/java/introclassJava/smallest_15cb07a7_007.java
++++ b/src/main/java/introclassJava/smallest_15cb07a7_007.java
+@@ -70,7 +70,6 @@
+             output += (String.format ("%d is the smallest\n", frst.value));
+-        } else if (scnd.value < frst.value && scnd.value < thrd.value
+-                   && scnd.value < frth.value) {
++        } else if ((scnd.value < frth.value)) {
+             output += (String.format ("%d is the smallest\n", scnd.value));
+         } else if (thrd.value < frst.value && thrd.value < scnd.value
+-                   && thrd.value < frth.value) {
++        && thrd.value < frth.value) {
+             output += (String.format ("%d is the smallest\n", thrd.value));
+
+PATCH
+
+real	0m8.813s
+user	0m7.758s
+sys	0m0.647s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 16:00:42 EDT 2021\n

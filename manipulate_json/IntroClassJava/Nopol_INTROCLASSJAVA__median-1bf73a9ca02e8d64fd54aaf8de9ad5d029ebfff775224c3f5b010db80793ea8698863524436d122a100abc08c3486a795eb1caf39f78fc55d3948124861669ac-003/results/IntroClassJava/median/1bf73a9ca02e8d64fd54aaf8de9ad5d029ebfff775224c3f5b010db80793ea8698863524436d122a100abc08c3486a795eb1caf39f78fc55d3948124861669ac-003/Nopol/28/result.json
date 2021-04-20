@@ -1,0 +1,15 @@
+{
+  "repair_end": "2021-04-03 21:00:31.462059", 
+  "repair_begin": "2021-04-03 20:59:58.162201", 
+  "patches": [
+    {
+      "nb_test_that_execute_statement": 11, 
+      "patchLocation": {
+        "line": 70, 
+        "class": "introclassJava.median_1bf73a9c_003"
+      }, 
+      "patchType": "PRECONDITION", 
+      "patch": "--- a/src/main/java/introclassJava/median_1bf73a9c_003.java\n+++ b/src/main/java/introclassJava/median_1bf73a9c_003.java\n@@ -69,7 +69,11 @@\n             ans.value = first.value;\n-        } else if ((second.value > first.value && second.value < third.value)\n-                   || (second.value > third.value && second.value < first.value)) {\n-            ans.value = second.value;\n         } else {\n-            ans.value = third.value;\n+            if (!(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))) {\n+                if ((second.value > first.value && second.value < third.value)\n+                || (second.value > third.value && second.value < first.value)) {\n+                    ans.value = second.value;\n+                } else {\n+                    ans.value = third.value;\n+                }\n+            }\n         }\n"
+    }
+  ]
+}

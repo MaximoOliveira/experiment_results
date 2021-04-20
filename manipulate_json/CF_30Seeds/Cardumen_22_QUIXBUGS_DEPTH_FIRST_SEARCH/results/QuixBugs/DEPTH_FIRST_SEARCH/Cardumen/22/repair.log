@@ -1,0 +1,343 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id DEPTH_FIRST_SEARCH- \
+	-failing java_testcases.junit.DEPTH_FIRST_SEARCH_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 22 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+13:54:49.615 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashSet<>() to new java.util.HashSet<>()
+13:54:50.887 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify new Search() to new Search()
+13:54:52.493 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify nodesvisited.contains(node) to nodesvisited.contains(node)
+13:54:53.768 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:54:56.247 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify node.getSuccessors() to node.getSuccessors()
+13:54:57.934 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify s.search(startnode) to s.search(startnode)
+13:54:59.184 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify node == goalnode to node == goalnode
+13:55:05.181 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify search(successornodes) to search(successornodes)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=DEPTH_FIRST_SEARCH-
+TOTAL_TIME=7200.018
+NR_GENERATIONS=73
+NR_RIGHT_COMPILATIONS=69
+NR_FAILLING_COMPILATIONS=4
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=64
+TIME=12
+VALIDATION=|true|0|5|[]|
+GENERATION=32
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-64
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-64/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=node == node
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (node == node) { 							return true;}
+
+
+
+Patch 2
+VARIANT_ID=66
+TIME=13
+VALIDATION=|true|0|5|[]|
+GENERATION=33
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-66
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-66/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=successornodes == successornodes
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (successornodes == successornodes) { 							return true;}
+
+
+
+Patch 3
+VARIANT_ID=68
+TIME=13
+VALIDATION=|true|0|5|[]|
+GENERATION=34
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-68
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-68/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=startnode == startnode
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (startnode == startnode) { 							return true;}
+
+
+
+Patch 4
+VARIANT_ID=90
+TIME=17
+VALIDATION=|true|0|5|[]|
+GENERATION=45
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-90
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-90/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=goalnode == goalnode
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (goalnode == goalnode) { 							return true;}
+
+
+
+Patch 5
+VARIANT_ID=102
+TIME=19
+VALIDATION=|true|0|5|[]|
+GENERATION=51
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-102
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-102/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=search(goalnode)
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=search(_Node_0)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (search(goalnode)) { 							return true;}
+
+
+
+Patch 6
+VARIANT_ID=118
+TIME=22
+VALIDATION=|true|0|5|[]|
+GENERATION=59
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-118
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-118/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=startnode == node
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (startnode == node) { 							return true;}
+
+
+
+Patch 7
+VARIANT_ID=136
+TIME=24
+VALIDATION=|true|0|5|[]|
+GENERATION=68
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-136
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.DEPTH_FIRST_SEARCH
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCH.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/./output_astor/AstorMain-DEPTH_FIRST_SEARCH-//src//variant-136/java_programs/DEPTH_FIRST_SEARCH.java
+
+LINE=23
+
+SUSPICIOUNESS=0.577
+
+MP_RANKING=1
+
+ORIGINAL_CODE=search(successornodes)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtIfImpl
+
+PATCH_HUNK_CODE=node == startnode
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Node_0 == _Node_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_22_QUIXBUGS_DEPTH_FIRST_SEARCH/Cardumen_QuixBugs_DEPTH_FIRST_SEARCH_/src/main/java/DEPTH_FIRST_SEARCHjava
+@@ -23 +23 @@
+-						if (search(successornodes)) { 							return true;}
++						if (node == startnode) { 							return true;}
+
+
+
+
+real	120m6.851s
+user	119m57.382s
+sys	0m6.068s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 15:54:50 EDT 2021\n

@@ -1,0 +1,81 @@
+{
+  "repair_end": "2021-04-07 18:53:11.591328", 
+  "repair_begin": "2021-04-07 16:52:55.267819", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n@@ -38,4 +38,4 @@\\n-\\t\\tif (arr.size() == 0) {\\n-\\t\\t\\treturn arr;\\n-\\t\\t} else {\\n-\\t\\t\\tint middle = arr.size() \\/ 2;\\n+\\t\\tif (\\n+\\n+\\n+\\t\\t(arr.size() \\/ 2) == 0) { \\t\\t\\treturn arr;} else { \\t\\t\\tint middle = arr.size() \\/ 2;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-310\\/java_programs\\/MERGESORT.java", 
+          "ORIGINAL_CODE": "arr.size()", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "arr.size() \\/ 2", 
+          "INGREDIENT_PARENT": "arr.size() \\/ 2", 
+          "LOCATION": "java_programs.MERGESORT", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORT.java", 
+          "LINE": "38", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "155", 
+      "VARIANT_ID": "310", 
+      "TIME": "143", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-310"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n@@ -38,4 +38,4 @@\\n-\\t\\tif (arr.size() == 0) {\\n-\\t\\t\\treturn arr;\\n-\\t\\t} else {\\n-\\t\\t\\tint middle = arr.size() \\/ 2;\\n+\\t\\tif (\\n+\\n+\\n+\\t\\t(arr.size() \\/ 2) == 0) { \\t\\t\\treturn arr;} else { \\t\\t\\tint middle = arr.size() \\/ 2;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-536\\/java_programs\\/MERGESORT.java", 
+          "ORIGINAL_CODE": "arr.size()", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(arr.size() \\/ 2)", 
+          "INGREDIENT_PARENT": "_ArrayList_0.size() \\/ 2", 
+          "LOCATION": "java_programs.MERGESORT", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORT.java", 
+          "LINE": "38", 
+          "MP_RANKING": "1", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "268", 
+      "VARIANT_ID": "536", 
+      "TIME": "263", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-536"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORTjava\\n@@ -38,4 +38,4 @@\\n-\\t\\tif (arr.size() == 0) {\\n-\\t\\t\\treturn arr;\\n-\\t\\t} else {\\n-\\t\\t\\tint middle = arr.size() \\/ 2;\\n+\\t\\tif (arr.size() == \\n+\\n+\\n+\\t\\t(arr.size() % 2)) { \\t\\t\\treturn arr;} else { \\t\\t\\tint middle = arr.size() \\/ 2;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-694\\/java_programs\\/MERGESORT.java", 
+          "ORIGINAL_CODE": "0", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "arr.size() % 2", 
+          "INGREDIENT_PARENT": "arr.size() % 2", 
+          "LOCATION": "java_programs.MERGESORT", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/src\\/main\\/java\\/MERGESORT.java", 
+          "LINE": "38", 
+          "MP_RANKING": "2", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "347", 
+      "VARIANT_ID": "694", 
+      "TIME": "299", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_5_QUIXBUGS_MERGESORT\\/Figra_QuixBugs_MERGESORT_\\/.\\/output_astor\\/AstorMain-MERGESORT-\\/\\/src\\/\\/variant-694"
+    }
+  ]
+}

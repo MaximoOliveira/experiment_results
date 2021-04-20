@@ -1,0 +1,393 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id HANOI- \
+	-failing java_testcases.junit.HANOI_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 4 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+11:53:20.761 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>>() to new java.util.ArrayList<java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>>()
+11:53:22.366 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.PriorityQueue<java.lang.Integer>() to new java.util.PriorityQueue<java.lang.Integer>()
+11:53:25.310 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+11:53:25.667 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify second to second
+11:53:29.245 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:53:30.584 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.poll() to crap_set.poll()
+11:53:32.877 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+11:53:33.479 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:53:36.224 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(1) to crap_set.add(1)
+11:53:39.536 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper) to new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)
+11:53:40.308 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+11:53:41.101 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
+11:53:41.440 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+11:53:42.334 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+11:53:42.719 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:53:48.730 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps to steps
+11:53:49.025 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:53:50.763 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")" to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")"
+11:53:58.382 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second))
+11:54:00.399 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(first) to java.lang.String.valueOf(first)
+11:54:12.023 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+11:54:14.817 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.valueOf(second) to java.lang.String.valueOf(second)
+11:54:17.551 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+11:54:20.234 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:54:22.313 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ("(" + java.lang.String.valueOf(first)) to ("(" + java.lang.String.valueOf(first))
+11:54:25.900 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set to crap_set
+11:54:32.311 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ", " to ", "
+11:54:52.798 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "(" to "("
+11:54:56.093 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (("(" + java.lang.String.valueOf(first)) + ", ") to (("(" + java.lang.String.valueOf(first)) + ", ")
+11:54:59.503 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")" to ((("(" + java.lang.String.valueOf(first)) + ", ") + java.lang.String.valueOf(second)) + ")"
+11:55:14.479 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+11:55:14.805 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)) to steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper))
+11:55:27.962 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(3) to crap_set.add(3)
+11:55:59.323 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.addAll(java_programs.HANOI.hanoi(height - 1, helper, end)) to steps.addAll(java_programs.HANOI.hanoi(height - 1, helper, end))
+11:56:07.425 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height > 0 to height > 0
+11:56:08.504 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ")" to ")"
+11:56:24.273 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.HANOI.hanoi(height - 1, helper, end) to java_programs.HANOI.hanoi(height - 1, helper, end)
+11:56:32.070 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+11:56:37.584 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+11:56:49.672 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.remove(start) to crap_set.remove(start)
+11:57:31.181 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+11:58:14.328 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+11:58:21.189 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+11:58:48.516 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify steps.addAll(java_programs.HANOI.hanoi(height - 1, start, helper)) to steps.addAll(java_programs.HANOI.hanoi(height - 1, start, helper))
+11:58:49.747 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.remove(end) to crap_set.remove(end)
+11:59:03.393 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify helper to helper
+11:59:06.699 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.HANOI.hanoi(height - 1, start, helper) to java_programs.HANOI.hanoi(height - 1, start, helper)
+11:59:09.707 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 3 to 3
+11:59:44.784 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+11:59:55.060 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+12:00:04.222 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify end to end
+12:00:10.492 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+12:01:09.673 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify start to start
+12:02:29.087 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+12:02:31.502 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify crap_set.add(2) to crap_set.add(2)
+12:02:42.366 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify end to end
+12:05:52.686 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height to height
+12:08:51.090 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify height - 1 to height - 1
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=HANOI-
+TOTAL_TIME=7200.515
+NR_GENERATIONS=5564
+NR_RIGHT_COMPILATIONS=5064
+NR_FAILLING_COMPILATIONS=500
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=1202
+TIME=202
+VALIDATION=|true|0|7|[]|
+GENERATION=601
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-1202
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-1202/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=44
+
+ORIGINAL_CODE=new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper)
+
+BUGGY_CODE_TYPE=CtConstructorCallImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end)
+
+PATCH_HUNK_TYPE=CtConstructorCallImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(_int_0, _int_1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));
+
+
+
+Patch 2
+VARIANT_ID=2482
+TIME=405
+VALIDATION=|true|0|7|[]|
+GENERATION=1241
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-2482
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-2482/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=43
+
+ORIGINAL_CODE=helper
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtConstructorCallImpl
+
+PATCH_HUNK_CODE=end * 1
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtConstructorCallImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 * 1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end * 1));
+
+
+
+Patch 3
+VARIANT_ID=3034
+TIME=492
+VALIDATION=|true|0|7|[]|
+GENERATION=1517
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-3034
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-3034/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=43
+
+ORIGINAL_CODE=helper
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtConstructorCallImpl
+
+PATCH_HUNK_CODE=end
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=end
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));
+
+
+
+Patch 4
+VARIANT_ID=5440
+TIME=901
+VALIDATION=|true|0|7|[]|
+GENERATION=2720
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-5440
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-5440/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=43
+
+ORIGINAL_CODE=helper
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtConstructorCallImpl
+
+PATCH_HUNK_CODE=end / 1
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtConstructorCallImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_int_0 / 1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end / 1));
+
+
+
+Patch 5
+VARIANT_ID=7762
+TIME=1292
+VALIDATION=|true|0|7|[]|
+GENERATION=3881
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-7762
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-7762/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=43
+
+ORIGINAL_CODE=helper
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtConstructorCallImpl
+
+PATCH_HUNK_CODE=end & end
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtConstructorCallImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_int_0 & _int_1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end & end));
+
+
+
+Patch 6
+VARIANT_ID=8682
+TIME=1466
+VALIDATION=|true|0|7|[]|
+GENERATION=4341
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-8682
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-8682/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=43
+
+ORIGINAL_CODE=helper
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtConstructorCallImpl
+
+PATCH_HUNK_CODE=end | end
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtConstructorCallImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_int_0 | _int_1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end | end));
+
+
+
+Patch 7
+VARIANT_ID=10284
+TIME=1791
+VALIDATION=|true|0|7|[]|
+GENERATION=5142
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-10284
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.HANOI
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOI.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/./output_astor/AstorMain-HANOI-//src//variant-10284/java_programs/HANOI.java
+
+LINE=27
+
+SUSPICIOUNESS=1
+
+MP_RANKING=45
+
+ORIGINAL_CODE=steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper))
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_ArrayList_0.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(_int_1, _int_2))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
++++ /users2/cpca56132020/moliveira/folders/Figra_4_QUIXBUGS_HANOI/Figra_QuixBugs_HANOI_/src/main/java/HANOIjava
+@@ -27 +27 @@
+-			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, helper));
++			steps.add(new java_programs.HANOI.Pair<java.lang.Integer, java.lang.Integer>(start, end));
+
+
+
+
+real	120m16.669s
+user	114m26.375s
+sys	3m21.452s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 13:53:17 EDT 2021\n

@@ -1,0 +1,121 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id GET_FACTORS- \
+	-failing java_testcases.junit.GET_FACTORS_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 27 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+12:01:38.618 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - error to modify i++ to n & i
+12:02:12.389 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.GET_FACTORS.get_factors(n / i) to java_programs.GET_FACTORS.get_factors(n / i)
+12:03:54.928 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.sqrt(n) to java.lang.Math.sqrt(n)
+12:04:56.636 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((int) (java.lang.Math.sqrt(n) + 1.0)) to ((int) (java.lang.Math.sqrt(n) + 1.0))
+12:10:25.954 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+12:10:48.932 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1.0 to 1.0
+12:14:40.883 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+12:15:01.344 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prepend to prepend
+12:16:49.900 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n == 1 to n == 1
+12:17:00.271 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+12:20:54.339 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify max to max
+12:21:41.706 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n / i to n / i
+12:27:28.889 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+12:33:54.006 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prepend to prepend
+12:34:24.591 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+12:35:51.846 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+12:38:19.175 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (n % i) == 0 to (n % i) == 0
+12:48:33.390 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prepend to prepend
+12:51:04.010 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+12:51:41.520 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i < max to i < max
+13:01:34.128 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+13:08:47.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(0) to new java.util.ArrayList<java.lang.Integer>(0)
+13:23:23.651 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n / i to n / i
+13:29:18.893 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prepend.addAll(java_programs.GET_FACTORS.get_factors(n / i)) to prepend.addAll(java_programs.GET_FACTORS.get_factors(n / i))
+13:35:19.155 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (n % i) to (n % i)
+13:35:47.239 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+13:41:41.360 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n to n
+13:41:51.517 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify prepend.add(i) to prepend.add(i)
+13:48:39.090 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (n % i) to (n % i)
+13:58:13.926 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=GET_FACTORS-
+TOTAL_TIME=7208.156
+NR_GENERATIONS=933
+NR_RIGHT_COMPILATIONS=911
+NR_FAILLING_COMPILATIONS=22
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=14
+TIME=3
+VALIDATION=|true|0|11|[]|
+GENERATION=7
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_/./output_astor/AstorMain-GET_FACTORS-//src//variant-14
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.GET_FACTORS
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_/src/main/java/GET_FACTORS.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_/./output_astor/AstorMain-GET_FACTORS-//src//variant-14/java_programs/GET_FACTORS.java
+
+LINE=19
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=max
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(n + n)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_int_0 + _int_1)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_/src/main/java/GET_FACTORSjava
++++ /users2/cpca56132020/moliveira/folders/Figra_27_QUIXBUGS_GET_FACTORS/Figra_QuixBugs_GET_FACTORS_/src/main/java/GET_FACTORSjava
+@@ -19,2 +19,2 @@
+-		for (int i = 2; i < max;) {
+-			if ((n % i) == 0) {
++		for (int i = 2; i < 
++		(n + n); i++) { 			if ((n % i) == 0) {
+
+
+
+
+real	120m20.811s
+user	3m9.108s
+sys	0m19.942s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 14:01:43 EDT 2021\n

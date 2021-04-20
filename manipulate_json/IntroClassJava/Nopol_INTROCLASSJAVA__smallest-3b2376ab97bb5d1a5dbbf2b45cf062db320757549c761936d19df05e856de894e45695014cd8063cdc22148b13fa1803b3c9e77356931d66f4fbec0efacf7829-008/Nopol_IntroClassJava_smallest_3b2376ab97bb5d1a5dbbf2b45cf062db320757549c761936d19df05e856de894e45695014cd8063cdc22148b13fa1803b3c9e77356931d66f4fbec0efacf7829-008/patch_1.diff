@@ -1,0 +1,12 @@
+--- a/src/main/java/introclassJava/smallest_3b2376ab_008.java
++++ b/src/main/java/introclassJava/smallest_3b2376ab_008.java
+@@ -69,7 +69,6 @@
+             output += (String.format ("%d is the smallest ", n1.value));
+-        } else if (n2.value < n1.value && n2.value < n3.value
+-                   && n2.value < n4.value) {
++        } else if ((n2.value < n4.value)) {
+             output += (String.format ("%d is the smallest", n2.value));
+         } else if (n3.value < n1.value && n3.value < n2.value
+-                   && n3.value < n4.value) {
++        && n3.value < n4.value) {
+             output += (String.format ("%d is the smallest", n3.value));

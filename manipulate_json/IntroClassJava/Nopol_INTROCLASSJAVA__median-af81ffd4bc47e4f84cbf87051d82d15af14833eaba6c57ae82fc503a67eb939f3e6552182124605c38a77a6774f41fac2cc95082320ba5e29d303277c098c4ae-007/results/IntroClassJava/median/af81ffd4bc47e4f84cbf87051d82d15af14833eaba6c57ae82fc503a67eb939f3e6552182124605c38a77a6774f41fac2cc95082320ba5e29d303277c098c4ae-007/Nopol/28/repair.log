@@ -1,0 +1,229 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__median-af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007/Nopol_IntroClassJava_median_af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/usr/lib/jvm/java-1.8.0-openjdk/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 7 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+16:00:01.834 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:01.836 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__median-af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007/Nopol_IntroClassJava_median_af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__median-af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007/Nopol_IntroClassJava_median_af81ffd4bc47e4f84cbf87051d82d15af14833eaba6c57ae82fc503a67eb939f3e6552182124605c38a77a6774f41fac2cc95082320ba5e29d303277c098c4ae-007/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:01.836 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:01.837 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.median_af81ffd4_007BlackboxTest, introclassJava.median_af81ffd4_007WhiteboxTest]
+16:00:01.839 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.median_af81ffd4_007BlackboxTest, introclassJava.median_af81ffd4_007WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:01.839 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:01.842 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:01.842 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:01.842 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:01.842 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:01.846 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:01.846 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:20.560 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:20.563 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:79 which is executed by 8 tests
+-166623364
+16:00:20.906 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:22.145 [pool-3-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:22.146 [pool-3-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:22.146 [pool-3-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:79.
+16:00:22.147 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:22.558 [pool-13-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:22.558 [pool-13-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthemedian> but was:<...rsseparatedbyspaces>[1]isthemedian>]
+16:00:22.558 [pool-13-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:79.
+16:00:22.558 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:22.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:76 which is executed by 11 tests
+-166623364
+16:00:22.658 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.003 [pool-23-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:23.003 [pool-23-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:23.003 [pool-23-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:76.
+16:00:23.003 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:23.352 [pool-33-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:23.352 [pool-33-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthemedian> but was:<...rsseparatedbyspaces>[1]isthemedian>]
+16:00:23.352 [pool-33-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:76.
+16:00:23.352 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:23.352 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:84 which is executed by 13 tests
+-166623364
+16:00:23.462 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.770 [pool-43-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:23.770 [pool-43-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:23.770 [pool-43-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:84.
+16:00:23.770 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:23.770 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:74 which is executed by 13 tests
+-166623364
+16:00:23.862 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:24.152 [pool-53-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:24.153 [pool-53-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:24.153 [pool-53-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:74.
+16:00:24.153 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:24.735 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:24.844 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:24.945 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:25.455 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:26.409 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:36.219 [pool-63-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:00:36.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+16:00:36.221 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:73 which is executed by 13 tests
+-166623364
+16:00:36.314 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:36.643 [pool-108-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthemedian> but was:<...rsseparatedbyspaces>[1]isthemedian>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:36.643 [pool-108-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:36.643 [pool-108-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:73.
+16:00:36.643 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+16:00:36.643 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:72 which is executed by 13 tests
+-166623364
+16:00:36.719 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:37.074 [pool-118-thread-1] DEBUG tests.output - Failing tests with false: 
+[test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthemedian> but was:<...rsseparatedbyspaces>[1]isthemedian>]
+16:00:37.074 [pool-118-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:37.074 [pool-118-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:72.
+16:00:37.075 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+16:00:37.075 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:71 which is executed by 13 tests
+-166623364
+16:00:37.138 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:37.412 [pool-128-thread-1] DEBUG tests.output - Failing tests with false: 
+[test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:37.413 [pool-128-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:37.413 [pool-128-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:71.
+16:00:37.413 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+16:00:37.414 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:70 which is executed by 13 tests
+-166623364
+16:00:37.486 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:37.885 [pool-138-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:37.885 [pool-138-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:37.886 [pool-138-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:70.
+16:00:37.886 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+16:00:37.886 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:69 which is executed by 13 tests
+-166623364
+16:00:37.936 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:38.286 [pool-148-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:38.287 [pool-148-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:38.287 [pool-148-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:69.
+16:00:38.287 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+16:00:38.287 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:68 which is executed by 13 tests
+-166623364
+16:00:38.350 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:38.604 [pool-158-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:38.604 [pool-158-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:38.605 [pool-158-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:68.
+16:00:38.605 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+16:00:38.605 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:67 which is executed by 13 tests
+-166623364
+16:00:38.674 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:39.028 [pool-168-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:39.029 [pool-168-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:39.030 [pool-168-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:67.
+16:00:39.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+16:00:39.030 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:66 which is executed by 13 tests
+-166623364
+16:00:39.087 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+16:00:39.088 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:65 which is executed by 13 tests
+-166623364
+16:00:39.151 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:39.380 [pool-178-thread-1] DEBUG tests.output - Failing tests with false: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<[Pleaseenter3numbersseparatedbyspaces>0isthemedian]> but was:<[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<[Pleaseenter3numbersseparatedbyspaces>0isthemedian]> but was:<[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<[Pleaseenter3numbersseparatedbyspaces>9isthemedian]> but was:<[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<[Pleaseenter3numbersseparatedbyspaces>0isthemedian]> but was:<[]>]
+16:00:39.381 [pool-178-thread-1] DEBUG tests.output - Failing tests with true: 
+[test3(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test1(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>, test7(introclassJava.median_af81ffd4_007BlackboxTest): expected:<...rsseparatedbyspaces>[9isthemedian]> but was:<...rsseparatedbyspaces>[]>, test4(introclassJava.median_af81ffd4_007WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthemedian]> but was:<...rsseparatedbyspaces>[]>]
+16:00:39.381 [pool-178-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.median_af81ffd4_007:65.
+16:00:39.381 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+16:00:39.381 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:64 which is executed by 13 tests
+-166623364
+16:00:39.440 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+16:00:39.440 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:63 which is executed by 13 tests
+-166623364
+16:00:39.517 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #16
+16:00:39.517 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:62 which is executed by 13 tests
+-166623364
+16:00:39.591 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #17
+16:00:39.591 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.median_af81ffd4_007:60 which is executed by 13 tests
+-166623364
+16:00:39.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:00:39.664 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:00:39.664 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:00:39.664 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 15
+16:00:39.664 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 37821ms
+16:00:39.665 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+NO_SYNTHESIS
+
+real	0m38.597s
+user	0m21.817s
+sys	0m11.880s
+\n\nNode: hpc062.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 16:00:40 EDT 2021\n
