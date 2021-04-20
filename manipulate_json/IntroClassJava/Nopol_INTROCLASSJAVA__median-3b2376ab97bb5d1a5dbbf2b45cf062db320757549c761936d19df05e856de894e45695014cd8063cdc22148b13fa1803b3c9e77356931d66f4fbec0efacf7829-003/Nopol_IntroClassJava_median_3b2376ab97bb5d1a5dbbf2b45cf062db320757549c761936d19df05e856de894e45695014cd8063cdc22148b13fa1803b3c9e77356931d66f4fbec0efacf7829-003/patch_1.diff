@@ -1,7 +1,0 @@
---- a/src/main/java/introclassJava/median_3b2376ab_003.java
-+++ b/src/main/java/introclassJava/median_3b2376ab_003.java
-@@ -79,3 +79,3 @@
-                 output += (String.format ("%d is the median\n", n2.value));
--            } else if (n3.value > n1.value) {
-+            } else if (!(n3.value > n1.value)) {
-                 output += (String.format ("%d is the median\n", n3.value));

@@ -1,7 +1,0 @@
---- a/src/main/java/introclassJava/smallest_88394fc0_003.java
-+++ b/src/main/java/introclassJava/smallest_88394fc0_003.java
-@@ -75,3 +75,3 @@
-         }
--        if (c.value > d.value) {
-+        if (introclassJava.smallest_88394fc0_003.this.scanner.hasNext()) {
-             smallest.value = d.value;
