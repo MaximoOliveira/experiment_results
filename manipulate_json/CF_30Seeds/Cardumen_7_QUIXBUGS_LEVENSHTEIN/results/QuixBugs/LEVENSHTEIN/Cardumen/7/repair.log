@@ -1,0 +1,310 @@
+cd /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode cardumen \
+	-location . \
+	-id LEVENSHTEIN- \
+	-failing java_testcases.junit.LEVENSHTEIN_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 7 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+12:59:06.172 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify target.substring(1) to target.substring(1)
+12:59:09.113 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify target.charAt(0) to target.charAt(0)
+12:59:09.956 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify target.substring(1) to target.substring(1)
+12:59:22.215 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.substring(1) to source.substring(1)
+12:59:23.029 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.substring(1) to source.substring(1)
+12:59:31.653 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.substring(1) to source.substring(1)
+12:59:36.686 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.charAt(0) to source.charAt(0)
+12:59:50.868 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)) to java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1))
+12:59:51.693 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify target.substring(1) to target.substring(1)
+12:59:55.669 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.isEmpty() to source.isEmpty()
+12:59:59.693 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify target.isEmpty() to target.isEmpty()
+13:00:19.152 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.isEmpty() to source.isEmpty()
+13:00:29.167 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)) to java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+13:00:34.936 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)) to java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+13:00:36.042 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.charAt(0) == target.charAt(0) to source.charAt(0) == target.charAt(0)
+13:00:39.853 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.isEmpty() || target.isEmpty() to source.isEmpty() || target.isEmpty()
+13:01:17.166 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))) to java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)))
+13:01:55.184 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify source.isEmpty() ? target.length() : source.length() to source.isEmpty() ? target.length() : source.length()
+13:02:22.137 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target)) to java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target))
+13:02:46.251 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)) to 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+13:03:10.447 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target) to java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target)
+13:03:15.044 [main] ERROR fr.inria.astor.approaches.cardumen.ExpressionReplaceOperator - Replacement does not work for  modify 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target)) to 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target))
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=LEVENSHTEIN-
+TOTAL_TIME=7200.086
+NR_GENERATIONS=380
+NR_RIGHT_COMPILATIONS=380
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=72
+TIME=43
+VALIDATION=|true|0|6|[]|
+GENERATION=36
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-72
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LEVENSHTEIN
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEIN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-72/java_programs/LEVENSHTEIN.java
+
+LINE=17
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
+@@ -17,5 +17,5 @@
+-			return 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
+-		} else {
+-			return 1 + java.lang.Math.min(java.lang.Math.min(
+-			java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), 
+-			java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
++			return 
++
++			java.lang.Math.min(
++			java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), 
++			java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)));} else { 			return 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
+
+
+
+Patch 2
+VARIANT_ID=158
+TIME=87
+VALIDATION=|true|0|6|[]|
+GENERATION=79
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-158
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LEVENSHTEIN
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEIN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-158/java_programs/LEVENSHTEIN.java
+
+LINE=17
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
+@@ -17,5 +17,5 @@
+-			return 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
+-		} else {
+-			return 1 + java.lang.Math.min(java.lang.Math.min(
+-			java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), 
+-			java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
++			return 
++
++			java.lang.Math.min(
++			java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), 
++			java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)));} else { 			return 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
+
+
+
+Patch 3
+VARIANT_ID=342
+TIME=159
+VALIDATION=|true|0|6|[]|
+GENERATION=171
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-342
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LEVENSHTEIN
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEIN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-342/java_programs/LEVENSHTEIN.java
+
+LINE=17
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=java.lang.Math.min(
+java_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), 
+java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
+@@ -17,3 +17,3 @@
+-			return 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
+-		} else {
+-			return 1 + java.lang.Math.min(java.lang.Math.min(
++			return 
++
++			java.lang.Math.min(
+@@ -21 +21 @@
+-			java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
++			java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)));} else { 			return 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), 
+
+
+
+Patch 4
+VARIANT_ID=460
+TIME=206
+VALIDATION=|true|0|6|[]|
+GENERATION=230
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-460
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LEVENSHTEIN
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEIN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-460/java_programs/LEVENSHTEIN.java
+
+LINE=17
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
+@@ -17 +17 @@
+-			return 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
++			return java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1));
+
+
+
+Patch 5
+VARIANT_ID=716
+TIME=312
+VALIDATION=|true|0|6|[]|
+GENERATION=358
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-716
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.LEVENSHTEIN
+
+PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEIN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/./output_astor/AstorMain-LEVENSHTEIN-//src//variant-716/java_programs/LEVENSHTEIN.java
+
+LINE=17
+
+SUSPICIOUNESS=1
+
+MP_RANKING=6
+
+ORIGINAL_CODE=1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
++++ /users2/cpca56132020/moliveira/folders/Cardumen_7_QUIXBUGS_LEVENSHTEIN/Cardumen_QuixBugs_LEVENSHTEIN_/src/main/java/LEVENSHTEINjava
+@@ -17 +17 @@
+-			return 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
++			return java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));
+
+
+
+
+real	120m9.251s
+user	119m26.730s
+sys	0m21.006s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 14:58:59 EDT 2021\n

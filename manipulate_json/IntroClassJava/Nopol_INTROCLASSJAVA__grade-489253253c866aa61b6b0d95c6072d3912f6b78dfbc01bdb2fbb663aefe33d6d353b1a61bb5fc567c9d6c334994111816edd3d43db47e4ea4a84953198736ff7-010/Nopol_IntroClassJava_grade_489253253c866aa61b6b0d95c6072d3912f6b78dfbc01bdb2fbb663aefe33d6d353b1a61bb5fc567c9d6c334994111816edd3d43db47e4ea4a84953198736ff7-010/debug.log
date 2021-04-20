@@ -1,0 +1,164 @@
+16:00:38.384 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:38.387 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__grade-489253253c866aa61b6b0d95c6072d3912f6b78dfbc01bdb2fbb663aefe33d6d353b1a61bb5fc567c9d6c334994111816edd3d43db47e4ea4a84953198736ff7-010/Nopol_IntroClassJava_grade_489253253c866aa61b6b0d95c6072d3912f6b78dfbc01bdb2fbb663aefe33d6d353b1a61bb5fc567c9d6c334994111816edd3d43db47e4ea4a84953198736ff7-010/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__grade-489253253c866aa61b6b0d95c6072d3912f6b78dfbc01bdb2fbb663aefe33d6d353b1a61bb5fc567c9d6c334994111816edd3d43db47e4ea4a84953198736ff7-010/Nopol_IntroClassJava_grade_489253253c866aa61b6b0d95c6072d3912f6b78dfbc01bdb2fbb663aefe33d6d353b1a61bb5fc567c9d6c334994111816edd3d43db47e4ea4a84953198736ff7-010/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:38.388 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:38.388 fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.grade_48925325_010BlackboxTest, introclassJava.grade_48925325_010WhiteboxTest]
+16:00:38.392 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.grade_48925325_010BlackboxTest, introclassJava.grade_48925325_010WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:38.392 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:38.396 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:38.396 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:38.396 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:38.396 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:38.401 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:38.402 fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:42.131 fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:42.132 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:80 which is executed by 2 tests
+16:00:42.527 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:43.718 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>]
+16:00:43.718 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:43.719 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:80.
+16:00:43.719 fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:43.719 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:77 which is executed by 6 tests
+16:00:43.802 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:44.275 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>]
+16:00:44.275 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:44.275 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:77.
+16:00:44.276 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:44.581 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:44.581 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anDgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anDgrad]e>]
+16:00:44.581 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:77.
+16:00:44.582 fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:44.582 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:75 which is executed by 10 tests
+16:00:44.676 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:44.928 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>]
+16:00:44.928 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:44.928 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:75.
+16:00:44.929 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:45.187 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:45.188 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anCgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anCgrad]e>]
+16:00:45.188 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:75.
+16:00:45.188 fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:45.188 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:73 which is executed by 14 tests
+16:00:45.293 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:45.548 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>]
+16:00:45.549 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:45.549 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:73.
+16:00:45.549 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:45.810 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:45.810 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anBgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anBgrad]e>]
+16:00:45.810 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:73.
+16:00:45.811 fr.inria.lille.repair.nopol.NoPol - statement #5
+16:00:45.811 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:83 which is executed by 18 tests
+16:00:45.883 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:46.112 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:46.112 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:46.112 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:83.
+16:00:46.113 fr.inria.lille.repair.nopol.NoPol - statement #6
+16:00:46.113 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:71 which is executed by 18 tests
+16:00:46.208 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:46.503 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...udentscore(percent)>[Studenthasfailedthecourse]> but was:<...udentscore(percent)>[]>]
+16:00:46.504 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:46.504 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:71.
+16:00:46.509 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:46.778 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:46.778 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anAgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anAgrad]e>]
+16:00:46.778 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:71.
+16:00:46.778 fr.inria.lille.repair.nopol.NoPol - statement #7
+16:00:46.778 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:70 which is executed by 18 tests
+16:00:46.838 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.094 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:47.095 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:47.095 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:70.
+16:00:47.095 fr.inria.lille.repair.nopol.NoPol - statement #8
+16:00:47.095 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:69 which is executed by 18 tests
+16:00:47.163 fr.inria.lille.repair.nopol.NoPol - statement #9
+16:00:47.163 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:68 which is executed by 18 tests
+16:00:47.224 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.512 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...creasingpercentages>[Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<...creasingpercentages>[StudenthasanFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...creasingpercentages>[Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<...creasingpercentages>[StudenthasanFgrad]e>]
+16:00:47.512 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:47.513 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:68.
+16:00:47.513 fr.inria.lille.repair.nopol.NoPol - statement #10
+16:00:47.513 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:67 which is executed by 18 tests
+16:00:47.586 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.787 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anDgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anDgrad]e>]
+16:00:47.787 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:47.787 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:67.
+16:00:47.787 fr.inria.lille.repair.nopol.NoPol - statement #11
+16:00:47.787 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:66 which is executed by 18 tests
+16:00:47.852 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:48.109 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anCgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anCgrad]e>]
+16:00:48.109 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:48.109 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:66.
+16:00:48.109 fr.inria.lille.repair.nopol.NoPol - statement #12
+16:00:48.109 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:65 which is executed by 18 tests
+16:00:48.220 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:48.466 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anBgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anBgrad]e>]
+16:00:48.466 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:48.466 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:65.
+16:00:48.468 fr.inria.lille.repair.nopol.NoPol - statement #13
+16:00:48.468 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:64 which is executed by 18 tests
+16:00:48.546 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:48.722 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anAgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anAgrad]e>]
+16:00:48.722 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:48.722 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:64.
+16:00:48.722 fr.inria.lille.repair.nopol.NoPol - statement #14
+16:00:48.722 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:63 which is executed by 18 tests
+16:00:48.776 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:48.989 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...thresholdsforA,B,C,D[inthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<...thresholdsforA,B,C,D[Thankyou.Nowenterstudentscore(percent)>StudenthasanFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...thresholdsforA,B,C,D[inthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<...thresholdsforA,B,C,D[Thankyou.Nowenterstudentscore(percent)>StudenthasanFgrad]e>]
+16:00:48.989 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:48.989 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:63.
+16:00:48.991 fr.inria.lille.repair.nopol.NoPol - statement #15
+16:00:48.991 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:62 which is executed by 18 tests
+16:00:49.050 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:49.239 tests.output - Failing tests with false: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<[EnterthresholdsforA,B,C,Dinthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<[inthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>StudenthasanFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<[EnterthresholdsforA,B,C,Dinthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>Studenthasfailedthecours]e> but was:<[inthatorder,decreasingpercentages>Thankyou.Nowenterstudentscore(percent)>StudenthasanFgrad]e>]
+16:00:49.239 tests.output - Failing tests with true: 
+[test9(introclassJava.grade_48925325_010WhiteboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>, test9(introclassJava.grade_48925325_010BlackboxTest): expected:<...(percent)>Studenthas[failedthecours]e> but was:<...(percent)>Studenthas[anFgrad]e>]
+16:00:49.239 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.grade_48925325_010:62.
+16:00:49.240 fr.inria.lille.repair.nopol.NoPol - statement #16
+16:00:49.240 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:61 which is executed by 18 tests
+16:00:49.285 fr.inria.lille.repair.nopol.NoPol - statement #17
+16:00:49.285 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.grade_48925325_010:60 which is executed by 18 tests
+16:00:49.335 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:00:49.340 fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:00:49.340 fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:00:49.340 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 18
+16:00:49.340 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 0
+16:00:49.340 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:00:49.341 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 0
+16:00:49.341 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:00:49.341 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 10952ms
+16:00:49.342 fr.inria.lille.repair.nopol.NoPol - 

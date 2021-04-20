@@ -1,0 +1,56 @@
+{
+  "repair_end": "2021-04-07 19:01:41.237363", 
+  "repair_begin": "2021-04-07 17:01:24.641037", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n@@ -19,2 +19,2 @@\\n-\\t\\tfor (int i = 2; i < max;) {\\n-\\t\\t\\tif ((n % i) == 0) {\\n+\\t\\tfor (int i = 2; \\n+\\t\\t(n % i) >= 0; i++) { \\t\\t\\tif ((n % i) == 0) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-46\\/java_programs\\/GET_FACTORS.java", 
+          "ORIGINAL_CODE": "i < max", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(n % i) >= 0", 
+          "INGREDIENT_PARENT": "(n % i) >= 0", 
+          "LOCATION": "java_programs.GET_FACTORS", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtForImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORS.java", 
+          "LINE": "19", 
+          "MP_RANKING": "7", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtForImpl"
+        }
+      ], 
+      "GENERATION": "23", 
+      "VARIANT_ID": "46", 
+      "TIME": "8", 
+      "VALIDATION": "|true|0|11|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-46"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORSjava\\n@@ -19,5 +19,5 @@\\n-\\t\\tfor (int i = 2; i < max;) {\\n-\\t\\t\\tif ((n % i) == 0) {\\n-\\t\\t\\t\\tjava.util.ArrayList<java.lang.Integer> prepend = new java.util.ArrayList<java.lang.Integer>(0);\\n-\\t\\t\\t\\tprepend.add(i);\\n-\\t\\t\\t\\tprepend.addAll(java_programs.GET_FACTORS.get_factors(n \\/ i));\\n+\\t\\tfor (int i = 2; i < \\n+\\n+\\n+\\n+\\t\\t(n + i); i++) { \\t\\t\\tif ((n % i) == 0) { \\t\\t\\t\\tjava.util.ArrayList<java.lang.Integer> prepend = new java.util.ArrayList<java.lang.Integer>(0); \\t\\t\\t\\tprepend.add(i); \\t\\t\\t\\tprepend.addAll(java_programs.GET_FACTORS.get_factors(n \\/ i));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-92\\/java_programs\\/GET_FACTORS.java", 
+          "ORIGINAL_CODE": "max", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "n + i", 
+          "INGREDIENT_PARENT": "n + i", 
+          "LOCATION": "java_programs.GET_FACTORS", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/src\\/main\\/java\\/GET_FACTORS.java", 
+          "LINE": "19", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "46", 
+      "VARIANT_ID": "92", 
+      "TIME": "15", 
+      "VALIDATION": "|true|0|11|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_25_QUIXBUGS_GET_FACTORS\\/Figra_QuixBugs_GET_FACTORS_\\/.\\/output_astor\\/AstorMain-GET_FACTORS-\\/\\/src\\/\\/variant-92"
+    }
+  ]
+}

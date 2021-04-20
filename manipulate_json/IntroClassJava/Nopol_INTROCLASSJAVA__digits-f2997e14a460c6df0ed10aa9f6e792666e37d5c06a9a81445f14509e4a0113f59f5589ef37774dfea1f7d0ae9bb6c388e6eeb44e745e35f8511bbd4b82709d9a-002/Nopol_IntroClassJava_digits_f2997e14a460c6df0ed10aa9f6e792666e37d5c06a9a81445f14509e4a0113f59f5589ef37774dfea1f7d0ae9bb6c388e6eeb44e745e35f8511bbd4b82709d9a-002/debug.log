@@ -1,0 +1,193 @@
+15:59:56.582 fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+15:59:56.585 fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__digits-f2997e14a460c6df0ed10aa9f6e792666e37d5c06a9a81445f14509e4a0113f59f5589ef37774dfea1f7d0ae9bb6c388e6eeb44e745e35f8511bbd4b82709d9a-002/Nopol_IntroClassJava_digits_f2997e14a460c6df0ed10aa9f6e792666e37d5c06a9a81445f14509e4a0113f59f5589ef37774dfea1f7d0ae9bb6c388e6eeb44e745e35f8511bbd4b82709d9a-002/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__digits-f2997e14a460c6df0ed10aa9f6e792666e37d5c06a9a81445f14509e4a0113f59f5589ef37774dfea1f7d0ae9bb6c388e6eeb44e745e35f8511bbd4b82709d9a-002/Nopol_IntroClassJava_digits_f2997e14a460c6df0ed10aa9f6e792666e37d5c06a9a81445f14509e4a0113f59f5589ef37774dfea1f7d0ae9bb6c388e6eeb44e745e35f8511bbd4b82709d9a-002/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+15:59:56.585 fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+15:59:56.585 fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.digits_f2997e14_002BlackboxTest, introclassJava.digits_f2997e14_002WhiteboxTest]
+15:59:56.587 fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.digits_f2997e14_002BlackboxTest, introclassJava.digits_f2997e14_002WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+15:59:56.588 fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+15:59:56.591 fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+15:59:56.591 fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+15:59:56.591 fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+15:59:56.591 fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+15:59:56.595 fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+15:59:56.595 fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:00.520 fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:00.523 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:68 which is executed by 2 tests
+16:00:00.825 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:02.914 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): test timed out after 1000 milliseconds]
+16:00:02.915 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:02.915 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:68.
+16:00:02.916 fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:02.916 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:67 which is executed by 2 tests
+16:00:03.033 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:03.561 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:03.676 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:03.765 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:04.016 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:04.306 f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:17.235 f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:00:17.236 fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:17.236 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:74 which is executed by 15 tests
+16:00:17.342 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:17.619 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:17.619 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:17.619 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:74.
+16:00:17.619 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:17.850 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:17.850 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:17.850 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:74.
+16:00:17.851 fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:17.851 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:73 which is executed by 15 tests
+16:00:17.934 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:18.202 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[8]That'sall,haveaniced...>]
+16:00:18.202 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:18.202 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:73.
+16:00:18.202 fr.inria.lille.repair.nopol.NoPol - statement #5
+16:00:18.202 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:71 which is executed by 15 tests
+16:00:18.274 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:18.581 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[0]That'sall,haveaniced...>]
+16:00:18.582 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:18.582 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:71.
+16:00:18.582 fr.inria.lille.repair.nopol.NoPol - statement #6
+16:00:18.582 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:70 which is executed by 15 tests
+16:00:18.673 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:18.945 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:18.945 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:18.946 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:70.
+16:00:18.951 fr.inria.lille.repair.nopol.NoPol - statement #7
+16:00:18.951 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:69 which is executed by 15 tests
+16:00:19.018 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:19.235 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[0]That'sall,haveaniced...>]
+16:00:19.235 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:19.235 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:69.
+16:00:19.235 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:19.431 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[0]That'sall,haveaniced...>]
+16:00:19.431 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:19.431 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:69.
+16:00:19.431 fr.inria.lille.repair.nopol.NoPol - statement #8
+16:00:19.431 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:81 which is executed by 16 tests
+16:00:19.489 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:19.712 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:19.712 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:19.712 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:81.
+16:00:19.713 fr.inria.lille.repair.nopol.NoPol - statement #9
+16:00:19.713 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:79 which is executed by 16 tests
+16:00:19.778 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:20.012 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[That'sall,haveaniceday!]> but was:<Enteraninteger>8[0]>]
+16:00:20.012 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:20.012 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:79.
+16:00:20.013 fr.inria.lille.repair.nopol.NoPol - statement #10
+16:00:20.013 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:66 which is executed by 16 tests
+16:00:20.070 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:21.264 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): test timed out after 1000 milliseconds]
+16:00:21.264 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:21.264 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:66.
+16:00:21.264 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:00:22.485 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): test timed out after 1000 milliseconds]
+16:00:22.485 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[0]That'sall,haveaniced...>]
+16:00:22.486 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:66.
+16:00:22.486 fr.inria.lille.repair.nopol.NoPol - statement #11
+16:00:22.486 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:65 which is executed by 16 tests
+16:00:22.558 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:22.774 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[00]That'sall,haveaniced...>]
+16:00:22.775 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:22.775 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:65.
+16:00:22.778 fr.inria.lille.repair.nopol.NoPol - statement #12
+16:00:22.778 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:63 which is executed by 16 tests
+16:00:22.845 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.057 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:23.057 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:23.057 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:63.
+16:00:23.058 fr.inria.lille.repair.nopol.NoPol - statement #13
+16:00:23.058 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:62 which is executed by 16 tests
+16:00:23.135 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.283 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>[8]That'sall,haveaniced...> but was:<Enteraninteger>[0]That'sall,haveaniced...>]
+16:00:23.283 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:23.283 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:62.
+16:00:23.283 fr.inria.lille.repair.nopol.NoPol - statement #14
+16:00:23.283 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:61 which is executed by 16 tests
+16:00:23.353 fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:23.513 tests.output - Failing tests with false: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<[Enteraninteger>8]That'sall,haveaniced...> but was:<[80]That'sall,haveaniced...>]
+16:00:23.514 tests.output - Failing tests with true: 
+[test4(introclassJava.digits_f2997e14_002BlackboxTest): expected:<Enteraninteger>8[]That'sall,haveaniced...> but was:<Enteraninteger>8[0]That'sall,haveaniced...>]
+16:00:23.514 f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.digits_f2997e14_002:61.
+16:00:23.514 fr.inria.lille.repair.nopol.NoPol - statement #15
+16:00:23.514 fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.digits_f2997e14_002:60 which is executed by 16 tests
+16:00:23.591 fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:00:23.598 fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 17
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 27010ms
+16:00:23.599 fr.inria.lille.repair.nopol.NoPol - 

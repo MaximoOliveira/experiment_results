@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-07 19:20:25.664321", 
+  "repair_begin": "2021-04-07 17:20:18.502542", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_3_QUIXBUGS_RPN_EVAL\\/Cardumen_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_3_QUIXBUGS_RPN_EVAL\\/Cardumen_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVALjava\\n@@ -34 +34 @@\\n-\\t\\t\\t\\tc = bin_op.apply(a, b);\\n+\\t\\t\\t\\tc = bin_op.apply(b, a);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_3_QUIXBUGS_RPN_EVAL\\/Cardumen_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-166\\/java_programs\\/RPN_EVAL.java", 
+          "ORIGINAL_CODE": "bin_op.apply(a, b)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "bin_op.apply(b, a)", 
+          "INGREDIENT_PARENT": "_BinaryOperator_0.apply(_Double_1, _Double_2)", 
+          "LOCATION": "java_programs.RPN_EVAL", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtAssignmentImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_3_QUIXBUGS_RPN_EVAL\\/Cardumen_QuixBugs_RPN_EVAL_\\/src\\/main\\/java\\/RPN_EVAL.java", 
+          "LINE": "34", 
+          "MP_RANKING": "22", 
+          "SUSPICIOUNESS": "0.707", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtAssignmentImpl"
+        }
+      ], 
+      "GENERATION": "83", 
+      "VARIANT_ID": "166", 
+      "TIME": "35", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Cardumen_3_QUIXBUGS_RPN_EVAL\\/Cardumen_QuixBugs_RPN_EVAL_\\/.\\/output_astor\\/AstorMain-RPN_EVAL-\\/\\/src\\/\\/variant-166"
+    }
+  ]
+}

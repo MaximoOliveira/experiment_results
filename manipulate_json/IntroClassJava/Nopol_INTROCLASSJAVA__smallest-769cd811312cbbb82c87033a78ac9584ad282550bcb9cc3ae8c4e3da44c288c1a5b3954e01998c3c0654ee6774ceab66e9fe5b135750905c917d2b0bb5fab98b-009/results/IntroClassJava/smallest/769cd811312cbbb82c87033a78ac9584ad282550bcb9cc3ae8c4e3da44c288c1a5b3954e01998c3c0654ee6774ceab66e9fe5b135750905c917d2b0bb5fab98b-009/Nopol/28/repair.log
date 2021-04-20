@@ -1,0 +1,445 @@
+cd /users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009/Nopol_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar:/usr/lib/jvm/java-1.8.0-openjdk/bin/../lib/tools.jar fr.inria.lille.repair.Main \
+	--mode repair \
+	--type pre_then_cond \
+	--oracle angelic \
+	--synthesis smt \
+	--flocal gzoltar \
+	--json \
+	--solver z3 \
+	--solver-path /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3 \
+	--complianceLevel 7 \
+	--source src/main/java \
+	--classpath "target/classes:target/test-classes:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar";
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+16:00:41.965 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Source files: [src/main/java]
+16:00:41.968 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Classpath: [file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009/Nopol_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009/target/classes/, file:/users2/cpca56132020/moliveira/folders/Nopol_INTROCLASSJAVA__smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009/Nopol_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-009/target/test-classes/, file:/users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar, file:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/nopol.jar]
+16:00:41.968 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Statement type: PRE_THEN_COND
+16:00:41.968 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Args: [introclassJava.smallest_769cd811_009BlackboxTest, introclassJava.smallest_769cd811_009WhiteboxTest]
+16:00:41.970 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Config: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=true, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=PRE_THEN_COND, synthesis=SMT, oracle=ANGELIC, solver=Z3, solverPath='/users2/cpca56132020/moliveira/RepairThemAll/script/../libs/z3/build/z3', projectSources=[src/main/java], projectClasspath='[Ljava.net.URL;@16c0663d', projectTests=[introclassJava.smallest_769cd811_009BlackboxTest, introclassJava.smallest_769cd811_009WhiteboxTest], complianceLevel=7, outputFolder=., json=true}
+16:00:41.971 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Available processors (cores): 1
+16:00:41.974 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Free memory: 968 MB
+16:00:41.974 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Maximum memory: 3 GB
+16:00:41.974 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Total memory available to JVM: 989 MB
+16:00:41.974 [main] INFO  fr.inria.lille.repair.nopol.NoPol - Java version: 1.8.0_272
+16:00:41.978 [main] INFO  fr.inria.lille.repair.nopol.NoPol - JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk/bin
+16:00:41.978 [main] INFO  fr.inria.lille.repair.nopol.NoPol - PATH: /usr/lib/jvm/java-1.8.0-openjdk/bin:/users2/cpca56132020/moliveira/deps/Maven/apache-maven/bin:/users2/cpca56132020/moliveira/deps/Gradle/gradle-6.8.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users2/cpca56132020/moliveira/.local/bin:/users2/cpca56132020/moliveira/bin
+16:00:46.171 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #1
+16:00:46.171 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:77 which is executed by 8 tests
+-1448712328
+16:00:46.447 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:47.878 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:00:47.924 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:48.012 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:48.139 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:00:48.478 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:00:59.119 [pool-3-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:00:59.120 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #2
+16:00:59.120 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:71 which is executed by 13 tests
+-1448712328
+16:00:59.210 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:59.461 [pool-29-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:00:59.461 [pool-29-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:00:59.461 [pool-29-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:71.
+16:00:59.461 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #3
+16:00:59.461 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:81 which is executed by 16 tests
+-1448712328
+16:00:59.536 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:00:59.795 [pool-35-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:00:59.796 [pool-35-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:00:59.796 [pool-35-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:81.
+16:00:59.796 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #4
+16:00:59.796 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:79 which is executed by 16 tests
+-1448712328
+16:00:59.880 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:00.193 [pool-41-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0isthesmallest]> but was:<...rsseparatedbyspaces>[]>]
+16:01:00.193 [pool-41-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:00.193 [pool-41-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:79.
+16:01:00.193 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #5
+16:01:00.193 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:76 which is executed by 16 tests
+-1448712328
+16:01:00.254 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:00.672 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:01:00.722 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:00.783 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:00.949 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:01.216 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:04.375 [pool-47-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:01:04.375 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:01:04.785 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:01:04.796 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:04.830 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:04.972 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:05.695 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:14.198 [pool-89-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:01:14.199 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #6
+16:01:14.199 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:73 which is executed by 16 tests
+-1448712328
+16:01:14.267 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:14.508 [pool-136-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.508 [pool-136-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.508 [pool-136-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:73.
+16:01:14.509 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:01:14.720 [pool-142-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.721 [pool-142-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.721 [pool-142-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:73.
+16:01:14.721 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #7
+16:01:14.721 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:68 which is executed by 16 tests
+-1448712328
+16:01:14.794 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:14.951 [pool-148-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.951 [pool-148-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:14.951 [pool-148-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:68.
+16:01:14.951 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalReplacer
+16:01:15.136 [pool-154-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:15.136 [pool-154-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:01:15.136 [pool-154-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:68.
+16:01:15.137 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #8
+16:01:15.137 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:67 which is executed by 16 tests
+-1448712328
+16:01:15.205 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:15.778 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:01:15.791 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:15.812 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:15.892 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:16.083 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:47.488 [pool-160-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:01:47.490 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #9
+16:01:47.490 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:66 which is executed by 16 tests
+-1448712328
+16:01:47.559 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:01:47.983 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:01:47.995 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:48.016 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:01:48.087 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:01:48.283 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:02:19.852 [pool-205-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:02:19.852 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #10
+16:02:19.853 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:65 which is executed by 16 tests
+-1448712328
+16:02:19.901 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:02:20.286 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:02:20.300 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:02:20.324 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:02:20.430 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:02:20.622 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:02:52.218 [pool-250-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:02:52.218 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #11
+16:02:52.218 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:64 which is executed by 16 tests
+-1448712328
+16:02:52.264 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:02:52.567 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+16:02:52.585 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:02:52.627 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:02:52.699 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+16:02:52.911 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Operators:
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+== of arity: 2
+!= of arity: 2
+< of arity: 2
+<= of arity: 2
+! of arity: 1
+|| of arity: 2
+&& of arity: 2
+16:03:24.535 [pool-295-thread-1] DEBUG f.i.l.c.s.ConstraintBasedSynthesis - Failed code synthesis, returning NullCodeGenesis
+16:03:24.535 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #12
+16:03:24.536 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:63 which is executed by 16 tests
+-1448712328
+16:03:24.595 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #13
+16:03:24.603 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:62 which is executed by 16 tests
+-1448712328
+16:03:24.684 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - looking with class fr.inria.lille.repair.nopol.spoon.smt.ConditionalAdder
+16:03:24.883 [pool-340-thread-1] DEBUG tests.output - Failing tests with false: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<[Pleaseenter4numbersseparatedbyspaces>0]isthesmallest> but was:<[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<[Pleaseenter4numbersseparatedbyspaces>0]isthesmallest> but was:<[1]isthesmallest>]
+16:03:24.884 [pool-340-thread-1] DEBUG tests.output - Failing tests with true: 
+[test4(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>, test8(introclassJava.smallest_769cd811_009WhiteboxTest): expected:<...rsseparatedbyspaces>[0]isthesmallest> but was:<...rsseparatedbyspaces>[1]isthesmallest>]
+16:03:24.884 [pool-340-thread-1] INFO  f.i.l.r.n.synth.SMTNopolSynthesizer - Not enough specifications: 0. A trivial patch is "true" or "false", please write new tests specifying SourceLocation introclassJava.smallest_769cd811_009:62.
+16:03:24.884 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #14
+16:03:24.884 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:61 which is executed by 16 tests
+-1448712328
+16:03:24.959 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - statement #15
+16:03:24.960 [pool-2-thread-1] DEBUG fr.inria.lille.repair.nopol.NoPol - Analysing SourceLocation introclassJava.smallest_769cd811_009:60 which is executed by 16 tests
+-1448712328
+16:03:25.011 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----INFORMATION----
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 6
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 15
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 7
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 0
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 5
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [14] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2, == of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 14
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 0
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 163047ms
+16:03:25.014 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - 
+NO_SYNTHESIS
+
+real	2m43.772s
+user	2m41.287s
+sys	0m1.715s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Sat Apr  3 16:03:25 EDT 2021\n

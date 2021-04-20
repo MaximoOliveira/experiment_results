@@ -1,0 +1,406 @@
+{
+  "repair_end": "2021-04-07 19:01:58.584867", 
+  "repair_begin": "2021-04-07 17:01:19.535870", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,5 +17,5 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n+\\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)), java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-796\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)), java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)), java_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "398", 
+      "VARIANT_ID": "796", 
+      "TIME": "425", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-796"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn 1 * java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1046\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "1 * java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1))", 
+          "INGREDIENT_PARENT": "1 * java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "523", 
+      "VARIANT_ID": "1046", 
+      "TIME": "601", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1046"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn 0 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1114\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "0", 
+          "INGREDIENT_PARENT": "0", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "557", 
+      "VARIANT_ID": "1114", 
+      "TIME": "648", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1114"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,5 +17,5 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), \\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1438\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "719", 
+      "VARIANT_ID": "1438", 
+      "TIME": "900", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1438"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,5 +17,5 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n+\\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)), java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1486\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1)), java_programs.LEVENSHTEIN.levenshtein(target, source.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)), java_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "743", 
+      "VARIANT_ID": "1486", 
+      "TIME": "934", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1486"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1596\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java_programs.LEVENSHTEIN.levenshtein(target.substring(1), source.substring(1))", 
+          "INGREDIENT_PARENT": "java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "798", 
+      "VARIANT_ID": "1596", 
+      "TIME": "1042", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1596"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,3 +17,3 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n@@ -21 +21 @@\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1804\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\njava_programs.LEVENSHTEIN.levenshtein(_String_0, _String_1.substring(1)), \\njava_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "902", 
+      "VARIANT_ID": "1804", 
+      "TIME": "1241", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1804"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn 1 * java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1850\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(1 * java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)))", 
+          "INGREDIENT_PARENT": "(1 * java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "925", 
+      "VARIANT_ID": "1850", 
+      "TIME": "1281", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1850"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1974\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_PARENT": "java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "987", 
+      "VARIANT_ID": "1974", 
+      "TIME": "1390", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-1974"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17,5 +17,5 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n-\\t\\t} else {\\n-\\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(\\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), \\n-\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n+\\t\\t\\treturn \\n+\\n+\\t\\t\\tjava.lang.Math.min(\\n+\\n+\\t\\t\\tjava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)));} else { \\t\\t\\treturn 1 + java.lang.Math.min(java.lang.Math.min(java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))), \\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-2214\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)))", 
+          "INGREDIENT_PARENT": "java.lang.Math.min(\\n\\njava_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1)), java_programs.LEVENSHTEIN.levenshtein(source, target.substring(1)))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "12", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "1107", 
+      "VARIANT_ID": "2214", 
+      "TIME": "1614", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-2214"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1)) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-2502\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1))", 
+          "INGREDIENT_PARENT": "java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1251", 
+      "VARIANT_ID": "2502", 
+      "TIME": "1876", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-2502"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn (1 & java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1))) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3232\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(1 & java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1)))", 
+          "INGREDIENT_PARENT": "1 & java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1616", 
+      "VARIANT_ID": "3232", 
+      "TIME": "2583", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3232"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn (1 * java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1))) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3376\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(1 * java_programs.LEVENSHTEIN.levenshtein(target.substring(1), target.substring(1)))", 
+          "INGREDIENT_PARENT": "1 * java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1688", 
+      "VARIANT_ID": "3376", 
+      "TIME": "2712", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3376"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1)) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3558\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1))", 
+          "INGREDIENT_PARENT": "java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1779", 
+      "VARIANT_ID": "3558", 
+      "TIME": "2873", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3558"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn (1 & java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1))) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3940\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(1 & java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1)))", 
+          "INGREDIENT_PARENT": "1 & java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "1970", 
+      "VARIANT_ID": "3940", 
+      "TIME": "3236", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-3940"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEINjava\\n@@ -17 +17 @@\\n-\\t\\t\\treturn 1 + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n+\\t\\t\\treturn (1 * java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1))) + java_programs.LEVENSHTEIN.levenshtein(source.substring(1), target.substring(1));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-4164\\/java_programs\\/LEVENSHTEIN.java", 
+          "ORIGINAL_CODE": "1", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(1 * java_programs.LEVENSHTEIN.levenshtein(source.substring(1), source.substring(1)))", 
+          "INGREDIENT_PARENT": "1 * java_programs.LEVENSHTEIN.levenshtein(_String_0.substring(1), _String_1.substring(1))", 
+          "LOCATION": "java_programs.LEVENSHTEIN", 
+          "BUGGY_CODE_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/src\\/main\\/java\\/LEVENSHTEIN.java", 
+          "LINE": "17", 
+          "MP_RANKING": "6", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "2082", 
+      "VARIANT_ID": "4164", 
+      "TIME": "3443", 
+      "VALIDATION": "|true|0|6|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_27_QUIXBUGS_LEVENSHTEIN\\/Figra_QuixBugs_LEVENSHTEIN_\\/.\\/output_astor\\/AstorMain-LEVENSHTEIN-\\/\\/src\\/\\/variant-4164"
+    }
+  ]
+}

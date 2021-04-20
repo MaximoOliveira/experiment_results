@@ -1,0 +1,171 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id MERGESORT- \
+	-failing java_testcases.junit.MERGESORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 17 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+11:53:47.332 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify left to left
+11:53:47.830 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() == 0 to arr.size() == 0
+11:53:49.621 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.MERGESORT.mergesort(left) to java_programs.MERGESORT.mergesort(left)
+11:53:56.598 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() / 2 to arr.size() / 2
+11:54:05.278 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+11:54:20.151 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+11:54:22.358 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+11:54:25.934 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.MERGESORT.mergesort(right) to java_programs.MERGESORT.mergesort(right)
+11:54:28.814 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+11:54:43.281 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(middle, arr.size()) to arr.subList(middle, arr.size())
+11:54:46.593 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+11:55:45.781 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+11:56:02.053 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify left to left
+11:56:10.095 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+11:56:11.273 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(0, middle) to arr.subList(0, middle)
+11:56:25.964 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+11:56:54.195 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+11:56:56.065 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+11:57:02.392 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify right to right
+11:57:20.028 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 2 to 2
+11:58:03.800 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify right to right
+11:58:26.097 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+11:59:13.634 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+11:59:31.741 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle to middle
+11:59:43.427 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+11:59:55.501 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle to middle
+12:00:02.289 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+12:01:04.547 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify left.addAll(arr.subList(0, middle)) to left.addAll(arr.subList(0, middle))
+12:01:15.176 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify right.addAll(arr.subList(middle, arr.size())) to right.addAll(arr.subList(middle, arr.size()))
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=MERGESORT-
+TOTAL_TIME=7201.598
+NR_GENERATIONS=657
+NR_RIGHT_COMPILATIONS=571
+NR_FAILLING_COMPILATIONS=86
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=188
+TIME=71
+VALIDATION=|true|0|13|[]|
+GENERATION=94
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-188
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.MERGESORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-188/java_programs/MERGESORT.java
+
+LINE=38
+
+SUSPICIOUNESS=1
+
+MP_RANKING=1
+
+ORIGINAL_CODE=arr.size()
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=(arr.size() / 2)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_ArrayList_0.size() / 2
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
+@@ -38,4 +38,4 @@
+-		if (arr.size() == 0) {
+-			return arr;
+-		} else {
+-			int middle = arr.size() / 2;
++		if (
++
++
++		(arr.size() / 2) == 0) { 			return arr;} else { 			int middle = arr.size() / 2;
+
+
+
+Patch 2
+VARIANT_ID=582
+TIME=276
+VALIDATION=|true|0|13|[]|
+GENERATION=291
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-582
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.MERGESORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/./output_astor/AstorMain-MERGESORT-//src//variant-582/java_programs/MERGESORT.java
+
+LINE=38
+
+SUSPICIOUNESS=1
+
+MP_RANKING=2
+
+ORIGINAL_CODE=0
+
+BUGGY_CODE_TYPE=CtLiteralImpl|CtBinaryOperatorImpl
+
+PATCH_HUNK_CODE=arr.size() % 2
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=arr.size() % 2
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_17_QUIXBUGS_MERGESORT/Figra_QuixBugs_MERGESORT_/src/main/java/MERGESORTjava
+@@ -38,4 +38,4 @@
+-		if (arr.size() == 0) {
+-			return arr;
+-		} else {
+-			int middle = arr.size() / 2;
++		if (arr.size() == 
++
++
++		(arr.size() % 2)) { 			return arr;} else { 			int middle = arr.size() / 2;
+
+
+
+
+real	120m20.394s
+user	116m53.186s
+sys	0m36.303s
+\n\nNode: hpc061.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 13:53:46 EDT 2021\n

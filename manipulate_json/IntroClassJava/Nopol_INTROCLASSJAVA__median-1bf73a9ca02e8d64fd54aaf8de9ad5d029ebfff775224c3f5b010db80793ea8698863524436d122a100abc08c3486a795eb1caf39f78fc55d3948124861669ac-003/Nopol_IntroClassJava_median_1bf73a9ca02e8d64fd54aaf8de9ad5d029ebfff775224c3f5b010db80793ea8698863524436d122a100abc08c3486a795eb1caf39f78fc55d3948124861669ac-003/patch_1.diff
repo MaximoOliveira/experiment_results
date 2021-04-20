@@ -1,0 +1,18 @@
+--- a/src/main/java/introclassJava/median_1bf73a9c_003.java
++++ b/src/main/java/introclassJava/median_1bf73a9c_003.java
+@@ -69,7 +69,11 @@
+             ans.value = first.value;
+-        } else if ((second.value > first.value && second.value < third.value)
+-                   || (second.value > third.value && second.value < first.value)) {
+-            ans.value = second.value;
+         } else {
+-            ans.value = third.value;
++            if (!(((introclassJava.median_1bf73a9c_003.this.output.length()==0) || ((second.value < third.value))) && (!(((second.value < first.value)) || (((second.value > first.value) && (second.value < third.value)) || ((second.value > third.value) && (second.value < first.value))))))) {
++                if ((second.value > first.value && second.value < third.value)
++                || (second.value > third.value && second.value < first.value)) {
++                    ans.value = second.value;
++                } else {
++                    ans.value = third.value;
++                }
++            }
+         }

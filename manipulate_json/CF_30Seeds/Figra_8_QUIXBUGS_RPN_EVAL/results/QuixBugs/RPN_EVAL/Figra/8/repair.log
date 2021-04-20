@@ -1,0 +1,175 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id RPN_EVAL- \
+	-failing java_testcases.junit.RPN_EVAL_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst false \
+	-seed 8 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+11:53:10.300 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.HashMap<java.lang.String, java.util.function.BinaryOperator<java.lang.Double>>() to new java.util.HashMap<java.lang.String, java.util.function.BinaryOperator<java.lang.Double>>()
+11:53:10.736 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "-" to "-"
+11:53:11.827 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op to op
+11:53:12.846 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "+" to "+"
+11:53:13.619 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+11:53:14.028 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.lang.Double) (stack.pop())) to ((java.lang.Double) (stack.pop()))
+11:53:14.407 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack to stack
+11:53:15.634 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op to op
+11:53:16.462 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op to op
+11:53:16.951 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.lang.Double) (stack.pop())) to ((java.lang.Double) (stack.pop()))
+11:53:17.745 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op to op
+11:53:19.485 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+11:53:20.015 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+11:53:20.892 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+11:53:24.247 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.Stack() to new java.util.Stack()
+11:53:27.901 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "/" to "/"
+11:53:28.273 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.0 to 0.0
+11:53:29.427 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op to op
+11:53:32.496 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+11:53:33.065 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "*" to "*"
+11:53:38.249 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+11:53:41.380 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+11:53:41.986 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack to stack
+11:53:43.921 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a * b to a * b
+11:53:45.914 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+11:53:48.887 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify bin_op.apply(a, b) to bin_op.apply(a, b)
+11:53:49.325 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.lang.String) (token)) to ((java.lang.String) (token))
+11:53:50.814 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify tokens to tokens
+11:53:54.170 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+11:53:55.770 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack to stack
+11:54:00.209 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.lang.Double) (stack.pop())) to ((java.lang.Double) (stack.pop()))
+11:54:00.676 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack to stack
+11:54:02.661 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a - b to a - b
+11:54:05.297 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack to stack
+11:54:07.423 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack.push(((java.lang.Double) (token))) to stack.push(((java.lang.Double) (token)))
+11:54:10.935 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+11:54:12.833 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify token to token
+11:54:20.200 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify stack.push(c) to stack.push(c)
+11:54:24.361 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify token to token
+11:54:24.762 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a + b to a + b
+11:54:28.349 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.lang.Double) (token)) to ((java.lang.Double) (token))
+11:54:33.902 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a / b to a / b
+11:54:34.981 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+11:54:58.814 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify bin_op to bin_op
+11:55:31.581 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify op.get(token) to op.get(token)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=RPN_EVAL-
+TOTAL_TIME=7200.708
+NR_GENERATIONS=490
+NR_RIGHT_COMPILATIONS=278
+NR_FAILLING_COMPILATIONS=212
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=102
+TIME=22
+VALIDATION=|true|0|6|[]|
+GENERATION=51
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/./output_astor/AstorMain-RPN_EVAL-//src//variant-102
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.RPN_EVAL
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVAL.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/./output_astor/AstorMain-RPN_EVAL-//src//variant-102/java_programs/RPN_EVAL.java
+
+LINE=35
+
+SUSPICIOUNESS=0.707
+
+MP_RANKING=58
+
+ORIGINAL_CODE=c
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=bin_op.apply(b, a)
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=bin_op.apply(b, a)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVALjava
++++ /users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVALjava
+@@ -35 +35 @@
+-				stack.push(c);
++				stack.push(bin_op.apply(b, a));
+
+
+
+Patch 2
+VARIANT_ID=198
+TIME=41
+VALIDATION=|true|0|6|[]|
+GENERATION=99
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/./output_astor/AstorMain-RPN_EVAL-//src//variant-198
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.RPN_EVAL
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVAL.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/./output_astor/AstorMain-RPN_EVAL-//src//variant-198/java_programs/RPN_EVAL.java
+
+LINE=34
+
+SUSPICIOUNESS=0.707
+
+MP_RANKING=56
+
+ORIGINAL_CODE=bin_op.apply(a, b)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtAssignmentImpl
+
+PATCH_HUNK_CODE=bin_op.apply(b, a)
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=bin_op.apply(b, a)
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVALjava
++++ /users2/cpca56132020/moliveira/folders/Figra_8_QUIXBUGS_RPN_EVAL/Figra_QuixBugs_RPN_EVAL_/src/main/java/RPN_EVALjava
+@@ -34 +34 @@
+-				c = bin_op.apply(a, b);
++				c = bin_op.apply(b, a);
+
+
+
+
+real	120m10.580s
+user	119m49.174s
+sys	0m16.631s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Wed Apr  7 13:53:08 EDT 2021\n
