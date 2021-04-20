@@ -1,0 +1,119 @@
+cd /tmp/figra_Defects4J_Chart_13;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id Chart-13 \
+	-failing org.jfree.chart.block.junit.BorderArrangementTests \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 4 \
+	-srcjavafolder source/ \
+	-srctestfolder tests/ \
+	-binjavafolder build/ \
+	-bintestfolder build-tests/ \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /tmp/figra_Defects4J_Chart_13/build/:/tmp/figra_Defects4J_Chart_13/build-tests/:/tmp/figra_Defects4J_Chart_13/lib/junit.jar:/tmp/figra_Defects4J_Chart_13/lib/itext-2.0.6.jar:/tmp/figra_Defects4J_Chart_13/lib/servlet.jar:/home/maxoliveira/Tese/RepairThemAll/script/../benchmarks/defects4j/framework/projects/lib/junit-4.11.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+13:33:01.271 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:33:05.986 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new org.jfree.chart.block.RectangleConstraint(0.0, 
+new org.jfree.data.Range(0.0, constraint.getWidth() - w[2]), 
+org.jfree.chart.block.LengthConstraintType.RANGE, h[2], null, 
+org.jfree.chart.block.LengthConstraintType.FIXED) to new org.jfree.chart.block.RectangleConstraint(0.0, 
+new org.jfree.data.Range(0.0, constraint.getWidth() - w[2]), 
+org.jfree.chart.block.LengthConstraintType.RANGE, h[2], null, 
+org.jfree.chart.block.LengthConstraintType.FIXED)
+13:33:06.305 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:33:10.558 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:33:23.169 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+13:33:33.588 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 4 to 4
+13:33:36.554 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify h[4] to h[4]
+13:33:45.285 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify constraint to constraint
+13:33:49.651 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:33:51.529 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:33:55.716 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.awt.geom.Rectangle2D.Double(w[2] + w[4], h[0], 
+w[3], h[3]) to new java.awt.geom.Rectangle2D.Double(w[2] + w[4], h[0], 
+w[3], h[3])
+13:34:10.115 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify h[0] to h[0]
+13:34:20.320 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new javax.swing.ImageIcon(imageURL) to new javax.swing.ImageIcon(imageURL)
+13:34:22.138 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:34:25.347 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+13:34:27.408 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+13:34:39.229 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+13:34:39.529 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=Chart-13
+TOTAL_TIME=122.374
+NR_GENERATIONS=114
+NR_RIGHT_COMPILATIONS=98
+NR_FAILLING_COMPILATIONS=16
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=228
+TIME=122
+VALIDATION=|true|0|3597|[]|
+GENERATION=114
+FOLDER_SOLUTION_CODE=/tmp/figra_Defects4J_Chart_13/./output_astor/AstorMain-Chart-13//src//variant-228
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=org.jfree.chart.block.BorderArrangement
+
+PATH=/tmp/figra_Defects4J_Chart_13/source/org/jfree/chart/block/BorderArrangement.java
+
+MODIFIED_FILE_PATH=/tmp/figra_Defects4J_Chart_13/./output_astor/AstorMain-Chart-13//src//variant-228/org/jfree/chart/block/BorderArrangement.java
+
+LINE=453
+
+SUSPICIOUNESS=0.816
+
+MP_RANKING=178
+
+ORIGINAL_CODE=this
+
+BUGGY_CODE_TYPE=CtThisAccessImpl|CtFieldReadImpl
+
+PATCH_HUNK_CODE=new org.jfree.chart.block.BorderArrangement()
+
+PATCH_HUNK_TYPE=CtConstructorCallImpl|CtFieldReadImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=new org.jfree.chart.block.BorderArrangement()
+
+PATCH_DIFF_ORIG=--- /tmp/figra_Defects4J_Chart_13/source/org/jfree/chart/block/BorderArrangementjava
++++ /tmp/figra_Defects4J_Chart_13/source/org/jfree/chart/block/BorderArrangementjava
+@@ -453 +453 @@
+-		if (this.rightBlock != null) {
++		if (new org.jfree.chart.block.BorderArrangement().rightBlock != null) {
+
+
+
+281.69user 6.95system 3:05.98elapsed 155%CPU (0avgtext+0avgdata 2052760maxresident)k
+0inputs+54800outputs (0major+1557140minor)pagefaults 0swaps
+
+
+Node: polaris
+
+
+
+Date: qui 15 abr 2021 13:34:50 EDT
+

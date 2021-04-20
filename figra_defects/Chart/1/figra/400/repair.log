@@ -1,0 +1,112 @@
+cd /tmp/figra_Defects4J_Chart_1;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id Chart-1 \
+	-failing org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 400 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 4 \
+	-srcjavafolder source/ \
+	-srctestfolder tests/ \
+	-binjavafolder build/ \
+	-bintestfolder build-tests/ \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /tmp/figra_Defects4J_Chart_1/build/:/tmp/figra_Defects4J_Chart_1/build-tests/:/tmp/figra_Defects4J_Chart_1/lib/junit.jar:/tmp/figra_Defects4J_Chart_1/lib/iText-2.1.4.jar:/tmp/figra_Defects4J_Chart_1/lib/servlet.jar:/home/maxoliveira/Tese/RepairThemAll/script/../benchmarks/defects4j/framework/projects/lib/junit-4.11.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+12:12:29.061 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+12:12:31.051 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify imageURL to imageURL
+12:12:33.598 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass().getClassLoader().getResource(
+"org/jfree/chart/gorilla.jpg") to this.getClass().getClassLoader().getResource(
+"org/jfree/chart/gorilla.jpg")
+12:12:36.646 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass().getClassLoader() to this.getClass().getClassLoader()
+12:12:38.143 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new org.jfree.data.event.DatasetChangeEvent(this, dataset, 
+new org.jfree.chart.event.DatasetChangeInfo()) to new org.jfree.data.event.DatasetChangeEvent(this, dataset, 
+new org.jfree.chart.event.DatasetChangeInfo())
+12:12:38.568 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dataset to dataset
+12:12:42.598 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify imageURL != null to imageURL != null
+12:12:43.594 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.plot to this.plot
+12:12:46.959 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify super to super
+12:12:51.005 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+12:12:52.309 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify renderer to renderer
+12:12:53.189 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass() to this.getClass()
+12:12:55.732 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify imageURL to imageURL
+12:12:57.883 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+12:13:02.082 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new javax.swing.ImageIcon(imageURL) to new javax.swing.ImageIcon(imageURL)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=Chart-1
+TOTAL_TIME=45.981
+NR_GENERATIONS=59
+NR_RIGHT_COMPILATIONS=45
+NR_FAILLING_COMPILATIONS=14
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=118
+TIME=45
+VALIDATION=|true|0|4402|[]|
+GENERATION=59
+FOLDER_SOLUTION_CODE=/tmp/figra_Defects4J_Chart_1/./output_astor/AstorMain-Chart-1//src//variant-118
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+
+PATH=/tmp/figra_Defects4J_Chart_1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+
+MODIFIED_FILE_PATH=/tmp/figra_Defects4J_Chart_1/./output_astor/AstorMain-Chart-1//src//variant-118/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+
+LINE=1797
+
+SUSPICIOUNESS=0.132
+
+MP_RANKING=82
+
+ORIGINAL_CODE=dataset != null
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=!isSeriesVisibleInLegend(rowCount)
+
+PATCH_HUNK_TYPE=CtUnaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(!isSeriesVisibleInLegend(series))
+
+PATCH_DIFF_ORIG=--- /tmp/figra_Defects4J_Chart_1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRendererjava
++++ /tmp/figra_Defects4J_Chart_1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRendererjava
+@@ -1797 +1797 @@
+-		if (dataset != null) {
++		if (!isSeriesVisibleInLegend(rowCount)) {
+
+
+
+677.47user 5.95system 9:15.76elapsed 122%CPU (0avgtext+0avgdata 1971928maxresident)k
+49512inputs+56184outputs (31major+1394209minor)pagefaults 0swaps
+
+
+Node: polaris
+
+
+
+Date: qui 15 abr 2021 12:13:11 EDT
+

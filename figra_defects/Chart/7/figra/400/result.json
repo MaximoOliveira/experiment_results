@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 17:14:06.788598", 
+  "repair_begin": "2021-04-15 17:12:26.748775", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_7\\/source\\/org\\/jfree\\/data\\/time\\/TimePeriodValuesjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_7\\/source\\/org\\/jfree\\/data\\/time\\/TimePeriodValuesjava\\n@@ -288 +288 @@\\n-\\t\\t\\tlong e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();\\n+\\t\\t\\tlong e = \\n@@ -290,33 +289,0 @@\\n-\\t\\t\\tlong minMiddle = s + ((e - s) \\/ 2);\\n-\\t\\t\\tif (middle < minMiddle) {\\n-\\t\\t\\t\\tthis.minMiddleIndex = index;\\n-\\t\\t\\t}\\n-\\t\\t} else \\n-\\t\\t{\\n-\\t\\t\\tthis.minMiddleIndex = index;\\n-\\t\\t}\\n-\\n-\\t\\tif (this.maxMiddleIndex >= 0) {\\n-\\t\\t\\tlong s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();\\n-\\n-\\t\\t\\tlong e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();\\n-\\n-\\t\\t\\tlong maxMiddle = s + ((e - s) \\/ 2);\\n-\\t\\t\\tif (middle > maxMiddle) {\\n-\\t\\t\\t\\tthis.maxMiddleIndex = index;\\n-\\t\\t\\t}\\n-\\t\\t} else \\n-\\t\\t{\\n-\\t\\t\\tthis.maxMiddleIndex = index;\\n-\\t\\t}\\n-\\n-\\t\\tif (this.minEndIndex >= 0) {\\n-\\t\\t\\tlong minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();\\n-\\n-\\t\\t\\tif (end < minEnd) {\\n-\\t\\t\\t\\tthis.minEndIndex = index;\\n-\\t\\t\\t}\\n-\\t\\t} else \\n-\\t\\t{\\n-\\t\\t\\tthis.minEndIndex = index;\\n-\\t\\t}\\n@@ -324,2 +291,35 @@\\n-\\t\\tif (this.maxEndIndex >= 0) {\\n-\\t\\t\\tlong maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\t\\t\\tgetDataItem(this.maxEndIndex).getPeriod().getEnd().getTime(); \\t\\t\\tlong minMiddle = s + ((e - s) \\/ 2); \\t\\t\\tif (middle < minMiddle) { \\t\\t\\t\\tthis.minMiddleIndex = index;}} else { \\t\\t\\tthis.minMiddleIndex = index;} \\t\\tif (this.maxMiddleIndex >= 0) { \\t\\t\\tlong s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); \\t\\t\\tlong e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); \\t\\t\\tlong maxMiddle = s + ((e - s) \\/ 2); \\t\\t\\tif (middle > maxMiddle) { \\t\\t\\t\\tthis.maxMiddleIndex = index;}} else { \\t\\t\\tthis.maxMiddleIndex = index;} \\t\\tif (this.minEndIndex >= 0) { \\t\\t\\tlong minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime(); \\t\\t\\tif (end < minEnd) { \\t\\t\\t\\tthis.minEndIndex = index;}} else { \\t\\t\\tthis.minEndIndex = index;} \\t\\tif (this.maxEndIndex >= 0) { \\t\\t\\tlong maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_7\\/.\\/output_astor\\/AstorMain-Chart-7\\/\\/src\\/\\/variant-66\\/org\\/jfree\\/data\\/time\\/TimePeriodValues.java", 
+          "ORIGINAL_CODE": "getDataItem(this.minMiddleIndex).getPeriod()", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "getDataItem(this.maxEndIndex).getPeriod()", 
+          "INGREDIENT_PARENT": "getDataItem(this.maxEndIndex).getPeriod()", 
+          "LOCATION": "org.jfree.data.time.TimePeriodValues", 
+          "BUGGY_CODE_TYPE": "CtInvocationImpl|CtInvocationImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_7\\/source\\/org\\/jfree\\/data\\/time\\/TimePeriodValues.java", 
+          "LINE": "288", 
+          "MP_RANKING": "99", 
+          "SUSPICIOUNESS": "0.226", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtInvocationImpl"
+        }
+      ], 
+      "GENERATION": "33", 
+      "VARIANT_ID": "66", 
+      "TIME": "21", 
+      "VALIDATION": "|true|0|3641|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_7\\/.\\/output_astor\\/AstorMain-Chart-7\\/\\/src\\/\\/variant-66"
+    }
+  ]
+}

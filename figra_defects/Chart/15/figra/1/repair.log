@@ -1,0 +1,157 @@
+cd /tmp/figra_Defects4J_Chart_15;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/maxoliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/maxoliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id Chart-15 \
+	-failing org.jfree.chart.plot.junit.PiePlot3DTests \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 100000000 \
+	-maxtime 180 \
+	-stopfirst true \
+	-seed 1 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 4 \
+	-srcjavafolder source/ \
+	-srctestfolder tests/ \
+	-binjavafolder build/ \
+	-bintestfolder build-tests/ \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /tmp/figra_Defects4J_Chart_15/build/:/tmp/figra_Defects4J_Chart_15/build-tests/:/tmp/figra_Defects4J_Chart_15/lib/junit.jar:/tmp/figra_Defects4J_Chart_15/lib/itext-2.0.6.jar:/tmp/figra_Defects4J_Chart_15/lib/servlet.jar:/home/maxoliveira/Tese/RepairThemAll/script/../benchmarks/defects4j/framework/projects/lib/junit-4.11.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+02:45:26.519 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:45:27.723 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+02:45:43.424 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify info to info
+02:45:44.574 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify plotArea to plotArea
+02:46:13.188 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new javax.swing.ImageIcon(imageURL) to new javax.swing.ImageIcon(imageURL)
+02:46:17.283 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.getClass().getClassLoader() to this.getClass().getClassLoader()
+02:46:30.417 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cc.getHeightConstraintType() to cc.getHeightConstraintType()
+02:46:47.097 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify drawHorizontal(g2, area) to drawHorizontal(g2, area)
+02:47:23.679 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:47:24.579 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:47:25.489 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify iterator to iterator
+02:47:26.518 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:48:05.906 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.fragments.iterator() to this.fragments.iterator()
+02:48:07.829 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify state to state
+02:48:20.471 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify plotArea to plotArea
+02:49:02.479 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:49:03.534 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:49:04.602 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify plotArea to plotArea
+02:49:56.961 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new org.jfree.chart.block.BlockResult() to new org.jfree.chart.block.BlockResult()
+02:49:57.881 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:50:10.805 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0.0 to 0.0
+02:50:11.804 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT to org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT
+02:50:14.667 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dimension to dimension
+02:50:22.675 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:50:25.675 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:51:04.498 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:51:07.108 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:51:10.630 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify insets to insets
+02:51:12.581 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify paint to paint
+02:51:57.579 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+02:51:59.204 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new org.jfree.chart.util.Size2D(width, height) to new org.jfree.chart.util.Size2D(width, height)
+02:52:00.115 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2.getClip() to g2.getClip()
+02:52:11.027 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:52:15.055 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:52:17.792 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.g2.getFontMetrics() to this.g2.getFontMetrics()
+02:52:20.014 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify area to area
+02:52:24.001 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:52:25.019 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((float) (titleArea.getY())) to ((float) (titleArea.getY()))
+02:52:30.212 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:52:31.150 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:52:56.118 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify dimension to dimension
+02:53:38.132 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:54:10.079 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify area to area
+02:54:23.272 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:54:35.229 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify t.arrange(g2, constraint) to t.arrange(g2, constraint)
+02:54:39.557 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.sources[s] to this.sources[s]
+02:54:43.211 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify iterator to iterator
+02:54:44.094 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:54:55.010 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:55:00.294 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.lang.IllegalArgumentException("Null 'dataset' argument.") to new java.lang.IllegalArgumentException("Null 'dataset' argument.")
+02:55:15.533 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify plotArea.getWidth() to plotArea.getWidth()
+02:55:16.408 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this.fragments.iterator() to this.fragments.iterator()
+02:55:17.304 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify g2 to g2
+02:55:38.246 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify this to this
+02:56:16.530 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify plotArea to plotArea
+02:56:19.588 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+02:56:19.593 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+02:56:19.593 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+02:56:19.593 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+02:56:19.593 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+02:56:19.593 [main] ERROR fr.inria.astor.core.solutionsearch.spaces.ingredients.transformations.FigraProbabilisticTransformationStrategy - Map is null for 5 for local n-gramm org.jfree.chart.ChartFactory, ingredient from org.jfree.chart.ChartFactory
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=Chart-15
+TOTAL_TIME=667.466
+NR_GENERATIONS=236
+NR_RIGHT_COMPILATIONS=167
+NR_FAILLING_COMPILATIONS=69
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=472
+TIME=667
+VALIDATION=|true|0|3579|[]|
+GENERATION=236
+FOLDER_SOLUTION_CODE=/tmp/figra_Defects4J_Chart_15/./output_astor/AstorMain-Chart-15//src//variant-472
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=org.jfree.chart.ChartFactory
+
+PATH=/tmp/figra_Defects4J_Chart_15/source/org/jfree/chart/ChartFactory.java
+
+MODIFIED_FILE_PATH=/tmp/figra_Defects4J_Chart_15/./output_astor/AstorMain-Chart-15//src//variant-472/org/jfree/chart/ChartFactory.java
+
+LINE=702
+
+SUSPICIOUNESS=0.408
+
+MP_RANKING=107
+
+ORIGINAL_CODE=new org.jfree.chart.JFreeChart(title, org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT, plot, 
+legend)
+
+BUGGY_CODE_TYPE=CtConstructorCallImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=org.jfree.chart.ChartFactory.createRingChart(title, dataset, urls, urls, urls)
+
+PATCH_HUNK_TYPE=CtInvocationImpl|CtReturnImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=org.jfree.chart.ChartFactory.createRingChart(_String_0, _PieDataset_1, _boolean_2, _boolean_3, _boolean_4)
+
+PATCH_DIFF_ORIG=--- /tmp/figra_Defects4J_Chart_15/source/org/jfree/chart/ChartFactoryjava
++++ /tmp/figra_Defects4J_Chart_15/source/org/jfree/chart/ChartFactoryjava
+@@ -702,2 +702,2 @@
+-		return new org.jfree.chart.JFreeChart(title, org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT, plot, 
+-		legend);
++		return org.jfree.chart.ChartFactory.createRingChart(title, dataset, urls, urls, urls);
++
+
+
+
+1317.87user 17.25system 18:41.91elapsed 119%CPU (0avgtext+0avgdata 2501048maxresident)k
+32inputs+141120outputs (0major+3391885minor)pagefaults 0swaps
+
+
+Node: polaris
+
+
+
+Date: dom 18 abr 2021 02:56:27 EDT
+

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-18 07:56:27.706932", 
+  "repair_begin": "2021-04-18 07:37:44.869423", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_15\\/source\\/org\\/jfree\\/chart\\/ChartFactoryjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_15\\/source\\/org\\/jfree\\/chart\\/ChartFactoryjava\\n@@ -702,2 +702,2 @@\\n-\\t\\treturn new org.jfree.chart.JFreeChart(title, org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT, plot, \\n-\\t\\tlegend);\\n+\\t\\treturn org.jfree.chart.ChartFactory.createRingChart(title, dataset, urls, urls, urls);\\n+\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_15\\/.\\/output_astor\\/AstorMain-Chart-15\\/\\/src\\/\\/variant-472\\/org\\/jfree\\/chart\\/ChartFactory.java", 
+          "ORIGINAL_CODE": "new org.jfree.chart.JFreeChart(title, org.jfree.chart.JFreeChart.DEFAULT_TITLE_FONT, plot, \\nlegend)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "org.jfree.chart.ChartFactory.createRingChart(title, dataset, urls, urls, urls)", 
+          "INGREDIENT_PARENT": "org.jfree.chart.ChartFactory.createRingChart(_String_0, _PieDataset_1, _boolean_2, _boolean_3, _boolean_4)", 
+          "LOCATION": "org.jfree.chart.ChartFactory", 
+          "BUGGY_CODE_TYPE": "CtConstructorCallImpl|CtReturnImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_15\\/source\\/org\\/jfree\\/chart\\/ChartFactory.java", 
+          "LINE": "702", 
+          "MP_RANKING": "107", 
+          "SUSPICIOUNESS": "0.408", 
+          "PATCH_HUNK_TYPE": "CtInvocationImpl|CtReturnImpl"
+        }
+      ], 
+      "GENERATION": "236", 
+      "VARIANT_ID": "472", 
+      "TIME": "667", 
+      "VALIDATION": "|true|0|3579|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_15\\/.\\/output_astor\\/AstorMain-Chart-15\\/\\/src\\/\\/variant-472"
+    }
+  ]
+}

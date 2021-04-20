@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 17:08:19.930071", 
+  "repair_begin": "2021-04-15 17:07:30.331562", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/figra_Defects4J_Chart_5\\/source\\/org\\/jfree\\/data\\/xy\\/XYSeriesjava\\n+++ \\/tmp\\/figra_Defects4J_Chart_5\\/source\\/org\\/jfree\\/data\\/xy\\/XYSeriesjava\\n@@ -563 +563 @@\\n-\\t\\t\\tif (this.autoSort) {\\n+\\t\\t\\tif ((maximumItemCount < maximumItemCount) && (overwritten.compareTo(data.get(maximumItemCount)) == 0)) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/figra_Defects4J_Chart_5\\/.\\/output_astor\\/AstorMain-Chart-5\\/\\/src\\/\\/variant-56\\/org\\/jfree\\/data\\/xy\\/XYSeries.java", 
+          "ORIGINAL_CODE": "this.autoSort", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(maximumItemCount < maximumItemCount) && \\n(overwritten.compareTo(data.get(maximumItemCount)) == 0)", 
+          "INGREDIENT_PARENT": "(_int_0 < _int_1) && \\n(_XYDataItem_2.compareTo(_List_3.get(_int_0)) == 0)", 
+          "LOCATION": "org.jfree.data.xy.XYSeries", 
+          "BUGGY_CODE_TYPE": "CtFieldReadImpl|CtIfImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/figra_Defects4J_Chart_5\\/source\\/org\\/jfree\\/data\\/xy\\/XYSeries.java", 
+          "LINE": "563", 
+          "MP_RANKING": "16", 
+          "SUSPICIOUNESS": "0.471", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtIfImpl"
+        }
+      ], 
+      "GENERATION": "28", 
+      "VARIANT_ID": "56", 
+      "TIME": "15", 
+      "VALIDATION": "|true|0|4081|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/figra_Defects4J_Chart_5\\/.\\/output_astor\\/AstorMain-Chart-5\\/\\/src\\/\\/variant-56"
+    }
+  ]
+}
