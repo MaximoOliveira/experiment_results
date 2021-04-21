@@ -4,7 +4,6 @@ import pandas as pd
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 
@@ -13,7 +12,7 @@ def create_row_from_json_file(filename, tool_name, bug_id):
         data = json.load(json_file)
         num_patches = len(data['patches'])
         if (num_patches):
-            time_first_patch = data['patches'][0]['TIME']
+            time_first_patch = int(data['patches'][0]['TIME'])
             row = {'tool': tool_name, 'bug_id': bug_id, 'num_patches': num_patches, 'time (seconds)': time_first_patch}
             return row
 
@@ -89,24 +88,31 @@ def split(strng, sep, pos):
     return sep.join(strng[:pos]), sep.join(strng[pos:])
 
 
-def stripplot_time():
-    df = all_folder_seeds('CF_30Seeds/')
+def boxplot_time():
+    df = all_folder_seeds('../CF_30Seeds/')
     df.sort_values(by=['time (seconds)'])
     sns.set_theme(style="whitegrid")
-    sns.boxplot(x="bug_id", y="time (seconds)", hue="tool",
-                      data=df, palette="Set2", dodge=True)
-    return sns.stripplot(x="bug_id", y="time (seconds)", hue="tool",
-                      data=df, palette="Set2", dodge=True)
+    sns.color_palette(palette="colorblind")
+    df = df.rename(columns={'tool': 'Repair Tool'})
+    params = dict(data=df,
+                  x='bug_id',
+                  y='time (seconds)',
+                  hue='Repair Tool',
+                  palette="Set2",
+                  dodge=True)
+    sns.boxplot(**params)
+    return sns.stripplot(**params, jitter=0.35, edgecolor='black', linewidth=1)
 
-def stripplot_num_patches():
-    df = all_folder_seeds('CF_30Seeds/')
+def barplot_num_patches():
+    df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
+    sns.color_palette(palette="colorblind")
     return sns.barplot(x="Bug ID", y="Number of Patches", hue="Repair Tool",
-                      data=df, palette="Set2", dodge=True)
+                      data=df, palette="Set2", dodge=True, ci= "sd")
 
 def violinplot_num_patches():
-    df = all_folder_seeds('CF_30Seeds/')
+    df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
     sns.violinplot(x="Bug ID", y="Number of Patches",
@@ -115,7 +121,7 @@ def violinplot_num_patches():
                          data=df, jitter=0.8)
 
 def violinplot_time():
-    df = all_folder_seeds('CF_30Seeds/')
+    df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
     sns.violinplot(x="Bug ID", y="Number of Patches",
@@ -124,7 +130,7 @@ def violinplot_time():
                       data=df, palette="Set2", dodge=True)
 
 def catplot_num_patches():
-    df = all_folder_seeds('CF_30Seeds/')
+    df = all_folder_seeds('../CF_30Seeds/')
     sns.set_theme(style="whitegrid")
     return sns.catplot(x="bug_id", y="num_patches",
                 data=df,
@@ -132,13 +138,24 @@ def catplot_num_patches():
                 hue="tool")
 
 def countplot_found_patches():
-    df = all_folder('QuixBugs/')
+    df = all_folder('../QuixBugs/')
     sns.set_theme(style="whitegrid")
     ax = sns.catplot(y="bug_id", hue="tool", kind="count",
                 palette="pastel", edgecolor=".6",
                 data=df)
     ax.set(xticks=[0,1])
     return ax
+
+#Todo
+def scatterplot_time_and_num_patches():
+    df = all_folder('../QuixBugs/')
+    sns.set_theme(style="whitegrid")
+    sns.color_palette(palette="colorblind")
+    df = df.loc[df['tool'] == 'Figra']
+    df = df.sort_values('bug_id', ascending=False).drop_duplicates('num_patches').sort_index()
+    g = sns.FacetGrid(df, col='bug_id')
+    g.map(sns.scatterplot, "num_patches", "time (seconds)")
+    return g
 
 if __name__ == '__main__':
     '''
@@ -163,7 +180,8 @@ if __name__ == '__main__':
     #df = all_folder('test/')
     #print(df.to_markdown())
 
-    plot = stripplot_time()
+    plot = boxplot_time()
+    plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
     plt.show()
 
     #df = all_folder('IntroClassJava_Figra/')

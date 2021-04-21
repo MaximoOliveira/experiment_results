@@ -1,7 +1,0 @@
---- a/src/main/java/introclassJava/smallest_48b82975_001.java
-+++ b/src/main/java/introclassJava/smallest_48b82975_001.java
-@@ -69,3 +69,3 @@
-             r.value = a.value;
--        } else if (b.value < a.value && b.value < c.value && b.value < d.value) {
-+        } else if ((b.value < d.value)) {
-             r.value = b.value;
