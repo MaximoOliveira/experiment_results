@@ -1,0 +1,149 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id FLATTEN- \
+	-failing java_testcases.junit.FLATTEN_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin \
+	-maxgen 1000000 \
+	-maxtime 180 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+04:47:32.273 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.FLATTEN.flatten(arr) to java_programs.FLATTEN.flatten(arr)
+04:47:33.677 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x instanceof java.util.ArrayList to x instanceof java.util.ArrayList
+04:47:36.062 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr instanceof java.util.ArrayList to arr instanceof java.util.ArrayList
+04:47:38.961 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+04:47:39.292 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify narr to narr
+04:47:39.929 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 50 to 50
+04:47:40.909 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList(50) to new java.util.ArrayList(50)
+04:47:41.546 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+04:47:43.637 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+04:47:46.538 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.util.ArrayList) (arr)) to ((java.util.ArrayList) (arr))
+04:47:47.176 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+04:47:48.535 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+04:47:49.690 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify ((java.util.ArrayList) (java_programs.FLATTEN.flatten(x))) to ((java.util.ArrayList) (java_programs.FLATTEN.flatten(x)))
+04:47:51.897 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+04:47:53.130 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result to result
+04:47:55.349 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.FLATTEN.flatten(x) to java_programs.FLATTEN.flatten(x)
+04:47:57.332 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result.add(java_programs.FLATTEN.flatten(x)) to result.add(java_programs.FLATTEN.flatten(x))
+04:47:59.788 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify result.addAll(((java.util.ArrayList) (java_programs.FLATTEN.flatten(x)))) to result.addAll(((java.util.ArrayList) (java_programs.FLATTEN.flatten(x))))
+04:48:00.702 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=FLATTEN-
+TOTAL_TIME=10800.031
+NR_GENERATIONS=170
+NR_RIGHT_COMPILATIONS=115
+NR_FAILLING_COMPILATIONS=55
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=32
+TIME=8
+VALIDATION=|true|0|7|[]|
+GENERATION=16
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-32
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FLATTEN
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTEN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-32/java_programs/FLATTEN.java
+
+LINE=21
+
+SUSPICIOUNESS=1
+
+MP_RANKING=2
+
+ORIGINAL_CODE=java_programs.FLATTEN.flatten(x)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtInvocationImpl
+
+PATCH_HUNK_CODE=x
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=x
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
+@@ -21 +21 @@
+-					result.add(java_programs.FLATTEN.flatten(x));
++					result.add(x);
+
+
+
+Patch 2
+VARIANT_ID=108
+TIME=18
+VALIDATION=|true|0|7|[]|
+GENERATION=54
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-108
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FLATTEN
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTEN.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/./output_astor/AstorMain-FLATTEN-//src//variant-108/java_programs/FLATTEN.java
+
+LINE=26
+
+SUSPICIOUNESS=1
+
+MP_RANKING=5
+
+ORIGINAL_CODE=java_programs.FLATTEN.flatten(arr)
+
+BUGGY_CODE_TYPE=CtInvocationImpl|CtReturnImpl
+
+PATCH_HUNK_CODE=arr
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtBinaryOperatorImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=arr
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_FLATTEN/Figra_QuixBugs_FLATTEN_/src/main/java/FLATTENjava
+@@ -26 +26 @@
+-			return java_programs.FLATTEN.flatten(arr);
++			return arr;
+
+
+
+
+real	180m7.648s
+user	179m54.416s
+sys	0m11.074s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Wed Apr 21 07:47:30 EDT 2021\n

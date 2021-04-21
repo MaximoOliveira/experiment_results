@@ -1,0 +1,56 @@
+{
+  "repair_end": "2021-04-21 12:47:59.116362", 
+  "repair_begin": "2021-04-21 09:47:23.183574", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRTjava\\n@@ -16,2 +16,2 @@\\n-\\t\\twhile (java.lang.Math.abs(x - approx) > epsilon) {\\n-\\t\\t\\tapprox = 0.5F * (approx + (x \\/ approx));\\n+\\t\\twhile (java.lang.Math.abs(\\n+\\t\\t(x \\/ approx) - approx) > epsilon) { \\t\\t\\tapprox = 0.5F * (approx + (x \\/ approx));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/.\\/output_astor\\/AstorMain-SQRT-\\/\\/src\\/\\/variant-178\\/java_programs\\/SQRT.java", 
+          "ORIGINAL_CODE": "x", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(x \\/ approx)", 
+          "INGREDIENT_PARENT": "(_double_0 \\/ _double_1)", 
+          "LOCATION": "java_programs.SQRT", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRT.java", 
+          "LINE": "16", 
+          "MP_RANKING": "3", 
+          "SUSPICIOUNESS": "0.926", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "89", 
+      "VARIANT_ID": "178", 
+      "TIME": "515", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/.\\/output_astor\\/AstorMain-SQRT-\\/\\/src\\/\\/variant-178"
+    }, 
+    {
+      "PATCH_DIFF_ORIG": "--- \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRTjava\\n+++ \\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRTjava\\n@@ -16,2 +16,2 @@\\n-\\t\\twhile (java.lang.Math.abs(x - approx) > epsilon) {\\n-\\t\\t\\tapprox = 0.5F * (approx + (x \\/ approx));\\n+\\t\\twhile (java.lang.Math.abs(\\n+\\t\\t(0.5F * (approx + (x \\/ approx))) - approx) > epsilon) { \\t\\t\\tapprox = 0.5F * (approx + (x \\/ approx));\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/.\\/output_astor\\/AstorMain-SQRT-\\/\\/src\\/\\/variant-376\\/java_programs\\/SQRT.java", 
+          "ORIGINAL_CODE": "x", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "(0.5F * (approx + (x \\/ approx)))", 
+          "INGREDIENT_PARENT": "(0.5F * (approx + (x \\/ approx)))", 
+          "LOCATION": "java_programs.SQRT", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/src\\/main\\/java\\/SQRT.java", 
+          "LINE": "16", 
+          "MP_RANKING": "3", 
+          "SUSPICIOUNESS": "0.926", 
+          "PATCH_HUNK_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "188", 
+      "VARIANT_ID": "376", 
+      "TIME": "1065", 
+      "VALIDATION": "|true|0|7|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/users2\\/cpca56132020\\/moliveira\\/folders\\/Figra_QUIXBUGS_SQRT\\/Figra_QuixBugs_SQRT_\\/.\\/output_astor\\/AstorMain-SQRT-\\/\\/src\\/\\/variant-376"
+    }
+  ]
+}
