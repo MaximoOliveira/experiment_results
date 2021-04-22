@@ -6,7 +6,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-
 def create_row_from_json_file(filename, tool_name, bug_id):
     with open(filename) as json_file:
         data = json.load(json_file)
@@ -32,8 +31,30 @@ def find(name, path):
         if name in files:
             return os.path.join(root, name)
 
+#get results from franklin machine
+def franklin(rootdir):
+    df = pd.DataFrame()
+    directories = sorted(os.listdir(rootdir))
+    for folder in directories:
+        subfolder = sorted(os.listdir(rootdir + folder))
+        for f in subfolder:
+            folder_path = rootdir + folder + '/' + f + '/Figra/28/'
+            json_path = find('detailed-result.json', folder_path)
+            if json_path:
+                row = create_row_from_json_file(json_path, 'Figra', f)
+                df = df.append(row, ignore_index=True)
+    return df.to_markdown()
 
-def all_folder(rootdir):
+
+def IntroClassJava(tool_name):
+    tool_name = tool_name.lower()
+    if tool_name == 'figra':
+        return franklin('../IntroClassJava_Figra/')
+    return cirrus('../IntroClassJava/')
+
+
+# get results from cirrus machine
+def cirrus(rootdir):
     df = pd.DataFrame()
     directories = sorted(os.listdir(rootdir))
     for f in directories:
@@ -50,7 +71,7 @@ def all_folder(rootdir):
                 row = create_row_from_nopol_json(json_path, tool_name, bug_id)
                 df = df.append(row, ignore_index=True)
     df = df[['tool', 'bug_id', 'num_patches', 'time (seconds)']]
-    return df
+    return df.to_markdown()
 
 
 # seed
@@ -103,52 +124,58 @@ def boxplot_time():
     sns.boxplot(**params)
     return sns.stripplot(**params, jitter=0.35, edgecolor='black', linewidth=1)
 
+
 def barplot_num_patches():
     df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
     sns.color_palette(palette="colorblind")
     return sns.barplot(x="Bug ID", y="Number of Patches", hue="Repair Tool",
-                      data=df, palette="Set2", dodge=True, ci= "sd")
+                       data=df, palette="Set2", dodge=True, ci="sd")
+
 
 def violinplot_num_patches():
     df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
     sns.violinplot(x="Bug ID", y="Number of Patches",
-                      data=df, inner=None, color=".8")
+                   data=df, inner=None, color=".8")
     return sns.stripplot(x="Bug ID", y="Number of Patches", hue="Repair Tool",
                          data=df, jitter=0.8)
+
 
 def violinplot_time():
     df = all_folder_seeds('../CF_30Seeds/')
     df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug ID', 'num_patches': 'Number of Patches'}, inplace=True)
     sns.set_theme(style="whitegrid")
     sns.violinplot(x="Bug ID", y="Number of Patches",
-                      data=df, inner=None, color=".8")
+                   data=df, inner=None, color=".8")
     return sns.stripplot(x="bug_id", y="time (seconds)", hue="tool",
-                      data=df, palette="Set2", dodge=True)
+                         data=df, palette="Set2", dodge=True)
+
 
 def catplot_num_patches():
     df = all_folder_seeds('../CF_30Seeds/')
     sns.set_theme(style="whitegrid")
     return sns.catplot(x="bug_id", y="num_patches",
-                data=df,
-                kind="bar", ci="sd", palette="dark", alpha=.6, height=6,
-                hue="tool")
+                       data=df,
+                       kind="bar", ci="sd", palette="dark", alpha=.6, height=6,
+                       hue="tool")
+
 
 def countplot_found_patches():
-    df = all_folder('../QuixBugs/')
+    df = cirrus('../QuixBugs/')
     sns.set_theme(style="whitegrid")
     ax = sns.catplot(y="bug_id", hue="tool", kind="count",
-                palette="pastel", edgecolor=".6",
-                data=df)
-    ax.set(xticks=[0,1])
+                     palette="pastel", edgecolor=".6",
+                     data=df)
+    ax.set(xticks=[0, 1])
     return ax
 
-#Todo
+
+# Todo
 def scatterplot_time_and_num_patches():
-    df = all_folder('../QuixBugs/')
+    df = cirrus('../QuixBugs/')
     sns.set_theme(style="whitegrid")
     sns.color_palette(palette="colorblind")
     df = df.loc[df['tool'] == 'Figra']
@@ -156,6 +183,7 @@ def scatterplot_time_and_num_patches():
     g = sns.FacetGrid(df, col='bug_id')
     g.map(sns.scatterplot, "num_patches", "time (seconds)")
     return g
+
 
 if __name__ == '__main__':
     '''
@@ -174,18 +202,14 @@ if __name__ == '__main__':
     print("Number of plausbile patches: " + str(df_filtered['num_patches'].sum()))
     '''
 
-    #df = all_folder_seeds('CF_30Seeds/')
-    #print(df.to_markdown())
+    # df = all_folder_seeds('CF_30Seeds/')
+    # print(df.to_markdown())
 
-    #df = all_folder('test/')
-    #print(df.to_markdown())
+    # df = all_folder('test/')
+    # print(df.to_markdown())
 
-    plot = boxplot_time()
-    plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
-    plt.show()
+    # plot = boxplot_time()
+    # plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
+    # plt.show()
 
-    #df = all_folder('IntroClassJava_Figra/')
-    #print(df.to_markdown())
-
-
-
+    print(IntroClassJava('nopol'))
