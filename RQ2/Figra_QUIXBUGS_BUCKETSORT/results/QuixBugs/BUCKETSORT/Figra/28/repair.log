@@ -1,0 +1,111 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin/";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id BUCKETSORT- \
+	-failing java_testcases.junit.BUCKETSORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin/ \
+	-maxgen 1000000 \
+	-maxtime 180 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+05:45:18.059 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Collections.nCopies(count, i) to java.util.Collections.nCopies(count, i)
+05:45:19.645 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify counts.get(x) to counts.get(x)
+05:45:31.129 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify counts to counts
+05:45:32.980 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify sorted_arr to sorted_arr
+05:45:33.210 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(100) to new java.util.ArrayList<java.lang.Integer>(100)
+05:45:34.279 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.util.Collections.nCopies(k, 0) to java.util.Collections.nCopies(k, 0)
+05:45:34.534 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>(java.util.Collections.nCopies(k, 0)) to new java.util.ArrayList<java.lang.Integer>(java.util.Collections.nCopies(k, 0))
+05:45:35.063 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+05:45:38.221 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify counts.set(x, counts.get(x) + 1) to counts.set(x, counts.get(x) + 1)
+05:45:39.285 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify sorted_arr to sorted_arr
+05:45:41.776 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i++ to i++
+05:45:44.685 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+05:45:44.895 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify count to count
+05:45:48.291 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+05:45:50.739 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 100 to 100
+05:45:51.747 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+05:45:53.909 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+05:45:57.683 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify i to i
+05:45:58.895 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify sorted_arr.addAll(java.util.Collections.nCopies(count, i)) to sorted_arr.addAll(java.util.Collections.nCopies(count, i))
+05:46:00.876 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify counts.get(x) + 1 to counts.get(x) + 1
+05:46:04.874 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+05:46:23.357 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify k to k
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=BUCKETSORT-
+TOTAL_TIME=10800.222
+NR_GENERATIONS=336
+NR_RIGHT_COMPILATIONS=323
+NR_FAILLING_COMPILATIONS=13
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=100
+TIME=25
+VALIDATION=|true|0|6|[]|
+GENERATION=50
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_/./output_astor/AstorMain-BUCKETSORT-//src//variant-100
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.BUCKETSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_/src/main/java/BUCKETSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_/./output_astor/AstorMain-BUCKETSORT-//src//variant-100/java_programs/BUCKETSORT.java
+
+LINE=22
+
+SUSPICIOUNESS=1
+
+MP_RANKING=14
+
+ORIGINAL_CODE=arr
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtForEachImpl
+
+PATCH_HUNK_CODE=counts
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtInvocationImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=counts
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_/src/main/java/BUCKETSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BUCKETSORT/Figra_QuixBugs_BUCKETSORT_/src/main/java/BUCKETSORTjava
+@@ -22 +22 @@
+-		for (java.lang.Integer count : arr) {
++		for (java.lang.Integer count : counts) {
+
+
+
+
+real	180m7.036s
+user	179m35.085s
+sys	0m13.226s
+\n\nNode: hpc060.ncg.ingrid.pt\n
+\n\nDate: Thu Apr 22 08:45:15 EDT 2021\n

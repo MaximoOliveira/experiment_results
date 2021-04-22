@@ -1,0 +1,538 @@
+cd /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk/bin/";
+time java -Xmx4g -Xms1g -cp /users2/cpca56132020/moliveira/RepairThemAll/script/../libs/jtestex7.jar:/users2/cpca56132020/moliveira/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id QUICKSORT- \
+	-failing java_testcases.junit.QUICKSORT_Test \
+	-jvm4testexecution /usr/lib/jvm/java-1.8.0-openjdk/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/java-1.8.0-openjdk/bin/ \
+	-maxgen 1000000 \
+	-maxtime 180 \
+	-stopfirst false \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 8 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /users2/cpca56132020/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/users2/cpca56132020/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+05:45:24.762 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.QUICKSORT.quicksort(lesser) to java_programs.QUICKSORT.quicksort(lesser)
+05:45:41.690 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+05:45:45.014 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.get(0) to arr.get(0)
+05:45:50.704 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+05:45:51.402 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+05:45:53.609 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+05:45:54.562 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java_programs.QUICKSORT.quicksort(greater) to java_programs.QUICKSORT.quicksort(greater)
+05:46:00.506 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+05:46:03.551 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.subList(1, arr.size()) to arr.subList(1, arr.size())
+05:46:04.925 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+05:46:06.624 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+05:46:10.367 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.isEmpty() to arr.isEmpty()
+05:46:11.410 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser to lesser
+05:46:12.664 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+05:46:13.008 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+05:46:14.566 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new java.util.ArrayList<java.lang.Integer>() to new java.util.ArrayList<java.lang.Integer>()
+05:46:15.665 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+05:46:15.956 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr.size() to arr.size()
+05:46:16.245 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+05:46:16.503 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+05:46:16.783 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser to lesser
+05:46:17.956 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify greater to greater
+05:46:22.552 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify arr to arr
+05:46:24.587 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify greater to greater
+05:46:25.840 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle to middle
+05:46:26.824 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify pivot to pivot
+05:46:27.111 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle to middle
+05:46:47.542 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle to middle
+05:46:49.679 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify greater to greater
+05:46:54.628 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+05:46:54.892 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x < pivot to x < pivot
+05:46:55.824 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser.addAll(middle) to lesser.addAll(middle)
+05:46:56.424 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser to lesser
+05:47:03.550 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser to lesser
+05:47:05.363 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle.add(pivot) to middle.add(pivot)
+05:47:23.804 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify greater.add(x) to greater.add(x)
+05:47:26.525 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify middle.addAll(greater) to middle.addAll(greater)
+05:47:27.599 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x > pivot to x > pivot
+05:47:31.004 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify lesser.add(x) to lesser.add(x)
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=QUICKSORT-
+TOTAL_TIME=10800.364
+NR_GENERATIONS=446
+NR_RIGHT_COMPILATIONS=342
+NR_FAILLING_COMPILATIONS=104
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=414
+TIME=94
+VALIDATION=|true|0|13|[]|
+GENERATION=207
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-414
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-414/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x >= pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 >= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (x >= pivot) {
+
+
+
+Patch 2
+VARIANT_ID=434
+TIME=98
+VALIDATION=|true|0|13|[]|
+GENERATION=217
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-434
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-434/java_programs/QUICKSORT.java
+
+LINE=24
+
+SUSPICIOUNESS=0.277
+
+MP_RANKING=20
+
+ORIGINAL_CODE=x < pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=pivot >= x
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 >= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -24 +24 @@
+-			if (x < pivot) {
++			if (pivot >= x) {
+
+
+
+Patch 3
+VARIANT_ID=478
+TIME=106
+VALIDATION=|true|0|13|[]|
+GENERATION=239
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-478
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-478/java_programs/QUICKSORT.java
+
+LINE=24
+
+SUSPICIOUNESS=0.277
+
+MP_RANKING=20
+
+ORIGINAL_CODE=x < pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x <= pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 <= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -24 +24 @@
+-			if (x < pivot) {
++			if (x <= pivot) {
+
+
+
+Patch 4
+VARIANT_ID=566
+TIME=131
+VALIDATION=|true|0|13|[]|
+GENERATION=283
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-566
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-566/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=pivot <= x
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 <= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (pivot <= x) {
+
+
+
+Patch 5
+VARIANT_ID=668
+TIME=158
+VALIDATION=|true|0|13|[]|
+GENERATION=334
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-668
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-668/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x >= x
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 >= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (x >= x) {
+
+
+
+Patch 6
+VARIANT_ID=682
+TIME=161
+VALIDATION=|true|0|13|[]|
+GENERATION=341
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-682
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-682/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=!arr.isEmpty()
+
+PATCH_HUNK_TYPE=CtUnaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=!arr.isEmpty()
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (!arr.isEmpty()) {
+
+
+
+Patch 7
+VARIANT_ID=688
+TIME=172
+VALIDATION=|true|0|13|[]|
+GENERATION=344
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-688
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-688/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=pivot >= pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 >= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (pivot >= pivot) {
+
+
+
+Patch 8
+VARIANT_ID=718
+TIME=195
+VALIDATION=|true|0|13|[]|
+GENERATION=359
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-718
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-718/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x <= x
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 <= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (x <= x) {
+
+
+
+Patch 9
+VARIANT_ID=740
+TIME=214
+VALIDATION=|true|0|13|[]|
+GENERATION=370
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-740
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-740/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=x == x
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 == _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (x == x) {
+
+
+
+Patch 10
+VARIANT_ID=758
+TIME=223
+VALIDATION=|true|0|13|[]|
+GENERATION=379
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-758
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-758/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=pivot == pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 == _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (pivot == pivot) {
+
+
+
+Patch 11
+VARIANT_ID=850
+TIME=260
+VALIDATION=|true|0|13|[]|
+GENERATION=425
+FOLDER_SOLUTION_CODE=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-850
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.QUICKSORT
+
+PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORT.java
+
+MODIFIED_FILE_PATH=/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/./output_astor/AstorMain-QUICKSORT-//src//variant-850/java_programs/QUICKSORT.java
+
+LINE=26
+
+SUSPICIOUNESS=0.289
+
+MP_RANKING=2
+
+ORIGINAL_CODE=x > pivot
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+PATCH_HUNK_CODE=pivot <= pivot
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtIfImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=_Integer_0 <= _Integer_1
+
+PATCH_DIFF_ORIG=--- /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
++++ /users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_QUICKSORT/Figra_QuixBugs_QUICKSORT_/src/main/java/QUICKSORTjava
+@@ -26 +26 @@
+-			} else if (x > pivot) {
++			} else if (pivot <= pivot) {
+
+
+
+
+real	180m9.151s
+user	177m15.896s
+sys	0m22.303s
+\n\nNode: hpc063.ncg.ingrid.pt\n
+\n\nDate: Thu Apr 22 08:45:22 EDT 2021\n
