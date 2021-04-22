@@ -1,0 +1,87 @@
+cd /tmp/Figra_IntroClassJava_median_15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-003;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/moliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/moliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id median-15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-003 \
+	-failing introclassJava.median_15cb07a7_003BlackboxTest:introclassJava.median_15cb07a7_003WhiteboxTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+10:42:37.659 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+10:42:40.189 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+10:42:40.453 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+10:42:54.160 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the median\n" to "%d is the median\n"
+10:42:58.700 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify frst to frst
+10:42:58.970 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+10:42:59.701 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp2 to cmp2
+10:43:16.144 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify frst to frst
+10:43:33.464 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Please enter 3 numbers separated by spaces > " to "Please enter 3 numbers separated by spaces > "
+10:43:33.916 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+10:43:36.951 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp1 to cmp1
+10:43:37.476 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+10:43:39.884 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Please enter 3 numbers separated by spaces > ") to java.lang.String.format("Please enter 3 numbers separated by spaces > ")
+10:43:43.107 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify thrd to thrd
+10:43:44.498 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+10:43:45.678 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify thrd to thrd
+10:43:46.238 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp2 to cmp2
+10:43:46.471 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp2 to cmp2
+10:43:48.603 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify med to med
+10:43:49.579 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp1 to cmp1
+10:43:52.546 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scnd to scnd
+10:43:56.194 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scnd to scnd
+10:43:56.968 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scnd to scnd
+10:44:01.462 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scnd to scnd
+10:44:01.730 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify med to med
+10:44:02.002 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scnd to scnd
+10:44:02.824 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+10:44:03.086 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp2 to cmp2
+10:44:03.738 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify thrd to thrd
+10:44:04.290 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp1 to cmp1
+10:44:06.476 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify med to med
+10:44:08.536 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify frst to frst
+10:44:12.780 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp1 to cmp1
+10:44:13.632 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp1 to cmp1
+10:44:14.525 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify cmp2 to cmp2
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=median-15cb07a72bc49f3f4b4a1000410c388b4d03b9f36236365ba4b611ca0617243b6de4e2e0868abf9ccb667e5ff71ccd3ce631cd59fcf13ee22addabf66c1824fa-003
+TOTAL_TIME=7200.702
+NR_GENERATIONS=288
+NR_RIGHT_COMPILATIONS=242
+NR_FAILLING_COMPILATIONS=46
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+7372.61user 42.24system 2:00:06elapsed 102%CPU (0avgtext+0avgdata 1688932maxresident)k
+0inputs+33440outputs (0major+24162248minor)pagefaults 0swaps
+
+
+Node: franklin
+
+
+
+Date: qui 15 abr 2021 12:42:37 EDT
+

@@ -1,0 +1,79 @@
+cd /tmp/Figra_IntroClassJava_median_95362737dcd262ddd67b0fe1381c25f1e6b885860b4e51efb6f57223dceb77b4c6c7d855e3fe891c10cd51b48c9b052cf2c74f181a28d3020d77a4a2d6e4db18-000;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/moliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/moliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id median-95362737dcd262ddd67b0fe1381c25f1e6b885860b4e51efb6f57223dceb77b4c6c7d855e3fe891c10cd51b48c9b052cf2c74f181a28d3020d77a4a2d6e4db18-000 \
+	-failing introclassJava.median_95362737_000BlackboxTest:introclassJava.median_95362737_000WhiteboxTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+00:46:40.699 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+00:46:41.353 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+00:46:42.272 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+00:46:47.792 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+00:46:51.227 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+00:46:58.122 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+00:46:58.898 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+00:47:04.587 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+00:47:05.943 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+00:47:13.957 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the median\n" to "%d is the median\n"
+00:47:16.997 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+00:47:17.223 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+00:47:19.970 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+00:47:21.802 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+00:47:24.082 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+00:47:43.083 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Please eneter 3 numbers separated by spaces > ") to java.lang.String.format("Please eneter 3 numbers separated by spaces > ")
+00:48:01.835 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+00:48:20.210 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+00:48:24.320 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+00:48:30.861 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+00:48:51.002 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n2 to n2
+00:48:56.922 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+00:49:02.098 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Please eneter 3 numbers separated by spaces > " to "Please eneter 3 numbers separated by spaces > "
+00:49:14.215 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the median\n" to "%d is the median\n"
+00:49:46.027 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n3 to n3
+00:50:07.543 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the median\n" to "%d is the median\n"
+00:50:22.287 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify n1 to n1
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=median-95362737dcd262ddd67b0fe1381c25f1e6b885860b4e51efb6f57223dceb77b4c6c7d855e3fe891c10cd51b48c9b052cf2c74f181a28d3020d77a4a2d6e4db18-000
+TOTAL_TIME=7206.526
+NR_GENERATIONS=244
+NR_RIGHT_COMPILATIONS=146
+NR_FAILLING_COMPILATIONS=98
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+7350.75user 44.65system 2:00:13elapsed 102%CPU (0avgtext+0avgdata 1786592maxresident)k
+1520inputs+27296outputs (0major+38722678minor)pagefaults 0swaps
+
+
+Node: franklin
+
+
+
+Date: sex 16 abr 2021 02:46:47 EDT
+

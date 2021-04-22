@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-17 01:54:04.005311", 
+  "repair_begin": "2021-04-17 01:53:42.458367", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/src\\/main\\/java\\/introclassJava\\/smallest_769cd811_007java\\n+++ \\/tmp\\/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/src\\/main\\/java\\/introclassJava\\/smallest_769cd811_007java\\n@@ -76 +76 @@\\n-\\t\\tif (z.value > t.value) {\\n+\\t\\tif (y.value > t.value) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/.\\/output_astor\\/AstorMain-smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/\\/src\\/\\/variant-40\\/introclassJava\\/smallest_769cd811_007.java", 
+          "ORIGINAL_CODE": "z", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "y", 
+          "INGREDIENT_PARENT": "y", 
+          "LOCATION": "introclassJava.smallest_769cd811_007", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/src\\/main\\/java\\/introclassJava\\/smallest_769cd811_007.java", 
+          "LINE": "76", 
+          "MP_RANKING": "32", 
+          "SUSPICIOUNESS": "0.354", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "20", 
+      "VARIANT_ID": "40", 
+      "TIME": "15", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/.\\/output_astor\\/AstorMain-smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-007\\/\\/src\\/\\/variant-40"
+    }
+  ]
+}

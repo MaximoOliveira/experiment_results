@@ -1,0 +1,112 @@
+cd /tmp/Figra_IntroClassJava_digits_d2b889e1ac42bc85f9df5c45c10708f46784be93d69acd1415cfd4d028cb50b19f50c374a9498c8e8b909173053a100e20c279ddb06c6359a06a920ead3e8080-003;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/moliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/moliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id digits-d2b889e1ac42bc85f9df5c45c10708f46784be93d69acd1415cfd4d028cb50b19f50c374a9498c8e8b909173053a100e20c279ddb06c6359a06a920ead3e8080-003 \
+	-failing introclassJava.digits_d2b889e1_003BlackboxTest:introclassJava.digits_d2b889e1_003WhiteboxTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+23:00:22.257 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify y to y
+23:00:36.657 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:00:42.139 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:00:43.592 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+23:00:57.756 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:00:58.817 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+23:00:59.969 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify new introclassJava.IntObj() to new introclassJava.IntObj()
+23:01:00.556 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:01:01.270 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+23:01:01.492 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:01:03.308 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d\n" to "%d\n"
+23:01:06.758 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:01:35.047 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:01:36.930 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:01:41.590 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:01:59.003 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify java.lang.String.format("Enter an integer > ") to java.lang.String.format("Enter an integer > ")
+23:01:59.851 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+23:02:01.068 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+23:02:02.773 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d\nThat\'s all, have a nice day~\n" to "%d\nThat\'s all, have a nice day~\n"
+23:02:04.882 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+23:02:05.191 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+23:02:13.246 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:02:17.286 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:02:19.728 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:02:22.774 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+23:02:23.422 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+23:02:42.969 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:02:48.797 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:02:49.298 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:02:49.641 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+23:02:55.162 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:03:16.576 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (-1) to (-1)
+23:03:17.806 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d\n" to "%d\n"
+23:03:19.945 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d\n" to "%d\n"
+23:03:22.120 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+23:03:24.992 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:03:27.233 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify b to b
+23:03:31.599 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 1 to 1
+23:03:43.627 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d\nThat\'s all, have a nice day!\n" to "%d\nThat\'s all, have a nice day!\n"
+23:03:44.281 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify y to y
+23:03:55.011 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:04:00.680 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+23:04:02.607 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:04:07.534 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:04:10.494 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 0 to 0
+23:04:29.563 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:04:37.674 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+23:04:47.466 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:04:48.686 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:05:09.394 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:05:14.692 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "Enter an integer > " to "Enter an integer > "
+23:05:21.544 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify c to c
+23:05:31.999 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:05:36.263 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:05:54.964 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify a to a
+23:06:21.721 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (-1) to (-1)
+23:07:03.353 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify 10 to 10
+23:07:17.167 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify x to x
+23:07:19.286 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify (-1) to (-1)
+23:09:57.617 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "\n%d\n" to "\n%d\n"
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=digits-d2b889e1ac42bc85f9df5c45c10708f46784be93d69acd1415cfd4d028cb50b19f50c374a9498c8e8b909173053a100e20c279ddb06c6359a06a920ead3e8080-003
+TOTAL_TIME=7210.388
+NR_GENERATIONS=675
+NR_RIGHT_COMPILATIONS=548
+NR_FAILLING_COMPILATIONS=127
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=TIME_OUT
+
+Patch stats:
+
+7453.47user 61.92system 2:00:17elapsed 104%CPU (0avgtext+0avgdata 1760916maxresident)k
+0inputs+54840outputs (0major+26745584minor)pagefaults 0swaps
+
+
+Node: franklin
+
+
+
+Date: seg 19 abr 2021 01:00:32 EDT
+

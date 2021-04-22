@@ -1,0 +1,103 @@
+cd /tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/moliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/moliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002 \
+	-failing introclassJava.smallest_769cd811_002BlackboxTest:introclassJava.smallest_769cd811_002WhiteboxTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002
+TOTAL_TIME=1.608
+NR_GENERATIONS=3
+NR_RIGHT_COMPILATIONS=3
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=6
+TIME=1
+VALIDATION=|true|0|16|[]|
+GENERATION=3
+FOLDER_SOLUTION_CODE=/tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002/./output_astor/AstorMain-smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002//src//variant-6
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=introclassJava.smallest_769cd811_002
+
+PATH=/tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002/src/main/java/introclassJava/smallest_769cd811_002.java
+
+MODIFIED_FILE_PATH=/tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002/./output_astor/AstorMain-smallest-769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002//src//variant-6/introclassJava/smallest_769cd811_002.java
+
+LINE=61
+
+SUSPICIOUNESS=0.5
+
+MP_RANKING=4
+
+ORIGINAL_CODE=new introclassJava.IntObj()
+
+BUGGY_CODE_TYPE=CtConstructorCallImpl|CtLocalVariableImpl
+
+PATCH_HUNK_CODE=z
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtLocalVariableImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=z
+
+PATCH_DIFF_ORIG=--- /tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002/src/main/java/introclassJava/smallest_769cd811_002java
++++ /tmp/Figra_IntroClassJava_smallest_769cd811312cbbb82c87033a78ac9584ad282550bcb9cc3ae8c4e3da44c288c1a5b3954e01998c3c0654ee6774ceab66e9fe5b135750905c917d2b0bb5fab98b-002/src/main/java/introclassJava/smallest_769cd811_002java
+@@ -61,6 +61,6 @@
+-		new introclassJava.IntObj(); 		introclassJava.IntObj a = new introclassJava.IntObj();
+-		output += 
+-		java.lang.String.format("Please enter 4 numbers separated by spaces > ");
+-		x.value = scanner.nextInt();
+-		y.value = scanner.nextInt();
+-		z.value = scanner.nextInt();
++		new introclassJava.IntObj(); 		introclassJava.IntObj a = 
++
++
++
++
++		z; 		output += java.lang.String.format("Please enter 4 numbers separated by spaces > "); 		x.value = scanner.nextInt(); 		y.value = scanner.nextInt(); 		z.value = scanner.nextInt();
+
+
+
+17.83user 1.77system 0:07.36elapsed 266%CPU (0avgtext+0avgdata 477848maxresident)k
+0inputs+7488outputs (0major+215492minor)pagefaults 0swaps
+
+
+Node: franklin
+
+
+
+Date: sex 16 abr 2021 20:53:39 EDT
+

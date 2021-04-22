@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-17 11:56:38.208806", 
+  "repair_begin": "2021-04-17 11:56:20.025522", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/src\\/main\\/java\\/introclassJava\\/smallest_97f6b152_003java\\n+++ \\/tmp\\/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/src\\/main\\/java\\/introclassJava\\/smallest_97f6b152_003java\\n@@ -68,14 +68,14 @@\\n-\\t\\tif (((num1.value < num2.value) && (num1.value < num3.value)) && \\n-\\t\\t(num1.value < num4.value)) {\\n-\\t\\t\\tsmall.value = num1.value;\\n-\\t\\t} else if (((num2.value < num1.value) && (num2.value < num3.value)) && \\n-\\t\\t(num2.value < num4.value)) {\\n-\\t\\t\\tsmall.value = num2.value;\\n-\\t\\t} else if (((num3.value < num1.value) && (num3.value < num2.value)) && \\n-\\t\\t(num3.value < num4.value)) {\\n-\\t\\t\\tsmall.value = num3.value;\\n-\\t\\t} else {\\n-\\t\\t\\tsmall.value = num4.value;\\n-\\t\\t}\\n-\\t\\toutput += java.lang.String.format(\\\"%d is the smallest\\\\n\\\", small.value);\\n-\\t\\tif (true)\\n+\\t\\tif (\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\t\\ttrue && (num1.value < num4.value)) { \\t\\t\\tsmall.value = num1.value;} else if (((num2.value < num1.value) && (num2.value < num3.value)) && (num2.value < num4.value)) { \\t\\t\\tsmall.value = num2.value;} else if (((num3.value < num1.value) && (num3.value < num2.value)) && (num3.value < num4.value)) { \\t\\t\\tsmall.value = num3.value;} else { \\t\\t\\tsmall.value = num4.value;} \\t\\toutput += java.lang.String.format(\\\"%d is the smallest\\\\n\\\", small.value); \\t\\tif (true)\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/.\\/output_astor\\/AstorMain-smallest-97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/\\/src\\/\\/variant-6\\/introclassJava\\/smallest_97f6b152_003.java", 
+          "ORIGINAL_CODE": "((num1.value < num2.value) && (num1.value < num3.value))", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "true", 
+          "INGREDIENT_PARENT": "true", 
+          "LOCATION": "introclassJava.smallest_97f6b152_003", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/src\\/main\\/java\\/introclassJava\\/smallest_97f6b152_003.java", 
+          "LINE": "68", 
+          "MP_RANKING": "47", 
+          "SUSPICIOUNESS": "0.433", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "3", 
+      "VARIANT_ID": "6", 
+      "TIME": "11", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_smallest_97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/.\\/output_astor\\/AstorMain-smallest-97f6b15278788d90f6a0159ac65668f63f182fadf165e78bfecd7750de89f8611759f8d8206b3505407f7de14d124db7b0309a53e222c538c4dedadc6fa24fe6-003\\/\\/src\\/\\/variant-6"
+    }
+  ]
+}

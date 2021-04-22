@@ -1,0 +1,102 @@
+cd /tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003;
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en";
+TZ="America/New_York"; export TZ;
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/:$PATH";
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/";
+time java -Xmx4g -Xms1g -cp /home/moliveira/Tese/RepairThemAll/script/../libs/jtestex7.jar:/home/moliveira/Tese/RepairThemAll/script/../repair_tools/astor.jar fr.inria.main.evolution.AstorMain \
+	-mode figra \
+	-location . \
+	-id median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003 \
+	-failing introclassJava.median_1bf73a9c_003BlackboxTest:introclassJava.median_1bf73a9c_003WhiteboxTest \
+	-jvm4testexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-jvm4evosuitetestexecution /usr/lib/jvm/jdk1.7.0_80/bin/ \
+	-maxgen 1000000 \
+	-maxtime 120 \
+	-stopfirst true \
+	-seed 28 \
+	-scope package \
+	-population 1 \
+	-javacompliancelevel 7 \
+	-srcjavafolder src/main/java \
+	-srctestfolder src/test/java \
+	-binjavafolder target/classes \
+	-bintestfolder target/test-classes \
+	-parameters x:x:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000:maxCombinationVariableLimit:true:maxVarCombination:1000 \
+	-dependencies /home/moliveira/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/moliveira/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;
+	echo "\n\nNode: `hostname`\n";
+	echo "\n\nDate: `date`\n";
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+04:42:23.372 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+04:42:23.594 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify "%d is the median\n" to "%d is the median\n"
+04:42:26.740 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify third to third
+04:42:27.569 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner to scanner
+04:42:27.844 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify second to second
+04:42:28.910 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify third to third
+04:42:30.816 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify second to second
+04:42:34.352 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify scanner.nextInt() to scanner.nextInt()
+04:42:35.406 [main] ERROR fr.inria.astor.approaches.figra.ExpressionReplaceOperator - Replacement does not work for  modify first to first
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003
+TOTAL_TIME=16.927
+NR_GENERATIONS=58
+NR_RIGHT_COMPILATIONS=45
+NR_FAILLING_COMPILATIONS=13
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=116
+TIME=16
+VALIDATION=|true|0|13|[]|
+GENERATION=58
+FOLDER_SOLUTION_CODE=/tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/./output_astor/AstorMain-median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003//src//variant-116
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=introclassJava.median_1bf73a9c_003
+
+PATH=/tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/src/main/java/introclassJava/median_1bf73a9c_003.java
+
+MODIFIED_FILE_PATH=/tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/./output_astor/AstorMain-median-1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003//src//variant-116/introclassJava/median_1bf73a9c_003.java
+
+LINE=70
+
+SUSPICIOUNESS=0.302
+
+MP_RANKING=3
+
+ORIGINAL_CODE=second
+
+BUGGY_CODE_TYPE=CtVariableReadImpl|CtFieldReadImpl
+
+PATCH_HUNK_CODE=third
+
+PATCH_HUNK_TYPE=CtVariableReadImpl|CtFieldReadImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=third
+
+PATCH_DIFF_ORIG=--- /tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/src/main/java/introclassJava/median_1bf73a9c_003java
++++ /tmp/Figra_IntroClassJava_median_1bf73a9ca02e8d64fd54aaf8de9ad5d029ebfff775224c3f5b010db80793ea8698863524436d122a100abc08c3486a795eb1caf39f78fc55d3948124861669ac-003/src/main/java/introclassJava/median_1bf73a9c_003java
+@@ -70 +70 @@
+-		} else if (((second.value > first.value) && (second.value < third.value)) || 
++		} else if (((third.value > first.value) && (second.value < third.value)) || 
+
+
+
+44.39user 4.19system 0:23.21elapsed 209%CPU (0avgtext+0avgdata 1052064maxresident)k
+0inputs+10688outputs (0major+842523minor)pagefaults 0swaps
+
+
+Node: franklin
+
+
+
+Date: qui 15 abr 2021 04:42:38 EDT
+

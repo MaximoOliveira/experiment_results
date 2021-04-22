@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-16 23:53:17.115114", 
+  "repair_begin": "2021-04-16 23:51:26.631056", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_smallest_818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/src\\/main\\/java\\/introclassJava\\/smallest_818f8cf4_003java\\n+++ \\/tmp\\/Figra_IntroClassJava_smallest_818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/src\\/main\\/java\\/introclassJava\\/smallest_818f8cf4_003java\\n@@ -83 +83 @@\\n-\\t\\t\\toutput += java.lang.String.format(\\\"%d is the smallest\\\\n\\\", num_smallest.value);\\n+\\t\\t\\toutput += java.lang.String.format(\\\"%d is the smallest\\\\n\\\", num4.value);\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/.\\/output_astor\\/AstorMain-smallest-818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/\\/src\\/\\/variant-298\\/introclassJava\\/smallest_818f8cf4_003.java", 
+          "ORIGINAL_CODE": "num_smallest", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "num4", 
+          "INGREDIENT_PARENT": "num4", 
+          "LOCATION": "introclassJava.smallest_818f8cf4_003", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/src\\/main\\/java\\/introclassJava\\/smallest_818f8cf4_003.java", 
+          "LINE": "83", 
+          "MP_RANKING": "24", 
+          "SUSPICIOUNESS": "1", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "149", 
+      "VARIANT_ID": "298", 
+      "TIME": "102", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_smallest_818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/.\\/output_astor\\/AstorMain-smallest-818f8cf4e2e713753d02db9ee70a099b71f2a5a6bdc904191cf9ba68cfa5f64328464dccdd9b02fe0822e14a403dc196fe88b9964969409e60c93a776186a86a-003\\/\\/src\\/\\/variant-298"
+    }
+  ]
+}

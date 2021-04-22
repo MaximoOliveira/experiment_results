@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-15 23:44:24.105232", 
+  "repair_begin": "2021-04-15 23:43:22.960180", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_median_0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/src\\/main\\/java\\/introclassJava\\/median_0cdfa335_003java\\n+++ \\/tmp\\/Figra_IntroClassJava_median_0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/src\\/main\\/java\\/introclassJava\\/median_0cdfa335_003java\\n@@ -68,2 +68,2 @@\\n-\\t\\t((a.value >= c.value) && (a.value <= b.value))) {\\n-\\t\\t\\tmedian.value = a.value;\\n+\\t\\t((a.value >= c.value) && (a.value <= b.value))) { \\t\\t\\tc.value = \\n+\\t\\t\\ta.value;\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_median_0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/.\\/output_astor\\/AstorMain-median-0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/\\/src\\/\\/variant-170\\/introclassJava\\/median_0cdfa335_003.java", 
+          "ORIGINAL_CODE": "median", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "c", 
+          "INGREDIENT_PARENT": "c", 
+          "LOCATION": "introclassJava.median_0cdfa335_003", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldWriteImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_median_0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/src\\/main\\/java\\/introclassJava\\/median_0cdfa335_003.java", 
+          "LINE": "69", 
+          "MP_RANKING": "0", 
+          "SUSPICIOUNESS": "0.577", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldWriteImpl"
+        }
+      ], 
+      "GENERATION": "85", 
+      "VARIANT_ID": "170", 
+      "TIME": "55", 
+      "VALIDATION": "|true|0|13|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_median_0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/.\\/output_astor\\/AstorMain-median-0cdfa335eea3c612e6fa3ad261276b0c3ebbc6ff0ff13c20bdc249bad29a8037ca6dc887dd28558964e1e1a24f47c4cffc05adba525285dc8b93660cdf9b8b7c-003\\/\\/src\\/\\/variant-170"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-17 19:52:34.018621", 
+  "repair_begin": "2021-04-17 19:52:20.132525", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_digits_c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/src\\/main\\/java\\/introclassJava\\/digits_c5d8f924_003java\\n+++ \\/tmp\\/Figra_IntroClassJava_digits_c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/src\\/main\\/java\\/introclassJava\\/digits_c5d8f924_003java\\n@@ -75,2 +75,2 @@\\n-\\t\\t\\tnumber.value = number.value \\/ 10;\\n-\\t\\t\\ti.value++;\\n+\\t\\t\\tnumber.value = number.value \\/ 10; \\t\\t\\tstore.value++;\\n+\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_digits_c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/.\\/output_astor\\/AstorMain-digits-c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/\\/src\\/\\/variant-52\\/introclassJava\\/digits_c5d8f924_003.java", 
+          "ORIGINAL_CODE": "i", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "store", 
+          "INGREDIENT_PARENT": "store", 
+          "LOCATION": "introclassJava.digits_c5d8f924_003", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldWriteImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_digits_c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/src\\/main\\/java\\/introclassJava\\/digits_c5d8f924_003.java", 
+          "LINE": "76", 
+          "MP_RANKING": "38", 
+          "SUSPICIOUNESS": "0.25", 
+          "PATCH_HUNK_TYPE": "CtVariableReadImpl|CtFieldWriteImpl"
+        }
+      ], 
+      "GENERATION": "26", 
+      "VARIANT_ID": "52", 
+      "TIME": "7", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_digits_c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/.\\/output_astor\\/AstorMain-digits-c5d8f924b86adfeafa7f520559aeb8bd0c3c178efe2500c4054c5ce51bcdbfc2da2e3d9fd5c73f559a7cb6c3b3555b04646111404744496cbcf31caa90e5beb4-003\\/\\/src\\/\\/variant-52"
+    }
+  ]
+}

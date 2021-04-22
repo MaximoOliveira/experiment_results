@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-20 16:03:32.299912", 
+  "repair_begin": "2021-04-20 16:03:22.582306", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_grade_b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/src\\/main\\/java\\/introclassJava\\/grade_b1924d63_003java\\n+++ \\/tmp\\/Figra_IntroClassJava_grade_b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/src\\/main\\/java\\/introclassJava\\/grade_b1924d63_003java\\n@@ -74,10 +74,10 @@\\n-\\t\\t} else if ((score.value >= b.value) && (score.value > a.value)) {\\n-\\t\\t\\toutput += java.lang.String.format(\\\"Student has an B grade\\\\n\\\");\\n-\\t\\t} else if ((score.value >= c.value) && (score.value < b.value)) {\\n-\\t\\t\\toutput += java.lang.String.format(\\\"Student has an C grade\\\\n\\\");\\n-\\t\\t} else if ((score.value >= d.value) && (score.value < c.value)) {\\n-\\t\\t\\toutput += java.lang.String.format(\\\"Student has an D grade\\\\n\\\");\\n-\\t\\t} else if (score.value < d.value) {\\n-\\t\\t\\toutput += java.lang.String.format(\\\"Student has failed the course\\\\n\\\");\\n-\\t\\t}\\n-\\t\\tif (true)\\n+\\t\\t} else if ((score.value >= b.value) && \\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\n+\\t\\ttrue) { \\t\\t\\toutput += java.lang.String.format(\\\"Student has an B grade\\\\n\\\");} else if ((score.value >= c.value) && (score.value < b.value)) { \\t\\t\\toutput += java.lang.String.format(\\\"Student has an C grade\\\\n\\\");} else if ((score.value >= d.value) && (score.value < c.value)) { \\t\\t\\toutput += java.lang.String.format(\\\"Student has an D grade\\\\n\\\");} else if (score.value < d.value) { \\t\\t\\toutput += java.lang.String.format(\\\"Student has failed the course\\\\n\\\");} \\t\\tif (true)\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_grade_b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/.\\/output_astor\\/AstorMain-grade-b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/\\/src\\/\\/variant-22\\/introclassJava\\/grade_b1924d63_003.java", 
+          "ORIGINAL_CODE": "(score.value > a.value)", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "true", 
+          "INGREDIENT_PARENT": "true", 
+          "LOCATION": "introclassJava.grade_b1924d63_003", 
+          "BUGGY_CODE_TYPE": "CtBinaryOperatorImpl|CtBinaryOperatorImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_grade_b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/src\\/main\\/java\\/introclassJava\\/grade_b1924d63_003.java", 
+          "LINE": "74", 
+          "MP_RANKING": "21", 
+          "SUSPICIOUNESS": "0.535", 
+          "PATCH_HUNK_TYPE": "CtLiteralImpl|CtBinaryOperatorImpl"
+        }
+      ], 
+      "GENERATION": "11", 
+      "VARIANT_ID": "22", 
+      "TIME": "3", 
+      "VALIDATION": "|true|0|18|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_grade_b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/.\\/output_astor\\/AstorMain-grade-b1924d63a2e25b7c8d9a794093c4ae97fdceec9e0ea46b6a4b02d9a18b9ba9cecf07cb0c42c264a0947aec22b0bacff788a547a8250c2265f601581ab545bf82-003\\/\\/src\\/\\/variant-22"
+    }
+  ]
+}

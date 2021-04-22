@@ -1,0 +1,31 @@
+{
+  "repair_end": "2021-04-17 13:54:05.180929", 
+  "repair_begin": "2021-04-17 13:53:40.665623", 
+  "patches": [
+    {
+      "PATCH_DIFF_ORIG": "--- \\/tmp\\/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/src\\/main\\/java\\/introclassJava\\/smallest_3b2376ab_007java\\n+++ \\/tmp\\/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/src\\/main\\/java\\/introclassJava\\/smallest_3b2376ab_007java\\n@@ -75 +75 @@\\n-\\t\\tif (n4.value < n3.value) {\\n+\\t\\tif (n4.value < new introclassJava.IntObj().value) {\\n\\n", 
+      "patchhunks": [
+        {
+          "MODIFIED_FILE_PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/.\\/output_astor\\/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/\\/src\\/\\/variant-70\\/introclassJava\\/smallest_3b2376ab_007.java", 
+          "ORIGINAL_CODE": "n3", 
+          "INGREDIENT_SCOPE": "-", 
+          "PATCH_HUNK_CODE": "new introclassJava.IntObj()", 
+          "INGREDIENT_PARENT": "new introclassJava.IntObj()", 
+          "LOCATION": "introclassJava.smallest_3b2376ab_007", 
+          "BUGGY_CODE_TYPE": "CtVariableReadImpl|CtFieldReadImpl", 
+          "OPERATOR": "ExpressionReplaceOperator", 
+          "PATH": "\\/tmp\\/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/src\\/main\\/java\\/introclassJava\\/smallest_3b2376ab_007.java", 
+          "LINE": "75", 
+          "MP_RANKING": "34", 
+          "SUSPICIOUNESS": "0.354", 
+          "PATCH_HUNK_TYPE": "CtConstructorCallImpl|CtFieldReadImpl"
+        }
+      ], 
+      "GENERATION": "35", 
+      "VARIANT_ID": "70", 
+      "TIME": "18", 
+      "VALIDATION": "|true|0|16|[]|", 
+      "FOLDER_SOLUTION_CODE": "\\/tmp\\/Figra_IntroClassJava_smallest_3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/.\\/output_astor\\/AstorMain-smallest-3b2376ab97bb5d1a5dbbf2b45cf062db320757549c761936d19df05e856de894e45695014cd8063cdc22148b13fa1803b3c9e77356931d66f4fbec0efacf7829-007\\/\\/src\\/\\/variant-70"
+    }
+  ]
+}
