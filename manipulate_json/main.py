@@ -6,6 +6,41 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
+def patch_correctness():
+    correctness = {
+        'Figra': (11, 7),
+        'JAID': (9, 2),
+        'Cardumen': (4, 1),
+        'Arja': (2, 2),
+        'RSRepair': (2, 1),
+        'JMutRepair': (2, 1),
+        'Nopol': (2, 2),
+        'NPEFix': (1, 2),
+        'JKali': (1, 2),
+        'Tibra': (1, 2),
+        'Dynamoth': (1, 1),
+        'JGenProg': (1, 3)
+    }
+    df = pd.DataFrame(columns=['Tool', 'Correctness'])
+    for key, value in correctness.items():
+        for _ in range(value[0]):
+            row = {'Tool': key, 'Correctness': 'Correct'}
+            df = df.append(row, ignore_index=True)
+        for _ in range(value[1]):
+            row = {'Tool': key, 'Correctness': 'Incorrect'}
+            df = df.append(row, ignore_index=True)
+    ax = sns.countplot(x='Tool', hue='Correctness', palette=['lightgreen', 'tomato'], data=df)
+    ax.set_ylabel(' ')
+    legend_labels, _ = ax.get_legend_handles_labels()
+    ax.legend(legend_labels, ['Correctly repaired programs', 'Incorrectly repaired programs'],
+              title='',
+              bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
+              ncol=2, mode="expand", borderaxespad=0.,
+              frameon=False)
+    ax.set(ylim=(0, 12))
+    return ax
+
+
 def create_row_from_json_file(filename, tool_name, bug_id):
     with open(filename) as json_file:
         data = json.load(json_file)
@@ -31,7 +66,8 @@ def find(name, path):
         if name in files:
             return os.path.join(root, name)
 
-#get results from franklin machine
+
+# get results from franklin machine
 def franklin(rootdir):
     df = pd.DataFrame()
     directories = sorted(os.listdir(rootdir))
@@ -212,4 +248,8 @@ if __name__ == '__main__':
     # plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
     # plt.show()
 
-    print(IntroClassJava('nopol'))
+    # print(IntroClassJava('nopol'))
+
+    patch_correctness()
+    plt.show()
+    # print(df.to_markdown())
