@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/runner/local/LocalRunner.py", line 41, in run
+    task.run()
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/runner/RepairTask.py", line 30, in run
+    return self.tool.repair(self)
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/repair_tools/Astor.py", line 41, in repair
+    self.init_bug(bug, bug_path)
+  File "/users2/cpca56132020/moliveira/RepairThemAll/script/core/RepairTool.py", line 61, in init_bug
+    shutil.rmtree(bug_path)
+  File "/usr/lib64/python2.7/shutil.py", line 247, in rmtree
+    rmtree(fullname, ignore_errors, onerror)
+  File "/usr/lib64/python2.7/shutil.py", line 247, in rmtree
+    rmtree(fullname, ignore_errors, onerror)
+  File "/usr/lib64/python2.7/shutil.py", line 247, in rmtree
+    rmtree(fullname, ignore_errors, onerror)
+  File "/usr/lib64/python2.7/shutil.py", line 256, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/lib64/python2.7/shutil.py", line 254, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/users2/cpca56132020/moliveira/folders/Figra_QUIXBUGS_BITCOUNT/Figra_QuixBugs_BITCOUNT_/output_astor/AstorMain-BITCOUNT-/bin'
