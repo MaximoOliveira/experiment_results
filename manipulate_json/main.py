@@ -145,6 +145,76 @@ def split(strng, sep, pos):
     return sep.join(strng[:pos]), sep.join(strng[pos:])
 
 
+def first_patch_found():
+    first_patch = {
+        'DEPTH_FIRST_SEARCH': (4, 2),
+        'LEVENSTHEIN': (12, 21),
+        'MERGESORT': (1, 3),
+        'RPN_EVAL': (10, 1),
+        'GET_FACTORS': (2, 2),
+        'HANOI': (110, 16),
+    }
+    df = pd.DataFrame(columns=['Tool', 'BUG_ID', 'Time'])
+    for key, value in first_patch.items():
+        row = {'Tool': 'Cardumen', 'BUG_ID': key, 'Time': int(value[0])}
+        df = df.append(row, ignore_index=True)
+        row = {'Tool': 'Figra', 'BUG_ID': key, 'Time': int(value[1])}
+        df = df.append(row, ignore_index=True)
+    df = df.rename(columns={'Tool': 'Repair Tool'})
+    sns.set_theme(style="whitegrid")
+    sns.color_palette(palette="colorblind")
+    params = dict(data=df,
+                  x='BUG_ID',
+                  y='Time',
+                  hue='Repair Tool',
+                  palette="Set2",
+                  dodge=True)
+    return sns.barplot(**params)
+
+def time_facetGrid():
+    df = all_folder_seeds('../CF_30Seeds/')
+    df.sort_values(by=['time (seconds)'])
+    sns.set_theme(style="whitegrid")
+    sns.color_palette(palette="colorblind")
+    fig, axes = plt.subplots(2, 3)
+    df = df.rename(columns={'time (seconds)': 'Time to find first patch (seconds)'})
+    params = dict(x='tool',
+                  y='Time to find first patch (seconds)',
+                  palette="Set2",
+                  dodge=True,
+                  orient='v')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'DEPTH_FIRST_SEARCH'], ax=axes[0, 0])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'DEPTH_FIRST_SEARCH'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[0, 0])
+    ax.set_title('DEPTH_FIRST_SEARCH')
+    ax.set_xlabel(' ')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'LEVENSHTEIN'], ax=axes[0, 1])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'LEVENSHTEIN'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[0, 1])
+    ax.set_title('LEVENSHTEIN')
+    ax.set_xlabel(' ')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'MERGESORT'], ax=axes[0, 2])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'MERGESORT'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[0, 2])
+    ax.set_title('MERGESORT')
+    ax.set_xlabel(' ')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'RPN_EVAL'], ax=axes[1, 0])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'RPN_EVAL'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[1, 0])
+    ax.set_title('RPN_EVAL')
+    ax.set_xlabel(' ')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'GET_FACTORS'], ax=axes[1, 1])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'GET_FACTORS'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[1, 1])
+    ax.set_title('GET_FACTORS')
+    ax.set_xlabel(' ')
+    ax = sns.boxplot(**params, data=df[df['bug_id'] == 'HANOI'], ax=axes[1, 2])
+    ax = sns.stripplot(**params, data=df[df['bug_id'] == 'HANOI'], jitter=0.35, edgecolor='black',
+                       linewidth=1, ax=axes[1, 2])
+    ax.set_title('HANOI')
+    ax.set_xlabel(' ')
+    return ax
+
 def boxplot_time():
     df = all_folder_seeds('../CF_30Seeds/')
     df.sort_values(by=['time (seconds)'])
@@ -238,18 +308,15 @@ if __name__ == '__main__':
     print("Number of plausbile patches: " + str(df_filtered['num_patches'].sum()))
     '''
 
-    # df = all_folder_seeds('CF_30Seeds/')
-    # print(df.to_markdown())
+    #df = all_folder_seeds('../CF_30Seeds/')
+    #print(df.to_markdown())
 
     # df = all_folder('test/')
     # print(df.to_markdown())
 
-    # plot = boxplot_time()
-    # plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
-    # plt.show()
+    plot = time_facetGrid()
+    #plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
+    plt.show()
 
     # print(IntroClassJava('nopol'))
-
-    patch_correctness()
-    plt.show()
     # print(df.to_markdown())
