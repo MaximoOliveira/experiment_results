@@ -74,12 +74,25 @@ def franklin(rootdir):
     for folder in directories:
         subfolder = sorted(os.listdir(rootdir + folder))
         for f in subfolder:
-            folder_path = rootdir + folder + '/' + f + '/Figra/28/'
+            folder_path = rootdir + folder + '/' + f + '/Figra/'
             json_path = find('detailed-result.json', folder_path)
             if json_path:
                 row = create_row_from_json_file(json_path, 'Figra', f)
                 df = df.append(row, ignore_index=True)
-    return df.to_markdown()
+    return df
+
+def franklin_d4j(rootdir):
+    df = pd.DataFrame()
+    directories = sorted(os.listdir(rootdir))
+    for folder in directories:
+        subfolder = sorted(os.listdir(rootdir + folder))
+        for f in subfolder:
+            folder_path = rootdir + folder + '/' + f
+            json_path = find('detailed-result.json', folder_path)
+            if json_path:
+                row = create_row_from_json_file(json_path, 'Figra', f)
+                df = df.append(row, ignore_index=True)
+    return df
 
 
 def IntroClassJava(tool_name):
@@ -87,7 +100,6 @@ def IntroClassJava(tool_name):
     if tool_name == 'figra':
         return franklin('../IntroClassJava_Figra/')
     return cirrus('../IntroClassJava/')
-
 
 # get results from cirrus machine
 def cirrus(rootdir):
@@ -107,7 +119,7 @@ def cirrus(rootdir):
                 row = create_row_from_nopol_json(json_path, tool_name, bug_id)
                 df = df.append(row, ignore_index=True)
     df = df[['tool', 'bug_id', 'num_patches', 'time (seconds)']]
-    return df.to_markdown()
+    return df
 
 
 # seed
@@ -290,23 +302,24 @@ def scatterplot_time_and_num_patches():
     g.map(sns.scatterplot, "num_patches", "time (seconds)")
     return g
 
+def avg_time():
+    quixbugs = cirrus('../QuixBugs/')
+    figra_quixbugs = quixbugs.loc[quixbugs['tool'] == 'Figra']
+    introclassjava = IntroClassJava('figra')
+    figra_introclassjava = introclassjava.loc[introclassjava['tool'] == 'Figra']
+    d4j = franklin_d4j('../figra_defects/')
+
+    avg_time_quixbugs = figra_quixbugs['time (seconds)'].mean()
+    avg_time_introclassjava = figra_introclassjava['time (seconds)'].mean()
+    avg_time_d4j = d4j['time (seconds)'].mean()
+
+    data = [['QuixBugs', avg_time_quixbugs], ['IntroClassJava', avg_time_introclassjava], ['Defects4J', avg_time_d4j]]
+    df = pd.DataFrame(data, columns=['Benchmark', 'avg_time'])
+
+    return df
+
 
 if __name__ == '__main__':
-    '''
-    df = all_folder('QuixBugs/')
-    del df['num_patches']
-    df.rename(columns={'tool': 'Repair Tool', 'bug_id': 'Bug Name', 'time (seconds)': 'Time (seconds)'}, inplace=True)
-    print(df.to_markdown())
-    print(df.to_latex(index=False))
-    '''
-
-    '''
-    df = all_folder('QuixBugs/')
-    df_filtered = df[df['tool'] == 'Figra']
-    print(df_filtered.to_markdown())
-    print("Number of patched programs: " + str(len(df_filtered.index)))
-    print("Number of plausbile patches: " + str(df_filtered['num_patches'].sum()))
-    '''
 
     #df = all_folder_seeds('../CF_30Seeds/')
     #print(df.to_markdown())
@@ -314,9 +327,10 @@ if __name__ == '__main__':
     # df = all_folder('test/')
     # print(df.to_markdown())
 
-    plot = time_facetGrid()
+    #plot = time_facetGrid()
     #plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
-    plt.show()
+    #plt.show()
 
-    # print(IntroClassJava('nopol'))
-    # print(df.to_markdown())
+    #print(IntroClassJava('figra'))
+    test = avg_time()
+    print(test.to_markdown())
