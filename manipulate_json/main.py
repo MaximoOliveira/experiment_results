@@ -4,6 +4,8 @@ import pandas as pd
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
+from itertools import cycle
+
 
 
 def patch_correctness():
@@ -29,7 +31,7 @@ def patch_correctness():
         for _ in range(value[1]):
             row = {'Tool': key, 'Correctness': 'Incorrect'}
             df = df.append(row, ignore_index=True)
-    ax = sns.countplot(x='Tool', hue='Correctness', palette=['lightgreen', 'tomato'], data=df)
+    ax = sns.countplot(x='Tool', hue='Correctness', data=df)
     ax.set_ylabel(' ')
     legend_labels, _ = ax.get_legend_handles_labels()
     ax.legend(legend_labels, ['Correctly repaired programs', 'Incorrectly repaired programs'],
@@ -38,6 +40,7 @@ def patch_correctness():
               ncol=2, mode="expand", borderaxespad=0.,
               frameon=False)
     ax.set(ylim=(0, 12))
+    sns.set(rc={"figure.figsize": (4, 5)})
     return ax
 
 
@@ -163,7 +166,7 @@ def first_patch_found():
         'LEVENSTHEIN': (12, 21),
         'MERGESORT': (1, 3),
         'RPN_EVAL': (10, 1),
-        'GET_FACTORS': (2, 2),
+        'GET_FACTORS': (2, 1),
         'HANOI': (110, 16),
     }
     df = pd.DataFrame(columns=['Tool', 'BUG_ID', 'Time'])
@@ -181,6 +184,8 @@ def first_patch_found():
                   hue='Repair Tool',
                   palette="Set2",
                   dodge=True)
+    sns.set(rc={"figure.figsize": (12, 12)})
+    sns.set_theme(style="whitegrid")
     return sns.barplot(**params)
 
 def time_facetGrid():
@@ -331,6 +336,15 @@ if __name__ == '__main__':
     #plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
     #plt.show()
 
+    #plot = first_patch_found()
+    #plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
+    #plt.show()
+
+    plot = patch_correctness()
+    plt.show()
+
     #print(IntroClassJava('figra'))
-    test = avg_time()
-    print(test.to_markdown())
+    #test = avg_time()
+    #print(test.to_latex(index=False))
+
+    #sns.set(rc={"figure.figsize": (8, 4)})
