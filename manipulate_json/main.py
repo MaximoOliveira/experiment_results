@@ -4,9 +4,6 @@ import pandas as pd
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
-from itertools import cycle
-
-
 
 def patch_correctness():
     correctness = {
@@ -205,31 +202,37 @@ def time_facetGrid():
                        linewidth=1, ax=axes[0, 0])
     ax.set_title('DEPTH_FIRST_SEARCH')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 25))
     ax = sns.boxplot(**params, data=df[df['bug_id'] == 'LEVENSHTEIN'], ax=axes[0, 1])
     ax = sns.stripplot(**params, data=df[df['bug_id'] == 'LEVENSHTEIN'], jitter=0.35, edgecolor='black',
                        linewidth=1, ax=axes[0, 1])
     ax.set_title('LEVENSHTEIN')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 850))
     ax = sns.boxplot(**params, data=df[df['bug_id'] == 'MERGESORT'], ax=axes[0, 2])
     ax = sns.stripplot(**params, data=df[df['bug_id'] == 'MERGESORT'], jitter=0.35, edgecolor='black',
                        linewidth=1, ax=axes[0, 2])
     ax.set_title('MERGESORT')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 300))
     ax = sns.boxplot(**params, data=df[df['bug_id'] == 'RPN_EVAL'], ax=axes[1, 0])
     ax = sns.stripplot(**params, data=df[df['bug_id'] == 'RPN_EVAL'], jitter=0.35, edgecolor='black',
                        linewidth=1, ax=axes[1, 0])
     ax.set_title('RPN_EVAL')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 85))
     ax = sns.boxplot(**params, data=df[df['bug_id'] == 'GET_FACTORS'], ax=axes[1, 1])
     ax = sns.stripplot(**params, data=df[df['bug_id'] == 'GET_FACTORS'], jitter=0.35, edgecolor='black',
                        linewidth=1, ax=axes[1, 1])
     ax.set_title('GET_FACTORS')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 15))
     ax = sns.boxplot(**params, data=df[df['bug_id'] == 'HANOI'], ax=axes[1, 2])
     ax = sns.stripplot(**params, data=df[df['bug_id'] == 'HANOI'], jitter=0.35, edgecolor='black',
                        linewidth=1, ax=axes[1, 2])
     ax.set_title('HANOI')
     ax.set_xlabel(' ')
+    ax.set(ylim=(0, 225))
     return ax
 
 def boxplot_time():
@@ -340,7 +343,7 @@ if __name__ == '__main__':
     #plot.set(ylabel="Time to find first patch (seconds)", xlabel="BUG_ID")
     #plt.show()
 
-    plot = patch_correctness()
+    plot = time_facetGrid()
     plt.show()
 
     #print(IntroClassJava('figra'))
